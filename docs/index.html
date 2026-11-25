@@ -276,11 +276,12 @@
     function highlightDivine(text) {
       return text
         .replace(/\b(JESUS|LORD|GOD)\b/g, '<span class="divine">$1</span>')
+        .replace(/\bI AM\b/g, '<span class="divine">I AM</span>')
         .replace(/\[JESUS\]/g, '<span class="divine">[JESUS]</span>');
     }
 
     function hasDivine(text) {
-      return /\b(JESUS|LORD|GOD)\b|\[JESUS\]/.test(text);
+      return /\b(JESUS|LORD|GOD)\b|\bI AM\b|\[JESUS\]/.test(text);
     }
 
     function parseText(raw) {
