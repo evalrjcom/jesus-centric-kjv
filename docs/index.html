@@ -5,73 +5,211 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jesus-Centric KJV</title>
   <style>
-    :root { --bg:#0d0f12; --surface:#161a1f; --text:#e8e6e3; --muted:#9a958c; --accent:#c4a574; --border:#2a2f36; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-    header { position:sticky; top:0; background:var(--surface); border-bottom:1px solid var(--border); padding:1rem 1.5rem; display:flex; gap:1rem; align-items:center; flex-wrap:wrap; z-index:10; }
-    h1 { margin:0; font-size:1.25rem; }
-    input[type=search] { flex:1; min-width:200px; padding:0.5rem 0.75rem; background:var(--bg); border:1px solid var(--border); color:var(--text); border-radius:4px; }
-    .btn { background:var(--accent); color:#1a1a1a; border:none; padding:0.5rem 1rem; border-radius:4px; cursor:pointer; font-weight:600; text-decoration:none; }
-    #status { color:var(--muted); font-size:0.9rem; }
-    main { max-width:800px; margin:0 auto; padding:1.5rem; }
-    .verse { margin:0.4rem 0; }
-    .verse-ref { color:var(--accent); font-weight:600; margin-right:0.5rem; }
-    mark { background:#5c4a2a; color:var(--text); }
+    :root {
+      --bg: #0d0f12;
+      --surface: #161a1f;
+      --text: #e8e6e3;
+      --muted: #9a958c;
+      --accent: #c4a574;
+      --border: #2a2f36;
+      --red: #e74c3c;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header {
+      position: sticky; top: 0; background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; z-index: 20;
+    }
+    h1 { margin: 0; font-size: 1.2rem; }
+    input[type=search] { flex: 1; min-width: 180px; padding: 0.5rem 0.75rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: 4px; }
+    .btn { background: var(--accent); color: #1a1a1a; border: none; padding: 0.45rem 0.9rem; border-radius: 4px; cursor: pointer; font-weight: 600; text-decoration: none; font-size: 0.9rem; }
+    #status { color: var(--muted); font-size: 0.85rem; }
+    .layout { display: flex; min-height: calc(100vh - 60px); }
+    #sidebar {
+      width: 220px; background: var(--surface); border-right: 1px solid var(--border);
+      overflow-y: auto; padding: 0.5rem 0; flex-shrink: 0;
+    }
+    #sidebar a {
+      display: block; padding: 0.35rem 1rem; color: var(--text); text-decoration: none; font-size: 0.9rem;
+    }
+    #sidebar a:hover, #sidebar a.active { background: var(--bg); color: var(--accent); }
+    main { flex: 1; max-width: 900px; margin: 0 auto; padding: 1.5rem 1.5rem 3rem; }
+    .book-title { font-size: 1.8rem; margin: 1.5rem 0 0.5rem; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    .chapter-title { font-size: 1.2rem; margin: 1.8rem 0 0.6rem; color: var(--muted); }
+    .verse { margin: 0.35rem 0; }
+    .verse-ref { color: var(--accent); font-weight: 600; margin-right: 0.4rem; font-variant-numeric: tabular-nums; }
+    .divine { color: var(--red); font-weight: 600; }
+    mark { background: #5c4a2a; color: var(--text); }
+    @media (max-width: 700px) {
+      .layout { flex-direction: column; }
+      #sidebar { width: 100%; max-height: 180px; border-right: none; border-bottom: 1px solid var(--border); }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Jesus-Centric KJV</h1>
-    <input type="search" id="search" placeholder="Search..." />
+    <input type="search" id="search" placeholder="Search all books…" />
     <a class="btn" id="suggest" href="#" target="_blank">Suggest a change</a>
     <span id="status">Loading…</span>
   </header>
-  <main id="content"></main>
+  <div class="layout">
+    <nav id="sidebar"></nav>
+    <main id="content"></main>
+  </div>
   <script>
     const REPO = "evalrjcom/jesus-centric-kjv";
     const TXT_URL = "jesus_centric_kjv_all66.txt";
     const contentEl = document.getElementById("content");
+    const sidebarEl = document.getElementById("sidebar");
     const searchEl = document.getElementById("search");
     const statusEl = document.getElementById("status");
     const suggestEl = document.getElementById("suggest");
-    let allVerses = [];
-    function parseLine(line) {
-      const m = line.match(/^(\d+:\d+)\s+(.*)/);
-      return m ? {ref:m[1], text:m[2]} : {ref:"", text:line};
+
+    let books = []; // [{name, verses: [{ref, text, chapter}]}]
+    let currentBook = null;
+
+    function highlightDivine(text) {
+      return text
+        .replace(/\b(JESUS|LORD|GOD)\b/g, '<span class="divine">$1</span>')
+        .replace(/\[JESUS\]/g, '<span class="divine">[JESUS]</span>');
     }
-    function render(verses, query="") {
-      const q = query.trim().toLowerCase();
+
+    function parseText(raw) {
+      const lines = raw.split(/\r?\n/);
+      let current = null;
+      books = [];
+      for (const line of lines) {
+        const trimmed = line.trim();
+        if (!trimmed) continue;
+        // Book header: all caps with possible numbers/spaces, not a verse
+        if (/^[A-Z0-9 ]+$/.test(trimmed) && !trimmed.includes(":")) {
+          current = { name: trimmed, verses: [] };
+          books.push(current);
+          continue;
+        }
+        const m = trimmed.match(/^(\d+):(\d+):\s+(.*)/);
+        if (m && current) {
+          current.verses.push({
+            ref: `${m[1]}:${m[2]}`,
+            chapter: parseInt(m[1], 10),
+            text: m[3]
+          });
+        }
+      }
+    }
+
+    function renderSidebar() {
+      sidebarEl.innerHTML = "";
+      books.forEach((b, i) => {
+        const a = document.createElement("a");
+        a.href = "#";
+        a.textContent = b.name;
+        a.onclick = (e) => {
+          e.preventDefault();
+          showBook(i);
+          sidebarEl.querySelectorAll("a").forEach(x => x.classList.remove("active"));
+          a.classList.add("active");
+        };
+        sidebarEl.appendChild(a);
+      });
+    }
+
+    function showBook(idx, query = "") {
+      currentBook = idx;
+      const book = books[idx];
       contentEl.innerHTML = "";
+      const title = document.createElement("h2");
+      title.className = "book-title";
+      title.textContent = book.name;
+      contentEl.appendChild(title);
+
+      const q = query.trim().toLowerCase();
+      let lastChap = 0;
       let shown = 0;
-      verses.forEach(v => {
-        if (q && !(v.ref+" "+v.text).toLowerCase().includes(q)) return;
+      book.verses.forEach(v => {
+        if (q && !(v.ref + " " + v.text).toLowerCase().includes(q)) return;
+        if (v.chapter !== lastChap) {
+          const ch = document.createElement("h3");
+          ch.className = "chapter-title";
+          ch.textContent = `Chapter ${v.chapter}`;
+          contentEl.appendChild(ch);
+          lastChap = v.chapter;
+        }
         const div = document.createElement("div");
         div.className = "verse";
-        let text = v.text;
-        if (q) text = text.replace(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")})`,"gi"), "<mark>$1</mark>");
-        div.innerHTML = (v.ref ? `<span class="verse-ref">${v.ref}</span>` : "") + text;
+        let text = highlightDivine(v.text);
+        if (q) {
+          const esc = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+          text = text.replace(new RegExp(`(${esc})`, "gi"), "<mark>$1</mark>");
+        }
+        div.innerHTML = `<span class="verse-ref">${v.ref}</span>${text}`;
         contentEl.appendChild(div);
         shown++;
       });
-      statusEl.textContent = q ? `${shown} matches` : `${verses.length} lines`;
+      statusEl.textContent = q ? `${shown} matches in ${book.name}` : `${book.verses.length} verses • ${book.name}`;
     }
+
+    function doSearch() {
+      const q = searchEl.value.trim();
+      if (!q) {
+        if (currentBook !== null) showBook(currentBook);
+        return;
+      }
+      // Search across all books, but show first matching book or a combined view? For simplicity, filter current or switch to first match.
+      // Better: show matches from all, grouped by book.
+      contentEl.innerHTML = "";
+      let total = 0;
+      books.forEach((book, bi) => {
+        const matches = book.verses.filter(v => (v.ref + " " + v.text).toLowerCase().includes(q.toLowerCase()));
+        if (!matches.length) return;
+        const title = document.createElement("h2");
+        title.className = "book-title";
+        title.textContent = book.name;
+        contentEl.appendChild(title);
+        matches.forEach(v => {
+          const div = document.createElement("div");
+          div.className = "verse";
+          let text = highlightDivine(v.text);
+          const esc = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+          text = text.replace(new RegExp(`(${esc})`, "gi"), "<mark>$1</mark>");
+          div.innerHTML = `<span class="verse-ref">${v.ref}</span>${text}`;
+          contentEl.appendChild(div);
+          total++;
+        });
+      });
+      statusEl.textContent = total ? `${total} matches` : "No matches";
+    }
+
     function updateSuggest() {
       const title = encodeURIComponent("Jesus reference suggestion");
       const body = encodeURIComponent("**Book / Chapter:Verse:**\n\n**Current text:**\n\n**Suggested change:**\n\n**Reason:**\n");
       suggestEl.href = `https://github.com/${REPO}/issues/new?title=${title}&body=${body}&labels=suggestion`;
     }
+
     async function load() {
       try {
         const res = await fetch(TXT_URL);
-        if (!res.ok) throw new Error();
-        allVerses = (await res.text()).split(/\r?\n/).map(parseLine).filter(v => v.text.trim());
-        render(allVerses);
+        if (!res.ok) throw new Error("fetch failed");
+        const raw = await res.text();
+        parseText(raw);
+        renderSidebar();
+        if (books.length) {
+          showBook(0);
+          sidebarEl.querySelector("a").classList.add("active");
+        }
         updateSuggest();
-      } catch(e) {
-        statusEl.textContent = "Place jesus_centric_kjv_all66.txt next to this page.";
+        statusEl.textContent = `${books.length} books loaded`;
+      } catch (e) {
+        statusEl.textContent = "Place jesus_centric_kjv_all66.txt next to this page (or wait for the workflow to generate it).";
+        contentEl.innerHTML = "<p>The processed text file is not yet available. The GitHub Action will generate it on the next push to the processor or when you manually run the workflow.</p>";
       }
     }
-    searchEl.oninput = () => render(allVerses, searchEl.value);
+
+    searchEl.oninput = () => {
+      if (searchEl.value.trim()) doSearch();
+      else if (currentBook !== null) showBook(currentBook);
+    };
     load();
   </script>
 </body>
