@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Jesus-centric KJV processor. See README for rules."""
+"""Jesus-centric KJV processor. See README for rules.
+Processes public-domain KJV text: modernizes archaic forms, capitalizes LORD/GOD, uppercases JESUS, and adds [JESUS] markers.
+"""
 import argparse, json, re, sys
 from pathlib import Path
 
