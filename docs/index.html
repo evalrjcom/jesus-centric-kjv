@@ -129,15 +129,24 @@
     #verses {
       flex: 1;
       overflow-y: auto;
-      padding: 0.5rem 1.5rem 4rem;
+      padding: 0;
+      position: relative;
+    }
+    #virtualSpacer { width: 100%; }
+    #virtualWindow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0.5rem 1.5rem 2rem;
     }
     .chapter-title {
       font-size: 1.15rem;
-      margin: 1.6rem 0 0.5rem;
+      margin: 1.2rem 0 0.4rem;
       color: var(--muted);
     }
     .verse {
-      margin: 0.4rem 0;
+      margin: 0.35rem 0;
       display: flex;
       gap: 0.5rem;
       align-items: baseline;
@@ -188,7 +197,7 @@
       }
       #sidebar a { padding: 0.7rem 1rem; }
       main { max-width: none; }
-      #bookBar, #verses { padding-left: 1rem; padding-right: 1rem; }
+      #bookBar, #virtualWindow { padding-left: 1rem; padding-right: 1rem; }
       header { padding: 0.5rem; }
       #backTop { bottom: 1rem; right: 1rem; }
     }
@@ -218,7 +227,10 @@
         <h2 class="book-title" id="bookTitle">Loading…</h2>
         <span id="status"></span>
       </div>
-      <div id="verses"></div>
+      <div id="verses">
+        <div id="virtualSpacer"></div>
+        <div id="virtualWindow"></div>
+      </div>
     </main>
   </div>
   <button id="backTop" title="Back to top">↑</button>
@@ -226,6 +238,8 @@
     const REPO = "evalrjcom/jesus-centric-kjv";
     const TXT_URL = "jesus_centric_kjv_all66.txt";
     const versesEl = document.getElementById("verses");
+    const spacerEl = document.getElementById("virtualSpacer");
+    const windowEl = document.getElementById("virtualWindow");
     const bookTitleEl = document.getElementById("bookTitle");
     const sidebarEl = document.getElementById("sidebar");
     const searchEl = document.getElementById("search");
@@ -246,6 +260,12 @@
     let redOnly = false;
     const redColors = ["#e74c3c", "#ff6b6b", "#c0392b", "#e67e22", "#f39c12"];
     let colorIdx = 0;
+
+    // Virtual list state
+    let items = [];          // flat list of {type:'ch'|'v', ...}
+    let itemHeight = 42;     // estimated px per item
+    let buffer = 8;
+    let lastStart = -1;
 
     function highlightDivine(text) {
       return text
@@ -339,13 +359,9 @@
       const contains = [];
       books.forEach(b => {
         const name = b.name.toUpperCase();
-        if (!q) {
-          starts.push(b.name);
-        } else if (name.startsWith(q)) {
-          starts.push(b.name);
-        } else if (name.includes(q)) {
-          contains.push(b.name);
-        }
+        if (!q) starts.push(b.name);
+        else if (name.startsWith(q)) starts.push(b.name);
+        else if (name.includes(q)) contains.push(b.name);
       });
       [...starts, ...contains].forEach(name => {
         const opt = document.createElement("option");
@@ -374,46 +390,86 @@
       });
     }
 
+    function buildItems(book, query) {
+      const list = [];
+      const q = query.trim().toLowerCase();
+      let lastChap = 0;
+      book.verses.forEach(v => {
+        if (redOnly && !hasDivine(v.text)) return;
+        if (q && !(v.ref + " " + v.text).toLowerCase().includes(q)) return;
+        if (v.chapter !== lastChap) {
+          list.push({ type: "ch", chapter: v.chapter });
+          lastChap = v.chapter;
+        }
+        list.push({ type: "v", verse: v, query: q });
+      });
+      return list;
+    }
+
+    function renderWindow() {
+      if (!items.length) {
+        windowEl.innerHTML = "";
+        spacerEl.style.height = "0";
+        return;
+      }
+      const scrollTop = versesEl.scrollTop;
+      const viewH = versesEl.clientHeight;
+      const start = Math.max(0, Math.floor(scrollTop / itemHeight) - buffer);
+      const end = Math.min(items.length, Math.ceil((scrollTop + viewH) / itemHeight) + buffer);
+      if (start === lastStart && end === lastStart + (end - start)) return;
+      lastStart = start;
+
+      spacerEl.style.height = (items.length * itemHeight) + "px";
+      windowEl.style.transform = `translateY(${start * itemHeight}px)`;
+
+      const frag = document.createDocumentFragment();
+      for (let i = start; i < end; i++) {
+        const it = items[i];
+        if (it.type === "ch") {
+          const h = document.createElement("h3");
+          h.className = "chapter-title";
+          h.id = "ch-" + it.chapter;
+          h.textContent = "Chapter " + it.chapter;
+          frag.appendChild(h);
+        } else {
+          const div = document.createElement("div");
+          div.className = "verse";
+          let text = highlightDivine(it.verse.text);
+          if (it.query) {
+            const esc = it.query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            text = text.replace(new RegExp(`(${esc})`, "gi"), "<mark>$1</mark>");
+          }
+          div.innerHTML = `<span class="verse-ref">${it.verse.ref}</span><span>${text}</span>`;
+          frag.appendChild(div);
+        }
+      }
+      windowEl.innerHTML = "";
+      windowEl.appendChild(frag);
+    }
+
     function showBook(idx) {
       currentBook = idx;
       const book = books[idx];
       if (!book) return;
       bookTitleEl.textContent = book.name;
-      versesEl.innerHTML = "";
-
-      const q = searchEl.value.trim().toLowerCase();
-      let lastChap = 0;
-      let shown = 0;
-      book.verses.forEach(v => {
-        if (redOnly && !hasDivine(v.text)) return;
-        if (q && !(v.ref + " " + v.text).toLowerCase().includes(q)) return;
-        if (v.chapter !== lastChap) {
-          const ch = document.createElement("h3");
-          ch.className = "chapter-title";
-          ch.id = "ch-" + v.chapter;
-          ch.textContent = `Chapter ${v.chapter}`;
-          versesEl.appendChild(ch);
-          lastChap = v.chapter;
-        }
-        const div = document.createElement("div");
-        div.className = "verse";
-        let text = highlightDivine(v.text);
-        if (q) {
-          const esc = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-          text = text.replace(new RegExp(`(${esc})`, "gi"), "<mark>$1</mark>");
-        }
-        div.innerHTML = `<span class="verse-ref">${v.ref}</span><span>${text}</span>`;
-        versesEl.appendChild(div);
-        shown++;
-      });
-      statusEl.textContent = `${shown} verses`;
+      const q = searchEl.value.trim();
+      items = buildItems(book, q);
+      statusEl.textContent = `${items.filter(i => i.type === "v").length} verses`;
+      lastStart = -1;
       updateChapterSelect();
       setActiveSidebar(idx);
       savePosition();
+      versesEl.scrollTop = 0;
+      renderWindow();
 
-      const target = document.getElementById("ch-" + currentChapter);
-      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
-      else versesEl.scrollTop = 0;
+      // Scroll to chapter if requested
+      if (currentChapter > 1) {
+        const idxCh = items.findIndex(it => it.type === "ch" && it.chapter === currentChapter);
+        if (idxCh >= 0) {
+          versesEl.scrollTop = idxCh * itemHeight;
+          renderWindow();
+        }
+      }
     }
 
     function doSearch() {
@@ -422,32 +478,21 @@
         showBook(currentBook);
         return;
       }
-      versesEl.innerHTML = "";
       bookTitleEl.textContent = "Search results";
-      let total = 0;
-      books.forEach((book) => {
+      items = [];
+      books.forEach(book => {
         const matches = book.verses.filter(v => {
           if (redOnly && !hasDivine(v.text)) return false;
           return (v.ref + " " + v.text).toLowerCase().includes(q.toLowerCase());
         });
         if (!matches.length) return;
-        const title = document.createElement("h3");
-        title.className = "chapter-title";
-        title.textContent = book.name;
-        versesEl.appendChild(title);
-        matches.forEach(v => {
-          const div = document.createElement("div");
-          div.className = "verse";
-          let text = highlightDivine(v.text);
-          const esc = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-          text = text.replace(new RegExp(`(${esc})`, "gi"), "<mark>$1</mark>");
-          div.innerHTML = `<span class="verse-ref">${v.ref}</span><span>${text}</span>`;
-          versesEl.appendChild(div);
-          total++;
-        });
+        items.push({ type: "ch", chapter: 0, bookName: book.name });
+        matches.forEach(v => items.push({ type: "v", verse: v, query: q.toLowerCase() }));
       });
-      statusEl.textContent = total ? `${total} matches` : "No matches";
+      statusEl.textContent = items.filter(i => i.type === "v").length + " matches";
+      lastStart = -1;
       versesEl.scrollTop = 0;
+      renderWindow();
     }
 
     function updateSuggest() {
@@ -467,6 +512,12 @@
       }
       return -1;
     }
+
+    // Events
+    versesEl.onscroll = () => {
+      renderWindow();
+      backTopEl.classList.toggle("show", versesEl.scrollTop > 400);
+    };
 
     bookSearchEl.oninput = () => {
       const val = bookSearchEl.value.trim();
@@ -494,14 +545,21 @@
 
     chapterJumpEl.onchange = () => {
       currentChapter = parseInt(chapterJumpEl.value, 10);
-      const target = document.getElementById("ch-" + currentChapter);
-      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      const idxCh = items.findIndex(it => it.type === "ch" && it.chapter === currentChapter);
+      if (idxCh >= 0) {
+        versesEl.scrollTop = idxCh * itemHeight;
+        renderWindow();
+      }
       savePosition();
     };
 
+    let searchTimer = null;
     searchEl.oninput = () => {
-      if (searchEl.value.trim()) doSearch();
-      else showBook(currentBook);
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => {
+        if (searchEl.value.trim()) doSearch();
+        else showBook(currentBook);
+      }, 180);
     };
 
     redToggleEl.onclick = () => {
@@ -528,10 +586,6 @@
       savePosition();
     };
 
-    versesEl.onscroll = () => {
-      backTopEl.classList.toggle("show", versesEl.scrollTop > 400);
-    };
-
     backTopEl.onclick = () => {
       versesEl.scrollTo({ top: 0, behavior: "smooth" });
     };
@@ -549,7 +603,7 @@
         statusEl.textContent = `${books.length} books`;
       } catch (e) {
         statusEl.textContent = "Processed text not found.";
-        versesEl.innerHTML = "<p>The processed text file is not yet available.</p>";
+        windowEl.innerHTML = "<p>The processed text file is not yet available.</p>";
       }
     }
 
