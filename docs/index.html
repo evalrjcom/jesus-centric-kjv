@@ -370,7 +370,6 @@
       setActiveSidebar(idx);
       savePosition();
 
-      // Scroll to saved chapter if present
       const target = document.getElementById("ch-" + currentChapter);
       if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
       else contentEl.scrollTop = 0;
@@ -384,7 +383,7 @@
       }
       contentEl.innerHTML = "";
       let total = 0;
-      books.forEach((book, bi) => {
+      books.forEach((book) => {
         const matches = book.verses.filter(v => {
           if (redOnly && !hasDivine(v.text)) return false;
           return (v.ref + " " + v.text).toLowerCase().includes(q.toLowerCase());
@@ -415,14 +414,44 @@
       suggestEl.href = `https://github.com/${REPO}/issues/new?title=${title}&body=${body}&labels=suggestion`;
     }
 
+    function findBestBookMatch(query) {
+      if (!query || query.length < 2) return -1;
+      const q = query.toUpperCase();
+      // Prefer exact or starts-with matches
+      let best = -1;
+      for (let i = 0; i < books.length; i++) {
+        const name = books[i].name.toUpperCase();
+        if (name.startsWith(q)) return i;
+      }
+      // Fall back to contains, but prefer earlier books if multiple
+      for (let i = 0; i < books.length; i++) {
+        const name = books[i].name.toUpperCase();
+        if (name.includes(q)) return i;
+      }
+      return -1;
+    }
+
     // Event listeners
     bookSearchEl.oninput = () => {
-      const val = bookSearchEl.value.trim().toUpperCase();
-      const idx = books.findIndex(b => b.name.toUpperCase().includes(val));
-      if (idx >= 0 && val.length > 1) {
+      const val = bookSearchEl.value.trim();
+      const idx = findBestBookMatch(val);
+      if (idx >= 0 && val.length >= 2) {
         currentChapter = 1;
         showBook(idx);
-        bookSearchEl.value = "";
+        // Keep the typed value so user can refine; clear only on Enter or exact
+      }
+    };
+
+    bookSearchEl.onkeydown = (e) => {
+      if (e.key === "Enter") {
+        const val = bookSearchEl.value.trim();
+        const idx = findBestBookMatch(val);
+        if (idx >= 0) {
+          currentChapter = 1;
+          showBook(idx);
+          bookSearchEl.value = "";
+          bookSearchEl.blur();
+        }
       }
     };
 
