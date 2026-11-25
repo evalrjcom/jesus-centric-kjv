@@ -15,34 +15,112 @@
       --red: #e74c3c;
     }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
     header {
-      position: sticky; top: 0; background: var(--surface); border-bottom: 1px solid var(--border);
-      padding: 0.75rem 1.5rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; z-index: 20;
+      flex-shrink: 0;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 20;
     }
     h1 { margin: 0; font-size: 1.2rem; }
-    input[type=search] { flex: 1; min-width: 180px; padding: 0.5rem 0.75rem; background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: 4px; }
-    .btn { background: var(--accent); color: #1a1a1a; border: none; padding: 0.45rem 0.9rem; border-radius: 4px; cursor: pointer; font-weight: 600; text-decoration: none; font-size: 0.9rem; }
+    input[type=search] {
+      flex: 1;
+      min-width: 180px;
+      padding: 0.5rem 0.75rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 4px;
+    }
+    .btn {
+      background: var(--accent);
+      color: #1a1a1a;
+      border: none;
+      padding: 0.45rem 0.9rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
     #status { color: var(--muted); font-size: 0.85rem; }
-    .layout { display: flex; min-height: calc(100vh - 60px); }
+    .layout {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+      min-height: 0;
+    }
     #sidebar {
-      width: 220px; background: var(--surface); border-right: 1px solid var(--border);
-      overflow-y: auto; padding: 0.5rem 0; flex-shrink: 0;
+      width: 220px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      padding: 0.5rem 0;
+      flex-shrink: 0;
     }
     #sidebar a {
-      display: block; padding: 0.35rem 1rem; color: var(--text); text-decoration: none; font-size: 0.9rem;
+      display: block;
+      padding: 0.4rem 1rem;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
     }
-    #sidebar a:hover, #sidebar a.active { background: var(--bg); color: var(--accent); }
-    main { flex: 1; max-width: 900px; margin: 0 auto; padding: 1.5rem 1.5rem 3rem; }
-    .book-title { font-size: 1.8rem; margin: 1.5rem 0 0.5rem; color: var(--accent); border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
-    .chapter-title { font-size: 1.2rem; margin: 1.8rem 0 0.6rem; color: var(--muted); }
+    #sidebar a:hover, #sidebar a.active {
+      background: var(--bg);
+      color: var(--accent);
+    }
+    main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem 1.5rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .book-title {
+      font-size: 1.8rem;
+      margin: 0.5rem 0 0.5rem;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+    }
+    .chapter-title {
+      font-size: 1.2rem;
+      margin: 1.8rem 0 0.6rem;
+      color: var(--muted);
+    }
     .verse { margin: 0.35rem 0; }
-    .verse-ref { color: var(--accent); font-weight: 600; margin-right: 0.4rem; font-variant-numeric: tabular-nums; }
+    .verse-ref {
+      color: var(--accent);
+      font-weight: 600;
+      margin-right: 0.4rem;
+      font-variant-numeric: tabular-nums;
+    }
     .divine { color: var(--red); font-weight: 600; }
     mark { background: #5c4a2a; color: var(--text); }
     @media (max-width: 700px) {
       .layout { flex-direction: column; }
-      #sidebar { width: 100%; max-height: 180px; border-right: none; border-bottom: 1px solid var(--border); }
+      #sidebar {
+        width: 100%;
+        max-height: 200px;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+      main { max-width: none; }
     }
   </style>
 </head>
@@ -66,7 +144,7 @@
     const statusEl = document.getElementById("status");
     const suggestEl = document.getElementById("suggest");
 
-    let books = []; // [{name, verses: [{ref, text, chapter}]}]
+    let books = [];
     let currentBook = null;
 
     function highlightDivine(text) {
@@ -82,7 +160,6 @@
       for (const line of lines) {
         const trimmed = line.trim();
         if (!trimmed) continue;
-        // Book header: all caps with possible numbers/spaces, not a verse
         if (/^[A-Z0-9 ]+$/.test(trimmed) && !trimmed.includes(":")) {
           current = { name: trimmed, verses: [] };
           books.push(current);
@@ -110,6 +187,7 @@
           showBook(i);
           sidebarEl.querySelectorAll("a").forEach(x => x.classList.remove("active"));
           a.classList.add("active");
+          contentEl.scrollTop = 0;
         };
         sidebarEl.appendChild(a);
       });
@@ -156,11 +234,9 @@
         if (currentBook !== null) showBook(currentBook);
         return;
       }
-      // Search across all books, but show first matching book or a combined view? For simplicity, filter current or switch to first match.
-      // Better: show matches from all, grouped by book.
       contentEl.innerHTML = "";
       let total = 0;
-      books.forEach((book, bi) => {
+      books.forEach((book) => {
         const matches = book.verses.filter(v => (v.ref + " " + v.text).toLowerCase().includes(q.toLowerCase()));
         if (!matches.length) return;
         const title = document.createElement("h2");
@@ -179,6 +255,7 @@
         });
       });
       statusEl.textContent = total ? `${total} matches` : "No matches";
+      contentEl.scrollTop = 0;
     }
 
     function updateSuggest() {
