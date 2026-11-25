@@ -27,6 +27,15 @@ MODERNIZATION_RULES = [
     (re.compile(r"\bverily\b", re.I), "truly"),
     (re.compile(r"\bwhosoever\b", re.I), "whoever"),
     (re.compile(r"\bwhoso\b", re.I), "whoever"),
+    # -adeth forms
+    (re.compile(r"\bspreadeth\b", re.I), "spreads"),
+    (re.compile(r"\btreadeth\b", re.I), "treads"),
+    (re.compile(r"\bfadeth\b", re.I), "fades"),
+    (re.compile(r"\breadeth\b", re.I), "reads"),
+    (re.compile(r"\bpleadeth\b", re.I), "pleads"),
+    (re.compile(r"\bpersuadeth\b", re.I), "persuades"),
+    (re.compile(r"\bloadeth\b", re.I), "loads"),
+    (re.compile(r"\bladeth\b", re.I), "lades"),
 ]
 
 LORD_GOD_PATTERN = re.compile(r"\b(Lord|LORD|God|GOD)\b")
