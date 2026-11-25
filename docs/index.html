@@ -291,7 +291,6 @@
 
     function renderSidebar() {
       sidebarEl.innerHTML = "";
-      bookListEl.innerHTML = "";
       books.forEach((b, i) => {
         const a = document.createElement("a");
         a.href = "#";
@@ -303,9 +302,28 @@
           setActiveSidebar(i);
         };
         sidebarEl.appendChild(a);
+      });
+      updateBookDatalist("");
+    }
 
+    function updateBookDatalist(query) {
+      bookListEl.innerHTML = "";
+      const q = (query || "").toUpperCase();
+      const starts = [];
+      const contains = [];
+      books.forEach(b => {
+        const name = b.name.toUpperCase();
+        if (!q) {
+          starts.push(b.name);
+        } else if (name.startsWith(q)) {
+          starts.push(b.name);
+        } else if (name.includes(q)) {
+          contains.push(b.name);
+        }
+      });
+      [...starts, ...contains].forEach(name => {
         const opt = document.createElement("option");
-        opt.value = b.name;
+        opt.value = name;
         bookListEl.appendChild(opt);
       });
     }
@@ -417,16 +435,11 @@
     function findBestBookMatch(query) {
       if (!query || query.length < 2) return -1;
       const q = query.toUpperCase();
-      // Prefer exact or starts-with matches
-      let best = -1;
       for (let i = 0; i < books.length; i++) {
-        const name = books[i].name.toUpperCase();
-        if (name.startsWith(q)) return i;
+        if (books[i].name.toUpperCase().startsWith(q)) return i;
       }
-      // Fall back to contains, but prefer earlier books if multiple
       for (let i = 0; i < books.length; i++) {
-        const name = books[i].name.toUpperCase();
-        if (name.includes(q)) return i;
+        if (books[i].name.toUpperCase().includes(q)) return i;
       }
       return -1;
     }
@@ -434,11 +447,11 @@
     // Event listeners
     bookSearchEl.oninput = () => {
       const val = bookSearchEl.value.trim();
+      updateBookDatalist(val);
       const idx = findBestBookMatch(val);
       if (idx >= 0 && val.length >= 2) {
         currentChapter = 1;
         showBook(idx);
-        // Keep the typed value so user can refine; clear only on Enter or exact
       }
     };
 
@@ -450,6 +463,7 @@
           currentChapter = 1;
           showBook(idx);
           bookSearchEl.value = "";
+          updateBookDatalist("");
           bookSearchEl.blur();
         }
       }
