@@ -195,18 +195,77 @@
     }
     .settings-row label { color: var(--muted); }
     @media (max-width: 700px) {
+      header {
+        padding: 0.4rem 0.5rem;
+        gap: 0.4rem;
+      }
+      h1 { font-size: 1rem; }
+      .controls {
+        width: 100%;
+        gap: 0.35rem;
+      }
+      input, select, button.ctrl, .btn {
+        padding: 0.55rem 0.7rem;
+        font-size: 1rem;
+        min-height: 44px;
+      }
+      input[type=search] { min-width: 0; flex: 1 1 140px; }
+      #bookSearch { min-width: 0; max-width: none; flex: 1 1 120px; }
+      #chapterJump { width: 70px; min-width: 70px; }
+      .settings-row {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .settings-row label { font-size: 0.8rem; }
       .layout { flex-direction: column; }
       #sidebar {
         width: 100%;
-        max-height: 220px;
+        max-height: 180px;
         border-right: none;
         border-bottom: 1px solid var(--border);
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0.3rem 0;
+        -webkit-overflow-scrolling: touch;
       }
-      #sidebar a { padding: 0.7rem 1rem; }
+      #sidebar a {
+        padding: 0.6rem 0.9rem;
+        white-space: nowrap;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+      }
+      #sidebar a.active {
+        border-left-color: transparent;
+        border-bottom-color: var(--accent);
+      }
       main { max-width: none; }
-      #bookBar, #virtualWindow { padding-left: 1rem; padding-right: 1rem; }
-      header { padding: 0.5rem; }
-      #backTop { bottom: 1rem; right: 1rem; }
+      #bookBar {
+        padding: 0.5rem 0.8rem 0.4rem;
+        flex-wrap: wrap;
+      }
+      .book-title { font-size: 1.35rem; }
+      #status { font-size: 0.8rem; }
+      #virtualWindow { padding: 0.4rem 0.8rem 3rem; }
+      .verse { margin: 0.5rem 0; }
+      .verse-ref { min-width: 2.8rem; font-size: 0.9em; }
+      #backTop {
+        bottom: 1rem;
+        right: 1rem;
+        width: 48px;
+        height: 48px;
+        font-size: 1.4rem;
+      }
+    }
+    @media (max-width: 420px) {
+      header { flex-wrap: wrap; }
+      h1 { width: 100%; margin-bottom: 0.2rem; }
+      .controls { gap: 0.3rem; }
+      #search { flex: 1 1 100%; order: 10; }
     }
   </style>
 </head>
