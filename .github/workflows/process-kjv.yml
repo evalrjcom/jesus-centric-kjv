@@ -1,0 +1,79 @@
+name: Process Jesus-Centric KJV
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'jesus_centric_kjv_processor.py'
+      - '.github/workflows/process-kjv.yml'
+  pull_request:
+    paths:
+      - 'jesus_centric_kjv_processor.py'
+  issues:
+    types: [opened, edited, reopened]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Download source KJV
+        run: |
+          python3 - << 'PY'
+          import json, urllib.request
+          url = "https://api.github.com/repos/takelley1/plaintext-bible-kjv/contents/"
+          with urllib.request.urlopen(url) as r:
+              files = json.load(r)
+          txts = sorted([f for f in files if f["name"].endswith(".txt")], key=lambda x: x["name"])
+          with open("/tmp/kjv_all.txt", "w", encoding="utf-8") as out:
+              for f in txts:
+                  with urllib.request.urlopen(f["download_url"]) as resp:
+                      content = resp.read().decode("utf-8")
+                      out.write(content)
+                      if not content.endswith("\n"):
+                          out.write("\n")
+          print("Source KJV downloaded successfully")
+          PY
+
+      - name: Run processor
+        run: python3 jesus_centric_kjv_processor.py /tmp/kjv_all.txt docs/jesus_centric_kjv_all66.txt
+
+      - name: Commit processed text if changed
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/jesus_centric_kjv_all66.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update processed Jesus-centric KJV text [skip ci]"
+            git push
+          fi
+
+      - name: Acknowledge issue
+        if: github.event_name == 'issues'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Thank you for your suggestion regarding the Jesus-centric KJV! The viewer on GitHub Pages will reflect the latest processed text after the next update to the processor or a manual workflow run.'
+            })
