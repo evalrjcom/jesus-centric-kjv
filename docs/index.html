@@ -66,7 +66,6 @@
     }
     button.ctrl { cursor: pointer; }
     button.ctrl.active { background: var(--accent); color: #1a1a1a; }
-    #status { color: var(--muted); font-size: 0.8rem; }
     .layout {
       flex: 1;
       display: flex;
@@ -112,11 +111,20 @@
       border-bottom: 1px solid var(--border);
       padding: 0.6rem 1.5rem 0.5rem;
       z-index: 10;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
     }
     .book-title {
       font-size: 1.7rem;
       margin: 0;
       color: var(--accent);
+    }
+    #status {
+      color: var(--muted);
+      font-size: 0.85rem;
+      white-space: nowrap;
     }
     #verses {
       flex: 1;
@@ -201,13 +209,15 @@
         <label>Width <input type="range" id="readWidth" min="600" max="1200" value="900" step="50" style="width:70px"></label>
       </div>
       <a class="btn" id="suggest" href="#" target="_blank">Suggest</a>
-      <span id="status">Loading…</span>
     </div>
   </header>
   <div class="layout">
     <nav id="sidebar"></nav>
     <main>
-      <div id="bookBar"><h2 class="book-title" id="bookTitle">Loading…</h2></div>
+      <div id="bookBar">
+        <h2 class="book-title" id="bookTitle">Loading…</h2>
+        <span id="status"></span>
+      </div>
       <div id="verses"></div>
     </main>
   </div>
@@ -396,7 +406,7 @@
         versesEl.appendChild(div);
         shown++;
       });
-      statusEl.textContent = `${shown} verses • ${book.name}`;
+      statusEl.textContent = `${shown} verses`;
       updateChapterSelect();
       setActiveSidebar(idx);
       savePosition();
@@ -536,7 +546,7 @@
         loadPosition();
         showBook(currentBook);
         updateSuggest();
-        statusEl.textContent = `${books.length} books loaded`;
+        statusEl.textContent = `${books.length} books`;
       } catch (e) {
         statusEl.textContent = "Processed text not found.";
         versesEl.innerHTML = "<p>The processed text file is not yet available.</p>";
