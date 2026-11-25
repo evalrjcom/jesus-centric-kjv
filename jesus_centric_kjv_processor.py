@@ -1,0 +1,81 @@
+#!/usr/bin/env python3
+"""Jesus-centric KJV processor. See README for rules."""
+import argparse, json, re, sys
+from pathlib import Path
+
+MODERNIZATION_RULES = [
+    (re.compile(r"\bthee\b", re.I), "you"),
+    (re.compile(r"\bthou\b", re.I), "you"),
+    (re.compile(r"\bthy\b", re.I), "your"),
+    (re.compile(r"\bthine\b", re.I), "yours"),
+    (re.compile(r"\bye\b", re.I), "you"),
+    (re.compile(r"\bhath\b", re.I), "has"),
+    (re.compile(r"\bdoth\b", re.I), "does"),
+    (re.compile(r"\bsaith\b", re.I), "says"),
+    (re.compile(r"\bbelieveth\b", re.I), "believes"),
+    (re.compile(r"\bmaketh\b", re.I), "makes"),
+    (re.compile(r"\bleadeth\b", re.I), "leads"),
+    (re.compile(r"\brestoreth\b", re.I), "restores"),
+    (re.compile(r"\bgoeth\b", re.I), "goes"),
+    (re.compile(r"\bcometh\b", re.I), "comes"),
+    (re.compile(r"\bsuffer\b", re.I), "let"),
+    (re.compile(r"\bconversation\b", re.I), "conduct"),
+    (re.compile(r"\bprevent\b", re.I), "precede"),
+    (re.compile(r"\bcharity\b", re.I), "love"),
+    (re.compile(r"\bverily\b", re.I), "truly"),
+    (re.compile(r"\bwhosoever\b", re.I), "whoever"),
+    (re.compile(r"\bwhoso\b", re.I), "whoever"),
+]
+
+LORD_GOD_PATTERN = re.compile(r"\b(Lord|LORD|God|GOD)\b")
+
+def modernize_line(line):
+    for p, r in MODERNIZATION_RULES:
+        line = p.sub(r, line)
+    return line
+
+def capitalize_divine(line):
+    def repl(m):
+        w = m.group(0)
+        return w.upper() if w.lower() in ("lord", "god") else w
+    return LORD_GOD_PATTERN.sub(repl, line)
+
+def uppercase_jesus(line):
+    return re.sub(r"\b[Jj]esus\b", "JESUS", line)
+
+def add_jesus_marker(line):
+    terms = [r"\bWord\b", r"\bLamb\b", r"\bChrist\b", r"\bMessiah\b", r"\bSon of Man\b", r"\bSon of God\b"]
+    def repl(m):
+        t = m.group(0).upper()
+        return t if t == "JESUS" else f"{t}[JESUS]"
+    for term in terms:
+        line = re.compile(term, re.I).sub(repl, line)
+    return line
+
+def process_file(inp, outp):
+    with open(inp, encoding="utf-8", errors="replace") as fin, open(outp, "w", encoding="utf-8") as fout:
+        for raw in fin:
+            line = raw.rstrip("\n")
+            if not line.strip():
+                fout.write("\n")
+                continue
+            line = modernize_line(line)
+            line = capitalize_divine(line)
+            line = uppercase_jesus(line)
+            line = add_jesus_marker(line)
+            fout.write(line + "\n")
+    print(f"Processed {inp} -> {outp}")
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("input", type=Path)
+    p.add_argument("output", type=Path)
+    args = p.parse_args()
+    try:
+        process_file(args.input, args.output)
+    except Exception as e:
+        print(e, file=sys.stderr)
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
