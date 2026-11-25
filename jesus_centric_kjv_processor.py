@@ -46,10 +46,22 @@ def uppercase_jesus(line):
     return re.sub(r"\b[Jj]esus\b", "JESUS", line)
 
 def add_jesus_marker(line):
+    # Special case: do not mark Christ if already preceded by JESUS
+    # e.g. "JESUS CHRIST" stays as-is, not "JESUS CHRIST[JESUS]"
+    line = re.sub(r"\bJESUS\s+Christ\b", "JESUS CHRIST", line, flags=re.I)
+
     terms = [r"\bWord\b", r"\bLamb\b", r"\bChrist\b", r"\bMessiah\b", r"\bSon of Man\b", r"\bSon of God\b"]
     def repl(m):
-        t = m.group(0).upper()
-        return t if t == "JESUS" else f"{t}[JESUS]"
+        t = m.group(0)
+        # Skip if this Christ is part of already-handled "JESUS CHRIST"
+        if t.upper() == "CHRIST":
+            # Look behind for JESUS immediately before
+            start = m.start()
+            before = line[max(0, start-12):start]
+            if re.search(r"JESUS\s+$", before, re.I):
+                return t.upper()
+        return t.upper() if t.upper() == "JESUS" else f"{t.upper()}[JESUS]"
+
     for term in terms:
         line = re.compile(term, re.I).sub(repl, line)
     return line
