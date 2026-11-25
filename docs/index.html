@@ -145,6 +145,13 @@
       margin: 1.2rem 0 0.4rem;
       color: var(--muted);
     }
+    .book-header {
+      font-size: 1.25rem;
+      margin: 1.4rem 0 0.4rem;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.2rem;
+    }
     .verse {
       margin: 0.35rem 0;
       display: flex;
@@ -261,9 +268,8 @@
     const redColors = ["#e74c3c", "#ff6b6b", "#c0392b", "#e67e22", "#f39c12"];
     let colorIdx = 0;
 
-    // Virtual list state
-    let items = [];          // flat list of {type:'ch'|'v', ...}
-    let itemHeight = 42;     // estimated px per item
+    let items = [];
+    let itemHeight = 42;
     let buffer = 8;
     let lastStart = -1;
 
@@ -427,9 +433,14 @@
         const it = items[i];
         if (it.type === "ch") {
           const h = document.createElement("h3");
-          h.className = "chapter-title";
-          h.id = "ch-" + it.chapter;
-          h.textContent = "Chapter " + it.chapter;
+          if (it.bookName) {
+            h.className = "book-header";
+            h.textContent = it.bookName;
+          } else {
+            h.className = "chapter-title";
+            h.id = "ch-" + it.chapter;
+            h.textContent = "Chapter " + it.chapter;
+          }
           frag.appendChild(h);
         } else {
           const div = document.createElement("div");
@@ -462,7 +473,6 @@
       versesEl.scrollTop = 0;
       renderWindow();
 
-      // Scroll to chapter if requested
       if (currentChapter > 1) {
         const idxCh = items.findIndex(it => it.type === "ch" && it.chapter === currentChapter);
         if (idxCh >= 0) {
@@ -486,7 +496,7 @@
           return (v.ref + " " + v.text).toLowerCase().includes(q.toLowerCase());
         });
         if (!matches.length) return;
-        items.push({ type: "ch", chapter: 0, bookName: book.name });
+        items.push({ type: "ch", bookName: book.name });
         matches.forEach(v => items.push({ type: "v", verse: v, query: q.toLowerCase() }));
       });
       statusEl.textContent = items.filter(i => i.type === "v").length + " matches";
@@ -513,7 +523,6 @@
       return -1;
     }
 
-    // Events
     versesEl.onscroll = () => {
       renderWindow();
       backTopEl.classList.toggle("show", versesEl.scrollTop > 400);
