@@ -84,6 +84,18 @@ REPLACEMENTS = {
     "meaneth": "means", "reigneth": "reigns", "seemeth": "seems",
     "saveth": "saves", "repenteth": "repents", "pisseth": "urinates",
     "lighteneth": "lightens", "presseth": "presses",
+    # second-person -est forms
+    "seest": "see", "lest": "lest", "standest": "stand", "liest": "lie",
+    "goest": "go", "broughtest": "brought", "sayest": "say", "reapest": "reap",
+    "layest": "lay", "stoodest": "stood", "puttest": "put", "succeedest": "succeed",
+    "dwellest": "dwell", "bearest": "bear", "askest": "ask", "spakest": "spoke",
+    "lodgest": "lodge", "sawest": "saw", "leddest": "led", "seekest": "seek",
+    "swarest": "swore", "keepest": "keep", "comest": "come", "heardest": "heard",
+    "madest": "made", "forgavest": "forgave", "tookest": "took", "takest": "take",
+    "makest": "make", "trustest": "trust", "forgettest": "forget", "speakest": "speak",
+    "holdest": "hold", "devourest": "devour", "callest": "call", "hearest": "hear",
+    "destroyest": "destroy", "buildest": "build", "savourest": "savor",
+    "lackest": "lack", "answerest": "answer", "teachest": "teach", "acceptest": "accept",
 }
 
 # Sort by length descending so phrases win over single words
