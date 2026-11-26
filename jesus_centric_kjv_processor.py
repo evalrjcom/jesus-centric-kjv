@@ -85,7 +85,7 @@ REPLACEMENTS = {
     "saveth": "saves", "repenteth": "repents", "pisseth": "urinates",
     "lighteneth": "lightens", "presseth": "presses",
     # second-person -est forms
-    "seest": "see", "lest": "lest", "standest": "stand", "liest": "lie",
+    "seest": "see", "lest": "so that not", "standest": "stand", "liest": "lie",
     "goest": "go", "broughtest": "brought", "sayest": "say", "reapest": "reap",
     "layest": "lay", "stoodest": "stood", "puttest": "put", "succeedest": "succeed",
     "dwellest": "dwell", "bearest": "bear", "askest": "ask", "spakest": "spoke",
