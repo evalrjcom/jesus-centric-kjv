@@ -96,16 +96,10 @@ REPLACEMENTS = {
     "holdest": "hold", "devourest": "devour", "callest": "call", "hearest": "hear",
     "destroyest": "destroy", "buildest": "build", "savourest": "savor",
     "lackest": "lack", "answerest": "answer", "teachest": "teach", "acceptest": "accept",
-    # more second-person -est
-    "believest": "believe", "visitest": "visit", "oughtest": "ought",
-    "sleepest": "sleep", "judgest": "judge", "repliest": "reply",
-    "thinkest": "think", "despisest": "despise", "treasurest": "treasure",
-    "restest": "rest", "dishonourest": "dishonor", "revilest": "revile",
-    "commandest": "command", "sittest": "sit", "tarriest": "tarry",
-    "weepest": "weep", "couldest": "could", "gavest": "gave",
-    "camest": "came", "needest": "need", "blasphemest": "blaspheme",
-    "lovest": "love", "knewest": "knew", "regardest": "regard",
-    "carest": "care",
+    # additional forms
+    "testifieth": "testifies", "esteemeth": "esteems", "appeareth": "appears",
+    "honoureth": "honors", "ruleth": "rules", "basest": "base",
+    "thyself": "yourself", "bestead": "beset",
 }
 
 # Sort by length descending so phrases win over single words
