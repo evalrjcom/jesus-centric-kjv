@@ -286,16 +286,8 @@ def modernize_line(line):
     # Pass 1: explicit replacements (longest first)
     for old, new in SORTED_REPLACEMENTS:
         line = make_pattern(old).sub(new, line)
-    # Pass 2: catch remaining -eth verbs (simple heuristic)
-    def eth_to_s(m):
-        w = m.group(0)
-        base = w[:-3]  # strip eth
-        # avoid turning short words into nonsense
-        if len(base) < 3:
-            return w
-        # common consonant doubling already handled by explicit rules
-        return base + "s"
-    line = re.sub(r"\b[a-z]{4,}eth\b", eth_to_s, line, flags=re.I)
+    # The general "-eth -> -s" pass was removed: it mangled words such as compasseth -> "compasss".
+    # Only -eth words listed explicitly in REPLACEMENTS are modernized; all others keep the KJV form.
     return line
 
 def capitalize_divine(line):

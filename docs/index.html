@@ -350,6 +350,18 @@
         .replace(/\[JESUS\]/g, '<span class="divine">[JESUS]</span>');
     }
 
+    // Apostrophe-insensitive search: straight ', curly ‘ ’, modifier ʼ, backtick and acute accent
+    // all match each other. Matching uses folded copies; the original text is what gets displayed.
+    const APOS_CLASS = "['\u2018\u2019\u02BC`\u00B4]";
+    const APOS_RE = new RegExp(APOS_CLASS, "g");
+    function foldSearch(s) {
+      return String(s).replace(APOS_RE, "'").toLowerCase();
+    }
+    function searchRegex(q) {
+      const esc = String(q).replace(APOS_RE, "'").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp("(" + esc.replace(/'/g, APOS_CLASS) + ")", "gi");
+    }
+
     function hasDivine(text) {
       return /\b(JESUS|LORD|GOD)\b|\bI AM\b|\[JESUS\]/.test(text);
     }
@@ -469,11 +481,11 @@
 
     function buildItems(book, query) {
       const list = [];
-      const q = query.trim().toLowerCase();
+      const q = foldSearch(query.trim());
       let lastChap = 0;
       book.verses.forEach(v => {
         if (redOnly && !hasDivine(v.text)) return;
-        if (q && !(v.ref + " " + v.text).toLowerCase().includes(q)) return;
+        if (q && !foldSearch(v.ref + " " + v.text).includes(q)) return;
         if (v.chapter !== lastChap) {
           list.push({ type: "ch", chapter: v.chapter });
           lastChap = v.chapter;
@@ -518,8 +530,7 @@
           div.className = "verse";
           let plain = it.verse.text;
           if (it.query) {
-            const esc = it.query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-            plain = plain.replace(new RegExp(`(${esc})`, "gi"), "\x00$1\x00");
+            plain = plain.replace(searchRegex(it.query), "\x00$1\x00");
           }
           let text = highlightDivine(plain);
           text = text.replace(/\x00([^\x00]+)\x00/g, "<mark>$1</mark>");
@@ -566,11 +577,11 @@
       books.forEach(book => {
         const matches = book.verses.filter(v => {
           if (redOnly && !hasDivine(v.text)) return false;
-          return (v.ref + " " + v.text).toLowerCase().includes(q.toLowerCase());
+          return foldSearch(v.ref + " " + v.text).includes(foldSearch(q));
         });
         if (!matches.length) return;
         items.push({ type: "ch", bookName: book.name });
-        matches.forEach(v => items.push({ type: "v", verse: v, query: q.toLowerCase() }));
+        matches.forEach(v => items.push({ type: "v", verse: v, query: foldSearch(q) }));
       });
       statusEl.textContent = items.filter(i => i.type === "v").length + " matches";
       lastStart = -1;

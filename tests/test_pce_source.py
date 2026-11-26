@@ -131,3 +131,17 @@ def test_cli_legacy_plain_input(tmp_path):
     out = tmp_path / "out.txt"
     jk.main([str(src), str(out)])
     assert out.read_text(encoding="utf-8") == "JOHN\n3:16: For GOD so loved the world, that whoever believes in him\n"
+
+
+def test_general_eth_rule_removed():
+    # Unlisted -eth words keep their KJV form (the old general rule produced "compasss").
+    for w in ["compasseth", "crieth", "sendeth", "hasteth"]:
+        assert jk.modernize_line(f"he {w} it") == f"he {w} it"
+    assert "compasss" not in jk.process_line("2:11: that is it which compasseth the whole land")
+
+
+def test_explicit_eth_mappings_kept():
+    # loveth/believeth/saith are explicit REPLACEMENTS entries, separate from the removed general rule.
+    assert jk.modernize_line("he that loveth") == "he that loves"
+    assert jk.modernize_line("whosoever believeth") == "whoever believes"
+    assert jk.modernize_line("thus saith the LORD") == "thus says the LORD"
