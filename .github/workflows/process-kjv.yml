@@ -5,10 +5,14 @@ on:
     branches: [ main ]
     paths:
       - 'jesus_centric_kjv_processor.py'
+      - 'docs/TEXT-PCE.txt'
+      - 'tests/**'
       - '.github/workflows/process-kjv.yml'
   pull_request:
     paths:
       - 'jesus_centric_kjv_processor.py'
+      - 'docs/TEXT-PCE.txt'
+      - 'tests/**'
   issues:
     types: [opened, edited, reopened]
   workflow_dispatch:
@@ -32,26 +36,14 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Download source KJV
+      - name: Run tests
         run: |
-          python3 - << 'PY'
-          import json, urllib.request
-          url = "https://api.github.com/repos/takelley1/plaintext-bible-kjv/contents/"
-          with urllib.request.urlopen(url) as r:
-              files = json.load(r)
-          txts = sorted([f for f in files if f["name"].endswith(".txt")], key=lambda x: x["name"])
-          with open("/tmp/kjv_all.txt", "w", encoding="utf-8") as out:
-              for f in txts:
-                  with urllib.request.urlopen(f["download_url"]) as resp:
-                      content = resp.read().decode("utf-8")
-                      out.write(content)
-                      if not content.endswith("\n"):
-                          out.write("\n")
-          print("Source KJV downloaded successfully")
-          PY
+          python3 -m pip install --quiet pytest
+          python3 -m pytest -q tests
 
+      # Source text: Pure Cambridge Edition (bibleprotector.com), committed as docs/TEXT-PCE.txt
       - name: Run processor
-        run: python3 jesus_centric_kjv_processor.py /tmp/kjv_all.txt docs/jesus_centric_kjv_all66.txt
+        run: python3 jesus_centric_kjv_processor.py --source docs/TEXT-PCE.txt docs/jesus_centric_kjv_all66.txt
 
       - name: Commit processed text if changed
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'

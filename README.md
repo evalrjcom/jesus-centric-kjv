@@ -13,8 +13,27 @@ Independent modernization and Jesus-centric markup of the public-domain King Jam
 
 ## Usage
 ```bash
+# Default: read docs/TEXT-PCE.txt, write docs/jesus_centric_kjv_all66.txt
+python3 jesus_centric_kjv_processor.py
+
+# Choose the output, or the PCE source (local path or URL)
+python3 jesus_centric_kjv_processor.py out.txt
+python3 jesus_centric_kjv_processor.py --source path/or/url/TEXT-PCE.txt out.txt
+
+# Still supported: explicit input and output (a PCE file, or a legacy "BOOK / C:V: text" file)
 python3 jesus_centric_kjv_processor.py input_kjv.txt output.txt
 ```
+
+Options:
+- `--italics strip|keep|html`: PCE marks translator-supplied words with `[ ]` (printed in italics). The default, `strip`, keeps the words and drops the brackets. `keep` leaves the brackets, which can be confused with `[JESUS]` markers. `html` wraps them in `<i>…</i>`, which the viewer renders as italics.
+- `--titles-json FILE`: Psalm titles and epistle colophons (`<<…>>` in PCE) are kept out of the verse text. Use this to save them as JSON metadata.
+- `--timeout SECONDS`: download timeout when the source is fetched from a URL (default 30).
+
+If `docs/TEXT-PCE.txt` is missing, the script downloads it from
+`https://raw.githubusercontent.com/evalrjcom/jesus-centric-kjv/main/docs/TEXT-PCE.txt`.
+Every load is validated: 66 books, 1,189 chapters and 31,102 verses, in canonical order with no duplicates. The script exits with an error if any check fails.
+
+Tests: `python3 -m pytest -q tests`
 
 ## Viewer (GitHub Pages)
 The processed text is served from the `/docs` folder.
@@ -28,11 +47,18 @@ The processed text is served from the `/docs` folder.
 The site will be available at `https://evalrjcom.github.io/jesus-centric-kjv/`.
 
 The GitHub Action (`.github/workflows/process-kjv.yml`) automatically:
-- Downloads a clean public-domain KJV source
+- Runs the tests
+- Reads the Pure Cambridge Edition text from `docs/TEXT-PCE.txt`
 - Runs the processor
 - Commits the updated `docs/jesus_centric_kjv_all66.txt` when the processor changes (or on manual workflow run)
 - Comments on new/edited issues
 
 Trigger the workflow manually from the Actions tab if you want to regenerate the text immediately.
 
-Source text: public-domain KJV (via structured plaintext books).
+## Source text and attribution
+The source text is the **Pure Cambridge Edition (PCE)** of the King James Bible, from
+[Bible Protector](https://www.bibleprotector.com). The repo copy is `docs/TEXT-PCE.txt` (the original Windows-1252 file, also in `docs/TEXT-PCE.zip`).
+It is used as published: its spelling, punctuation and curly apostrophes are kept. Only the modernization and markup rules above are applied.
+Thanks to bibleprotector.com for preparing and distributing the PCE text.
+
+Earlier versions used the takelley1/plaintext-bible-kjv files. `docs/crosscheck-report.md` compares that text with PCE.
