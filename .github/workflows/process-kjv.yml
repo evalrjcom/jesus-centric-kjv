@@ -63,6 +63,8 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "Update processed Jesus-centric KJV text [skip ci]"
+            # Pull any concurrent commits before pushing
+            git pull --rebase origin main || true
             git push
           fi
 
