@@ -74,6 +74,10 @@ MODERNIZATION_RULES = [
     (re.compile(r"\brunneth\b", re.I), "runs"),
     (re.compile(r"\bthinketh\b", re.I), "thinks"),
     (re.compile(r"\bhopeth\b", re.I), "hopes"),
+    # additional archaic forms
+    (re.compile(r"\bspake\b", re.I), "spoke"),
+    (re.compile(r"\bsware\b", re.I), "swore"),
+    (re.compile(r"\bfrom hence\b", re.I), "from here"),
 ]
 
 LORD_GOD_PATTERN = re.compile(r"\b(Lord|LORD|God|GOD)\b")
