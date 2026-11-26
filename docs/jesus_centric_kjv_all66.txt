@@ -23,12 +23,12 @@ GENESIS
 1:22: And GOD blessed them, saying, Be fruitful, and multiply, and fill the waters in the seas, and let fowl multiply in the earth.
 1:23: And the evening and the morning were the fifth day.
 1:24: And GOD said, Let the earth bring forth the living creature after his kind, cattle, and creeping thing, and beast of the earth after his kind: and it was so.
-1:25: And GOD made the beast of the earth after his kind, and cattle after their kind, and every thing that creepeth upon the earth after his kind: and GOD saw that it was good.
-1:26: And GOD said, Let us make man in our image, after our likeness: and let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping thing that creepeth upon the earth.
+1:25: And GOD made the beast of the earth after his kind, and cattle after their kind, and every thing that creeps upon the earth after his kind: and GOD saw that it was good.
+1:26: And GOD said, Let us make man in our image, after our likeness: and let them have dominion over the fish of the sea, and over the fowl of the air, and over the cattle, and over all the earth, and over every creeping thing that creeps upon the earth.
 1:27: So GOD created man in his own image, in the image of GOD created he him; male and female created he them.
 1:28: And GOD blessed them, and GOD said to them, Be fruitful, and multiply, and replenish the earth, and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every living thing that moveth upon the earth.
 1:29: And GOD said, look, I have given you every herb bearing seed, which is upon the face of all the earth, and every tree, in the which is the fruit of a tree yielding seed; to you it shall be for meat.
-1:30: And to every beast of the earth, and to every fowl of the air, and to every thing that creepeth upon the earth, in which there is life, I have given every green herb for meat: and it was so.
+1:30: And to every beast of the earth, and to every fowl of the air, and to every thing that creeps upon the earth, in which there is life, I have given every green herb for meat: and it was so.
 1:31: And GOD saw every thing that he had made, and, look, it was very good. And the evening and the morning were the sixth day.
 2:1: Thus the heavens and the earth were finished, and all the host of them.
 2:2: And on the seventh day GOD ended his work which he had made; and he rested on the seventh day from all his work which he had made.
@@ -166,20 +166,20 @@ GENESIS
 7:5: And Noah did according to all that the LORD commanded him.
 7:6: And Noah was six hundred years old when the flood of waters was upon the earth.
 7:7: And Noah went in, and his sons, and his wife, and his sons' wives with him, into the ark, because of the waters of the flood.
-7:8: Of clean beasts, and of beasts that are not clean, and of birds, and of every thing that creepeth upon the earth,
+7:8: Of clean beasts, and of beasts that are not clean, and of birds, and of every thing that creeps upon the earth,
 7:9: There went in two and two to Noah into the ark, the male and the female, as GOD had commanded Noah.
 7:10: And it came to pass after seven days, that the waters of the flood were upon the earth.
 7:11: In the six hundredth year of Noah's life, in the second month, the seventeenth day of the month, the same day were all the fountains of the great deep broken up, and the windows of heaven were opened.
 7:12: And the rain was upon the earth forty days and forty nights.
 7:13: In the selfsame day entered Noah, and Shem, and Ham, and Japheth, the sons of Noah, and Noah's wife, and the three wives of his sons with them, into the ark;
-7:14: They, and every beast after his kind, and all the cattle after their kind, and every creeping thing that creepeth upon the earth after his kind, and every fowl after his kind, every bird of every sort.
+7:14: They, and every beast after his kind, and all the cattle after their kind, and every creeping thing that creeps upon the earth after his kind, and every fowl after his kind, every bird of every sort.
 7:15: And they went in to Noah into the ark, two and two of all flesh, in which is the breath of life.
 7:16: And they that went in, went in male and female of all flesh, as GOD had commanded him: and the LORD shut him in.
 7:17: And the flood was forty days upon the earth; and the waters increased, and bore up the ark, and it was lift up above the earth.
 7:18: And the waters prevailed, and were increased greatly upon the earth; and the ark went upon the face of the waters.
 7:19: And the waters prevailed exceedingly upon the earth; and all the high hills, that were under the whole heaven, were covered.
 7:20: Fifteen cubits upward did the waters prevail; and the mountains were covered.
-7:21: And all flesh died that moved upon the earth, both of fowl, and of cattle, and of beast, and of every creeping thing that creepeth upon the earth, and every man:
+7:21: And all flesh died that moved upon the earth, both of fowl, and of cattle, and of beast, and of every creeping thing that creeps upon the earth, and every man:
 7:22: All in whose nostrils was the breath of life, of all that was in the dry land, died.
 7:23: And every living substance was destroyed which was upon the face of the ground, both man, and cattle, and the creeping things, and the fowl of the heaven; and they were destroyed from the earth: and Noah only remained alive, and they that were with him in the ark.
 7:24: And the waters prevailed upon the earth an hundred and fifty days.
@@ -199,9 +199,9 @@ GENESIS
 8:14: And in the second month, on the seven and twentieth day of the month, was the earth dried.
 8:15: And GOD spoke to Noah, saying,
 8:16: Go forth of the ark, you, and your wife, and your sons, and your sons' wives with you.
-8:17: Bring forth with you every living thing that is with you, of all flesh, both of fowl, and of cattle, and of every creeping thing that creepeth upon the earth; that they may breed abundantly in the earth, and be fruitful, and multiply upon the earth.
+8:17: Bring forth with you every living thing that is with you, of all flesh, both of fowl, and of cattle, and of every creeping thing that creeps upon the earth; that they may breed abundantly in the earth, and be fruitful, and multiply upon the earth.
 8:18: And Noah went forth, and his sons, and his wife, and his sons' wives with him:
-8:19: Every beast, every creeping thing, and every fowl, and whatsoever creepeth upon the earth, after their kinds, went forth out of the ark.
+8:19: Every beast, every creeping thing, and every fowl, and whatsoever creeps upon the earth, after their kinds, went forth out of the ark.
 8:20: And Noah built an altar to the LORD; and took of every clean beast, and of every clean fowl, and offered burnt offerings on the altar.
 8:21: And the LORD smelled a sweet savour; and the LORD said in his heart, I will not again curse the ground any more for man's sake; for the imagination of man's heart is evil from his youth; neither will I again smite any more every thing living, as I have done.
 8:22: While the earth remaineth, seedtime and harvest, and cold and heat, and summer and winter, and day and night shall not cease.
@@ -1222,7 +1222,7 @@ GENESIS
 41:25: And Joseph said to Pharaoh, The dream of Pharaoh is one: GOD has shewed Pharaoh what he is about to do.
 41:26: The seven good kine are seven years; and the seven good ears are seven years: the dream is one.
 41:27: And the seven thin and ill favoured kine that came up after them are seven years; and the seven empty ears blasted with the east wind shall be seven years of famine.
-41:28: This is the thing which I have spoken to Pharaoh: What GOD is about to do he sheweth to Pharaoh.
+41:28: This is the thing which I have spoken to Pharaoh: What GOD is about to do he shows to Pharaoh.
 41:29: look, there come seven years of great plenty throughout all the land of Egypt:
 41:30: And there shall arise after them seven years of famine; and all the plenty shall be forgotten in the land of Egypt; and the famine shall consume the land;
 41:31: And the plenty shall not be known in the land by reason of that famine following; for it shall be very grievous.
@@ -1782,7 +1782,7 @@ EXODUS
 10:2: And that you may tell in the ears of your son, and of your son's son, what things I have worked in Egypt, and my signs which I have done among them; that you may know how that I am the LORD.
 10:3: And Moses and Aaron came in to Pharaoh, and said to him, Thus says the LORD GOD of the Hebrews, How long will you refuse to humble thyself before me? let my people go, that they may serve me.
 10:4: Else, if you refuse to let my people go, look, to morrow will I bring the locusts into your coast:
-10:5: And they shall cover the face of the earth, that one cannot be able to see the earth: and they shall eat the residue of that which is escaped, which remaineth to you from the hail, and shall eat every tree which groweth for you out of the field:
+10:5: And they shall cover the face of the earth, that one cannot be able to see the earth: and they shall eat the residue of that which is escaped, which remaineth to you from the hail, and shall eat every tree which grows for you out of the field:
 10:6: And they shall fill your houses, and the houses of all your servants, and the houses of all the Egyptians; which neither your fathers, nor your fathers' fathers have seen, since the day that they were upon the earth to this day. And he turned himself, and went out from Pharaoh.
 10:7: And Pharaoh's servants said to him, How long shall this man be a snare to us? let the men go, that they may serve the LORD their GOD: know you not yet that Egypt is destroyed?
 10:8: And Moses and Aaron were brought again to Pharaoh: and he said to them, Go, serve the LORD your GOD: but who are they that shall go?
@@ -2133,7 +2133,7 @@ EXODUS
 22:17: If her father utterly refuse to give her to him, he shall pay money according to the dowry of virgins.
 22:18: you shall not let a witch to live.
 22:19: whoever lieth with a beast shall surely be put to death.
-22:20: He that sacrificeth to any god, save to the LORD only, he shall be utterly destroyed.
+22:20: He that sacrifices to any god, save to the LORD only, he shall be utterly destroyed.
 22:21: you shall neither vex a stranger, nor oppress him: for you were strangers in the land of Egypt.
 22:22: you shall not afflict any widow, or fatherless child.
 22:23: If you afflict them in any wise, and they cry at all to me, I will surely hear their cry;
@@ -3039,12 +3039,12 @@ LEVITICUS
 11:38: But if any water be put upon the seed, and any part of their carcase fall on it, it shall be unclean to you.
 11:39: And if any beast, of which you may eat, die; he that toucheth the carcase of it shall be unclean until the even.
 11:40: And he that eats of the carcase of it shall wash his clothes, and be unclean until the even: he also that beareth the carcase of it shall wash his clothes, and be unclean until the even.
-11:41: And every creeping thing that creepeth upon the earth shall be an abomination; it shall not be eaten.
+11:41: And every creeping thing that creeps upon the earth shall be an abomination; it shall not be eaten.
 11:42: Whatsoever goes upon the belly, and whatsoever goes upon all four, or whatsoever has more feet among all creeping things that creep upon the earth, them you shall not eat; for they are an abomination.
-11:43: you shall not make yourselves abominable with any creeping thing that creepeth, neither shall you make yourselves unclean with them, that you should be defiled thereby.
-11:44: For I am the LORD your GOD: you shall therefore sanctify yourselves, and you shall be holy; for I am holy: neither shall you defile yourselves with any manner of creeping thing that creepeth upon the earth.
+11:43: you shall not make yourselves abominable with any creeping thing that creeps, neither shall you make yourselves unclean with them, that you should be defiled thereby.
+11:44: For I am the LORD your GOD: you shall therefore sanctify yourselves, and you shall be holy; for I am holy: neither shall you defile yourselves with any manner of creeping thing that creeps upon the earth.
 11:45: For I am the LORD that brings you up out of the land of Egypt, to be your GOD: you shall therefore be holy, for I am holy.
-11:46: This is the law of the beasts, and of the fowl, and of every living creature that moveth in the waters, and of every creature that creepeth upon the earth:
+11:46: This is the law of the beasts, and of the fowl, and of every living creature that moveth in the waters, and of every creature that creeps upon the earth:
 11:47: To make a difference between the unclean and the clean, and between the beast that may be eaten and the beast that may not be eaten.
 12:1: And the LORD spoke to Moses, saying,
 12:2: Speak to the children of Israel, saying, If a woman have conceived seed, and born a man child: then she shall be unclean seven days; according to the days of the separation for her infirmity shall she be unclean.
@@ -3092,7 +3092,7 @@ LEVITICUS
 13:36: Then the priest shall look on him: and, look, if the scall be spread in the skin, the priest shall not seek for yellow hair; he is unclean.
 13:37: But if the scall be in his sight at a stay, and that there is black hair grown up therein; the scall is healed, he is clean: and the priest shall pronounce him clean.
 13:38: If a man also or a woman have in the skin of their flesh bright spots, even white bright spots;
-13:39: Then the priest shall look: and, look, if the bright spots in the skin of their flesh be darkish white; it is a freckled spot that groweth in the skin; he is clean.
+13:39: Then the priest shall look: and, look, if the bright spots in the skin of their flesh be darkish white; it is a freckled spot that grows in the skin; he is clean.
 13:40: And the man whose hair is fallen off his head, he is bald; yet is he clean.
 13:41: And he that has his hair fallen off from the part of his head toward his face, he is forehead bald: yet is he clean.
 13:42: And if there be in the bald head, or bald forehead, a white reddish sore; it is a leprosy sprung up in his bald head, or his bald forehead.
@@ -3343,8 +3343,8 @@ LEVITICUS
 20:21: And if a man shall take his brother's wife, it is an unclean thing: he has uncovered his brother's nakedness; they shall be childless.
 20:22: you shall therefore keep all my statutes, and all my judgments, and do them: that the land, where I bring you to dwell therein, spue you not out.
 20:23: And you shall not walk in the manners of the nation, which I cast out before you: for they committed all these things, and therefore I abhorred them.
-20:24: But I have said to you, you shall inherit their land, and I will give it to you to possess it, a land that floweth with milk and honey: I am the LORD your GOD, which have separated you from other people.
-20:25: you shall therefore put difference between clean beasts and unclean, and between unclean birds and clean: and you shall not make your souls abominable by beast, or by fowl, or by any manner of living thing that creepeth on the ground, which I have separated from you as unclean.
+20:24: But I have said to you, you shall inherit their land, and I will give it to you to possess it, a land that flows with milk and honey: I am the LORD your GOD, which have separated you from other people.
+20:25: you shall therefore put difference between clean beasts and unclean, and between unclean birds and clean: and you shall not make your souls abominable by beast, or by fowl, or by any manner of living thing that creeps on the ground, which I have separated from you as unclean.
 20:26: And you shall be holy to me: for I the LORD am holy, and have severed you from other people, that you should be mine.
 20:27: A man also or woman that has a familiar spirit, or that is a wizard, shall surely be put to death: they shall stone them with stones: their blood shall be upon them.
 21:1: And the LORD said to Moses, Speak to the priests the sons of Aaron, and say to them, There shall none be defiled for the dead among his people:
@@ -3475,13 +3475,13 @@ LEVITICUS
 25:2: Speak to the children of Israel, and say to them, When you come into the land which I give you, then shall the land keep a sabbath to the LORD.
 25:3: Six years you shall sow your field, and six years you shall prune your vineyard, and gather in the fruit of it;
 25:4: But in the seventh year shall be a sabbath of rest to the land, a sabbath for the LORD: you shall neither sow your field, nor prune your vineyard.
-25:5: That which groweth of its own accord of your harvest you shall not reap, neither gather the grapes of your vine undressed: for it is a year of rest to the land.
+25:5: That which grows of its own accord of your harvest you shall not reap, neither gather the grapes of your vine undressed: for it is a year of rest to the land.
 25:6: And the sabbath of the land shall be meat for you; for you, and for your servant, and for your maid, and for your hired servant, and for your stranger that sojourneth with you,
 25:7: And for your cattle, and for the beast that are in your land, shall all the increase of it be meat.
 25:8: And you shall number seven sabbaths of years to you, seven times seven years; and the space of the seven sabbaths of years shall be to you forty and nine years.
 25:9: Then shall you cause the trumpet of the jubile to sound on the tenth day of the seventh month, in the day of atonement shall you make the trumpet sound throughout all your land.
 25:10: And you shall hallow the fiftieth year, and proclaim liberty throughout all the land to all the inhabitants of it: it shall be a jubile to you; and you shall return every man to his possession, and you shall return every man to his family.
-25:11: A jubile shall that fiftieth year be to you: you shall not sow, neither reap that which groweth of itself in it, nor gather the grapes in it of your vine undressed.
+25:11: A jubile shall that fiftieth year be to you: you shall not sow, neither reap that which grows of itself in it, nor gather the grapes in it of your vine undressed.
 25:12: For it is the jubile; it shall be holy to you: you shall eat the increase of it out of the field.
 25:13: In the year of this jubile you shall return every man to his possession.
 25:14: And if you sell ought to your neighbour, or buyest ought of your neighbour's hand, you shall not oppress one another:
@@ -4104,7 +4104,7 @@ NUMBERS
 13:24: The place was called the brook Eshcol, because of the cluster of grapes which the children of Israel cut down from there.
 13:25: And they returned from searching of the land after forty days.
 13:26: And they went and came to Moses, and to Aaron, and to all the congregation of the children of Israel, to the wilderness of Paran, to Kadesh; and brought back WORD[JESUS] to them, and to all the congregation, and shewed them the fruit of the land.
-13:27: And they told him, and said, We came to the land where you sentest us, and surely it floweth with milk and honey; and this is the fruit of it.
+13:27: And they told him, and said, We came to the land where you sentest us, and surely it flows with milk and honey; and this is the fruit of it.
 13:28: Nevertheless the people be strong that dwell in the land, and the cities are walled, and very great: and moreover we saw the children of Anak there.
 13:29: The Amalekites dwell in the land of the south: and the Hittites, and the Jebusites, and the Amorites, dwell in the mountains: and the Canaanites dwell by the sea, and by the coast of Jordan.
 13:30: And Caleb stilled the people before Moses, and said, Let us go up at once, and possess it; for we are well able to overcome it.
@@ -4118,7 +4118,7 @@ NUMBERS
 14:5: Then Moses and Aaron fell on their faces before all the assembly of the congregation of the children of Israel.
 14:6: And Joshua the son of Nun, and Caleb the son of Jephunneh, which were of them that searched the land, tore their clothes:
 14:7: And they spoke to all the company of the children of Israel, saying, The land, which we passed through to search it, is an exceeding good land.
-14:8: If the LORD delight in us, then he will bring us into this land, and give it us; a land which floweth with milk and honey.
+14:8: If the LORD delight in us, then he will bring us into this land, and give it us; a land which flows with milk and honey.
 14:9: Only rebel not you against the LORD, neither fear you the people of the land; for they are bread for us: their defence is departed from them, and the LORD is with us: fear them not.
 14:10: But all the congregation told stone them with stones. And the glory of the LORD appeared in the tabernacle of the congregation before all the children of Israel.
 14:11: And the LORD said to Moses, How long will this people provoke me? and how long will it be before they believe me, for all the signs which I have shewed among them?
@@ -4209,8 +4209,8 @@ NUMBERS
 16:10: And he has brought you near to him, and all your brethren the sons of Levi with you: and seek you the priesthood also?
 16:11: For which cause both you and all your company are gathered together against the LORD: and what is Aaron, that you murmur against him?
 16:12: And Moses sent to call Dathan and Abiram, the sons of Eliab: which said, We will not come up:
-16:13: Is it a small thing that you have brought us up out of a land that floweth with milk and honey, to kill us in the wilderness, except you make thyself altogether a prince over us?
-16:14: Moreover you have not brought us into a land that floweth with milk and honey, or given us inheritance of fields and vineyards: will you put out the eyes of these men? we will not come up.
+16:13: Is it a small thing that you have brought us up out of a land that flows with milk and honey, to kill us in the wilderness, except you make thyself altogether a prince over us?
+16:14: Moreover you have not brought us into a land that flows with milk and honey, or given us inheritance of fields and vineyards: will you put out the eyes of these men? we will not come up.
 16:15: And Moses was very wroth, and said to the LORD, Respect not you their offering: I have not taken one ass from them, neither have I hurt one of them.
 16:16: And Moses said to Korah, Be you and all your company before the LORD, you, and they, and Aaron, to morrow:
 16:17: And take every man his censer, and put incense in them, and bring you before the LORD every man his censer, two hundred and fifty censers; you also, and Aaron, each of you his censer.
@@ -4421,7 +4421,7 @@ NUMBERS
 22:41: And it came to pass on the morrow, that Balak took Balaam, and brought him up into the high places of Baal, that from there he might see the utmost part of the people.
 23:1: And Balaam said to Balak, Build me here seven altars, and prepare me here seven oxen and seven rams.
 23:2: And Balak did as Balaam had spoken; and Balak and Balaam offered on every altar a bullock and a ram.
-23:3: And Balaam said to Balak, Stand by your burnt offering, and I will go: perhaps the LORD will come to meet me: and whatsoever he sheweth me I will tell you. And he went to an high place.
+23:3: And Balaam said to Balak, Stand by your burnt offering, and I will go: perhaps the LORD will come to meet me: and whatsoever he shows me I will tell you. And he went to an high place.
 23:4: And GOD met Balaam: and he said to him, I have prepared seven altars, and I have offered upon every altar a bullock and a ram.
 23:5: And the LORD put a WORD[JESUS] in Balaam's mouth, and said, Return to Balak, and thus you shall speak.
 23:6: And he returned to him, and, look, he stood by his burnt sacrifice, he, and all the princes of Moab.
@@ -5025,7 +5025,7 @@ DEUTERONOMY
 4:15: Take you therefore good heed to yourselves; for you saw no manner of similitude on the day that the LORD spoke to you in Horeb out of the midst of the fire:
 4:16: Lest you corrupt yourselves, and make you a graven image, the similitude of any figure, the likeness of male or female,
 4:17: The likeness of any beast that is on the earth, the likeness of any winged fowl that flieth in the air,
-4:18: The likeness of any thing that creepeth on the ground, the likeness of any fish that is in the waters beneath the earth:
+4:18: The likeness of any thing that creeps on the ground, the likeness of any fish that is in the waters beneath the earth:
 4:19: And lest you lift up yours eyes to heaven, and when you seest the sun, and the moon, and the stars, even all the host of heaven, should be driven to worship them, and serve them, which the LORD your GOD has divided to all nations under the whole heaven.
 4:20: But the LORD has taken you, and brought you forth out of the iron furnace, even out of Egypt, to be to him a people of inheritance, as you are this day.
 4:21: Furthermore the LORD was angry with me for your sakes, and swore that I should not go over Jordan, and that I should not go in to that good land, which the LORD your GOD gives you for an inheritance:
@@ -5092,7 +5092,7 @@ DEUTERONOMY
 5:33: you shall walk in all the ways which the LORD your GOD has commanded you, that you may live, and that it may be well with you, and that you may prolong your days in the land which you shall possess.
 6:1: Now these are the commandments, the statutes, and the judgments, which the LORD your GOD commanded to teach you, that you might do them in the land where you go to possess it:
 6:2: That you mightest fear the LORD your GOD, to keep all his statutes and his commandments, which I command you, you, and your son, and your son's son, all the days of your life; and that your days may be prolonged.
-6:3: Hear therefore, O Israel, and observe to do it; that it may be well with you, and that you may increase mightily, as the LORD GOD of your fathers has promised you, in the land that floweth with milk and honey.
+6:3: Hear therefore, O Israel, and observe to do it; that it may be well with you, and that you may increase mightily, as the LORD GOD of your fathers has promised you, in the land that flows with milk and honey.
 6:4: Hear, O Israel: The LORD our GOD is one LORD:
 6:5: And you shall love the LORD your GOD with all yours heart, and with all your soul, and with all your might.
 6:6: And these words, which I command you this day, shall be in yours heart:
@@ -5220,7 +5220,7 @@ DEUTERONOMY
 11:6: And what he did to Dathan and Abiram, the sons of Eliab, the son of Reuben: how the earth opened her mouth, and swallowed them up, and their households, and their tents, and all the substance that was in their possession, in the midst of all Israel:
 11:7: But your eyes have seen all the great acts of the LORD which he did.
 11:8: Therefore shall you keep all the commandments which I command you this day, that you may be strong, and go in and possess the land, where you go to possess it;
-11:9: And that you may prolong your days in the land, which the LORD swore to your fathers to give to them and to their seed, a land that floweth with milk and honey.
+11:9: And that you may prolong your days in the land, which the LORD swore to your fathers to give to them and to their seed, a land that flows with milk and honey.
 11:10: For the land, where you goest in to possess it, is not as the land of Egypt, from where you came out, where you sowedst your seed, and wateredst it with your foot, as a garden of herbs:
 11:11: But the land, where you go to possess it, is a land of hills and valleys, and drinks water of the rain of heaven:
 11:12: A land which the LORD your GOD careth for: the eyes of the LORD your GOD are always upon it, from the beginning of the year even to the end of the year.
@@ -5414,7 +5414,7 @@ DEUTERONOMY
 19:2: you shall separate three cities for you in the midst of your land, which the LORD your GOD gives you to possess it.
 19:3: you shall prepare you a way, and divide the coasts of your land, which the LORD your GOD gives you to inherit, into three parts, that every slayer may flee there.
 19:4: And this is the case of the slayer, which shall flee there, that he may live: whoever killeth his neighbour ignorantly, whom he hated not in time past;
-19:5: As when a man goes into the wood with his neighbour to hew wood, and his hand fetcheth a stroke with the axe to cut down the tree, and the head slippeth from the helve, and lighteth upon his neighbour, that he die; he shall flee to one of those cities, and live:
+19:5: As when a man goes into the wood with his neighbour to hew wood, and his hand fetcheth a stroke with the axe to cut down the tree, and the head slips from the helve, and lighteth upon his neighbour, that he die; he shall flee to one of those cities, and live:
 19:6: Lest the avenger of the blood pursue the slayer, while his heart is hot, and overtake him, because the way is long, and slay him; whereas he was not worthy of death, inasmuch as he hated him not in time past.
 19:7: therefore I command you, saying, you shall separate three cities for you.
 19:8: And if the LORD your GOD enlarge your coast, as he has sworn to your fathers, and give you all the land which he promised to give to your fathers;
@@ -5561,7 +5561,7 @@ DEUTERONOMY
 25:8: Then the elders of his city shall call him, and speak to him: and if he stand to it, and say, I like not to take her;
 25:9: Then shall his brother's wife come to him in the presence of the elders, and loose his shoe from off his foot, and spit in his face, and shall answer and say, So shall it be done to that man that will not build up his brother's house.
 25:10: And his name shall be called in Israel, The house of him that has his shoe loosed.
-25:11: When men strive together one with another, and the wife of the one draweth near for to deliver her husband out of the hand of him that smiteth him, and putteth forth her hand, and takes him by the secrets:
+25:11: When men strive together one with another, and the wife of the one draws near for to deliver her husband out of the hand of him that smiteth him, and putteth forth her hand, and takes him by the secrets:
 25:12: Then you shall cut off her hand, yours eye shall not pity her.
 25:13: you shall not have in your bag divers weights, a great and a small.
 25:14: you shall not have in yours house divers measures, a great and a small.
@@ -5578,20 +5578,20 @@ DEUTERONOMY
 26:6: And the Egyptians evil entreated us, and afflicted us, and laid upon us hard bondage:
 26:7: And when we cried to the LORD GOD of our fathers, the LORD heard our voice, and looked on our affliction, and our labour, and our oppression:
 26:8: And the LORD brought us forth out of Egypt with a mighty hand, and with an outstretched arm, and with great terribleness, and with signs, and with wonders:
-26:9: And he has brought us into this place, and has given us this land, even a land that floweth with milk and honey.
+26:9: And he has brought us into this place, and has given us this land, even a land that flows with milk and honey.
 26:10: And now, look, I have brought the firstfruits of the land, which you, O LORD, have given me. And you shall set it before the LORD your GOD, and worship before the LORD your GOD:
 26:11: And you shall rejoice in every good thing which the LORD your GOD has given to you, and to yours house, you, and the Levite, and the stranger that is among you.
 26:12: When you have made an end of tithing all the tithes of yours increase the third year, which is the year of tithing, and have given it to the Levite, the stranger, the fatherless, and the widow, that they may eat within your gates, and be filled;
 26:13: Then you shall say before the LORD your GOD, I have brought away the hallowed things out of mine house, and also have given them to the Levite, and to the stranger, to the fatherless, and to the widow, according to all your commandments which you have commanded me: I have not transgressed your commandments, neither have I forgotten them:
 26:14: I have not eaten of it in my mourning, neither have I taken away ought of it for any unclean use, nor given ought of it for the dead: but I have hearkened to the voice of the LORD my GOD, and have done according to all that you have commanded me.
-26:15: Look down from your holy habitation, from heaven, and bless your people Israel, and the land which you have given us, as you swarest to our fathers, a land that floweth with milk and honey.
+26:15: Look down from your holy habitation, from heaven, and bless your people Israel, and the land which you have given us, as you swarest to our fathers, a land that flows with milk and honey.
 26:16: This day the LORD your GOD has commanded you to do these statutes and judgments: you shall therefore keep and do them with all yours heart, and with all your soul.
 26:17: you have avouched the LORD this day to be your GOD, and to walk in his ways, and to keep his statutes, and his commandments, and his judgments, and to listen to his voice:
 26:18: And the LORD has avouched you this day to be his peculiar people, as he has promised you, and that you should keep all his commandments;
 26:19: And to make you high above all nations which he has made, in praise, and in name, and in honour; and that you may be an holy people to the LORD your GOD, as he has spoken.
 27:1: And Moses with the elders of Israel commanded the people, saying, Keep all the commandments which I command you this day.
 27:2: And it shall be on the day when you shall pass over Jordan to the land which the LORD your GOD gives you, that you shall set you up great stones, and plaister them with plaister:
-27:3: And you shall write upon them all the words of this law, when you are passed over, that you may go in to the land which the LORD your GOD gives you, a land that floweth with milk and honey; as the LORD GOD of your fathers has promised you.
+27:3: And you shall write upon them all the words of this law, when you are passed over, that you may go in to the land which the LORD your GOD gives you, a land that flows with milk and honey; as the LORD GOD of your fathers has promised you.
 27:4: Therefore it shall be when you be gone over Jordan, that you shall set up these stones, which I command you this day, in mount Ebal, and you shall plaister them with plaister.
 27:5: And there shall you build an altar to the LORD your GOD, an altar of stones: you shall not lift up any iron tool upon them.
 27:6: you shall build the altar of the LORD your GOD of whole stones: and you shall offer burnt offerings on it to the LORD your GOD:
@@ -5705,7 +5705,7 @@ DEUTERONOMY
 29:20: The LORD will not spare him, but then the anger of the LORD and his jealousy shall smoke against that man, and all the curses that are written in this book shall lie upon him, and the LORD shall blot out his name from under heaven.
 29:21: And the LORD shall separate him to evil out of all the tribes of Israel, according to all the curses of the covenant that are written in this book of the law:
 29:22: So that the generation to come of your children that shall rise up after you, and the stranger that shall come from a far land, shall say, when they see the plagues of that land, and the sicknesses which the LORD has laid upon it;
-29:23: And that the whole land of it is brimstone, and salt, and burning, that it is not sown, nor beareth, nor any grass groweth therein, like the overthrow of Sodom, and Gomorrah, Admah, and Zeboim, which the LORD overthrew in his anger, and in his wrath:
+29:23: And that the whole land of it is brimstone, and salt, and burning, that it is not sown, nor beareth, nor any grass grows therein, like the overthrow of Sodom, and Gomorrah, Admah, and Zeboim, which the LORD overthrew in his anger, and in his wrath:
 29:24: Even all nations shall say, therefore has the LORD done thus to this land? what meaneth the heat of this great anger?
 29:25: Then men shall say, Because they have forsaken the covenant of the LORD GOD of their fathers, which he made with them when he brought them forth out of the land of Egypt:
 29:26: For they went and served other gods, and worshipped them, gods whom they knew not, and whom he had not given to them:
@@ -5751,7 +5751,7 @@ DEUTERONOMY
 31:17: Then my anger shall be kindled against them in that day, and I will forsake them, and I will hide my face from them, and they shall be devoured, and many evils and troubles shall befall them; so that they will say in that day. Are not these evils come upon us, because our GOD is not among us?
 31:18: And I will surely hide my face in that day for all the evils which they shall have worked, in that they are turned to other gods.
 31:19: Now therefore write you this song for you, and teach it the children of Israel: put it in their mouths, that this song may be a witness for me against the children of Israel.
-31:20: For when I shall have brought them into the land which I swore to their fathers, that floweth with milk and honey; and they shall have eaten and filled themselves, and waxen fat; then will they turn to other gods, and serve them, and provoke me, and break my covenant.
+31:20: For when I shall have brought them into the land which I swore to their fathers, that flows with milk and honey; and they shall have eaten and filled themselves, and waxen fat; then will they turn to other gods, and serve them, and provoke me, and break my covenant.
 31:21: And it shall come to pass, when many evils and troubles are befallen them, that this song shall testify against them as a witness; for it shall not be forgotten out of the mouths of their seed: for I know their imagination which they go about, even now, before I have brought them into the land which I swore.
 31:22: Moses therefore wrote this song the same day, and taught it the children of Israel.
 31:23: And he gave Joshua the son of Nun a charge, and said, Be strong and of a good courage: for you shall bring the children of Israel into the land which I swore to them: and I will be with you.
@@ -5944,7 +5944,7 @@ JOSHUA
 5:3: And Joshua made him sharp knives, and circumcised the children of Israel at the hill of the foreskins.
 5:4: And this is the cause why Joshua did circumcise: All the people that came out of Egypt, that were males, even all the men of war, died in the wilderness by the way, after they came out of Egypt.
 5:5: Now all the people that came out were circumcised: but all the people that were born in the wilderness by the way as they came forth out of Egypt, them they had not circumcised.
-5:6: For the children of Israel walked forty years in the wilderness, till all the people that were men of war, which came out of Egypt, were consumed, because they obeyed not the voice of the LORD: to whom the LORD swore that he would not shew them the land, which the LORD swore to their fathers that he would give us, a land that floweth with milk and honey.
+5:6: For the children of Israel walked forty years in the wilderness, till all the people that were men of war, which came out of Egypt, were consumed, because they obeyed not the voice of the LORD: to whom the LORD swore that he would not shew them the land, which the LORD swore to their fathers that he would give us, a land that flows with milk and honey.
 5:7: And their children, whom he raised up in their stead, them Joshua circumcised: for they were uncircumcised, because they had not circumcised them by the way.
 5:8: And it came to pass, when they had done circumcising all the people, that they abode in their places in the camp, till they were whole.
 5:9: And the LORD said to Joshua, This day have I rolled away the reproach of Egypt from off you. therefore the name of the place is called Gilgal to this day.
@@ -6704,7 +6704,7 @@ JUDGES
 7:2: And the LORD said to Gideon, The people that are with you are too many for me to give the Midianites into their hands, lest Israel vaunt themselves against me, saying, Mine own hand has saved me.
 7:3: Now therefore go to, proclaim in the ears of the people, saying, whoever is fearful and afraid, let him return and depart early from mount Gilead. And there returned of the people twenty and two thousand; and there remained ten thousand.
 7:4: And the LORD said to Gideon, The people are yet too many; bring them down to the water, and I will try them for you there: and it shall be, that of whom I say to you, This shall go with you, the same shall go with you; and of whomsoever I say to you, This shall not go with you, the same shall not go.
-7:5: So he brought down the people to the water: and the LORD said to Gideon, Every one that lappeth of the water with his tongue, as a dog lappeth, him shall you set by himself; likewise every one that boweth down upon his knees to drink.
+7:5: So he brought down the people to the water: and the LORD said to Gideon, Every one that laps of the water with his tongue, as a dog laps, him shall you set by himself; likewise every one that bows down upon his knees to drink.
 7:6: And the number of them that lapped, putting their hand to their mouth, were three hundred men: but all the rest of the people bowed down upon their knees to drink water.
 7:7: And the LORD said to Gideon, By the three hundred men that lapped will I save you, and deliver the Midianites into yours hand: and let all the other people go every man to his place.
 7:8: So the people took victuals in their hand, and their trumpets: and he sent all the rest of Israel every man to his tent, and retained those three hundred men: and the host of Midian was beneath him in the valley.
@@ -7038,7 +7038,7 @@ JUDGES
 19:6: And they sat down, and did eat and drink both of them together: for the damsel's father had said to the man, Be content, I pray you, and tarry all night, and let yours heart be merry.
 19:7: And when the man rose up to depart, his father in law urged him: therefore he lodged there again.
 19:8: And he arose early in the morning on the fifth day to depart: and the damsel's father said, Comfort yours heart, I pray you. And they tarried until afternoon, and they did eat both of them.
-19:9: And when the man rose up to depart, he, and his concubine, and his servant, his father in law, the damsel's father, said to him, look, now the day draweth toward evening, I pray you tarry all night: look, the day groweth to an end, lodge here, that yours heart may be merry; and to morrow get you early on your way, that you may go home.
+19:9: And when the man rose up to depart, he, and his concubine, and his servant, his father in law, the damsel's father, said to him, look, now the day draws toward evening, I pray you tarry all night: look, the day grows to an end, lodge here, that yours heart may be merry; and to morrow get you early on your way, that you may go home.
 19:10: But the man would not tarry that night, but he rose up and departed, and came over against Jebus, which is Jerusalem; and there were with him two asses saddled, his concubine also was with him.
 19:11: And when they were by Jebus, the day was far spent; and the servant said to his master, Come, I pray you, and let us turn in into this city of the Jebusites, and lodge in it.
 19:12: And his master said to him, We will not turn aside here into the city of a stranger, that is not of the children of Israel; we will pass over to Gibeah.
@@ -7802,7 +7802,7 @@ FIRST SAMUEL
 22:5: And the prophet Gad said to David, Abide not in the hold; depart, and get you into the land of Judah. Then David departed, and came into the forest of Hareth.
 22:6: When Saul heard that David was discovered, and the men that were with him, (now Saul abode in Gibeah under a tree in Ramah, having his spear in his hand, and all his servants were standing about him;)
 22:7: Then Saul said to his servants that stood about him, Hear now, you Benjamites; will the son of Jesse give every one of you fields and vineyards, and make you all captains of thousands, and captains of hundreds;
-22:8: That all of you have conspired against me, and there is none that sheweth me that my son has made a league with the son of Jesse, and there is none of you that is sorry for me, or sheweth to me that my son has stirred up my servant against me, to lie in wait, as at this day?
+22:8: That all of you have conspired against me, and there is none that shows me that my son has made a league with the son of Jesse, and there is none of you that is sorry for me, or shows to me that my son has stirred up my servant against me, to lie in wait, as at this day?
 22:9: Then answered Doeg the Edomite, which was set over the servants of Saul, and said, I saw the son of Jesse coming to Nob, to Ahimelech the son of Ahitub.
 22:10: And he enquired of the LORD for him, and gave him victuals, and gave him the sword of Goliath the Philistine.
 22:11: Then the king sent to call Ahimelech the priest, the son of Ahitub, and all his father's house, the priests that were in Nob: and they came all of them to the king.
@@ -8661,7 +8661,7 @@ SECOND SAMUEL
 22:48: It is GOD that avengeth me, and that brings down the people under me,
 22:49: And that brings me forth from mine enemies: you also have lifted me up on high above them that rose up against me: you have delivered me from the violent man.
 22:50: Therefore I will give thanks to you, O LORD, among the heathen, and I will sing praises to your name.
-22:51: He is the tower of salvation for his king: and sheweth mercy to his anointed, to David, and to his seed for evermore.
+22:51: He is the tower of salvation for his king: and shows mercy to his anointed, to David, and to his seed for evermore.
 23:1: Now these be the last words of David. David the son of Jesse said, and the man who was raised up on high, the anointed of the GOD of Jacob, and the sweet psalmist of Israel, said,
 23:2: The Spirit of the LORD spoke by me, and his WORD[JESUS] was in my tongue.
 23:3: The GOD of Israel said, the Rock of Israel spoke to me, He that ruleth over men must be just, ruling in the fear of GOD.
@@ -9413,7 +9413,7 @@ SECOND SAMUEL
 19:14: And he said, I have been very jealous for the LORD GOD of hosts: because the children of Israel have forsaken your covenant, thrown down yours altars, and slain your prophets with the sword; and I, even I only, am left; and they seek my life, to take it away.
 19:15: And the LORD said to him, Go, return on your way to the wilderness of Damascus: and when you comest, anoint Hazael to be king over Syria:
 19:16: And Jehu the son of Nimshi shall you anoint to be king over Israel: and Elisha the son of Shaphat of Abel-meholah shall you anoint to be prophet in your room.
-19:17: And it shall come to pass, that him that escapeth the sword of Hazael shall Jehu slay: and him that escapeth from the sword of Jehu shall Elisha slay.
+19:17: And it shall come to pass, that him that escapes the sword of Hazael shall Jehu slay: and him that escapes from the sword of Jehu shall Elisha slay.
 19:18: Yet I have left me seven thousand in Israel, all the knees which have not bowed to Baal, and every mouth which has not kissed him.
 19:19: So he departed from there, and found Elisha the son of Shaphat, who was plowing with twelve yoke of oxen before him, and he with the twelfth: and Elijah passed by him, and cast his mantle upon him.
 19:20: And he left the oxen, and ran after Elijah, and said, Let me, I pray you, kiss my father and my mother, and then I will follow you. And he said to him, Go back again: for what have I done to you?
@@ -9854,7 +9854,7 @@ SECOND SAMUEL
 11:12: And he brought forth the king's son, and put the crown upon him, and gave him the testimony; and they made him king, and anointed him; and they clapped their hands, and said, GOD save the king.
 11:13: And when Athaliah heard the noise of the guard and of the people, she came to the people into the temple of the LORD.
 11:14: And when she looked, look, the king stood by a pillar, as the manner was, and the princes and the trumpeters by the king, and all the people of the land rejoiced, and blew with trumpets: and Athaliah tore her clothes, and cried, Treason, Treason.
-11:15: But Jehoiada the priest commanded the captains of the hundreds, the officers of the host, and said to them, Have her forth without the ranges: and him that followeth her kill with the sword. For the priest had said, Let her not be slain in the house of the LORD.
+11:15: But Jehoiada the priest commanded the captains of the hundreds, the officers of the host, and said to them, Have her forth without the ranges: and him that follows her kill with the sword. For the priest had said, Let her not be slain in the house of the LORD.
 11:16: And they laid hands on her; and she went by the way by the which the horses came into the king's house: and there was she slain.
 11:17: And Jehoiada made a covenant between the LORD and the king and the people that they should be the LORD's people; between the king also and the people.
 11:18: And all the people of the land went into the house of Baal, and broke it down; his altars and his images broke they in pieces thoroughly, and slew Mattan the priest of Baal before the altars. And the priest appointed officers over the house of the LORD.
@@ -10749,7 +10749,7 @@ SECOND SAMUEL
 12:15: These are they that went over Jordan in the first month, when it had overflown all his banks; and they put to flight all them of the valleys, both toward the east, and toward the west.
 12:16: And there came of the children of Benjamin and Judah to the hold to David.
 12:17: And David went out to meet them, and answered and said to them, If you be come peaceably to me to help me, mine heart shall be knit to you: but if you be come to betray me to mine enemies, seeing there is no wrong in mine hands, the GOD of our fathers look on it, and rebuke it.
-12:18: Then the spirit came upon Amasai, who was chief of the captains, and he said, yours are we, David, and on your side, you son of Jesse: peace, peace be to you, and peace be to yours helpers; for your GOD helpeth you. Then David received them, and made them captains of the band.
+12:18: Then the spirit came upon Amasai, who was chief of the captains, and he said, yours are we, David, and on your side, you son of Jesse: peace, peace be to you, and peace be to yours helpers; for your GOD helps you. Then David received them, and made them captains of the band.
 12:19: And there fell some of Manasseh to David, when he came with the Philistines against Saul to battle: but they helped them not: for the lords of the Philistines upon advisement sent him away, saying, He will fall to his master Saul to the jeopardy of our heads.
 12:20: As he went to Ziklag, there fell to him of Manasseh, Adnah, and Jozabad, and Jediael, and Michael, and Jozabad, and Elihu, and Zilthai, captains of the thousands that were of Manasseh.
 12:21: And they helped David against the band of the rovers: for they were all mighty men of valour, and were captains in the host.
@@ -11682,7 +11682,7 @@ SECOND SAMUEL
 23:11: Then they brought out the king's son, and put upon him the crown, and gave him the testimony, and made him king. And Jehoiada and his sons anointed him, and said, GOD save the king.
 23:12: Now when Athaliah heard the noise of the people running and praising the king, she came to the people into the house of the LORD:
 23:13: And she looked, and, look, the king stood at his pillar at the entering in, and the princes and the trumpets by the king: and all the people of the land rejoiced, and sounded with trumpets, also the singers with instruments of musick, and such as taught to sing praise. Then Athaliah tore her clothes, and said, Treason, Treason.
-23:14: Then Jehoiada the priest brought out the captains of hundreds that were set over the host, and said to them, Have her forth of the ranges: and whoever followeth her, let him be slain with the sword. For the priest said, Slay her not in the house of the LORD.
+23:14: Then Jehoiada the priest brought out the captains of hundreds that were set over the host, and said to them, Have her forth of the ranges: and whoever follows her, let him be slain with the sword. For the priest said, Slay her not in the house of the LORD.
 23:15: So they laid hands on her; and when she was come to the entering of the horse gate by the king's house, they slew her there.
 23:16: And Jehoiada made a covenant between him, and between all the people, and between the king, that they should be the LORD's people.
 23:17: Then all the people went to the house of Baal, and broke it down, and broke his altars and his images in pieces, and slew Mattan the priest of Baal before the altars.
@@ -12531,7 +12531,7 @@ NEHEMIAH
 9:3: And they stood up in their place, and read in the book of the law of the LORD their GOD one fourth part of the day; and another fourth part they confessed, and worshipped the LORD their GOD.
 9:4: Then stood up upon the stairs, of the Levites, Jeshua, and Bani, Kadmiel, Shebaniah, Bunni, Sherebiah, Bani, and Chenani, and cried with a loud voice to the LORD their GOD.
 9:5: Then the Levites, Jeshua, and Kadmiel, Bani, Hashabniah, Sherebiah, Hodijah, Shebaniah, and Pethahiah, said, Stand up and bless the LORD your GOD for ever and ever: and blessed be your glorious name, which is exalted above all blessing and praise.
-9:6: you, even you, are LORD alone; you have made heaven, the heaven of heavens, with all their host, the earth, and all things that are therein, the seas, and all that is therein, and you preservest them all; and the host of heaven worshippeth you.
+9:6: you, even you, are LORD alone; you have made heaven, the heaven of heavens, with all their host, the earth, and all things that are therein, the seas, and all that is therein, and you preserve them all; and the host of heaven worships you.
 9:7: you are the LORD the GOD, who did choose Abram, and broughtest him forth out of Ur of the Chaldees, and gavest him the name of Abraham;
 9:8: And foundest his heart faithful before you, and madest a covenant with him to give the land of the Canaanites, the Hittites, the Amorites, and the Perizzites, and the Jebusites, and the Girgashites, to give it, I say, to his seed, and have performed your words; for you are righteous:
 9:9: And did see the affliction of our fathers in Egypt, and heardest their cry by the Red sea;
@@ -13084,7 +13084,7 @@ JOB
 9:14: How much less shall I answer him, and choose out my words to reason with him?
 9:15: Whom, though I were righteous, yet would I not answer, but I would make supplication to my judge.
 9:16: If I had called, and he had answered me; yet would I not believe that he had hearkened to my voice.
-9:17: For he breaketh me with a tempest, and multiplieth my wounds without cause.
+9:17: For he breaketh me with a tempest, and multiplies my wounds without cause.
 9:18: He will not let me to take my breath, but filleth me with bitterness.
 9:19: If I speak of strength, look, he is strong: and if of judgment, who shall set me a time to plead?
 9:20: If I justify myself, mine own mouth shall condemn me: if I say, I am perfect, it shall also prove me perverse.
@@ -13163,7 +13163,7 @@ JOB
 12:16: With him is strength and wisdom: the deceived and the deceiver are his.
 12:17: He leads counsellers away spoiled, and makes the judges fools.
 12:18: He looseth the bond of kings, and girdeth their loins with a girdle.
-12:19: He leads princes away spoiled, and overthroweth the mighty.
+12:19: He leads princes away spoiled, and overthrows the mighty.
 12:20: He removeth away the speech of the trusty, and takes away the understanding of the aged.
 12:21: He poureth contempt upon princes, and weakeneth the strength of the mighty.
 12:22: He discovereth deep things out of darkness, and brings out to light the shadow of death.
@@ -13474,7 +13474,7 @@ JOB
 24:19: Drought and heat consume the snow waters: so does the grave those which have sinned.
 24:20: The womb shall forget him; the worm shall feed sweetly on him; he shall be no more remembered; and wickedness shall be broken as a tree.
 24:21: He evil entreateth the barren that beareth not: and does not good to the widow.
-24:22: He draweth also the mighty with his power: he riseth up, and no man is sure of life.
+24:22: He draws also the mighty with his power: he riseth up, and no man is sure of life.
 24:23: Though it be given him to be in safety, whereon he resteth; yet his eyes are upon their ways.
 24:24: They are exalted for a little while, but are gone and brought low; they are taken out of the way as all other, and cut off as the tops of the ears of corn.
 24:25: And if it be not so now, who will make me a liar, and make my speech nothing worth?
@@ -13688,7 +13688,7 @@ JOB
 33:19: He is chastened also with pain upon his bed, and the multitude of his bones with strong pain:
 33:20: So that his life abhorreth bread, and his soul dainty meat.
 33:21: His flesh is consumed away, that it cannot be seen; and his bones that were not seen stick out.
-33:22: yes, his soul draweth near to the grave, and his life to the destroyers.
+33:22: yes, his soul draws near to the grave, and his life to the destroyers.
 33:23: If there be a messenger with him, an interpreter, one among a thousand, to shew to man his uprightness:
 33:24: Then he is gracious to him, and says, Deliver him from going down to the pit: I have found a ransom.
 33:25: His flesh shall be fresher than a child's: he shall return to the days of his youth:
@@ -13736,7 +13736,7 @@ JOB
 34:34: Let men of understanding tell me, and let a wise man listen to me.
 34:35: Job has spoken without knowledge, and his words were without wisdom.
 34:36: My desire is that Job may be tried to the end because of his answers for wicked men.
-34:37: For he addeth rebellion to his sin, he clappeth his hands among us, and multiplieth his words against GOD.
+34:37: For he adds rebellion to his sin, he claps his hands among us, and multiplies his words against GOD.
 35:1: Elihu spoke moreover, and said,
 35:2: Thinkest you this to be right, that you saidst, My righteousness is more than GOD's?
 35:3: For you saidst, What advantage will it be to you? and, What profit shall I have, if I be cleansed from my sin?
@@ -13752,7 +13752,7 @@ JOB
 35:13: Surely GOD will not hear vanity, neither will the Almighty regard it.
 35:14: Although you sayest you shall not see him, yet judgment is before him; therefore trust you in him.
 35:15: But now, because it is not so, he has visited in his anger; yet he knows it not in great extremity:
-35:16: Therefore does Job open his mouth in vain; he multiplieth words without knowledge.
+35:16: Therefore does Job open his mouth in vain; he multiplies words without knowledge.
 36:1: Elihu also proceeded, and said,
 36:2: let me a little, and I will shew you that I have yet to speak on GOD's behalf.
 36:3: I will fetch my knowledge from afar, and will ascribe righteousness to my Maker.
@@ -13761,13 +13761,13 @@ JOB
 36:6: He preserveth not the life of the wicked: but gives right to the poor.
 36:7: He withdraweth not his eyes from the righteous: but with kings are they on the throne; yes, he does establish them for ever, and they are exalted.
 36:8: And if they be bound in fetters, and be held in cords of affliction;
-36:9: Then he sheweth them their work, and their transgressions that they have exceeded.
+36:9: Then he shows them their work, and their transgressions that they have exceeded.
 36:10: He openeth also their ear to discipline, and commandeth that they return from iniquity.
 36:11: If they obey and serve him, they shall spend their days in prosperity, and their years in pleasures.
 36:12: But if they obey not, they shall perish by the sword, and they shall die without knowledge.
 36:13: But the hypocrites in heart heap up wrath: they cry not when he bindeth them.
 36:14: They die in youth, and their life is among the unclean.
-36:15: He delivereth the poor in his affliction, and openeth their ears in oppression.
+36:15: He delivers the poor in his affliction, and openeth their ears in oppression.
 36:16: Even so would he have removed you out of the strait into a broad place, where there is no straitness; and that which should be set on your table should be full of fatness.
 36:17: But you have fulfilled the judgment of the wicked: judgment and justice take hold on you.
 36:18: Because there is wrath, beware lest he take you away with his stroke: then a great ransom cannot deliver you.
@@ -13785,7 +13785,7 @@ JOB
 36:30: look, he spreads his light upon it, and covereth the bottom of the sea.
 36:31: For by them judgeth he the people; he gives meat in abundance.
 36:32: With clouds he covereth the light; and commandeth it not to shine by the cloud that comes between.
-36:33: The noise of it sheweth concerning it, the cattle also concerning the vapour.
+36:33: The noise of it shows concerning it, the cattle also concerning the vapour.
 37:1: At this also my heart trembleth, and is moved out of his place.
 37:2: Hear attentively the noise of his voice, and the sound that goes out of his mouth.
 37:3: He directeth it under the whole heaven, and his lightning to the ends of the earth.
@@ -13847,7 +13847,7 @@ JOB
 38:35: can you send lightnings, that they may go, and say to you, Here we are?
 38:36: Who has put wisdom in the inward parts? or who has given understanding to the heart?
 38:37: Who can number the clouds in wisdom? or who can stay the bottles of heaven,
-38:38: When the dust groweth into hardness, and the clods cleave fast together?
+38:38: When the dust grows into hardness, and the clods cleave fast together?
 38:39: will you hunt the prey for the lion? or fill the appetite of the young lions,
 38:40: When they couch in their dens, and abide in the covert to lie in wait?
 38:41: Who provides for the raven his food? when his young ones cry to GOD, they wander for lack of meat.
@@ -14067,7 +14067,7 @@ PSALMS
 10:6: He has said in his heart, I shall not be moved: for I shall never be in adversity.
 10:7: His mouth is full of cursing and deceit and fraud: under his tongue is mischief and vanity.
 10:8: He sits in the lurking places of the villages: in the secret places does he murder the innocent: his eyes are privily set against the poor.
-10:9: He lieth in wait secretly as a lion in his den: he lieth in wait to catch the poor: he does catch the poor, when he draweth him into his net.
+10:9: He lieth in wait secretly as a lion in his den: he lieth in wait to catch the poor: he does catch the poor, when he draws him into his net.
 10:10: He croucheth, and humbleth himself, that the poor may fall by his strong ones.
 10:11: He has said in his heart, GOD has forgotten: he hides his face; he will never see it.
 10:12: Arise, O LORD; O GOD, lift up yours hand: forget not the humble.
@@ -14183,11 +14183,11 @@ PSALMS
 18:45: The strangers shall fade away, and be afraid out of their close places.
 18:46: The LORD lives; and blessed be my rock; and let the GOD of my salvation be exalted.
 18:47: It is GOD that avengeth me, and subdueth the people under me.
-18:48: He delivereth me from mine enemies: yes, you liftest me up above those that rise up against me: you have delivered me from the violent man.
+18:48: He delivers me from mine enemies: yes, you liftest me up above those that rise up against me: you have delivered me from the violent man.
 18:49: Therefore will I give thanks to you, O LORD, among the heathen, and sing praises to your name.
-18:50: Great deliverance gives he to his king; and sheweth mercy to his anointed, to David, and to his seed for evermore.
-19:1: The heavens declare the glory of GOD; and the firmament sheweth his handywork.
-19:2: Day to day uttereth speech, and night to night sheweth knowledge.
+18:50: Great deliverance gives he to his king; and shows mercy to his anointed, to David, and to his seed for evermore.
+19:1: The heavens declare the glory of GOD; and the firmament shows his handywork.
+19:2: Day to day uttereth speech, and night to night shows knowledge.
 19:3: There is no speech nor language, where their voice is not heard.
 19:4: Their line is gone out through all the earth, and their words to the end of the world. In them has he set a tabernacle for the sun,
 19:5: Which is as a bridegroom coming out of his chamber, and rejoices as a strong man to run a race.
@@ -14412,7 +14412,7 @@ PSALMS
 34:4: I sought the LORD, and he heard me, and delivered me from all my fears.
 34:5: They looked to him, and were lightened: and their faces were not ashamed.
 34:6: This poor man cried, and the LORD heard him, and saved him out of all his troubles.
-34:7: The angel of the LORD encampeth round about them that fear him, and delivereth them.
+34:7: The angel of the LORD encamps round about them that fear him, and delivers them.
 34:8: O taste and see that the LORD is good: blessed is the man that trusteth in him.
 34:9: O fear the LORD, you his saints: for there is no want to them that fear him.
 34:10: The young lions do lack, and let hunger: but they that seek the LORD shall not want any good thing.
@@ -14422,9 +14422,9 @@ PSALMS
 34:14: Depart from evil, and do good; seek peace, and pursue it.
 34:15: The eyes of the LORD are upon the righteous, and his ears are open to their cry.
 34:16: The face of the LORD is against them that do evil, to cut off the remembrance of them from the earth.
-34:17: The righteous cry, and the LORD hears, and delivereth them out of all their troubles.
+34:17: The righteous cry, and the LORD hears, and delivers them out of all their troubles.
 34:18: The LORD is near to them that are of a broken heart; and saveth such as be of a contrite spirit.
-34:19: Many are the afflictions of the righteous: but the LORD delivereth him out of them all.
+34:19: Many are the afflictions of the righteous: but the LORD delivers him out of them all.
 34:20: He keeps all his bones: not one of them is broken.
 34:21: Evil shall slay the wicked: and they that hate the righteous shall be desolate.
 34:22: The LORD redeemeth the soul of his servants: and none of them that trust in him shall be desolate.
@@ -14461,7 +14461,7 @@ PSALMS
 36:3: The words of his mouth are iniquity and deceit: he has left off to be wise, and to do good.
 36:4: He deviseth mischief upon his bed; he setteth himself in a way that is not good; he abhorreth not evil.
 36:5: your mercy, O LORD, is in the heavens; and your faithfulness reacheth to the clouds.
-36:6: your righteousness is like the great mountains; your judgments are a great deep: O LORD, you preservest man and beast.
+36:6: your righteousness is like the great mountains; your judgments are a great deep: O LORD, you preserve man and beast.
 36:7: How excellent is your lovingkindness, O GOD! therefore the children of men put their trust under the shadow of your wings.
 36:8: They shall be abundantly satisfied with the fatness of your house; and you shall make them drink of the river of your pleasures.
 36:9: For with you is the fountain of life: in your light shall we see light.
@@ -14488,7 +14488,7 @@ PSALMS
 37:18: The LORD knows the days of the upright: and their inheritance shall be for ever.
 37:19: They shall not be ashamed in the evil time: and in the days of famine they shall be satisfied.
 37:20: But the wicked shall perish, and the enemies of the LORD shall be as the fat of lambs: they shall consume; into smoke shall they consume away.
-37:21: The wicked borroweth, and payeth not again: but the righteous sheweth mercy, and gives.
+37:21: The wicked borroweth, and payeth not again: but the righteous shows mercy, and gives.
 37:22: For such as be blessed of him shall inherit the earth; and they that be cursed of him shall be cut off.
 37:23: The steps of a good man are ordered by the LORD: and he delighteth in his way.
 37:24: Though he fall, he shall not be utterly cast down: for the LORD upholdeth him with his hand.
@@ -14523,7 +14523,7 @@ PSALMS
 38:13: But I, as a deaf man, heard not; and I was as a dumb man that openeth not his mouth.
 38:14: Thus I was as a man that hears not, and in whose mouth are no reproofs.
 38:15: For in you, O LORD, do I hope: you will hear, O LORD my GOD.
-38:16: For I said, Hear me, lest otherwise they should rejoice over me: when my foot slippeth, they magnify themselves against me.
+38:16: For I said, Hear me, lest otherwise they should rejoice over me: when my foot slips, they magnify themselves against me.
 38:17: For I am ready to halt, and my sorrow is continually before me.
 38:18: For I will declare mine iniquity; I will be sorry for my sin.
 38:19: But mine enemies are lively, and they are strong: and they that hate me wrongfully are multiplied.
@@ -14741,7 +14741,7 @@ PSALMS
 53:2: GOD looked down from heaven upon the children of men, to see if there were any that did understand, that did seek GOD.
 53:3: Every one of them is gone back: they are altogether become filthy; there is none that does good, no, not one.
 53:4: Have the workers of iniquity no knowledge? who eat up my people as they eat bread: they have not called upon GOD.
-53:5: There were they in great fear, where no fear was: for GOD has scattered the bones of him that encampeth against you: you have put them to shame, because GOD has despised them.
+53:5: There were they in great fear, where no fear was: for GOD has scattered the bones of him that encamps against you: you have put them to shame, because GOD has despised them.
 53:6: Oh that the salvation of Israel were come out of Zion! When GOD brings back the captivity of his people, Jacob shall rejoice, and Israel shall be glad.
 54:1: Save me, O GOD, by your name, and judge me by your strength.
 54:2: Hear my prayer, O GOD; give ear to the words of my mouth.
@@ -14864,7 +14864,7 @@ PSALMS
 63:5: My soul shall be satisfied as with marrow and fatness; and my mouth shall praise you with joyful li
 63:6: When I remember you upon my bed, and meditate on you in the night watches.
 63:7: Because you have been my help, therefore in the shadow of your wings will I rejoice.
-63:8: My soul followeth hard after you: your right hand upholdeth me.
+63:8: My soul follows hard after you: your right hand upholdeth me.
 63:9: But those that seek my soul, to destroy it, shall go into the lower parts of the earth.
 63:10: They shall fall by the sword: they shall be a portion for foxes.
 63:11: But the king shall rejoice in GOD; every one that sweareth by him shall glory: but the mouth of them that speak lies shall be stopped.
@@ -15328,7 +15328,7 @@ PSALMS
 87:7: As well the singers as the players on instruments shall be there: all my springs are in you.
 88:1: O LORD GOD of my salvation, I have cried day and night before you:
 88:2: Let my prayer come before you: incline yours ear to my cry;
-88:3: For my soul is full of troubles: and my life draweth near to the grave.
+88:3: For my soul is full of troubles: and my life draws near to the grave.
 88:4: I am counted with them that go down into the pit: I am as a man that has no strength:
 88:5: Free among the dead, like the slain that lie in the grave, whom you rememberest no more: and they are cut off from your hand.
 88:6: you have laid me in the lowest pit, in darkness, in the deeps.
@@ -15400,8 +15400,8 @@ PSALMS
 90:2: Before the mountains were brought forth, or ever you hadst formed the earth and the world, even from everlasting to everlasting, you are GOD.
 90:3: you turnest man to destruction; and sayest, Return, you children of men.
 90:4: For a thousand years in your sight are but as yesterday when it is past, and as a watch in the night.
-90:5: you carriest them away as with a flood; they are as a sleep: in the morning they are like grass which groweth up.
-90:6: In the morning it flourisheth, and groweth up; in the evening it is cut down, and withereth.
+90:5: you carriest them away as with a flood; they are as a sleep: in the morning they are like grass which grows up.
+90:6: In the morning it flourisheth, and grows up; in the evening it is cut down, and withereth.
 90:7: For we are consumed by yours anger, and by your wrath are we troubled.
 90:8: you have set our iniquities before you, our secret sins in the light of your countenance.
 90:9: For all our days are passed away in your wrath: we spend our years as a tale that is told.
@@ -15466,7 +15466,7 @@ PSALMS
 94:15: But judgment shall return to righteousness: and all the upright in heart shall follow it.
 94:16: Who will rise up for me against the evildoers? or who will stand up for me against the workers of iniquity?
 94:17: Unless the LORD had been my help, my soul had almost lived in silence.
-94:18: When I said, My foot slippeth; your mercy, O LORD, held me up.
+94:18: When I said, My foot slips; your mercy, O LORD, held me up.
 94:19: In the multitude of my thoughts within me your comforts delight my soul.
 94:20: Shall the throne of iniquity have fellowship with you, which frameth mischief by a law?
 94:21: They gather themselves together against the soul of the righteous, and condemn the innocent blood.
@@ -15505,7 +15505,7 @@ PSALMS
 97:7: Confounded be all they that serve graven images, that boast themselves of idols: worship him, all you gods.
 97:8: Zion heard, and was glad; and the daughters of Judah rejoiced because of your judgments, O LORD.
 97:9: For you, LORD, are high above all the earth: you are exalted far above all gods.
-97:10: you that love the LORD, hate evil: he preserveth the souls of his saints; he delivereth them out of the hand of the wicked.
+97:10: you that love the LORD, hate evil: he preserveth the souls of his saints; he delivers them out of the hand of the wicked.
 97:11: Light is sown for the righteous, and gladness for the upright in heart.
 97:12: Rejoice in the LORD, you righteous; and give thanks at the remembrance of his holiness.
 98:1: O sing to the LORD a new song; for he has done marvellous things: his right hand, and his holy arm, has gotten him the victory.
@@ -15825,7 +15825,7 @@ PSALMS
 112:2: His seed shall be mighty upon earth: the generation of the upright shall be blessed.
 112:3: Wealth and riches shall be in his house: and his righteousness endureth for ever.
 112:4: to the upright there ariseth light in the darkness: he is gracious, and full of compassion, and righteous.
-112:5: A good man sheweth favour, and lendeth: he will guide his affairs with discretion.
+112:5: A good man shows favour, and lendeth: he will guide his affairs with discretion.
 112:6: Surely he shall not be moved for ever: the righteous shall be in everlasting remembrance.
 112:7: He shall not be afraid of evil tidings: his heart is fixed, trusting in the LORD.
 112:8: His heart is established, he shall not be afraid, until he see his desire upon his enemies.
@@ -16155,7 +16155,7 @@ PSALMS
 129:3: The plowers plowed upon my back: they made long their furrows.
 129:4: The LORD is righteous: he has cut asunder the cords of the wicked.
 129:5: Let them all be confounded and turned back that hate Zion.
-129:6: Let them be as the grass upon the housetops, which withereth afore it groweth up:
+129:6: Let them be as the grass upon the housetops, which withereth afore it grows up:
 129:7: with which the mower filleth not his hand; nor he that bindeth sheaves his bosom.
 129:8: Neither do they which go by say, The blessing of the LORD be upon you: we bless you in the name of the LORD.
 130:1: Out of the depths have I cried to you, O LORD.
@@ -16332,7 +16332,7 @@ PSALMS
 144:7: Send yours hand from above; rid me, and deliver me out of great waters, from the hand of strange children;
 144:8: Whose mouth speaks vanity, and their right hand is a right hand of falsehood.
 144:9: I will sing a new song to you, O GOD: upon a psaltery and an instrument of ten strings will I sing praises to you.
-144:10: It is he that gives salvation to kings: who delivereth David his servant from the hurtful sword.
+144:10: It is he that gives salvation to kings: who delivers David his servant from the hurtful sword.
 144:11: Rid me, and deliver me from the hand of strange children, whose mouth speaks vanity, and their right hand is a right hand of falsehood:
 144:12: That our sons may be as plants grown up in their youth; that our daughters may be as corner stones, polished after the similitude of a palace:
 144:13: That our garners may be full, affording all manner of store: that our sheep may bring forth thousands and ten thousands in our streets:
@@ -16387,7 +16387,7 @@ PSALMS
 147:16: He gives snow like wool: he scattereth the hoarfrost like ashes.
 147:17: He casteth forth his ice like morsels: who can stand before his cold?
 147:18: He sendeth out his WORD[JESUS], and melteth them: he causeth his wind to blow, and the waters flow.
-147:19: He sheweth his WORD[JESUS] to Jacob, his statutes and his judgments to Israel.
+147:19: He shows his WORD[JESUS] to Jacob, his statutes and his judgments to Israel.
 147:20: He has not dealt so with any nation: and as for his judgments, they have not known them. Praise you the LORD.
 148:1: Praise you the LORD. Praise you the LORD from the heavens: praise him in the heights.
 148:2: Praise you him, all his angels: praise you him, all his hosts.
@@ -16572,12 +16572,12 @@ PROVERBS
 6:11: So shall your poverty come as one that travelleth, and your want as an armed man.
 6:12: A naughty person, a wicked man, walks with a froward mouth.
 6:13: He winketh with his eyes, he speaks with his feet, he teacheth with his fingers;
-6:14: Frowardness is in his heart, he deviseth mischief continually; he soweth discord.
+6:14: Frowardness is in his heart, he deviseth mischief continually; he sows discord.
 6:15: Therefore shall his calamity come suddenly; suddenly shall he be broken without remedy.
 6:16: These six things does the LORD hate: yes, seven are an abomination to him:
 6:17: A proud look, a lying tongue, and hands that shed innocent blood,
 6:18: An heart that deviseth wicked imaginations, feet that be swift in running to mischief,
-6:19: A false witness that speaks lies, and he that soweth discord among brethren.
+6:19: A false witness that speaks lies, and he that sows discord among brethren.
 6:20: My son, keep your father's commandment, and forsake not the law of your mother:
 6:21: Bind them continually upon yours heart, and tie them about your neck.
 6:22: When you goest, it shall lead you; when you sleepest, it shall keep you; and when you awakest, it shall talk with you.
@@ -16676,7 +16676,7 @@ PROVERBS
 9:17: Stolen waters are sweet, and bread eaten in secret is pleasant.
 9:18: But he knows not that the dead are there; and that her guests are in the depths of hell.
 10:1: The proverbs of Solomon. A wise son makes a glad father: but a foolish son is the heaviness of his mother.
-10:2: Treasures of wickedness profit nothing: but righteousness delivereth from death.
+10:2: Treasures of wickedness profit nothing: but righteousness delivers from death.
 10:3: The LORD will not let the soul of the righteous to famish: but he casteth away the substance of the wicked.
 10:4: He becometh poor that dealeth with a slack hand: but the hand of the diligent makes rich.
 10:5: He that gathereth in summer is a wise son: but he that sleepeth in harvest is a son that causeth shame.
@@ -16696,7 +16696,7 @@ PROVERBS
 10:19: In the multitude of words there wanteth not sin: but he that refraineth his lips is wise.
 10:20: The tongue of the just is as choice silver: the heart of the wicked is little worth.
 10:21: The lips of the righteous feed many: but fools die for want of wisdom.
-10:22: The blessing of the LORD, it makes rich, and he addeth no sorrow with it.
+10:22: The blessing of the LORD, it makes rich, and he adds no sorrow with it.
 10:23: It is as sport to a fool to do mischief: but a man of understanding has wisdom.
 10:24: The fear of the wicked, it shall come upon him: but the desire of the righteous shall be granted.
 10:25: As the whirlwind passeth, so is the wicked no more: but the righteous is an everlasting foundation.
@@ -16710,7 +16710,7 @@ PROVERBS
 11:1: A false balance is abomination to the LORD: but a just weight is his delight.
 11:2: When pride comes, then comes shame: but with the lowly is wisdom.
 11:3: The integrity of the upright shall guide them: but the perverseness of transgressors shall destroy them.
-11:4: Riches profit not in the day of wrath: but righteousness delivereth from death.
+11:4: Riches profit not in the day of wrath: but righteousness delivers from death.
 11:5: The righteousness of the perfect shall direct his way: but the wicked shall fall by his own wickedness.
 11:6: The righteousness of the upright shall deliver them: but transgressors shall be taken in their own naughtiness.
 11:7: When a wicked man dieth, his expectation shall perish: and the hope of unjust men perisheth.
@@ -16724,7 +16724,7 @@ PROVERBS
 11:15: He that is surety for a stranger shall smart for it: and he that hateth suretiship is sure.
 11:16: A gracious woman retaineth honour: and strong men retain riches.
 11:17: The merciful man does good to his own soul: but he that is cruel troubleth his own flesh.
-11:18: The wicked worketh a deceitful work: but to him that soweth righteousness shall be a sure reward.
+11:18: The wicked worketh a deceitful work: but to him that sows righteousness shall be a sure reward.
 11:19: As righteousness tendeth to life: so he that pursueth evil pursueth it to his own death.
 11:20: They that are of a froward heart are abomination to the LORD: but such as are upright in their way are his delight.
 11:21: Though hand join in hand, the wicked shall not be unpunished: but the seed of the righteous shall be delivered.
@@ -16748,13 +16748,13 @@ PROVERBS
 12:8: A man shall be commended according to his wisdom: but he that is of a perverse heart shall be despised.
 12:9: He that is despised, and has a servant, is better than he that honoureth himself, and lacketh bread.
 12:10: A righteous man regardeth the life of his beast: but the tender mercies of the wicked are cruel.
-12:11: He that tilleth his land shall be satisfied with bread: but he that followeth vain persons is void of understanding.
+12:11: He that tilleth his land shall be satisfied with bread: but he that follows vain persons is void of understanding.
 12:12: The wicked desireth the net of evil men: but the root of the righteous yieldeth fruit.
 12:13: The wicked is snared by the transgression of his lips: but the just shall come out of trouble.
 12:14: A man shall be satisfied with good by the fruit of his mouth: and the recompence of a man's hands shall be rendered to him.
 12:15: The way of a fool is right in his own eyes: but he that hearkeneth to counsel is wise.
 12:16: A fool's wrath is presently known: but a prudent man covereth shame.
-12:17: He that speaks truth sheweth forth righteousness: but a false witness deceit.
+12:17: He that speaks truth shows forth righteousness: but a false witness deceit.
 12:18: There is that speaks like the piercings of a sword: but the tongue of the wise is health.
 12:19: The lip of truth shall be established for ever: but a lying tongue is but for a moment.
 12:20: Deceit is in the heart of them that imagine evil: but to the counsellers of peace is joy.
@@ -16771,7 +16771,7 @@ PROVERBS
 13:3: He that keeps his mouth keeps his life: but he that openeth wide his lips shall have destruction.
 13:4: The soul of the sluggard desireth, and has nothing: but the soul of the diligent shall be made fat.
 13:5: A righteous man hateth lying: but a wicked man is loathsome, and comes to shame.
-13:6: Righteousness keeps him that is upright in the way: but wickedness overthroweth the sinner.
+13:6: Righteousness keeps him that is upright in the way: but wickedness overthrows the sinner.
 13:7: There is that makes himself rich, yet has nothing: there is that makes himself poor, yet has great riches.
 13:8: The ransom of a man's life are his riches: but the poor hears not rebuke.
 13:9: The light of the righteous rejoices: but the lamp of the wicked shall be put out.
@@ -16815,7 +16815,7 @@ PROVERBS
 14:22: Do they not err that devise evil? but mercy and truth shall be to them that devise good.
 14:23: In all labour there is profit: but the talk of the lips tendeth only to penury.
 14:24: The crown of the wise is their riches: but the foolishness of fools is folly.
-14:25: A true witness delivereth souls: but a deceitful witness speaks lies.
+14:25: A true witness delivers souls: but a deceitful witness speaks lies.
 14:26: In the fear of the LORD is strong confidence: and his children shall have a place of refuge.
 14:27: The fear of the LORD is a fountain of life, to depart from the snares of death.
 14:28: In the multitude of people is the king's honour: but in the want of people is the destruction of the prince.
@@ -16834,7 +16834,7 @@ PROVERBS
 15:6: In the house of the righteous is much treasure: but in the revenues of the wicked is trouble.
 15:7: The lips of the wise disperse knowledge: but the heart of the foolish does not so.
 15:8: The sacrifice of the wicked is an abomination to the LORD: but the prayer of the upright is his delight.
-15:9: The way of the wicked is an abomination to the LORD: but he loves him that followeth after righteousness.
+15:9: The way of the wicked is an abomination to the LORD: but he loves him that follows after righteousness.
 15:10: Correction is grievous to him that forsaketh the way: and he that hateth reproof shall die.
 15:11: Hell and destruction are before the LORD: how much more then the hearts of the children of men?
 15:12: A scorner loves not one that reproveth him: neither will he go to the wise.
@@ -16881,12 +16881,12 @@ PROVERBS
 16:20: He that handleth a matter wisely shall find good: and whoever trusteth in the LORD, happy is he.
 16:21: The wise in heart shall be called prudent: and the sweetness of the lips increaseth learning.
 16:22: Understanding is a wellspring of life to him that has it: but the instruction of fools is folly.
-16:23: The heart of the wise teacheth his mouth, and addeth learning to his lips.
+16:23: The heart of the wise teacheth his mouth, and adds learning to his lips.
 16:24: Pleasant words are as an honeycomb, sweet to the soul, and health to the bones.
 16:25: There is a way that seemeth right to a man, but the end of it are the ways of death.
 16:26: He that laboureth laboureth for himself; for his mouth craveth it of him.
 16:27: An ungodly man diggeth up evil: and in his lips there is as a burning fire.
-16:28: A froward man soweth strife: and a whisperer separateth chief friends.
+16:28: A froward man sows strife: and a whisperer separateth chief friends.
 16:29: A violent man enticeth his neighbour, and leads him into the way that is not good.
 16:30: He shutteth his eyes to devise froward things: moving his lips he brings evil to pass.
 16:31: The hoary head is a crown of glory, if it be found in the way of righteousness.
@@ -17014,7 +17014,7 @@ PROVERBS
 21:9: It is better to dwell in a corner of the housetop, than with a brawling woman in a wide house.
 21:10: The soul of the wicked desireth evil: his neighbour findeth no favour in his eyes.
 21:11: When the scorner is punished, the simple is made wise: and when the wise is instructed, he receiveth knowledge.
-21:12: The righteous man wisely considereth the house of the wicked: but GOD overthroweth the wicked for their wickedness.
+21:12: The righteous man wisely considereth the house of the wicked: but GOD overthrows the wicked for their wickedness.
 21:13: whoever stoppeth his ears at the cry of the poor, he also shall cry himself, but shall not be heard.
 21:14: A gift in secret pacifieth anger: and a reward in the bosom strong wrath.
 21:15: It is joy to the just to do judgment: but destruction shall be to the workers of iniquity.
@@ -17023,7 +17023,7 @@ PROVERBS
 21:18: The wicked shall be a ransom for the righteous, and the transgressor for the upright.
 21:19: It is better to dwell in the wilderness, than with a contentious and an angry woman.
 21:20: There is treasure to be desired and oil in the dwelling of the wise; but a foolish man spendeth it up.
-21:21: He that followeth after righteousness and mercy findeth life, righteousness, and honour.
+21:21: He that follows after righteousness and mercy findeth life, righteousness, and honour.
 21:22: A wise man scaleth the city of the mighty, and casteth down the strength of the confidence of it.
 21:23: whoever keeps his mouth and his tongue keeps his soul from troubles.
 21:24: Proud and haughty scorner is his name, who dealeth in proud wrath.
@@ -17041,11 +17041,11 @@ PROVERBS
 22:5: Thorns and snares are in the way of the froward: he that does keep his soul shall be far from them.
 22:6: Train up a child in the way he should go: and when he is old, he will not depart from it.
 22:7: The rich ruleth over the poor, and the borrower is servant to the lender.
-22:8: He that soweth iniquity shall reap vanity: and the rod of his anger shall fail.
+22:8: He that sows iniquity shall reap vanity: and the rod of his anger shall fail.
 22:9: He that has a bountiful eye shall be blessed; for he gives of his bread to the poor.
 22:10: Cast out the scorner, and contention shall go out; yes, strife and reproach shall cease.
 22:11: He that loves pureness of heart, for the grace of his lips the king shall be his friend.
-22:12: The eyes of the LORD preserve knowledge, and he overthroweth the words of the transgressor.
+22:12: The eyes of the LORD preserve knowledge, and he overthrows the words of the transgressor.
 22:13: The slothful man says, There is a lion without, I shall be slain in the streets.
 22:14: The mouth of strange women is a deep pit: he that is abhorred of the LORD shall fall therein.
 22:15: Foolishness is bound in the heart of a child; but the rod of correction shall drive it far from him.
@@ -17212,7 +17212,7 @@ PROVERBS
 27:22: Though you should bray a fool in a mortar among wheat with a pestle, yet will not his foolishness depart from him.
 27:23: Be you diligent to know the state of your flocks, and look well to your herds.
 27:24: For riches are not for ever: and does the crown endure to every generation?
-27:25: The hay appeareth, and the tender grass sheweth itself, and herbs of the mountains are gathered.
+27:25: The hay appeareth, and the tender grass shows itself, and herbs of the mountains are gathered.
 27:26: The lambs are for your clothing, and the goats are the price of the field.
 27:27: And you shall have goats' milk enough for your food, for the food of your household, and for the maintenance for your maidens.
 28:1: The wicked flee when no man pursueth: but the righteous are bold as a lion.
@@ -17233,7 +17233,7 @@ PROVERBS
 28:16: The prince that wanteth understanding is also a great oppressor: but he that hateth covetousness shall prolong his days.
 28:17: A man that does violence to the blood of any person shall flee to the pit; let no man stay him.
 28:18: whoever walks uprightly shall be saved: but he that is perverse in his ways shall fall at once.
-28:19: He that tilleth his land shall have plenty of bread: but he that followeth after vain persons shall have poverty enough.
+28:19: He that tilleth his land shall have plenty of bread: but he that follows after vain persons shall have poverty enough.
 28:20: A faithful man shall abound with blessings: but he that makes haste to be rich shall not be innocent.
 28:21: To have respect of persons is not good: for for a piece of bread that man will transgress.
 28:22: He that hasteth to be rich has an evil eye, and considereth not that poverty shall come upon him.
@@ -17246,7 +17246,7 @@ PROVERBS
 29:1: He, that being often reproved hardeneth his neck, shall suddenly be destroyed, and that without remedy.
 29:2: When the righteous are in authority, the people rejoice: but when the wicked beareth rule, the people mourn.
 29:3: whoever loves wisdom rejoices his father: but he that keeps company with harlots spendeth his substance.
-29:4: The king by judgment establisheth the land: but he that receiveth gifts overthroweth it.
+29:4: The king by judgment establisheth the land: but he that receiveth gifts overthrows it.
 29:5: A man that flattereth his neighbour spreads a net for his feet.
 29:6: In the transgression of an evil man there is a snare: but the righteous does sing and rejoice.
 29:7: The righteous considereth the cause of the poor: but the wicked regardeth not to know it.
@@ -17326,7 +17326,7 @@ PROVERBS
 31:21: She is not afraid of the snow for her household: for all her household are clothed with scarlet.
 31:22: She makes herself coverings of tapestry; her clothing is silk and purple.
 31:23: Her husband is known in the gates, when he sits among the elders of the land.
-31:24: She makes fine linen, and selleth it; and delivereth girdles to the merchant.
+31:24: She makes fine linen, and selleth it; and delivers girdles to the merchant.
 31:25: Strength and honour are her clothing; and she shall rejoice in time to come.
 31:26: She openeth her mouth with wisdom; and in her tongue is the law of kindness.
 31:27: She looketh well to the ways of her household, and eats not the bread of idleness.
@@ -17496,7 +17496,7 @@ ECCLESIASTES
 8:16: When I applied mine heart to know wisdom, and to see the business that is done upon the earth: (for also there is that neither day nor night sees sleep with his eyes:)
 8:17: Then I beheld all the work of GOD, that a man cannot find out the work that is done under the sun: because though a man labour to seek it out, yet he shall not find it; yes further; though a wise man think to know it, yet shall he not be able to find it.
 9:1: For all this I considered in my heart even to declare all this, that the righteous, and the wise, and their works, are in the hand of GOD: no man knows either love or hatred by all that is before them.
-9:2: All things come alike to all: there is one event to the righteous, and to the wicked; to the good and to the clean, and to the unclean; to him that sacrificeth, and to him that sacrificeth not: as is the good, so is the sinner; and he that sweareth, as he that feareth an oath.
+9:2: All things come alike to all: there is one event to the righteous, and to the wicked; to the good and to the clean, and to the unclean; to him that sacrifices, and to him that sacrifices not: as is the good, so is the sinner; and he that sweareth, as he that feareth an oath.
 9:3: This is an evil among all things that are done under the sun, that there is one event to all: yes, also the heart of the sons of men is full of evil, and madness is in their heart while they live, and after that they go to the dead.
 9:4: For to him that is joined to all the living there is hope: for a living dog is better than a dead lion.
 9:5: For the living know that they shall die: but the dead know not any thing, neither have they any more a reward; for the memory of them is forgotten.
@@ -17698,7 +17698,7 @@ ISAIAH
 1:20: But if you refuse and rebel, you shall be devoured with the sword: for the mouth of the LORD has spoken it.
 1:21: How is the faithful city become an harlot! it was full of judgment; righteousness lodged in it; but now murderers.
 1:22: your silver is become dross, your wine mixed with water:
-1:23: your princes are rebellious, and companions of thieves: every one loves gifts, and followeth after rewards: they judge not the fatherless, neither does the cause of the widow come to them.
+1:23: your princes are rebellious, and companions of thieves: every one loves gifts, and follows after rewards: they judge not the fatherless, neither does the cause of the widow come to them.
 1:24: Therefore says the LORD, the LORD of hosts, the mighty One of Israel, Ah, I will ease me of mine adversaries, and avenge me of mine enemies:
 1:25: And I will turn my hand upon you, and purely purge away your dross, and take away all your tin:
 1:26: And I will restore your judges as at the first, and your counsellers as at the beginning: afterward you shall be called, The city of righteousness, the faithful city.
@@ -17715,7 +17715,7 @@ ISAIAH
 2:6: Therefore you have forsaken your people the house of Jacob, because they be replenished from the east, and are soothsayers like the Philistines, and they please themselves in the children of strangers.
 2:7: Their land also is full of silver and gold, neither is there any end of their treasures; their land is also full of horses, neither is there any end of their chariots:
 2:8: Their land also is full of idols; they worship the work of their own hands, that which their own fingers have made:
-2:9: And the mean man boweth down, and the great man humbleth himself: therefore forgive them not.
+2:9: And the mean man bows down, and the great man humbleth himself: therefore forgive them not.
 2:10: Enter into the rock, and hide you in the dust, for fear of the LORD, and for the glory of his majesty.
 2:11: The lofty looks of man shall be humbled, and the haughtiness of men shall be bowed down, and the LORD alone shall be exalted in that day.
 2:12: For the day of the LORD of hosts shall be upon every one that is proud and lofty, and upon every one that is lifted up; and he shall be brought low:
@@ -17990,7 +17990,7 @@ ISAIAH
 15:6: For the waters of Nimrim shall be desolate: for the hay is withered away, the grass faileth, there is no green thing.
 15:7: Therefore the abundance they have gotten, and that which they have laid up, shall they carry away to the brook of the willows.
 15:8: For the cry is gone round about the borders of Moab; the howling of it to Eglaim, and the howling of it to Beer-elim.
-15:9: For the waters of Dimon shall be full of blood: for I will bring more upon Dimon, lions upon him that escapeth of Moab, and upon the remnant of the land.
+15:9: For the waters of Dimon shall be full of blood: for I will bring more upon Dimon, lions upon him that escapes of Moab, and upon the remnant of the land.
 16:1: Send you the LAMB[JESUS] to the ruler of the land from Sela to the wilderness, to the mount of the daughter of Zion.
 16:2: For it shall be, that, as a wandering bird cast out of the nest, so the daughters of Moab shall be at the fords of Arnon.
 16:3: Take counsel, execute judgment; make your shadow as the night in the midst of the noonday; hide the outcasts; bewray not him that wandereth.
@@ -18021,7 +18021,7 @@ ISAIAH
 17:14: And look at eveningtide trouble; and before the morning he is not. This is the portion of them that spoil us, and the lot of them that rob us.
 18:1: Woe to the land shadowing with wings, which is beyond the rivers of Ethiopia:
 18:2: That sendeth ambassadors by the sea, even in vessels of bulrushes upon the waters, saying, Go, you swift messengers, to a nation scattered and peeled, to a people terrible from their beginning hitherto; a nation meted out and trodden down, whose land the rivers have spoiled!
-18:3: All you inhabitants of the world, and dwellers on the earth, see you, when he lifteth up an ensign on the mountains; and when he bloweth a trumpet, hear you.
+18:3: All you inhabitants of the world, and dwellers on the earth, see you, when he lifteth up an ensign on the mountains; and when he blows a trumpet, hear you.
 18:4: For so the LORD said to me, I will take my rest, and I will consider in my dwelling place like a clear heat upon herbs, and like a cloud of dew in the heat of harvest.
 18:5: For afore the harvest, when the bud is perfect, and the sour grape is ripening in the flower, he shall both cut off the sprigs with pruning hooks, and take away and cut down the branches.
 18:6: They shall be left together to the birds of the mountains, and to the beasts of the earth: and the birds shall summer upon them, and all the beasts of the earth shall winter upon them.
@@ -18168,7 +18168,7 @@ ISAIAH
 26:14: They are dead, they shall not live; they are deceased, they shall not rise: therefore have you visited and destroyed them, and made all their memory to perish.
 26:15: you have increased the nation, O LORD, you have increased the nation: you are glorified: you hadst removed it far to all the ends of the earth.
 26:16: LORD, in trouble have they visited you, they poured out a prayer when your chastening was upon them.
-26:17: Like as a woman with child, that draweth near the time of her delivery, is in pain, and crieth out in her pangs; so have we been in your sight, O LORD.
+26:17: Like as a woman with child, that draws near the time of her delivery, is in pain, and crieth out in her pangs; so have we been in your sight, O LORD.
 26:18: We have been with child, we have been in pain, we have as it were brought forth wind; we have not worked any deliverance in the earth; neither have the inhabitants of the world fallen.
 26:19: your dead men shall live, together with my dead body shall they arise. Awake and sing, you that dwell in dust: for your dew is as the dew of herbs, and the earth shall cast out the dead.
 26:20: Come, my people, enter you into your chambers, and shut your doors about you: hide thyself as it were for a little moment, until the indignation be overpast.
@@ -18274,7 +18274,7 @@ ISAIAH
 30:33: For Tophet is ordained of old; yes, for the king it is prepared; he has made it deep and large: the pile of it is fire and much wood; the breath of the LORD, like a stream of brimstone, does kindle it.
 31:1: Woe to them that go down to Egypt for help; and stay on horses, and trust in chariots, because they are many; and in horsemen, because they are very strong; but they look not to the Holy One of Israel, neither seek the LORD!
 31:2: Yet he also is wise, and will bring evil, and will not call back his words: but will arise against the house of the evildoers, and against the help of them that work iniquity.
-31:3: Now the Egyptians are men, and not GOD; and their horses flesh, and not spirit. When the LORD shall stretch out his hand, both he that helpeth shall fall, and he that is helped shall fall down, and they all shall fail together.
+31:3: Now the Egyptians are men, and not GOD; and their horses flesh, and not spirit. When the LORD shall stretch out his hand, both he that helps shall fall, and he that is helped shall fall down, and they all shall fail together.
 31:4: For thus has the LORD spoken to me, Like as the lion and the young lion roaring on his prey, when a multitude of shepherds is called forth against him, he will not be afraid of their voice, nor abase himself for the noise of them: so shall the LORD of hosts come down to fight for mount Zion, and for the hill of it.
 31:5: As birds flying, so will the LORD of hosts defend Jerusalem; defending also he will deliver it; and passing over he will preserve it.
 31:6: Turn you to him from whom the children of Israel have deeply revolted.
@@ -18403,7 +18403,7 @@ ISAIAH
 37:27: Therefore their inhabitants were of small power, they were dismayed and confounded: they were as the grass of the field, and as the green herb, as the grass on the housetops, and as corn blasted before it be grown up.
 37:28: But I know your abode, and your going out, and your coming in, and your rage against me.
 37:29: Because your rage against me, and your tumult, is come up into mine ears, therefore will I put my hook in your nose, and my bridle in your lips, and I will turn you back by the way by which you camest.
-37:30: And this shall be a sign to you, you shall eat this year such as groweth of itself; and the second year that which springeth of the same: and in the third year sow you, and reap, and plant vineyards, and eat the fruit of it.
+37:30: And this shall be a sign to you, you shall eat this year such as grows of itself; and the second year that which springeth of the same: and in the third year sow you, and reap, and plant vineyards, and eat the fruit of it.
 37:31: And the remnant that is escaped of the house of Judah shall again take root downward, and bear fruit upward:
 37:32: For out of Jerusalem shall go forth a remnant, and they that escape out of mount Zion: the zeal of the LORD of hosts shall do this.
 37:33: Therefore thus says the LORD concerning the king of Assyria, He shall not come into this city, nor shoot an arrow there nor come before it with shields, nor cast a bank against it.
@@ -18448,7 +18448,7 @@ ISAIAH
 40:4: Every valley shall be exalted, and every mountain and hill shall be made low: and the crooked shall be made straight, and the rough places plain:
 40:5: And the glory of the LORD shall be revealed, and all flesh shall see it together: for the mouth of the LORD has spoken it.
 40:6: The voice said, Cry. And he said, What shall I cry? All flesh is grass, and all the goodliness of it is as the flower of the field:
-40:7: The grass withereth, the flower fades: because the spirit of the LORD bloweth upon it: surely the people is grass.
+40:7: The grass withereth, the flower fades: because the spirit of the LORD blows upon it: surely the people is grass.
 40:8: The grass withereth, the flower fades: but the WORD[JESUS] of our GOD shall stand for ever.
 40:9: O Zion, that bringest good tidings, get you up into the high mountain; O Jerusalem, that bringest good tidings, lift up your voice with strength; lift it up, be not afraid; say to the cities of Judah, look your GOD!
 40:10: look, the LORD GOD will come with strong hand, and his arm shall rule for him: look, his reward is with him, and his work before him.
@@ -18498,7 +18498,7 @@ ISAIAH
 41:23: Shew the things that are to come hereafter, that we may know that you are gods: yes, do good, or do evil, that we may be dismayed, and look it together.
 41:24: look, you are of nothing, and your work of nought: an abomination is he that chooseth you.
 41:25: I have raised up one from the north, and he shall come: from the rising of the sun shall he call upon my name: and he shall come upon princes as upon morter, and as the potter treads clay.
-41:26: Who has declared from the beginning, that we may know? and beforetime, that we may say, He is righteous? yes, there is none that sheweth, yes, there is none that declareth, yes, there is none that hears your words.
+41:26: Who has declared from the beginning, that we may know? and beforetime, that we may say, He is righteous? yes, there is none that shows, yes, there is none that declareth, yes, there is none that hears your words.
 41:27: The first shall say to Zion, look, look them: and I will give to Jerusalem one that brings good tidings.
 41:28: For I beheld, and there was no man; even among them, and there was no counseller, that, when I asked of them, could answer a WORD[JESUS].
 41:29: look, they are all vanity; their works are nothing: their molten images are wind and confusion.
@@ -18523,7 +18523,7 @@ ISAIAH
 42:19: Who is blind, but my servant? or deaf, as my messenger that I sent? who is blind as he that is perfect, and blind as the LORD's servant?
 42:20: Seeing many things, but you observest not; opening the ears, but he hears not.
 42:21: The LORD is well pleased for his righteousness' sake; he will magnify the law, and make it honourable.
-42:22: But this is a people robbed and spoiled; they are all of them snared in holes, and they are hid in prison houses: they are for a prey, and none delivereth; for a spoil, and none says, Restore.
+42:22: But this is a people robbed and spoiled; they are all of them snared in holes, and they are hid in prison houses: they are for a prey, and none delivers; for a spoil, and none says, Restore.
 42:23: Who among you will give ear to this? who will listen and hear for the time to come?
 42:24: Who gave Jacob for a spoil, and Israel to the robbers? did not the LORD, he against whom we have sinned? for they would not walk in his ways, neither were they obedient to his law.
 42:25: Therefore he has poured upon him the fury of his anger, and the strength of battle: and it has set him on fire round about, yet he knew not; and it burned him, yet he laid it not to heart.
@@ -18569,9 +18569,9 @@ ISAIAH
 44:12: The smith with the tongs both worketh in the coals, and fashioneth it with hammers, and worketh it with the strength of his arms: yes, he is hungry, and his strength faileth: he drinks no water, and is faint.
 44:13: The carpenter stretcheth out his rule; he marketh it out with a line; he fitteth it with planes, and he marketh it out with the compass, and makes it after the figure of a man, according to the beauty of a man; that it may remain in the house.
 44:14: He heweth him down cedars, and takes the cypress and the oak, which he strengtheneth for himself among the trees of the forest: he planteth an ash, and the rain does nourish it.
-44:15: Then shall it be for a man to burn: for he will take of it, and warm himself; yes, he kindleth it, and baketh bread; yes, he makes a god, and worshippeth it; he makes it a graven image, and falleth down thereto.
+44:15: Then shall it be for a man to burn: for he will take of it, and warm himself; yes, he kindleth it, and baketh bread; yes, he makes a god, and worships it; he makes it a graven image, and falleth down thereto.
 44:16: He burneth part of it in the fire; with part of it he eats flesh; he roasteth roast, and is satisfied: yes, he warmeth himself, and says, Aha, I am warm, I have seen the fire:
-44:17: And the residue of it he makes a god, even his graven image: he falleth down to it, and worshippeth it, and prayeth to it, and says, Deliver me; for you are my god.
+44:17: And the residue of it he makes a god, even his graven image: he falleth down to it, and worships it, and prayeth to it, and says, Deliver me; for you are my god.
 44:18: They have not known nor understood: for he has shut their eyes, that they cannot see; and their hearts, that they cannot understand.
 44:19: And none considereth in his heart, neither is there knowledge nor understanding to say, I have burned part of it in the fire; yes, also I have baked bread upon the coals of it; I have roasted flesh, and eaten it: and shall I make the residue of it an abomination? shall I fall down to the stock of a tree?
 44:20: He feeds on ashes: a deceived heart has turned him aside, that he cannot deliver his soul, nor say, Is there not a lie in my right hand?
@@ -18608,7 +18608,7 @@ ISAIAH
 45:23: I have sworn by myself, the WORD[JESUS] is gone out of my mouth in righteousness, and shall not return, That to me every knee shall bow, every tongue shall swear.
 45:24: Surely, shall one say, in the LORD have I righteousness and strength: even to him shall men come; and all that are incensed against him shall be ashamed.
 45:25: In the LORD shall all the seed of Israel be justified, and shall glory.
-46:1: Bel boweth down, Nebo stoopeth, their idols were upon the beasts, and upon the cattle: your carriages were heavy loaden; they are a burden to the weary beast.
+46:1: Bel bows down, Nebo stoopeth, their idols were upon the beasts, and upon the cattle: your carriages were heavy loaden; they are a burden to the weary beast.
 46:2: They stoop, they bow down together; they could not deliver the burden, but themselves are gone into captivity.
 46:3: listen to me, O house of Jacob, and all the remnant of the house of Israel, which are borne by me from the belly, which are carried from the womb:
 46:4: And even to your old age I am he; and even to hoar hairs will I carry you: I have made, and I will bear; even I will carry, and will deliver you.
@@ -18760,7 +18760,7 @@ ISAIAH
 54:13: And all your children shall be taught of the LORD; and great shall be the peace of your children.
 54:14: In righteousness shall you be established: you shall be far from oppression; for you shall not fear: and from terror; for it shall not come near you.
 54:15: look, they shall surely gather together, but not by me: whoever shall gather together against you shall fall for your sake.
-54:16: look, I have created the smith that bloweth the coals in the fire, and that brings forth an instrument for his work; and I have created the waster to destroy.
+54:16: look, I have created the smith that blows the coals in the fire, and that brings forth an instrument for his work; and I have created the waster to destroy.
 54:17: No weapon that is formed against you shall prosper; and every tongue that shall rise against you in judgment you shall condemn. This is the heritage of the servants of the LORD, and their righteousness is of me, says the LORD.
 55:1: Ho, every one that thirsteth, come you to the waters, and he that has no money; come you, buy, and eat; yes, come, buy wine and milk without money and without price.
 55:2: therefore do you spend money for that which is not bread? and your labour for that which satisfieth not? listen diligently to me, and eat you that which is good, and let your soul delight itself in fatness.
@@ -18921,7 +18921,7 @@ ISAIAH
 64:12: will you refrain thyself for these things, O LORD? will you hold your peace, and afflict us very sore?
 65:1: I am sought of them that asked not for me; I am found of them that sought me not: I said, look me, look me, to a nation that was not called by my name.
 65:2: I have spread out my hands all the day to a rebellious people, which walks in a way that was not good, after their own thoughts;
-65:3: A people that provoketh me to anger continually to my face; that sacrificeth in gardens, and burneth incense upon altars of brick;
+65:3: A people that provoketh me to anger continually to my face; that sacrifices in gardens, and burneth incense upon altars of brick;
 65:4: Which remain among the graves, and lodge in the monuments, which eat swine's flesh, and broth of abominable things is in their vessels;
 65:5: Which say, Stand by thyself, come not near to me; for I am holier than you. These are a smoke in my nose, a fire that burneth all the day.
 65:6: look, it is written before me: I will not keep silence, but will recompense, even recompense into their bosom,
@@ -18946,7 +18946,7 @@ ISAIAH
 65:25: The wolf and the LAMB[JESUS] shall feed together, and the lion shall eat straw like the bullock: and dust shall be the serpent's meat. They shall not hurt nor destroy in all my holy mountain, says the LORD.
 66:1: Thus says the LORD, The heaven is my throne, and the earth is my footstool: where is the house that you build to me? and where is the place of my rest?
 66:2: For all those things has mine hand made, and those things have been, says the LORD: but to this man will I look, even to him that is poor and of a contrite spirit, and trembleth at my WORD[JESUS].
-66:3: He that killeth an ox is as if he slew a man; he that sacrificeth a LAMB[JESUS], as if he cut off a dog's neck; he that offereth an oblation, as if he offered swine's blood; he that burneth incense, as if he blessed an idol. yes, they have chosen their own ways, and their soul delighteth in their abominations.
+66:3: He that killeth an ox is as if he slew a man; he that sacrifices a LAMB[JESUS], as if he cut off a dog's neck; he that offereth an oblation, as if he offered swine's blood; he that burneth incense, as if he blessed an idol. yes, they have chosen their own ways, and their soul delighteth in their abominations.
 66:4: I also will choose their delusions, and will bring their fears upon them; because when I called, none did answer; when I spoke, they did not hear: but they did evil before mine eyes, and chose that in which I delighted not.
 66:5: Hear the WORD[JESUS] of the LORD, you that tremble at his WORD[JESUS]; your brethren that hated you, that cast you out for my name's sake, said, Let the LORD be glorified: but he shall appear to your joy, and they shall be ashamed.
 66:6: A voice of noise from the city, a voice from the temple, a voice of the LORD that rendereth recompence to his enemies.
@@ -20121,7 +20121,7 @@ JEREMIAH
 48:16: The calamity of Moab is near to come, and his affliction hasteth fast.
 48:17: All you that are about him, bemoan him; and all you that know his name, say, How is the strong staff broken, and the beautiful rod!
 48:18: you daughter that dost inhabit Dibon, come down from your glory, and sit in thirst; for the spoiler of Moab shall come upon you, and he shall destroy your strong holds.
-48:19: O inhabitant of Aroer, stand by the way, and espy; ask him that fleeth, and her that escapeth, and say, What is done?
+48:19: O inhabitant of Aroer, stand by the way, and espy; ask him that fleeth, and her that escapes, and say, What is done?
 48:20: Moab is confounded; for it is broken down: howl and cry; and tell you it in Arnon, that Moab is spoiled,
 48:21: And judgment is come upon the plain country; upon Holon, and upon Jahazah, and upon Mephaath,
 48:22: And upon Dibon, and upon Nebo, and upon Beth-diblathaim,
@@ -20613,7 +20613,7 @@ EZEKIEL
 7:9: And mine eye shall not spare, neither will I have pity: I will recompense you according to your ways and yours abominations that are in the midst of you; and you shall know that I am the LORD that smiteth.
 7:10: look the day, look, it is come: the morning is gone forth; the rod has blossomed, pride has budded.
 7:11: Violence is risen up into a rod of wickedness: none of them shall remain, nor of their multitude, nor of any of theirs: neither shall there be wailing for them.
-7:12: The time is come, the day draweth near: let not the buyer rejoice, nor the seller mourn: for wrath is upon all the multitude of it.
+7:12: The time is come, the day draws near: let not the buyer rejoice, nor the seller mourn: for wrath is upon all the multitude of it.
 7:13: For the seller shall not return to that which is sold, although they were yet alive: for the vision is touching the whole multitude of it, which shall not return; neither shall any strengthen himself in the iniquity of his life.
 7:14: They have blown the trumpet, even to make all ready; but none goes to the battle: for my wrath is upon all the multitude of it.
 7:15: The sword is without, and the pestilence and the famine within: he that is in the field shall die with the sword; and he that is in the city, famine and pestilence shall devour him.
@@ -20820,7 +20820,7 @@ EZEKIEL
 16:31: In that you buildest yours eminent place in the head of every way, and makest yours high place in every street; and have not been as an harlot, in that you scornest hire;
 16:32: But as a wife that committeth adultery, which takes strangers instead of her husband!
 16:33: They give gifts to all whores: but you givest your gifts to all your lovers, and hirest them, that they may come to you on every side for your whoredom.
-16:34: And the contrary is in you from other women in your whoredoms, whereas none followeth you to commit whoredoms: and in that you givest a reward, and no reward is given to you, therefore you are contrary.
+16:34: And the contrary is in you from other women in your whoredoms, whereas none follows you to commit whoredoms: and in that you givest a reward, and no reward is given to you, therefore you are contrary.
 16:35: therefore, O harlot, hear the WORD[JESUS] of the LORD:
 16:36: Thus says the LORD GOD; Because your filthiness was poured out, and your nakedness discovered through your whoredoms with your lovers, and with all the idols of your abominations, and by the blood of your children, which you did give to them;
 16:37: look, therefore I will gather all your lovers, with whom you have taken pleasure, and all them that you have loved, with all them that you have hated; I will even gather them round about against you, and will discover your nakedness to them, that they may see all your nakedness.
@@ -21106,7 +21106,7 @@ EZEKIEL
 24:23: And your tires shall be upon your heads, and your shoes upon your feet: you shall not mourn nor weep; but you shall pine away for your iniquities, and mourn one toward another.
 24:24: Thus Ezekiel is to you a sign: according to all that he has done shall you do: and when this comes, you shall know that I am the LORD GOD.
 24:25: Also, you SON OF MAN[JESUS], shall it not be in the day when I take from them their strength, the joy of their glory, the desire of their eyes, and that whereupon they set their minds, their sons and their daughters,
-24:26: That he that escapeth in that day shall come to you, to cause you to hear it with yours ears?
+24:26: That he that escapes in that day shall come to you, to cause you to hear it with yours ears?
 24:27: In that day shall your mouth be opened to him which is escaped, and you shall speak, and be no more dumb: and you shall be a sign to them; and they shall know that I am the LORD.
 25:1: The WORD[JESUS] of the LORD came again to me, saying,
 25:2: SON OF MAN[JESUS], set your face against the Ammonites, and prophesy against them;
@@ -21838,12 +21838,12 @@ DANIEL
 3:3: Then the princes, the governors, and captains, the judges, the treasurers, the counsellers, the sheriffs, and all the rulers of the provinces, were gathered together to the dedication of the image that Nebuchadnezzar the king had set up; and they stood before the image that Nebuchadnezzar had set up.
 3:4: Then an herald cried aloud, To you it is commanded, O people, nations, and languages,
 3:5: That at what time you hear the sound of the cornet, flute, harp, sackbut, psaltery, dulcimer, and all kinds of musick, you fall down and worship the golden image that Nebuchadnezzar the king has set up:
-3:6: And whoever falleth not down and worshippeth shall the same hour be cast into the midst of a burning fiery furnace.
+3:6: And whoever falleth not down and worships shall the same hour be cast into the midst of a burning fiery furnace.
 3:7: Therefore at that time, when all the people heard the sound of the cornet, flute, harp, sackbut, psaltery, and all kinds of musick, all the people, the nations, and the languages, fell down and worshipped the golden image that Nebuchadnezzar the king had set up.
 3:8: therefore at that time certain Chaldeans came near, and accused the Jews.
 3:9: They spoke and said to the king Nebuchadnezzar, O king, live for ever.
 3:10: you, O king, have made a decree, that every man that shall hear the sound of the cornet, flute, harp, sackbut, psaltery, and dulcimer, and all kinds of musick, shall fall down and worship the golden image:
-3:11: And whoever falleth not down and worshippeth, that he should be cast into the midst of a burning fiery furnace.
+3:11: And whoever falleth not down and worships, that he should be cast into the midst of a burning fiery furnace.
 3:12: There are certain Jews whom you have set over the affairs of the province of Babylon, Shadrach, Meshach, and Abed-nego; these men, O king, have not regarded you: they serve not your gods, nor worship the golden image which you have set up.
 3:13: Then Nebuchadnezzar in his rage and fury commanded to bring Shadrach, Meshach, and Abed-nego. Then they brought these men before the king.
 3:14: Nebuchadnezzar spoke and said to them, Is it true, O Shadrach, Meshach, and Abed-nego, do not you serve my gods, nor worship the golden image which I have set up?
@@ -21957,7 +21957,7 @@ DANIEL
 6:24: And the king commanded, and they brought those men which had accused Daniel, and they cast them into the den of lions, them, their children, and their wives; and the lions had the mastery of them, and broke all their bones in pieces or ever they came at the bottom of the den.
 6:25: Then king Darius wrote to all people, nations, and languages, that dwell in all the earth; Peace be multiplied to you.
 6:26: I make a decree, That in every dominion of my kingdom men tremble and fear before the GOD of Daniel: for he is the living GOD, and stedfast for ever, and his kingdom that which shall not be destroyed, and his dominion shall be even to the end.
-6:27: He delivereth and rescueth, and he worketh signs and wonders in heaven and in earth, who has delivered Daniel from the power of the lions.
+6:27: He delivers and rescueth, and he worketh signs and wonders in heaven and in earth, who has delivered Daniel from the power of the lions.
 6:28: So this Daniel prospered in the reign of Darius, and in the reign of Cyrus the Persian.
 7:1: In the first year of Belshazzar king of Babylon Daniel had a dream and visions of his head upon his bed: then he wrote the dream, and told the sum of the matters.
 7:2: Daniel spoke and said, I saw in my vision by night, and, look, the four winds of the heaven strove upon the great sea.
@@ -22279,7 +22279,7 @@ HOSEA
 11:10: They shall walk after the LORD: he shall roar like a lion: when he shall roar, then the children shall tremble from the west.
 11:11: They shall tremble as a bird out of Egypt, and as a dove out of the land of Assyria: and I will place them in their houses, says the LORD.
 11:12: Ephraim compasseth me about with lies, and the house of Israel with deceit: but Judah yet ruleth with GOD, and is faithful with the saints.
-12:1: Ephraim feeds on wind, and followeth after the east wind: he daily increaseth lies and desolation; and they do make a covenant with the Assyrians, and oil is carried into Egypt.
+12:1: Ephraim feeds on wind, and follows after the east wind: he daily increaseth lies and desolation; and they do make a covenant with the Assyrians, and oil is carried into Egypt.
 12:2: The LORD has also a controversy with Judah, and will punish Jacob according to his ways; according to his doings will he recompense him.
 12:3: He took his brother by the heel in the womb, and by his strength he had power with GOD:
 12:4: yes, he had power over the angel, and prevailed: he wept, and made supplication to him: he found him in Bethel, and there he spoke with us;
@@ -22524,7 +22524,7 @@ AMOS
 8:12: And they shall wander from sea to sea, and from the north even to the east, they shall run to and fro to seek the WORD[JESUS] of the LORD, and shall not find it.
 8:13: In that day shall the fair virgins and young men faint for thirst.
 8:14: They that swear by the sin of Samaria, and say, your god, O Dan, lives; and, The manner of Beer-sheba lives; even they shall fall, and never rise up again.
-9:1: I saw the LORD standing upon the altar: and he said, Smite the lintel of the door, that the posts may shake: and cut them in the head, all of them; and I will slay the last of them with the sword: he that fleeth of them shall not flee away, and he that escapeth of them shall not be delivered.
+9:1: I saw the LORD standing upon the altar: and he said, Smite the lintel of the door, that the posts may shake: and cut them in the head, all of them; and I will slay the last of them with the sword: he that fleeth of them shall not flee away, and he that escapes of them shall not be delivered.
 9:2: Though they dig into hell, from there shall mine hand take them; though they climb up to heaven, from there will I bring them down:
 9:3: And though they hide themselves in the top of Carmel, I will search and take them out from there; and though they be hid from my sight in the bottom of the sea, from there will I command the serpent, and he shall bite them:
 9:4: And though they go into captivity before their enemies, from there will I command the sword, and it shall slay them: and I will set mine eyes upon them for evil, and not for good.
@@ -22536,7 +22536,7 @@ AMOS
 9:10: All the sinners of my people shall die by the sword, which say, The evil shall not overtake nor precede us.
 9:11: In that day will I raise up the tabernacle of David that is fallen, and close up the breaches of it; and I will raise up his ruins, and I will build it as in the days of old:
 9:12: That they may possess the remnant of Edom, and of all the heathen, which are called by my name, says the LORD that does this.
-9:13: look, the days come, says the LORD, that the plowman shall overtake the reaper, and the treader of grapes him that soweth seed; and the mountains shall drop sweet wine, and all the hills shall melt.
+9:13: look, the days come, says the LORD, that the plowman shall overtake the reaper, and the treader of grapes him that sows seed; and the mountains shall drop sweet wine, and all the hills shall melt.
 9:14: And I will bring again the captivity of my people of Israel, and they shall build the waste cities, and inhabit them; and they shall plant vineyards, and drink the wine of it; they shall also make gardens, and eat the fruit of them.
 9:15: And I will plant them upon their land, and they shall no more be pulled up out of their land which I have given them, says the LORD your GOD.
 OBADIAH
@@ -23140,7 +23140,7 @@ MALACHI
 1:11: For from the rising of the sun even to the going down of the same my name shall be great among the Gentiles; and in every place incense shall be offered to my name, and a pure offering: for my name shall be great among the heathen, says the LORD of hosts.
 1:12: But you have profaned it, in that you say, The table of the LORD is polluted; and the fruit of it, even his meat, is contemptible.
 1:13: you said also, look, what a weariness is it! and you have snuffed at it, says the LORD of hosts; and you brought that which was torn, and the lame, and the sick; thus you brought an offering: should I accept this of your hand? says the LORD.
-1:14: But cursed be the deceiver, which has in his flock a male, and voweth, and sacrificeth to the LORD a corrupt thing: for I am a great King, says the LORD of hosts, and my name is dreadful among the heathen.
+1:14: But cursed be the deceiver, which has in his flock a male, and vows, and sacrifices to the LORD a corrupt thing: for I am a great King, says the LORD of hosts, and my name is dreadful among the heathen.
 2:1: And now, O you priests, this commandment is for you.
 2:2: If you will not hear, and if you will not lay it to heart, to give glory to my name, says the LORD of hosts, I will even send a curse upon you, and I will curse your blessings: yes, I have cursed them already, because you do not lay it to heart.
 2:3: look, I will corrupt your seed, and spread dung upon your faces, even the dung of your solemn feasts; and one shall take you away with it.
@@ -23255,7 +23255,7 @@ MATTHEW
 4:5: Then the devil takes him up into the holy city, and setteth him on a pinnacle of the temple,
 4:6: And says to him, If you be the SON OF GOD[JESUS], cast thyself down: for it is written, He shall give his angels charge concerning you: and in their hands they shall bear you up, lest at any time you dash your foot against a stone.
 4:7: JESUS said to him, It is written again, you shall not tempt the LORD your GOD.
-4:8: Again, the devil takes him up into an exceeding high mountain, and sheweth him all the kingdoms of the world, and the glory of them;
+4:8: Again, the devil takes him up into an exceeding high mountain, and shows him all the kingdoms of the world, and the glory of them;
 4:9: And says to him, All these things will I give you, if you will fall down and worship me.
 4:10: Then says JESUS to him, Get you hence, Satan: for it is written, you shall worship the LORD your GOD, and him only shall you serve.
 4:11: Then the devil leaveth him, and, look, angels came and ministered to him.
@@ -23493,7 +23493,7 @@ MATTHEW
 10:35: For I am come to set a man at variance against his father, and the daughter against her mother, and the daughter in law against her mother in law.
 10:36: And a man's foes shall be they of his own household.
 10:37: He that loves father or mother more than me is not worthy of me: and he that loves son or daughter more than me is not worthy of me.
-10:38: And he that takes not his cross, and followeth after me, is not worthy of me.
+10:38: And he that takes not his cross, and follows after me, is not worthy of me.
 10:39: He that findeth his life shall lose it: and he that loseth his life for my sake shall find it.
 10:40: He that receiveth you receiveth me, and he that receiveth me receiveth him that sent me.
 10:41: He that receiveth a prophet in the name of a prophet shall receive a prophet's reward; and he that receiveth a righteous man in the name of a righteous man shall receive a righteous man's reward.
@@ -23614,7 +23614,7 @@ MATTHEW
 13:34: All these things spoke JESUS to the multitude in parables; and without a parable spoke he not to them:
 13:35: That it might be fulfilled which was spoken by the prophet, saying, I will open my mouth in parables; I will utter things which have been kept secret from the foundation of the world.
 13:36: Then JESUS sent the multitude away, and went into the house: and his disciples came to him, saying, Declare to us the parable of the tares of the field.
-13:37: He answered and said to them, He that soweth the good seed is the SON OF MAN[JESUS];
+13:37: He answered and said to them, He that sows the good seed is the SON OF MAN[JESUS];
 13:38: The field is the world; the good seed are the children of the kingdom; but the tares are the children of the wicked one;
 13:39: The enemy that sowed them is the devil; the harvest is the end of the world; and the reapers are the angels.
 13:40: As therefore the tares are gathered and burned in the fire; so shall it be in the end of this world.
@@ -23679,7 +23679,7 @@ MATTHEW
 15:5: But you say, whoever shall say to his father or his mother, It is a gift, by whatsoever you mightest be profited by me;
 15:6: And honour not his father or his mother, he shall be free. Thus have you made the commandment of GOD of none effect by your tradition.
 15:7: you hypocrites, well did Esaias prophesy of you, saying,
-15:8: This people draweth near to me with their mouth, and honoureth me with their lips; but their heart is far from me.
+15:8: This people draws near to me with their mouth, and honoureth me with their lips; but their heart is far from me.
 15:9: But in vain they do worship me, teaching for doctrines the commandments of men.
 15:10: And he called the multitude, and said to them, Hear, and understand:
 15:11: Not that which goes into the mouth defileth a man; but that which comes out of the mouth, this defileth a man.
@@ -24376,7 +24376,7 @@ MARK
 4:11: And he said to them, to you it is given to know the mystery of the kingdom of GOD: but to them that are without, all these things are done in parables:
 4:12: That seeing they may see, and not perceive; and hearing they may hear, and not understand; lest at any time they should be converted, and their sins should be forgiven them.
 4:13: And he said to them, Know you not this parable? and how then will you know all parables?
-4:14: The sower soweth the WORD[JESUS].
+4:14: The sower sows the WORD[JESUS].
 4:15: And these are they by the way side, where the WORD[JESUS] is sown; but when they have heard, Satan comes immediately, and takes away the WORD[JESUS] that was sown in their hearts.
 4:16: And these are they likewise which are sown on stony ground; who, when they have heard the WORD[JESUS], immediately receive it with gladness;
 4:17: And have no root in themselves, and so endure but for a time: afterward, when affliction or persecution ariseth for the WORD[JESUS]'s sake, immediately they are offended.
@@ -24394,7 +24394,7 @@ MARK
 4:29: But when the fruit is brought forth, immediately he putteth in the sickle, because the harvest is come.
 4:30: And he said, to which shall we liken the kingdom of GOD? or with what comparison shall we compare it?
 4:31: It is like a grain of mustard seed, which, when it is sown in the earth, is less than all the seeds that be in the earth:
-4:32: But when it is sown, it groweth up, and becometh greater than all herbs, and shooteth out great branches; so that the birds of the air may lodge under the shadow of it.
+4:32: But when it is sown, it grows up, and becometh greater than all herbs, and shooteth out great branches; so that the birds of the air may lodge under the shadow of it.
 4:33: And with many such parables spoke he the WORD[JESUS] to them, as they were able to hear it.
 4:34: But without a parable spoke he not to them: and when they were alone, he expounded all things to his disciples.
 4:35: And the same day, when the even was come, he says to them, Let us pass over to the other side.
@@ -24615,7 +24615,7 @@ MARK
 9:35: And he sat down, and called the twelve, and says to them, If any man desire to be first, the same shall be last of all, and servant of all.
 9:36: And he took a child, and set him in the midst of them: and when he had taken him in his arms, he said to them,
 9:37: whoever shall receive one of such children in my name, receiveth me: and whoever shall receive me, receiveth not me, but him that sent me.
-9:38: And John answered him, saying, Master, we saw one casting out devils in your name, and he followeth not us: and we forbad him, because he followeth not us.
+9:38: And John answered him, saying, Master, we saw one casting out devils in your name, and he follows not us: and we forbad him, because he follows not us.
 9:39: But JESUS said, Forbid him not: for there is no man which shall do a miracle in my name, that can lightly speak evil of me.
 9:40: For he that is not against us is on our part.
 9:41: For whoever shall give you a cup of water to drink in my name, because you belong to CHRIST[JESUS], truly I say to you, he shall not lose his reward.
@@ -25390,7 +25390,7 @@ LUKE
 9:46: Then there arose a reasoning among them, which of them should be greatest.
 9:47: And JESUS, perceiving the thought of their heart, took a child, and set him by him,
 9:48: And said to them, whoever shall receive this child in my name receiveth me: and whoever shall receive me receiveth him that sent me: for he that is least among you all, the same shall be great.
-9:49: And John answered and said, Master, we saw one casting out devils in your name; and we forbad him, because he followeth not with us.
+9:49: And John answered and said, Master, we saw one casting out devils in your name; and we forbad him, because he follows not with us.
 9:50: And JESUS said to him, Forbid him not: for he that is not against us is for us.
 9:51: And it came to pass, when the time was come that he should be received up, he stedfastly set his face to go to Jerusalem,
 9:52: And sent messengers before his face: and they went, and entered into a village of the Samaritans, to make ready for him.
@@ -25874,7 +25874,7 @@ LUKE
 21:5: And as some spoke of the temple, how it was adorned with goodly stones and gifts, he said,
 21:6: As for these things which you look, the days will come, in the which there shall not be left one stone upon another, that shall not be thrown down.
 21:7: And they asked him, saying, Master, but when shall these things be? and what sign will there be when these things shall come to pass?
-21:8: And he said, Take heed that you be not deceived: for many shall come in my name, saying, I am CHRIST[JESUS]; and the time draweth near: go you not therefore after them.
+21:8: And he said, Take heed that you be not deceived: for many shall come in my name, saying, I am CHRIST[JESUS]; and the time draws near: go you not therefore after them.
 21:9: But when you shall hear of wars and commotions, be not terrified: for these things must first come to pass; but the end is not by and by.
 21:10: Then said he to them, Nation shall rise against nation, and kingdom against kingdom:
 21:11: And great earthquakes shall be in divers places, and famines, and pestilences; and fearful sights and great signs shall there be from heaven.
@@ -25894,7 +25894,7 @@ LUKE
 21:25: And there shall be signs in the sun, and in the moon, and in the stars; and upon the earth distress of nations, with perplexity; the sea and the waves roaring;
 21:26: Men's hearts failing them for fear, and for looking after those things which are coming on the earth: for the powers of heaven shall be shaken.
 21:27: And then shall they see the SON OF MAN[JESUS] coming in a cloud with power and great glory.
-21:28: And when these things begin to come to pass, then look up, and lift up your heads; for your redemption draweth near.
+21:28: And when these things begin to come to pass, then look up, and lift up your heads; for your redemption draws near.
 21:29: And he spoke to them a parable; look the fig tree, and all the trees;
 21:30: When they now shoot forth, you see and know of your own selves that summer is now near at hand.
 21:31: So likewise you, when you see these things come to pass, know you that the kingdom of GOD is near at hand.
@@ -26169,7 +26169,7 @@ JOHN
 3:5: JESUS answered, truly, truly, I say to you, Except a man be born of water and of the Spirit, he cannot enter into the kingdom of GOD.
 3:6: That which is born of the flesh is flesh; and that which is born of the Spirit is spirit.
 3:7: Marvel not that I said to you, you must be born again.
-3:8: The wind bloweth where it listeth, and you hearest the sound of it, but can not tell from where it comes, and where it goes: so is every one that is born of the Spirit.
+3:8: The wind blows where it listeth, and you hearest the sound of it, but can not tell from where it comes, and where it goes: so is every one that is born of the Spirit.
 3:9: Nicodemus answered and said to him, How can these things be?
 3:10: JESUS answered and said to him, are you a master of Israel, and know not these things?
 3:11: truly, truly, I say to you, We speak that we do know, and testify that we have seen; and you receive not our witness.
@@ -26233,8 +26233,8 @@ JOHN
 4:33: Therefore said the disciples one to another, has any man brought him ought to eat?
 4:34: JESUS says to them, My meat is to do the will of him that sent me, and to finish his work.
 4:35: Say not you, There are yet four months, and then comes harvest? look, I say to you, Lift up your eyes, and look on the fields; for they are white already to harvest.
-4:36: And he that reapeth receiveth wages, and gathereth fruit to life eternal: that both he that soweth and he that reapeth may rejoice together.
-4:37: And herein is that saying true, One soweth, and another reapeth.
+4:36: And he that reapeth receiveth wages, and gathereth fruit to life eternal: that both he that sows and he that reapeth may rejoice together.
+4:37: And herein is that saying true, One sows, and another reapeth.
 4:38: I sent you to reap that whereon you bestowed no labour: other men laboured, and you are entered into their labours.
 4:39: And many of the Samaritans of that city believed on him for the saying of the woman, which testified, He told me all that ever I did.
 4:40: So when the Samaritans were come to him, they besought him that he would tarry with them: and he abode there two days.
@@ -26271,7 +26271,7 @@ JOHN
 5:17: But JESUS answered them, My Father worketh hitherto, and I work.
 5:18: Therefore the Jews sought the more to kill him, because he not only had broken the sabbath, but said also that GOD was his Father, making himself equal with GOD.
 5:19: Then answered JESUS and said to them, truly, truly, I say to you, The Son can do nothing of himself, but what he sees the Father do: for what things soever he does, these also does the Son likewise.
-5:20: For the Father loves the Son, and sheweth him all things that himself does: and he will shew him greater works than these, that you may marvel.
+5:20: For the Father loves the Son, and shows him all things that himself does: and he will shew him greater works than these, that you may marvel.
 5:21: For as the Father raiseth up the dead, and quickeneth them; even so the Son quickeneth whom he will.
 5:22: For the Father judgeth no man, but has committed all judgment to the Son:
 5:23: That all men should honour the Son, even as they honour the Father. He that honoureth not the Son honoureth not the Father which has sent him.
@@ -26434,7 +26434,7 @@ JOHN
 8:9: And they which heard it, being convicted by their own conscience, went out one by one, beginning at the eldest, even to the last: and JESUS was left alone, and the woman standing in the midst.
 8:10: When JESUS had lifted up himself, and saw none but the woman, he said to her, Woman, where are those yours accusers? has no man condemned you?
 8:11: She said, No man, LORD. And JESUS said to her, Neither do I condemn you: go, and sin no more.
-8:12: Then spoke JESUS again to them, saying, I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.
+8:12: Then spoke JESUS again to them, saying, I am the light of the world: he that follows me shall not walk in darkness, but shall have the light of life.
 8:13: The Pharisees therefore said to him, you bearest record of thyself; your record is not true.
 8:14: JESUS answered and said to them, Though I bear record of myself, yet my record is true: for I know from where I came, and where I go; but you cannot tell from where I come, and where I go.
 8:15: you judge after the flesh; I judge no man.
@@ -27654,7 +27654,7 @@ ACTS
 19:24: For a certain man named Demetrius, a silversmith, which made silver shrines for Diana, brought no small gain to the craftsmen;
 19:25: Whom he called together with the workmen of like occupation, and said, Sirs, you know that by this craft we have our wealth.
 19:26: Moreover you see and hear, that not alone at Ephesus, but almost throughout all Asia, this Paul has persuaded and turned away much people, saying that they be no gods, which are made with hands:
-19:27: So that not only this our craft is in danger to be set at nought; but also that the temple of the great goddess Diana should be despised, and her magnificence should be destroyed, whom all Asia and the world worshippeth.
+19:27: So that not only this our craft is in danger to be set at nought; but also that the temple of the great goddess Diana should be despised, and her magnificence should be destroyed, whom all Asia and the world worships.
 19:28: And when they heard these sayings, they were full of wrath, and cried out, saying, Great is Diana of the Ephesians.
 19:29: And the whole city was filled with confusion: and having caught Gaius and Aristarchus, men of Macedonia, Paul's companions in travel, they rushed with one accord into the theatre.
 19:30: And when Paul would have entered in to the people, the disciples suffered him not.
@@ -28185,7 +28185,7 @@ ROMANS
 8:23: And not only they, but ourselves also, which have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption, to wit, the redemption of our body.
 8:24: For we are saved by hope: but hope that is seen is not hope: for what a man sees, why does he yet hope for?
 8:25: But if we hope for that we see not, then do we with patience wait for it.
-8:26: Likewise the Spirit also helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself makes intercession for us with groanings which cannot be uttered.
+8:26: Likewise the Spirit also helps our infirmities: for we know not what we should pray for as we ought: but the Spirit itself makes intercession for us with groanings which cannot be uttered.
 8:27: And he that searcheth the hearts knows what is the mind of the Spirit, because he makes intercession for the saints according to the will of GOD.
 8:28: And we know that all things work together for good to them that love GOD, to them who are the called according to his purpose.
 8:29: For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he might be the firstborn among many brethren.
@@ -28214,7 +28214,7 @@ ROMANS
 9:13: As it is written, Jacob have I loved, but Esau have I hated.
 9:14: What shall we say then? Is there unrighteousness with GOD? GOD forbid.
 9:15: For he says to Moses, I will have mercy on whom I will have mercy, and I will have compassion on whom I will have compassion.
-9:16: So then it is not of him that willeth, nor of him that runs, but of GOD that sheweth mercy.
+9:16: So then it is not of him that willeth, nor of him that runs, but of GOD that shows mercy.
 9:17: For the scripture says to Pharaoh, Even for this same purpose have I raised you up, that I might shew my power in you, and that my name might be declared throughout all the earth.
 9:18: Therefore has he mercy on whom he will have mercy, and whom he will he hardeneth.
 9:19: you will say then to me, Why does he yet find fault? For who has resisted his will?
@@ -28296,7 +28296,7 @@ ROMANS
 12:5: So we, being many, are one body in CHRIST[JESUS], and every one members one of another.
 12:6: Having then gifts differing according to the grace that is given to us, whether prophecy, let us prophesy according to the proportion of faith;
 12:7: Or ministry, let us wait on our ministering: or he that teacheth, on teaching;
-12:8: Or he that exhorteth, on exhortation: he that gives, let him do it with simplicity; he that ruleth, with diligence; he that sheweth mercy, with cheerfulness.
+12:8: Or he that exhorteth, on exhortation: he that gives, let him do it with simplicity; he that ruleth, with diligence; he that shows mercy, with cheerfulness.
 12:9: Let love be without dissimulation. Abhor that which is evil; cleave to that which is good.
 12:10: Be kindly affectioned one to another with brotherly love; in honour preferring one another;
 12:11: Not slothful in business; fervent in spirit; serving the LORD;
@@ -28345,7 +28345,7 @@ ROMANS
 14:19: Let us therefore follow after the things which make for peace, and things with which one may edify another.
 14:20: For meat destroy not the work of GOD. All things indeed are pure; but it is evil for that man who eats with offence.
 14:21: It is good neither to eat flesh, nor to drink wine, nor any thing by which your brother stumbleth, or is offended, or is made weak.
-14:22: have you faith? have it to thyself before GOD. Happy is he that condemneth not himself in that thing which he alloweth.
+14:22: have you faith? have it to thyself before GOD. Happy is he that condemneth not himself in that thing which he allows.
 14:23: And he that doubteth is damned if he eat, because he eats not of faith: for whatsoever is not of faith is sin.
 15:1: We then that are strong ought to bear the infirmities of the weak, and not to please ourselves.
 15:2: Let every one of us please his neighbour for his good to edification.
@@ -28836,7 +28836,7 @@ ROMANS
 16:13: Watch you, stand fast in the faith, quit you like men, be strong.
 16:14: Let all your things be done with love.
 16:15: I beseech you, brethren, (you know the house of Stephanas, that it is the firstfruits of Achaia, and that they have addicted themselves to the ministry of the saints,)
-16:16: That you submit yourselves to such, and to every one that helpeth with us, and laboureth.
+16:16: That you submit yourselves to such, and to every one that helps with us, and laboureth.
 16:17: I am glad of the coming of Stephanas and Fortunatus and Achaicus: for that which was lacking on your part they have supplied.
 16:18: For they have refreshed my spirit and yours: therefore acknowledge you them that are such.
 16:19: The churches of Asia salute you. Aquila and Priscilla salute you much in the LORD, with the church that is in their house.
@@ -29007,7 +29007,7 @@ ROMANS
 9:3: Yet have I sent the brethren, lest our boasting of you should be in vain in this behalf; that, as I said, you may be ready:
 9:4: Lest haply if they of Macedonia come with me, and find you unprepared, we (that we say not, you) should be ashamed in this same confident boasting.
 9:5: Therefore I thought it necessary to exhort the brethren, that they would go before to you, and make up beforehand your bounty, of which you had notice before, that the same might be ready, as a matter of bounty, and not as of covetousness.
-9:6: But this I say, He which soweth sparingly shall reap also sparingly; and he which soweth bountifully shall reap also bountifully.
+9:6: But this I say, He which sows sparingly shall reap also sparingly; and he which sows bountifully shall reap also bountifully.
 9:7: Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for GOD loves a cheerful giver.
 9:8: And GOD is able to make all grace abound toward you; that you, always having all sufficiency in all things, may abound to every good work:
 9:9: (As it is written, He has dispersed abroad; he has given to the poor: his righteousness remaineth for ever.
@@ -29163,7 +29163,7 @@ GALATIANS
 3:12: And the law is not of faith: but, The man that does them shall live in them.
 3:13: CHRIST[JESUS] has redeemed us from the curse of the law, being made a curse for us: for it is written, Cursed is every one that hangeth on a tree:
 3:14: That the blessing of Abraham might come on the Gentiles through JESUS CHRIST; that we might receive the promise of the Spirit through faith.
-3:15: Brethren, I speak after the manner of men; Though it be but a man's covenant, yet if it be confirmed, no man disannulleth, or addeth thereto.
+3:15: Brethren, I speak after the manner of men; Though it be but a man's covenant, yet if it be confirmed, no man disannulleth, or adds thereto.
 3:16: Now to Abraham and his seed were the promises made. He says not, And to seeds, as of many; but as of one, And to your seed, which is CHRIST[JESUS].
 3:17: And this I say, that the covenant, that was confirmed before of GOD in CHRIST[JESUS], the law, which was four hundred and thirty years after, cannot disannul, that it should make the promise of none effect.
 3:18: For if the inheritance be of the law, it is no more of promise: but GOD gave it to Abraham by promise.
@@ -29241,8 +29241,8 @@ GALATIANS
 6:4: But let every man prove his own work, and then shall he have rejoicing in himself alone, and not in another.
 6:5: For every man shall bear his own burden.
 6:6: Let him that is taught in the WORD[JESUS] communicate to him that teacheth in all good things.
-6:7: Be not deceived; GOD is not mocked: for whatsoever a man soweth, that shall he also reap.
-6:8: For he that soweth to his flesh shall of the flesh reap corruption; but he that soweth to the Spirit shall of the Spirit reap life everlasting.
+6:7: Be not deceived; GOD is not mocked: for whatsoever a man sows, that shall he also reap.
+6:8: For he that sows to his flesh shall of the flesh reap corruption; but he that sows to the Spirit shall of the Spirit reap life everlasting.
 6:9: And let us not be weary in well doing: for in due season we shall reap, if we faint not.
 6:10: As we have therefore opportunity, let us do good to all men, especially to them who are of the household of faith.
 6:11: you see how large a letter I have written to you with mine own hand.
@@ -29297,7 +29297,7 @@ EPHESIANS
 2:18: For through him we both have access by one Spirit to the Father.
 2:19: Now therefore you are no more strangers and foreigners, but fellowcitizens with the saints, and of the household of GOD;
 2:20: And are built upon the foundation of the apostles and prophets, JESUS CHRIST himself being the chief corner stone;
-2:21: In whom all the building fitly framed together groweth to an holy temple in the LORD:
+2:21: In whom all the building fitly framed together grows to an holy temple in the LORD:
 2:22: In whom you also are built together for an habitation of GOD through the Spirit.
 3:1: For this cause I Paul, the prisoner of JESUS CHRIST for you Gentiles,
 3:2: If you have heard of the dispensation of the grace of GOD which is given me to you-ward:
@@ -29703,7 +29703,7 @@ COLOSSIANS
 2 THESSALONIANS
 1:1: Paul, and Silvanus, and Timotheus, to the church of the Thessalonians in GOD our Father and the LORD JESUS CHRIST:
 1:2: Grace to you, and peace, from GOD our Father and the LORD JESUS CHRIST.
-1:3: We are bound to thank GOD always for you, brethren, as it is meet, because that your faith groweth exceedingly, and the love of every one of you all toward each other aboundeth;
+1:3: We are bound to thank GOD always for you, brethren, as it is meet, because that your faith grows exceedingly, and the love of every one of you all toward each other aboundeth;
 1:4: So that we ourselves glory in you in the churches of GOD for your patience and faith in all your persecutions and tribulations that you endure:
 1:5: Which is a manifest token of the righteous judgment of GOD, that you may be counted worthy of the kingdom of GOD, for which you also let:
 1:6: Seeing it is a righteous thing with GOD to recompense tribulation to them that trouble you;
@@ -30419,7 +30419,7 @@ JAMES
 5:5: you have lived in pleasure on the earth, and been wanton; you have nourished your hearts, as in a day of slaughter.
 5:6: you have condemned and killed the just; and he does not resist you.
 5:7: Be patient therefore, brethren, to the coming of the LORD. look, the husbandman waiteth for the precious fruit of the earth, and has long patience for it, until he receive the early and latter rain.
-5:8: Be you also patient; stablish your hearts: for the coming of the LORD draweth near.
+5:8: Be you also patient; stablish your hearts: for the coming of the LORD draws near.
 5:9: Grudge not one against another, brethren, lest you be condemned: look, the judge stands before the door.
 5:10: Take, my brethren, the prophets, who have spoken in the name of the LORD, for an example of suffering affliction, and of patience.
 5:11: look, we count them happy which endure. you have heard of the patience of Job, and have seen the end of the LORD; that the LORD is very pitiful, and of tender mercy.
