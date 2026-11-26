@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jesus-Centric KJV</title>
   <style>
-    :root {
+    :root, [data-theme="dark"] {
       --bg: #0d0f12;
       --surface: #161a1f;
       --text: #e8e6e3;
@@ -15,6 +15,15 @@
       --red: #e74c3c;
       --font-size: 16px;
       --max-width: 900px;
+    }
+    [data-theme="light"] {
+      --bg: #f7f5f2;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b6560;
+      --accent: #8b6914;
+      --border: #e0dcd6;
+      --red: #c0392b;
     }
     * { box-sizing: border-box; }
     html, body { height: 100%; margin: 0; }
@@ -279,6 +288,7 @@
       <input type="search" id="search" placeholder="Search verses…" />
       <button class="ctrl" id="redToggle" title="Show only red-letter verses">Red only</button>
       <button class="ctrl" id="colorCycle" title="Cycle red color">Color</button>
+      <button class="ctrl" id="themeToggle" title="Toggle light/dark mode">Light</button>
       <div class="settings-row">
         <label>Size <input type="range" id="fontSize" min="14" max="22" value="16" style="width:70px"></label>
         <label>Width <input type="range" id="readWidth" min="600" max="1200" value="900" step="50" style="width:70px"></label>
@@ -315,6 +325,7 @@
     const suggestEl = document.getElementById("suggest");
     const redToggleEl = document.getElementById("redToggle");
     const colorCycleEl = document.getElementById("colorCycle");
+    const themeToggleEl = document.getElementById("themeToggle");
     const fontSizeEl = document.getElementById("fontSize");
     const readWidthEl = document.getElementById("readWidth");
     const backTopEl = document.getElementById("backTop");
@@ -658,6 +669,20 @@
     backTopEl.onclick = () => {
       versesEl.scrollTo({ top: 0, behavior: "smooth" });
     };
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      themeToggleEl.textContent = theme === "dark" ? "Light" : "Dark";
+      localStorage.setItem("kjv-theme", theme);
+    }
+
+    themeToggleEl.onclick = () => {
+      const current = document.documentElement.getAttribute("data-theme") || "dark";
+      applyTheme(current === "dark" ? "light" : "dark");
+    };
+
+    // Restore theme (default dark)
+    applyTheme(localStorage.getItem("kjv-theme") || "dark");
 
     async function load() {
       try {
