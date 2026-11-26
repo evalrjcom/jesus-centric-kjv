@@ -131,6 +131,19 @@ MODERNIZATION_RULES = [
     (re.compile(r"\bbade\b", re.I), "told"),
     (re.compile(r"\bcloke\b", re.I), "cloak"),
     (re.compile(r"\bholpen\b", re.I), "helped"),
+    # additional -eth / -est forms
+    (re.compile(r"\bsmotest\b", re.I), "struck"),
+    (re.compile(r"\bprophesieth\b", re.I), "prophesies"),
+    (re.compile(r"\bslayeth\b", re.I), "slays"),
+    (re.compile(r"\bproceedeth\b", re.I), "proceeds"),
+    (re.compile(r"\bfeedeth\b", re.I), "feeds"),
+    (re.compile(r"\bneedeth\b", re.I), "needs"),
+    (re.compile(r"\brideth\b", re.I), "rides"),
+    (re.compile(r"\bprovideth\b", re.I), "provides"),
+    (re.compile(r"\bhideth\b", re.I), "hides"),
+    (re.compile(r"\bdivideth\b", re.I), "divides"),
+    (re.compile(r"\bslideth\b", re.I), "slides"),
+    (re.compile(r"\bupbraideth\b", re.I), "reproaches"),
 ]
 
 LORD_GOD_PATTERN = re.compile(r"\b(Lord|LORD|God|GOD)\b")
