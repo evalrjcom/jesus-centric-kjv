@@ -155,3 +155,23 @@ def test_explicit_eth_verb_swaps():
     # names, ordinals and teeth are not verbs and stay as they are
     for word in ["Nazareth", "teeth", "twentieth", "Japheth", "BETH."]:
         assert jk.modernize_line(f"of {word} and") == f"of {word} and"
+
+
+def test_swaps_keep_capitalization():
+    assert jk.modernize_line("he said unto her") == "he said to her"                 # lowercase
+    assert jk.modernize_line("Unto the woman he said") == "To the woman he said"     # Title case
+    assert jk.modernize_line("Behold, thou hast driven me") == "Look, you have driven me"
+    assert jk.modernize_line("HOLINESS UNTO THE LORD") == "HOLINESS TO THE LORD"     # ALL CAPS
+    assert jk.modernize_line("THE LORD THY GOD") == "THE LORD YOUR GOD"
+    # multi-word targets: only the first letter is capitalized
+    assert jk.modernize_line("Thence they went") == "From there they went"
+    assert jk.modernize_line("And it came to pass, when") == "And it happened, when"
+    assert jk.modernize_line("Verily, verily, I say unto thee") == "Truly, truly, I say to you"
+    assert jk.match_case("O", "oh") == "Oh" and jk.match_case("lo", "look") == "look"
+
+
+def test_processed_verse_starts_capitalized():
+    lines = [jk.process_line(f"{v['chapter']}:{v['verse']}: " + jk.render_text(v["text"]))
+             for v in jk.load_pce()[0] if v["abbr"] in ("Ge", "Joh")]
+    starts = [l.split(": ", 1)[1][:1] for l in lines]
+    assert all(not c.islower() for c in starts)

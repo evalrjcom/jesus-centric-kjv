@@ -406,10 +406,23 @@ def make_pattern(word):
 # full run take many minutes.
 COMPILED_REPLACEMENTS = [(make_pattern(old), new) for old, new in SORTED_REPLACEMENTS]
 
+def match_case(found, target):
+    """Give `target` the capitalization of the matched KJV text `found`.
+    lowercase -> target as written; ALL CAPS (2+ letters) -> TARGET; otherwise (Title or mixed case)
+    -> target with only its first letter capitalized ("Unto" -> "To", "Thence" -> "From there")."""
+    letters = [c for c in found if c.isalpha()]
+    if not letters or found.islower():
+        return target
+    if len(letters) > 1 and found.isupper():
+        return target.upper()
+    if found[0].isupper():
+        return target[:1].upper() + target[1:]
+    return target
+
 def modernize_line(line):
-    # Pass 1: explicit replacements (longest first)
+    # Pass 1: explicit replacements (longest first), keeping the original word's capitalization
     for pattern, new in COMPILED_REPLACEMENTS:
-        line = pattern.sub(new, line)
+        line = pattern.sub(lambda m, new=new: match_case(m.group(0), new), line)
     # The general "-eth -> -s" pass was removed: it mangled words such as compasseth -> "compasss".
     # Only -eth words listed explicitly in REPLACEMENTS are modernized; all others keep the KJV form.
     return line
