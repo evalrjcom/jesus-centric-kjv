@@ -65,6 +65,7 @@ MODERNIZATION_RULES = [
     (re.compile(r"\bheareth\b", re.I), "hears"),
     (re.compile(r"\bkeepeth\b", re.I), "keeps"),
     (re.compile(r"\bsitteth\b", re.I), "sits"),
+    (re.compile(r"\bovercometh\b", re.I), "overcomes"),
     (re.compile(r"\bwalketh\b", re.I), "walks"),
     (re.compile(r"\bstandeth\b", re.I), "stands"),
     (re.compile(r"\babideth\b", re.I), "abides"),
