@@ -32,11 +32,15 @@ Options:
 - `--write-replacements-md [PATH]`: regenerate `REPLACEMENTS.md` from the swaps file and exit.
 
 ## Word swaps
-Lexical modernization rules live in `swaps.tsv`. Edit that file to add or remove a swap (one `old<TAB>new` pair per line), then regenerate the documentation table:
+Lexical modernization rules live in `swaps.tsv` (one `old<TAB>new` pair per line; `#` comments and blank lines are allowed). You can edit them locally or in the GitHub file editor.
+
+**Local:** edit `swaps.tsv`, regenerate the documentation table, then commit and push both files:
 
 ```bash
 python3 jesus_centric_kjv_processor.py --write-replacements-md
 ```
+
+**On GitHub:** edit only `swaps.tsv` in the browser and commit to `main`. CI regenerates `REPLACEMENTS.md` and the processed text, runs the tests, and commits any updates.
 
 Context rules that are not simple word pairs (currently the verb `art` → `are`) stay in the Python script. The full table and the `art` rule are in `REPLACEMENTS.md`. These swaps are kept in a separate file until a final Bible translation version is settled.
 
@@ -58,10 +62,11 @@ The processed text is served from the `/docs` folder.
 The site will be available at `https://evalrjcom.github.io/jesus-centric-kjv/`.
 
 The GitHub Action (`.github/workflows/process-kjv.yml`) automatically:
+- Regenerates `REPLACEMENTS.md` from `swaps.tsv`
 - Runs the tests
 - Reads the Pure Cambridge Edition text from `docs/TEXT-PCE.txt`
 - Runs the processor
-- Commits the updated `docs/jesus_centric_kjv_all66.txt` when the processor or `swaps.tsv` changes (or on manual workflow run)
+- Commits the updated `docs/jesus_centric_kjv_all66.txt` and `REPLACEMENTS.md` when they change (or on manual workflow run)
 - Comments on new/edited issues
 
 Trigger the workflow manually from the Actions tab if you want to regenerate the text immediately.

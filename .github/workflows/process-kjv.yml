@@ -40,6 +40,12 @@ jobs:
         with:
           python-version: '3.x'
 
+      # Keep REPLACEMENTS.md in sync before tests, so a browser-only edit of
+      # swaps.tsv still passes the sync test. On push / workflow_dispatch the
+      # later commit step writes the updated markdown back to main.
+      - name: Regenerate REPLACEMENTS.md
+        run: python3 jesus_centric_kjv_processor.py --write-replacements-md
+
       - name: Run tests
         run: |
           python3 -m pip install --quiet pytest
@@ -49,16 +55,16 @@ jobs:
       - name: Run processor
         run: python3 jesus_centric_kjv_processor.py --source docs/TEXT-PCE.txt docs/jesus_centric_kjv_all66.txt
 
-      - name: Commit processed text if changed
+      - name: Commit processed text and REPLACEMENTS.md if changed
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/jesus_centric_kjv_all66.txt
+          git add docs/jesus_centric_kjv_all66.txt REPLACEMENTS.md
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update processed Jesus-centric KJV text [skip ci]"
+            git commit -m "Update processed text and REPLACEMENTS.md [skip ci]"
             # Pull any concurrent commits before pushing
             git pull --rebase origin main || true
             git push
