@@ -191,7 +191,7 @@ REPLACEMENTS = {
     "thee": "you", "thou": "you", "thy": "your", "thine": "yours", "ye": "you",
     "thyself": "yourself",
     # modals / second person
-    "shalt": "shall", "hast": "have", "art": "are", "wilt": "will",
+    "shalt": "shall", "hast": "have", "wilt": "will",
     "didst": "did", "mayest": "may", "shouldest": "should", "wast": "were",
     "knowest": "know", "doest": "do", "canst": "can", "wouldest": "would",
     "livest": "live", "preservest": "preserve", "smotest": "struck",
@@ -204,7 +204,7 @@ REPLACEMENTS = {
     "holden": "held", "ere": "before", "whilst": "while", "wot": "know",
     "durst": "dared", "bade": "told", "cloke": "cloak", "holpen": "helped",
     "verily": "truly", "whosoever": "whoever", "whoso": "whoever",
-    "suffer": "let", "conversation": "conduct", "prevent": "precede",
+    "suffer": "let", "conversation": "conduct",
     "charity": "love",
     # location
     "thence": "from there", "whither": "where", "thither": "there",
@@ -213,8 +213,8 @@ REPLACEMENTS = {
     "wherewith": "with which", "whereof": "of which", "thereon": "on it",
     "whereby": "by which", "whereunto": "to which",
     # strong verbs
-    "smote": "struck", "dwelt": "lived", "begat": "fathered", "bare": "bore",
-    "wrought": "worked", "brake": "broke", "smitten": "struck", "rent": "tore",
+    "smote": "struck", "dwelt": "lived", "begat": "fathered", "bareth": "bares",
+    "wrought": "worked", "brake": "broke", "smitten": "struck",
     "builded": "built", "gat": "got", "clave": "clung", "drave": "drove",
     "spake": "spoke", "sware": "swore",
     # -eth forms (sample; full list below)
@@ -258,7 +258,7 @@ REPLACEMENTS = {
     "saveth": "saves", "repenteth": "repents", "pisseth": "urinates",
     "lighteneth": "lightens", "presseth": "presses",
     # second-person -est forms
-    "seest": "see", "lest": "so that not", "standest": "stand", "liest": "lie",
+    "seest": "see", "standest": "stand", "liest": "lie",
     "goest": "go", "broughtest": "brought", "sayest": "say", "reapest": "reap",
     "layest": "lay", "stoodest": "stood", "puttest": "put", "succeedest": "succeed",
     "dwellest": "dwell", "bearest": "bear", "askest": "ask", "spakest": "spoke",
