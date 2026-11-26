@@ -739,3 +739,9 @@ Total: **733**
 | `ye` | `you` |
 | `yea` | `yes` |
 | `yieldeth` | `yields` |
+
+## Context rule: `art`
+
+`art` → `are` only when it is the verb (*thou art*, *art thou*, *which art*). It is **not** in the table above,
+so the noun stays: "the art of the apothecary" (Ex 30:25, 30:35), "the apothecaries’ art" (2Ch 16:14) and
+"graven by art" (Ac 17:29). The rule skips any `art` right after "the ", "by " or a possessive apostrophe.

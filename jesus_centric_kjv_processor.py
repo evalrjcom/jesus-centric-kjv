@@ -419,10 +419,18 @@ def match_case(found, target):
         return target[:1].upper() + target[1:]
     return target
 
+# "art" the verb (thou art, art thou, which art) -> "are", but NOT "art" the noun (craft/skill).
+# In the PCE the noun appears only 4 times: "the art of the apothecary" (Ex 30:25, 30:35),
+# "the apothecaries' art" (2Ch 16:14) and "graven by art" (Ac 17:29). Those are skipped by
+# refusing a match right after "the ", "by " or a possessive apostrophe + space.
+ART_VERB_PATTERN = re.compile(r"(?<![Tt]he )(?<![Bb]y )(?<![\u2019'] )(?<!\w)art(?!\w)", re.I)
+
 def modernize_line(line):
     # Pass 1: explicit replacements (longest first), keeping the original word's capitalization
     for pattern, new in COMPILED_REPLACEMENTS:
         line = pattern.sub(lambda m, new=new: match_case(m.group(0), new), line)
+    # Pass 2: verb "art" -> "are" (noun "art" left alone, see ART_VERB_PATTERN)
+    line = ART_VERB_PATTERN.sub(lambda m: match_case(m.group(0), "are"), line)
     # The general "-eth -> -s" pass was removed: it mangled words such as compasseth -> "compasss".
     # Only -eth words listed explicitly in REPLACEMENTS are modernized; all others keep the KJV form.
     return line

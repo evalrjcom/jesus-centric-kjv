@@ -175,3 +175,16 @@ def test_processed_verse_starts_capitalized():
              for v in jk.load_pce()[0] if v["abbr"] in ("Ge", "Joh")]
     starts = [l.split(": ", 1)[1][:1] for l in lines]
     assert all(not c.islower() for c in starts)
+
+
+def test_art_verb_swapped_but_noun_kept():
+    """"art" the verb -> "are"; "art" the noun (craft) is left alone."""
+    import jesus_centric_kjv_processor as p
+    assert p.modernize_line("thou art the Christ") == "you are the Christ"
+    assert p.modernize_line("Art thou my very son") == "Are you my very son"
+    assert p.modernize_line("Who art thou?") == "Who are you?"
+    assert p.modernize_line("which art in heaven") == "which are in heaven"
+    assert p.modernize_line("after the art of the apothecary") == "after the art of the apothecary"
+    assert p.modernize_line("prepared by the apothecaries\u2019 art: and") == "prepared by the apothecaries\u2019 art: and"
+    assert p.modernize_line("graven by art and man\u2019s device") == "graven by art and man\u2019s device"
+    assert p.modernize_line("departeth") == "departs"
