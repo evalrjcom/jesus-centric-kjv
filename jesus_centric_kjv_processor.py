@@ -18,6 +18,8 @@ REPO_ROOT = Path(__file__).resolve().parent
 DEFAULT_PCE_PATH = REPO_ROOT / "docs" / "TEXT-PCE.txt"
 PCE_RAW_URL = "https://raw.githubusercontent.com/evalrjcom/jesus-centric-kjv/main/docs/TEXT-PCE.txt"
 DEFAULT_OUTPUT = REPO_ROOT / "docs" / "jesus_centric_kjv_all66.txt"
+DEFAULT_SWAPS_PATH = REPO_ROOT / "swaps.tsv"
+DEFAULT_REPLACEMENTS_MD = REPO_ROOT / "REPLACEMENTS.md"
 
 # Canonical 66-book order: (PCE abbreviation, full name, output header).
 # Output headers match the book headers the viewer (docs/index.html) has always used.
@@ -57,6 +59,10 @@ ITALIC = re.compile(r"\[([^\[\]]*)\]")    # words supplied by the translators (p
 
 class PCEError(ValueError):
     """Raised when the PCE source cannot be loaded or fails validation."""
+
+
+class SwapsError(ValueError):
+    """Raised when a swaps TSV cannot be loaded or fails validation."""
 
 
 def decode_pce(data: bytes) -> str:
@@ -179,232 +185,117 @@ def titles_metadata(verses: list) -> list:
 # Restored: this pattern was dropped in ab264e7, which made every CI run fail with NameError.
 LORD_GOD_PATTERN = re.compile(r"\b(Lord|LORD|God|GOD)\b")
 
-# Word/phrase replacements (longer phrases first)
-REPLACEMENTS = {
-    # phrases first
-    "from hence": "from here",
-    "from thence": "from there",
-    "from whence": "from where",
-    "it came to pass": "it happened",
-    "and it came to pass": "and it happened",
-    # pronouns
-    "thee": "you", "thou": "you", "thy": "your", "thine": "yours", "ye": "you",
-    "thyself": "yourself",
-    # modals / second person
-    "shalt": "shall", "hast": "have", "wilt": "will",
-    "didst": "did", "mayest": "may", "shouldest": "should", "wast": "were",
-    "knowest": "know", "doest": "do", "canst": "can", "wouldest": "would",
-    "livest": "live", "preservest": "preserve", "smotest": "struck",
-    # common archaic
-    "hath": "has", "doth": "does", "saith": "says", "unto": "to",
-    "behold": "look", "yea": "yes", "lo": "look", "hearken": "listen",
-    "nigh": "near", "howbeit": "however", "raiment": "clothing",
-    "fowls": "birds", "forasmuch": "since", "straightway": "immediately",
-    "peradventure": "perhaps", "betwixt": "between", "wist": "knew",
-    "holden": "held", "ere": "before", "whilst": "while", "wot": "know",
-    "durst": "dared", "bade": "told", "cloke": "cloak", "holpen": "helped",
-    "verily": "truly", "whosoever": "whoever", "whoso": "whoever",
-    "suffer": "let", "conversation": "conduct",
-    "charity": "love",
-    # location
-    "thence": "from there", "whither": "where", "thither": "there",
-    "whence": "from where", "hither": "here",
-    "thereof": "of it", "wherein": "in which", "wherefore": "therefore",
-    "wherewith": "with which", "whereof": "of which", "thereon": "on it",
-    "whereby": "by which", "whereunto": "to which",
-    # strong verbs
-    "smote": "struck", "dwelt": "lived", "begat": "fathered", "bareth": "bares",
-    "wrought": "worked", "brake": "broke", "smitten": "struck",
-    "builded": "built", "gat": "got", "clave": "clung", "drave": "drove",
-    "spake": "spoke", "sware": "swore",
-    # -eth forms (sample; full list below)
-    "believeth": "believes", "maketh": "makes", "leadeth": "leads",
-    "restoreth": "restores", "goeth": "goes", "cometh": "comes",
-    "spreadeth": "spreads", "treadeth": "treads", "fadeth": "fades",
-    "readeth": "reads", "pleadeth": "pleads", "persuadeth": "persuades",
-    "loadeth": "loads", "ladeth": "lades", "giveth": "gives",
-    "knoweth": "knows", "liveth": "lives", "doeth": "does",
-    "bringeth": "brings", "taketh": "takes", "speaketh": "speaks",
-    "loveth": "loves", "dwelleth": "dwells", "eateth": "eats",
-    "seeth": "sees", "heareth": "hears", "keepeth": "keeps",
-    "sitteth": "sits", "walketh": "walks", "standeth": "stands",
-    "abideth": "abides", "rejoiceth": "rejoices", "drinketh": "drinks",
-    "runneth": "runs", "thinketh": "thinks", "hopeth": "hopes",
-    "prophesieth": "prophesies", "slayeth": "slays", "proceedeth": "proceeds",
-    "feedeth": "feeds", "needeth": "needs", "rideth": "rides",
-    "provideth": "provides", "hideth": "hides", "divideth": "divides",
-    "slideth": "slides", "upbraideth": "reproaches",
-    "creepeth": "creeps", "escapeth": "escapes", "lappeth": "laps",
-    "boweth": "bows", "helpeth": "helps", "worshippeth": "worships",
-    "addeth": "adds", "clappeth": "claps", "multiplieth": "multiplies",
-    "encampeth": "encamps", "delivereth": "delivers", "slippeth": "slips",
-    "sheweth": "shows", "floweth": "flows", "followeth": "follows",
-    "overthroweth": "overthrows", "draweth": "draws", "bloweth": "blows",
-    "soweth": "sows", "voweth": "vows", "sacrificeth": "sacrifices",
-    "alloweth": "allows", "groweth": "grows",
-    "moveth": "moves", "lieth": "lies", "openeth": "opens", "asketh": "asks",
-    "fighteth": "fights", "healeth": "heals", "remaineth": "remains",
-    "lighteth": "lights", "passeth": "passes", "covereth": "covers",
-    "toucheth": "touches", "sprinkleth": "sprinkles", "offereth": "offers",
-    "killeth": "kills", "dieth": "dies", "causeth": "causes",
-    "separateth": "separates", "sojourneth": "sojourns", "sinneth": "sins",
-    "purifieth": "purifies", "defileth": "defiles", "chasteneth": "chastens",
-    "destroyeth": "destroys", "regardeth": "regards", "careth": "cares",
-    "lusteth": "lusts", "desireth": "desires", "lendeth": "lends",
-    "blesseth": "blesses", "hateth": "hates", "breatheth": "breathes",
-    "pertaineth": "pertains", "setteth": "sets", "putteth": "puts",
-    "flieth": "flies", "turneth": "turns", "beareth": "bears",
-    "meaneth": "means", "reigneth": "reigns", "seemeth": "seems",
-    "saveth": "saves", "repenteth": "repents", "pisseth": "urinates",
-    "lighteneth": "lightens", "presseth": "presses",
-    # remaining -eth verbs: explicit 3rd-person forms, checked by hand (alphabetical).
-    # Proper names (Nazareth, Japheth...), Psalm 119 letters (BETH, CHETH, DALETH, TETH), -ieth ordinals and teeth are left out on purpose.
-    "abhorreth": "abhors", "aboundeth": "abounds", "accepteth": "accepts", "accuseth": "accuses",
-    "acknowledgeth": "acknowledges", "adorneth": "adorns", "advantageth": "advantages",
-    "affecteth": "affects", "agreeth": "agrees", "aileth": "ails", "altereth": "alters",
-    "answereth": "answers", "appeaseth": "appeases", "appertaineth": "appertains", "appointeth": "appoints",
-    "approacheth": "approaches", "approveth": "approves", "ariseth": "arises", "ascendeth": "ascends",
-    "availeth": "avails", "avengeth": "avenges", "awaketh": "awakes", "backbiteth": "backbites",
-    "baketh": "bakes", "baptizeth": "baptizes", "beateth": "beats", "becometh": "becomes",
-    "befalleth": "befalls", "begetteth": "begets", "behaveth": "behaves", "beholdeth": "beholds",
-    "belongeth": "belongs", "bendeth": "bends", "bereaveth": "bereaves", "betrayeth": "betrays",
-    "bewaileth": "bewails", "bewrayeth": "bewrays", "biddeth": "bids", "bindeth": "binds", "biteth": "bites",
-    "blasphemeth": "blasphemes", "blindeth": "blinds", "blotteth": "blots", "boasteth": "boasts",
-    "borroweth": "borrows", "breaketh": "breaks", "bridleth": "bridles", "buildeth": "builds",
-    "burneth": "burns", "buyeth": "buys", "calleth": "calls", "calveth": "calves", "carrieth": "carries",
-    "casteth": "casts", "catcheth": "catches", "ceaseth": "ceases", "challengeth": "challenges",
-    "chanceth": "chances", "changeth": "changes", "chaseth": "chases", "chastiseth": "chastises",
-    "cheereth": "cheers", "cherisheth": "cherishes", "cheweth": "chews", "chooseth": "chooses",
-    "cleanseth": "cleanses", "cleaveth": "cleaves", "climbeth": "climbs", "comforteth": "comforts",
-    "commandeth": "commands", "commendeth": "commends", "committeth": "commits", "compasseth": "compasses",
-    "compoundeth": "compounds", "concealeth": "conceals", "concerneth": "concerns", "condemneth": "condemns",
-    "confesseth": "confesses", "confirmeth": "confirms", "considereth": "considers", "consisteth": "consists",
-    "constraineth": "constrains", "consulteth": "consults", "consumeth": "consumes", "containeth": "contains",
-    "contemneth": "contemns", "contendeth": "contends", "continueth": "continues", "converteth": "converts",
-    "convinceth": "convinces", "correcteth": "corrects", "corrupteth": "corrupts", "coucheth": "couches",
-    "counteth": "counts", "coupleth": "couples", "coveteth": "covets", "craveth": "craves",
-    "createth": "creates", "crieth": "cries", "croucheth": "crouches", "crowneth": "crowns",
-    "cumbereth": "cumbers", "curseth": "curses", "cutteth": "cuts", "darkeneth": "darkens",
-    "dasheth": "dashes", "dealeth": "deals", "decayeth": "decays", "deceiveth": "deceives",
-    "decketh": "decks", "declareth": "declares", "declineth": "declines", "deferreth": "defers",
-    "delayeth": "delays", "delighteth": "delights", "denieth": "denies", "departeth": "departs",
-    "descendeth": "descends", "describeth": "describes", "deserveth": "deserves", "despiseth": "despises",
-    "deviseth": "devises", "devoureth": "devours", "differeth": "differs", "diggeth": "digs",
-    "dippeth": "dips", "directeth": "directs", "disannulleth": "disannuls", "disappointeth": "disappoints",
-    "discerneth": "discerns", "discovereth": "discovers", "disguiseth": "disguises",
-    "dishonoureth": "dishonours", "dissembleth": "dissembles", "distributeth": "distributes",
-    "divineth": "divines", "doubteth": "doubts", "dreameth": "dreams", "dresseth": "dresses",
-    "drieth": "dries", "driveth": "drives", "droppeth": "drops", "dureth": "dures", "earneth": "earns",
-    "edifieth": "edifies", "emboldeneth": "emboldens", "endeth": "ends", "endureth": "endures",
-    "enlargeth": "enlarges", "entangleth": "entangles", "entereth": "enters", "enticeth": "entices",
-    "entreateth": "entreats", "envieth": "envies", "erreth": "errs", "escheweth": "eschews",
-    "establisheth": "establishes", "exacteth": "exacts", "exalteth": "exalts", "exceedeth": "exceeds",
-    "excelleth": "excels", "executeth": "executes", "exerciseth": "exercises", "exhorteth": "exhorts",
-    "extendeth": "extends", "faileth": "fails", "fainteth": "faints", "falleth": "falls",
-    "fashioneth": "fashions", "favoureth": "favours", "feareth": "fears", "fetcheth": "fetches",
-    "filleth": "fills", "findeth": "finds", "fitteth": "fits", "flattereth": "flatters", "fleeth": "flees",
-    "flourisheth": "flourishes", "fluttereth": "flutters", "foameth": "foams", "foldeth": "folds",
-    "forbeareth": "forbears", "forbiddeth": "forbids", "foreseeth": "foresees", "forgetteth": "forgets",
-    "forgiveth": "forgives", "formeth": "forms", "forsaketh": "forsakes", "frameth": "frames",
-    "fretteth": "frets", "frustrateth": "frustrates", "gathereth": "gathers", "gendereth": "genders",
-    "getteth": "gets", "girdeth": "girds", "glorieth": "glories", "glorifieth": "glorifies",
-    "gnasheth": "gnashes", "graveth": "graves", "greeteth": "greets", "grieveth": "grieves",
-    "groaneth": "groans", "gropeth": "gropes", "halteth": "halts", "handleth": "handles", "hangeth": "hangs",
-    "happeneth": "happens", "hardeneth": "hardens", "hasteneth": "hastens", "hasteth": "hastes",
-    "hatcheth": "hatches", "heapeth": "heaps", "hearkeneth": "listens", "heweth": "hews",
-    "hindereth": "hinders", "holdeth": "holds", "humbleth": "humbles", "hunteth": "hunts", "hurleth": "hurls",
-    "imagineth": "imagines", "imputeth": "imputes", "inclineth": "inclines", "increaseth": "increases",
-    "inhabiteth": "inhabits", "inheriteth": "inherits", "intermeddleth": "intermeddles", "judgeth": "judges",
-    "justifieth": "justifies", "kindleth": "kindles", "knocketh": "knocks", "laboureth": "labours",
-    "lacketh": "lacks", "languisheth": "languishes", "laugheth": "laughs", "layeth": "lays",
-    "leaneth": "leans", "leaveneth": "leavens", "leaveth": "leaves", "letteth": "lets", "licketh": "licks",
-    "lifteth": "lifts", "liketh": "likes", "limiteth": "limits", "lingereth": "lingers", "listeth": "lists",
-    "loatheth": "loathes", "lodgeth": "lodges", "longeth": "longs", "looketh": "looks", "looseth": "looses",
-    "loseth": "loses", "lotheth": "lothes", "loweth": "lows", "marketh": "marks", "marrieth": "marries",
-    "meddleth": "meddles", "meeteth": "meets", "melteth": "melts", "ministereth": "ministers",
-    "mocketh": "mocks", "mourneth": "mourns", "mustereth": "musters", "nameth": "names",
-    "nourisheth": "nourishes", "obeyeth": "obeys", "observeth": "observes", "obtaineth": "obtains",
-    "occupieth": "occupies", "opposeth": "opposes", "oppresseth": "oppresses", "ordaineth": "ordains",
-    "ordereth": "orders", "overcometh": "overcomes", "overfloweth": "overflows", "overtaketh": "overtakes",
-    "overturneth": "overturns", "oweth": "owes", "owneth": "owns", "pacifieth": "pacifies",
-    "panteth": "pants", "pardoneth": "pardons", "parteth": "parts", "paweth": "paws", "payeth": "pays",
-    "perceiveth": "perceives", "performeth": "performs", "perisheth": "perishes", "perverteth": "perverts",
-    "pierceth": "pierces", "pineth": "pines", "pitieth": "pities", "planteth": "plants", "playeth": "plays",
-    "pleaseth": "pleases", "plotteth": "plots", "ploweth": "plows", "plucketh": "plucks",
-    "pondereth": "ponders", "possesseth": "possesses", "poureth": "pours", "praiseth": "praises",
-    "prayeth": "prays", "preacheth": "preaches", "prepareth": "prepares", "preserveth": "preserves",
-    "prevaileth": "prevails", "proclaimeth": "proclaims", "procureth": "procures", "profaneth": "profanes",
-    "profiteth": "profits", "prolongeth": "prolongs", "prospereth": "prospers", "proveth": "proves",
-    "provoketh": "provokes", "publisheth": "publishes", "puffeth": "puffs", "purgeth": "purges",
-    "purposeth": "purposes", "pursueth": "pursues", "quickeneth": "quickens", "quieteth": "quiets",
-    "rageth": "rages", "raiseth": "raises", "rattleth": "rattles", "reacheth": "reaches", "reapeth": "reaps",
-    "rebuketh": "rebukes", "receiveth": "receives", "reckoneth": "reckons", "redeemeth": "redeems",
-    "refraineth": "refrains", "refresheth": "refreshes", "refuseth": "refuses", "rejecteth": "rejects",
-    "relieveth": "relieves", "remembereth": "remembers", "removeth": "removes", "rendereth": "renders",
-    "repayeth": "repays", "repeateth": "repeats", "reproacheth": "reproaches", "reproveth": "reproves",
-    "requireth": "requires", "rescueth": "rescues", "reserveth": "reserves", "resisteth": "resists",
-    "respecteth": "respects", "resteth": "rests", "retaineth": "retains", "returneth": "returns",
-    "revealeth": "reveals", "revengeth": "revenges", "rewardeth": "rewards", "riseth": "rises",
-    "roareth": "roars", "roasteth": "roasts", "robbeth": "robs", "rolleth": "rolls", "rusheth": "rushes",
-    "saluteth": "salutes", "sanctifieth": "sanctifies", "satisfieth": "satisfies", "scaleth": "scales",
-    "scattereth": "scatters", "scorneth": "scorns", "scourgeth": "scourges", "sealeth": "seals",
-    "searcheth": "searches", "seduceth": "seduces", "seeketh": "seeks", "selleth": "sells",
-    "sendeth": "sends", "serveth": "serves", "seweth": "sews", "shaketh": "shakes", "shameth": "shames",
-    "sharpeneth": "sharpens", "sheddeth": "sheds", "shineth": "shines", "shooteth": "shoots",
-    "shouteth": "shouts", "shutteth": "shuts", "sigheth": "sighs", "signifieth": "signifies",
-    "singeth": "sings", "slandereth": "slanders", "sleepeth": "sleeps", "slumbereth": "slumbers",
-    "smelleth": "smells", "smiteth": "smites", "smootheth": "smooths", "snuffeth": "snuffs",
-    "sorroweth": "sorrows", "soundeth": "sounds", "spareth": "spares", "spendeth": "spends",
-    "spoileth": "spoils", "springeth": "springs", "stablisheth": "stablishes", "staggereth": "staggers",
-    "stayeth": "stays", "stealeth": "steals", "steppeth": "steps", "sticketh": "sticks", "stilleth": "stills",
-    "stingeth": "stings", "stinketh": "stinks", "stirreth": "stirs", "stoopeth": "stoops",
-    "stoppeth": "stops", "straiteneth": "straitens", "strengtheneth": "strengthens",
-    "stretcheth": "stretches", "striketh": "strikes", "striveth": "strives", "studieth": "studies",
-    "stumbleth": "stumbles", "subdueth": "subdues", "suffereth": "suffers", "sufficeth": "suffices",
-    "supplieth": "supplies", "swalloweth": "swallows", "sweareth": "swears", "swimmeth": "swims",
-    "talketh": "talks", "tarrieth": "tarries", "tasteth": "tastes", "teacheth": "teaches", "teareth": "tears",
-    "telleth": "tells", "tempteth": "tempts", "tendeth": "tends", "thirsteth": "thirsts",
-    "thresheth": "threshes", "thrusteth": "thrusts", "thundereth": "thunders", "tilleth": "tills",
-    "transgresseth": "transgresses", "travaileth": "travails", "travelleth": "travels",
-    "trembleth": "trembles", "trickleth": "trickles", "trieth": "tries", "troubleth": "troubles",
-    "trusteth": "trusts", "uncovereth": "uncovers", "understandeth": "understands", "upholdeth": "upholds",
-    "useth": "uses", "uttereth": "utters", "vanisheth": "vanishes", "vaunteth": "vaunts",
-    "visiteth": "visits", "vomiteth": "vomits", "waiteth": "waits", "wakeneth": "wakens", "waketh": "wakes",
-    "wandereth": "wanders", "wanteth": "wants", "warmeth": "warms", "warreth": "wars", "wasteth": "wastes",
-    "watcheth": "watches", "watereth": "waters", "wavereth": "wavers", "waxeth": "waxes",
-    "weakeneth": "weakens", "weareth": "wears", "wearieth": "wearies", "weepeth": "weeps",
-    "weigheth": "weighs", "whirleth": "whirls", "willeth": "wills", "winketh": "winks", "winneth": "wins",
-    "winnoweth": "winnows", "wipeth": "wipes", "withdraweth": "withdraws", "withereth": "withers",
-    "withholdeth": "withholds", "witnesseth": "witnesses", "worketh": "works", "wotteth": "knows",
-    "woundeth": "wounds", "writeth": "writes", "wrongeth": "wrongs", "yieldeth": "yields",
-    # second-person -est forms
-    "seest": "see", "standest": "stand", "liest": "lie",
-    "goest": "go", "broughtest": "brought", "sayest": "say", "reapest": "reap",
-    "layest": "lay", "stoodest": "stood", "puttest": "put", "succeedest": "succeed",
-    "dwellest": "dwell", "bearest": "bear", "askest": "ask", "spakest": "spoke",
-    "lodgest": "lodge", "sawest": "saw", "leddest": "led", "seekest": "seek",
-    "swarest": "swore", "keepest": "keep", "comest": "come", "heardest": "heard",
-    "madest": "made", "forgavest": "forgave", "tookest": "took", "takest": "take",
-    "makest": "make", "trustest": "trust", "forgettest": "forget", "speakest": "speak",
-    "holdest": "hold", "devourest": "devour", "callest": "call", "hearest": "hear",
-    "destroyest": "destroy", "buildest": "build", "savourest": "savor",
-    "lackest": "lack", "answerest": "answer", "teachest": "teach", "acceptest": "accept",
-    # additional forms
-    "testifieth": "testifies", "esteemeth": "esteems", "appeareth": "appears",
-    "honoureth": "honors", "ruleth": "rules", "basest": "base",
-    "thyself": "yourself", "bestead": "beset",
-}
+# Word/phrase replacements are loaded from swaps.tsv (see load_swaps).
+# Longer phrases are applied first when the list is compiled below.
 
-# Sort by length descending so phrases win over single words
-SORTED_REPLACEMENTS = sorted(REPLACEMENTS.items(), key=lambda x: -len(x[0]))
+def load_swaps(path) -> dict:
+    """Parse a TSV of old<TAB>new pairs. Comments (#) and blank lines are ignored.
+
+    path is read as UTF-8 (a leading BOM is accepted); CR/LF endings are both fine.
+    Raises SwapsError with a line number for a bad row or a duplicate key.
+    """
+    path = Path(path)
+    try:
+        raw = path.read_text(encoding="utf-8-sig")
+    except FileNotFoundError:
+        raise SwapsError(f"{path}: file not found") from None
+    except UnicodeDecodeError as e:
+        raise SwapsError(f"{path}: not valid UTF-8 ({e})") from e
+    replacements = {}
+    for n, line in enumerate(raw.splitlines(), 1):  # splitlines strips the CR in CRLF
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        fields = [part.strip() for part in line.split("\t")]
+        if len(fields) != 2:
+            raise SwapsError(
+                f"{path}:{n}: expected exactly 2 fields (old<TAB>new), "
+                f"got {len(fields)}: {line[:80]!r}"
+            )
+        old, new = fields
+        if not old or not new:
+            raise SwapsError(f"{path}:{n}: empty field in old<TAB>new: {line[:80]!r}")
+        if old in replacements:
+            raise SwapsError(
+                f"{path}:{n}: duplicate swap key {old!r} "
+                f"(already mapped to {replacements[old]!r})"
+            )
+        replacements[old] = new
+    if not replacements:
+        raise SwapsError(f"{path}: no swap entries found")
+    return replacements
+
+
+def compile_replacements(mapping: dict):
+    """Precompile replacement patterns, longest source phrase first."""
+    sorted_items = sorted(mapping.items(), key=lambda x: -len(x[0]))
+    return sorted_items, [(make_pattern(old), new) for old, new in sorted_items]
+
+
+def apply_swaps(mapping: dict) -> None:
+    """Install a swaps mapping as the process-wide REPLACEMENTS / COMPILED_REPLACEMENTS."""
+    global REPLACEMENTS, SORTED_REPLACEMENTS, COMPILED_REPLACEMENTS
+    REPLACEMENTS = mapping
+    SORTED_REPLACEMENTS, COMPILED_REPLACEMENTS = compile_replacements(mapping)
+
 
 # Boundary that treats punctuation as non-word
 def make_pattern(word):
     return re.compile(r"(?<!\w)" + re.escape(word) + r"(?!\w)", re.I)
 
-# Compiled once: with 700+ entries, compiling per line overflowed Python's regex cache (512) and made a
-# full run take many minutes.
-COMPILED_REPLACEMENTS = [(make_pattern(old), new) for old, new in SORTED_REPLACEMENTS]
+
+# Load defaults at import so tests and callers can use modernize_line immediately.
+# --swaps in main() can point at a different file and call apply_swaps again.
+REPLACEMENTS = load_swaps(DEFAULT_SWAPS_PATH)
+# Sort by length descending so phrases win over single words.
+# Compiled once: with 700+ entries, compiling per line overflowed Python's regex cache (512)
+# and made a full run take many minutes.
+SORTED_REPLACEMENTS, COMPILED_REPLACEMENTS = compile_replacements(REPLACEMENTS)
+
+
+# Static prose appended when regenerating REPLACEMENTS.md from swaps.tsv.
+# Keep this in sync with the hand-written context-rule section of that file.
+ART_RULE_MD = (
+    "## Context rule: `art`\n"
+    "\n"
+    "`art` → `are` only when it is the verb (*thou art*, *art thou*, *which art*). It is **not** in the table above,\n"
+    "so the noun stays: \"the art of the apothecary\" (Ex 30:25, 30:35), \"the apothecaries’ art\" (2Ch 16:14) and\n"
+    "\"graven by art\" (Ac 17:29). The rule skips any `art` right after \"the \", \"by \" or a possessive apostrophe.\n"
+)
+
+
+def write_replacements_md(swaps=None, path=None) -> Path:
+    """Generate REPLACEMENTS.md from a swaps mapping or TSV path. Returns the written path."""
+    if swaps is None:
+        swaps = REPLACEMENTS
+    elif not isinstance(swaps, dict):
+        swaps = load_swaps(swaps)
+    path = Path(path) if path is not None else DEFAULT_REPLACEMENTS_MD
+    lines = [
+        "# Word replacements",
+        "",
+        "All modernization word swaps applied by `jesus_centric_kjv_processor.py`.",
+        "The source of truth is `swaps.tsv` (one `old<TAB>new` pair per line). This file is generated from it:",
+        "",
+        "```bash",
+        "python3 jesus_centric_kjv_processor.py --write-replacements-md",
+        "```",
+        "",
+        "Context rules that are not simple word pairs (currently the verb `art`) stay in the processor, not in `swaps.tsv`.",
+        "",
+        f"Total: **{len(swaps)}**",
+        "",
+        "| From | To |",
+        "|------|----|",
+    ]
+    for old, new in sorted(swaps.items(), key=lambda kv: kv[0].lower()):
+        lines.append(f"| `{old}` | `{new}` |")
+    lines.append("")
+    lines.append(ART_RULE_MD.rstrip("\n"))
+    lines.append("")
+    path.write_text("\n".join(lines), encoding="utf-8")
+    return path
+
 
 def match_case(found, target):
     """Give `target` the capitalization of the matched KJV text `found`.
@@ -432,7 +323,7 @@ def modernize_line(line):
     # Pass 2: verb "art" -> "are" (noun "art" left alone, see ART_VERB_PATTERN)
     line = ART_VERB_PATTERN.sub(lambda m: match_case(m.group(0), "are"), line)
     # The general "-eth -> -s" pass was removed: it mangled words such as compasseth -> "compasss".
-    # Only -eth words listed explicitly in REPLACEMENTS are modernized; all others keep the KJV form.
+    # Only -eth words listed explicitly in swaps.tsv / REPLACEMENTS are modernized; all others keep the KJV form.
     return line
 
 def capitalize_divine(line):
@@ -512,6 +403,12 @@ def main(argv=None):
                         "two args: input (PCE or legacy 'C:V: text' file) and output")
     p.add_argument("--source", "--pce-path", dest="source",
                    help="PCE file path or URL (default: docs/TEXT-PCE.txt, fallback: raw GitHub URL)")
+    p.add_argument("--swaps", type=Path, default=DEFAULT_SWAPS_PATH,
+                   help="TSV of word swaps, one old<TAB>new per line (default: swaps.tsv next to this script)")
+    p.add_argument("--write-replacements-md", nargs="?", const=DEFAULT_REPLACEMENTS_MD,
+                   type=Path, metavar="PATH",
+                   help="regenerate REPLACEMENTS.md from the swaps file and exit "
+                        "(default path: REPLACEMENTS.md next to this script)")
     p.add_argument("--italics", choices=["strip", "keep", "html"], default="strip",
                    help="PCE [italic] supplied words: strip brackets (default), keep [ ], or wrap in <i></i>")
     p.add_argument("--titles-json", type=Path, help="also write Psalm titles / colophons (<<...>>) as JSON")
@@ -520,6 +417,12 @@ def main(argv=None):
     if len(args.paths) > 2:
         p.error("expected at most two paths: [input] [output]")
     try:
+        if Path(args.swaps) != DEFAULT_SWAPS_PATH or args.write_replacements_md:
+            apply_swaps(load_swaps(args.swaps))
+        if args.write_replacements_md is not None:
+            out_md = write_replacements_md(REPLACEMENTS, args.write_replacements_md)
+            print(f"Wrote {len(REPLACEMENTS)} swaps -> {out_md}")
+            return
         if len(args.paths) == 2:
             inp, outp = args.paths
             if args.source:

@@ -1,6 +1,13 @@
 # Word replacements
 
-All modernization rules applied by `jesus_centric_kjv_processor.py`.
+All modernization word swaps applied by `jesus_centric_kjv_processor.py`.
+The source of truth is `swaps.tsv` (one `old<TAB>new` pair per line). This file is generated from it:
+
+```bash
+python3 jesus_centric_kjv_processor.py --write-replacements-md
+```
+
+Context rules that are not simple word pairs (currently the verb `art`) stay in the processor, not in `swaps.tsv`.
 
 Total: **733**
 

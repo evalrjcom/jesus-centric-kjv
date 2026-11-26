@@ -5,12 +5,16 @@ on:
     branches: [ main ]
     paths:
       - 'jesus_centric_kjv_processor.py'
+      - 'swaps.tsv'
+      - 'REPLACEMENTS.md'
       - 'docs/TEXT-PCE.txt'
       - 'tests/**'
       - '.github/workflows/process-kjv.yml'
   pull_request:
     paths:
       - 'jesus_centric_kjv_processor.py'
+      - 'swaps.tsv'
+      - 'REPLACEMENTS.md'
       - 'docs/TEXT-PCE.txt'
       - 'tests/**'
   issues:

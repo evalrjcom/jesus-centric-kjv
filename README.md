@@ -28,6 +28,17 @@ Options:
 - `--italics strip|keep|html`: PCE marks translator-supplied words with `[ ]` (printed in italics). The default, `strip`, keeps the words and drops the brackets. `keep` leaves the brackets, which can be confused with `[JESUS]` markers. `html` wraps them in `<i>…</i>`, which the viewer renders as italics.
 - `--titles-json FILE`: Psalm titles and epistle colophons (`<<…>>` in PCE) are kept out of the verse text. Use this to save them as JSON metadata.
 - `--timeout SECONDS`: download timeout when the source is fetched from a URL (default 30).
+- `--swaps PATH`: TSV of word swaps, one `old<TAB>new` pair per line (default: `swaps.tsv` next to the script). `#` comments and blank lines are allowed.
+- `--write-replacements-md [PATH]`: regenerate `REPLACEMENTS.md` from the swaps file and exit.
+
+## Word swaps
+Lexical modernization rules live in `swaps.tsv`. Edit that file to add or remove a swap (one `old<TAB>new` pair per line), then regenerate the documentation table:
+
+```bash
+python3 jesus_centric_kjv_processor.py --write-replacements-md
+```
+
+Context rules that are not simple word pairs (currently the verb `art` → `are`) stay in the Python script. The full table and the `art` rule are in `REPLACEMENTS.md`. These swaps are kept in a separate file until a final Bible translation version is settled.
 
 If `docs/TEXT-PCE.txt` is missing, the script downloads it from
 `https://raw.githubusercontent.com/evalrjcom/jesus-centric-kjv/main/docs/TEXT-PCE.txt`.
@@ -50,7 +61,7 @@ The GitHub Action (`.github/workflows/process-kjv.yml`) automatically:
 - Runs the tests
 - Reads the Pure Cambridge Edition text from `docs/TEXT-PCE.txt`
 - Runs the processor
-- Commits the updated `docs/jesus_centric_kjv_all66.txt` when the processor changes (or on manual workflow run)
+- Commits the updated `docs/jesus_centric_kjv_all66.txt` when the processor or `swaps.tsv` changes (or on manual workflow run)
 - Comments on new/edited issues
 
 Trigger the workflow manually from the Actions tab if you want to regenerate the text immediately.
