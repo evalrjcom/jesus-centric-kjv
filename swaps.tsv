@@ -8,6 +8,7 @@
 #
 # After editing, regenerate REPLACEMENTS.md:
 #   python3 jesus_centric_kjv_processor.py --write-replacements-md
+# Edit this file in the browser or locally; CI rebuilds REPLACEMENTS.md
 
 # phrases first
 from hence	from here
