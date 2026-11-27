@@ -13,6 +13,8 @@
       --accent: #c4a574;
       --border: #2a2f36;
       --red: #e74c3c;
+      --flash: rgba(196, 165, 116, 0.55);
+      --hit-hover: rgba(196, 165, 116, 0.18);
       --font-size: 16px;
       --max-width: 900px;
     }
@@ -24,6 +26,8 @@
       --accent: #8b6914;
       --border: #e0dcd6;
       --red: #c0392b;
+      --flash: rgba(139, 105, 20, 0.42);
+      --hit-hover: rgba(139, 105, 20, 0.16);
     }
     * { box-sizing: border-box; }
     html, body { height: 100%; margin: 0; }
@@ -178,6 +182,30 @@
     }
     .divine { color: var(--red); font-weight: 600; }
     mark { background: #5c4a2a; color: var(--text); }
+    [data-theme="light"] mark { background: #f3d9a4; color: var(--text); }
+    .verse.search-hit {
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 0.1rem 0.35rem;
+      margin-left: -0.35rem;
+      margin-right: -0.35rem;
+    }
+    .verse.search-hit:hover,
+    .verse.search-hit:focus {
+      background: var(--hit-hover);
+      outline: none;
+    }
+    .verse.search-hit:focus-visible {
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .verse.flash {
+      animation: verse-flash 1.6s ease-out both;
+      border-radius: 4px;
+    }
+    @keyframes verse-flash {
+      0% { background: var(--flash); }
+      100% { background: transparent; }
+    }
     #backTop {
       position: fixed;
       bottom: 1.5rem;
@@ -342,6 +370,117 @@
     let itemHeight = 42;
     let buffer = 8;
     let lastStart = -1;
+    let ignoreHashChange = false;
+    let flashTarget = null; // { bookIdx, chapter, verse, start, duration }
+    let pinRender = null; // { start, end } keep a chapter laid out naturally when jumping to a verse
+
+    // Short book ids for deep links such as #Eph/2/8
+    const BOOK_IDS = {
+      "GENESIS": "Gen", "EXODUS": "Exod", "LEVITICUS": "Lev", "NUMBERS": "Num",
+      "DEUTERONOMY": "Deut", "JOSHUA": "Josh", "JUDGES": "Judg", "RUTH": "Ruth",
+      "FIRST SAMUEL": "1Sam", "SECOND SAMUEL": "2Sam", "1 KINGS": "1Kgs", "2 KINGS": "2Kgs",
+      "1 CHRONICLES": "1Chr", "2 CHRONICLES": "2Chr", "EZRA": "Ezra", "NEHEMIAH": "Neh",
+      "ESTHER": "Esth", "JOB": "Job", "PSALMS": "Ps", "PROVERBS": "Prov",
+      "ECCLESIASTES": "Eccl", "THE SONG OF SOLOMON": "Song", "ISAIAH": "Isa", "JEREMIAH": "Jer",
+      "LAMENTATIONS": "Lam", "EZEKIEL": "Ezek", "DANIEL": "Dan", "HOSEA": "Hos",
+      "JOEL": "Joel", "AMOS": "Amos", "OBADIAH": "Obad", "JONAH": "Jonah",
+      "MICAH": "Mic", "NAHUM": "Nah", "HABAKKUK": "Hab", "ZEPHANIAH": "Zeph",
+      "HAGGAI": "Hag", "ZECHARIAH": "Zech", "MALACHI": "Mal", "MATTHEW": "Matt",
+      "MARK": "Mark", "LUKE": "Luke", "JOHN": "John", "ACTS": "Acts",
+      "ROMANS": "Rom", "1 CORINTHIANS": "1Cor", "2 CORINTHIANS": "2Cor", "GALATIANS": "Gal",
+      "EPHESIANS": "Eph", "PHILIPPIANS": "Phil", "COLOSSIANS": "Col",
+      "1 THESSALONIANS": "1Thess", "2 THESSALONIANS": "2Thess",
+      "1 TIMOTHY": "1Tim", "2 TIMOTHY": "2Tim", "TITUS": "Titus", "PHILEMON": "Phlm",
+      "HEBREWS": "Heb", "JAMES": "Jas", "1 PETER": "1Pet", "2 PETER": "2Pet",
+      "1 JOHN": "1John", "2 JOHN": "2John", "3 JOHN": "3John", "JUDE": "Jude",
+      "REVELATION": "Rev"
+    };
+    const BOOK_ALIASES = {
+      "genesis": "Gen", "exodus": "Exod", "ex": "Exod", "exo": "Exod",
+      "leviticus": "Lev", "numbers": "Num", "deuteronomy": "Deut", "dt": "Deut",
+      "joshua": "Josh", "judges": "Judg", "ruth": "Ruth",
+      "1samuel": "1Sam", "firstsamuel": "1Sam", "isamuel": "1Sam",
+      "2samuel": "2Sam", "secondsamuel": "2Sam", "iisamuel": "2Sam",
+      "1kings": "1Kgs", "2kings": "2Kgs", "1chronicles": "1Chr", "2chronicles": "2Chr",
+      "psalm": "Ps", "psalms": "Ps", "psa": "Ps",
+      "proverbs": "Prov", "ecclesiastes": "Eccl",
+      "songofsolomon": "Song", "songofsongs": "Song", "sos": "Song", "canticles": "Song",
+      "isaiah": "Isa", "jeremiah": "Jer", "lamentations": "Lam", "ezekiel": "Ezek",
+      "daniel": "Dan", "hosea": "Hos", "obadiah": "Obad", "micah": "Mic",
+      "nahum": "Nah", "habakkuk": "Hab", "zephaniah": "Zeph", "haggai": "Hag",
+      "zechariah": "Zech", "malachi": "Mal",
+      "matthew": "Matt", "mt": "Matt", "mk": "Mark", "lk": "Luke", "jn": "John",
+      "romans": "Rom", "1corinthians": "1Cor", "2corinthians": "2Cor",
+      "galatians": "Gal", "ephesians": "Eph", "philippians": "Phil", "php": "Phil",
+      "colossians": "Col", "1thessalonians": "1Thess", "2thessalonians": "2Thess",
+      "1timothy": "1Tim", "2timothy": "2Tim", "philemon": "Phlm", "phm": "Phlm",
+      "hebrews": "Heb", "james": "Jas", "1peter": "1Pet", "2peter": "2Pet",
+      "revelation": "Rev", "rev": "Rev"
+    };
+    const ID_TO_NAME = {};
+    Object.keys(BOOK_IDS).forEach(name => { ID_TO_NAME[BOOK_IDS[name].toLowerCase()] = name; });
+
+    function compactKey(s) {
+      return String(s).replace(/^the\s+/i, "").replace(/[\s_\-]+/g, "").toLowerCase();
+    }
+    function bookIdFor(name) {
+      return BOOK_IDS[name] || String(name).replace(/\s+/g, "");
+    }
+    function findBookIndexBySlug(slug) {
+      if (!slug) return -1;
+      let raw;
+      try { raw = decodeURIComponent(String(slug).trim()); }
+      catch (e) { raw = String(slug).trim(); }
+      if (!raw) return -1;
+      const lower = raw.toLowerCase();
+      const compact = compactKey(raw);
+      const id = (ID_TO_NAME[lower] && BOOK_IDS[ID_TO_NAME[lower]])
+        || BOOK_ALIASES[lower]
+        || BOOK_ALIASES[compact]
+        || (ID_TO_NAME[compact] && BOOK_IDS[ID_TO_NAME[compact]]);
+      if (id && ID_TO_NAME[id.toLowerCase()]) {
+        const name = ID_TO_NAME[id.toLowerCase()];
+        const idx = books.findIndex(b => b.name === name);
+        if (idx >= 0) return idx;
+      }
+      for (let i = 0; i < books.length; i++) {
+        if (compactKey(books[i].name) === compact) return i;
+      }
+      return findBestBookMatch(raw.replace(/[-_]/g, " "));
+    }
+    function verseNum(refOrVerse) {
+      const ref = typeof refOrVerse === "string" ? refOrVerse : (refOrVerse && refOrVerse.ref);
+      if (!ref) return 0;
+      const parts = String(ref).split(":");
+      return parseInt(parts[parts.length - 1], 10) || 0;
+    }
+    function makeHash(bookIdx, chapter, verse) {
+      if (bookIdx == null || !books[bookIdx]) return "";
+      let h = "#" + bookIdFor(books[bookIdx].name);
+      if (chapter) h += "/" + chapter;
+      if (verse) h += "/" + verse;
+      return h;
+    }
+    function setHash(bookIdx, chapter, verse, replace) {
+      const h = makeHash(bookIdx, chapter, verse);
+      if (!h || location.hash === h) return;
+      ignoreHashChange = true;
+      if (replace) history.replaceState(null, "", h);
+      else location.hash = h;
+      // location.hash fires hashchange; replaceState does not. Clear the guard either way.
+      setTimeout(() => { ignoreHashChange = false; }, 0);
+    }
+    function parseHash(hash) {
+      const m = String(hash || "").match(/^#\/?([^\/#]+)(?:\/(\d+))?(?:\/(\d+))?\/?$/);
+      if (!m) return null;
+      const bookIdx = findBookIndexBySlug(m[1]);
+      if (bookIdx < 0) return null;
+      return {
+        bookIdx,
+        chapter: m[2] ? parseInt(m[2], 10) : 1,
+        verse: m[3] ? parseInt(m[3], 10) : 0
+      };
+    }
 
     function highlightDivine(text) {
       return text
@@ -428,13 +567,12 @@
       sidebarEl.innerHTML = "";
       books.forEach((b, i) => {
         const a = document.createElement("a");
-        a.href = "#";
+        a.href = "#" + bookIdFor(b.name);
         a.textContent = b.name;
         a.onclick = (e) => {
           e.preventDefault();
           currentChapter = 1;
-          showBook(i);
-          setActiveSidebar(i);
+          showBook(i, { chapter: 1 });
         };
         sidebarEl.appendChild(a);
       });
@@ -462,6 +600,7 @@
     function setActiveSidebar(idx) {
       sidebarEl.querySelectorAll("a").forEach((a, i) => {
         a.classList.toggle("active", i === idx);
+        if (i === idx) a.scrollIntoView({ block: "nearest", inline: "nearest" });
       });
     }
 
@@ -503,8 +642,12 @@
       }
       const scrollTop = versesEl.scrollTop;
       const viewH = versesEl.clientHeight;
-      const start = Math.max(0, Math.floor(scrollTop / itemHeight) - buffer);
-      const end = Math.min(items.length, Math.ceil((scrollTop + viewH) / itemHeight) + buffer);
+      let start = Math.max(0, Math.floor(scrollTop / itemHeight) - buffer);
+      let end = Math.min(items.length, Math.ceil((scrollTop + viewH) / itemHeight) + buffer);
+      if (pinRender) {
+        start = Math.min(start, pinRender.start);
+        end = Math.max(end, pinRender.end);
+      }
       if (start === lastStart && end === lastStart + (end - start)) return;
       lastStart = start;
 
@@ -528,13 +671,36 @@
         } else {
           const div = document.createElement("div");
           div.className = "verse";
+          div.dataset.ref = it.verse.ref;
+          div.dataset.chapter = String(it.verse.chapter);
+          div.dataset.verse = String(verseNum(it.verse));
+          div.dataset.idx = String(i);
+          if (it.bookIdx != null) {
+            div.classList.add("search-hit");
+            div.setAttribute("role", "link");
+            div.tabIndex = 0;
+            div.dataset.bookIdx = String(it.bookIdx);
+            const label = (books[it.bookIdx] ? books[it.bookIdx].name : "") + " " + it.verse.ref;
+            div.setAttribute("aria-label", label.trim());
+          }
+          if (flashTarget
+              && flashTarget.bookIdx === currentBook
+              && it.bookIdx == null
+              && it.verse.chapter === flashTarget.chapter
+              && verseNum(it.verse) === flashTarget.verse) {
+            const elapsed = Date.now() - flashTarget.start;
+            if (elapsed < flashTarget.duration) {
+              div.classList.add("flash");
+              div.style.animationDelay = (-elapsed) + "ms";
+            }
+          }
           let plain = it.verse.text;
           if (it.query) {
             plain = plain.replace(searchRegex(it.query), "\x00$1\x00");
           }
-          let text = highlightDivine(plain);
-          text = text.replace(/\x00([^\x00]+)\x00/g, "<mark>$1</mark>");
-          div.innerHTML = `<span class="verse-ref">${it.verse.ref}</span><span>${text}</span>`;
+          let textHtml = highlightDivine(plain);
+          textHtml = textHtml.replace(/\x00([^\x00]+)\x00/g, "<mark>$1</mark>");
+          div.innerHTML = `<span class="verse-ref">${it.verse.ref}</span><span>${textHtml}</span>`;
           frag.appendChild(div);
         }
       }
@@ -542,31 +708,114 @@
       windowEl.appendChild(frag);
     }
 
-    function showBook(idx) {
+    function showBook(idx, opts) {
+      opts = opts || {};
+      pinRender = null;
       currentBook = idx;
+      if (opts.chapter) currentChapter = opts.chapter;
       const book = books[idx];
       if (!book) return;
       bookTitleEl.textContent = book.name;
-      const q = searchEl.value.trim();
-      items = buildItems(book, q);
+      // Chapter view is unfiltered so a leftover search query can stay in the box.
+      items = buildItems(book, "");
       statusEl.textContent = `${items.filter(i => i.type === "v").length} verses`;
       lastStart = -1;
       updateChapterSelect();
       setActiveSidebar(idx);
       savePosition();
-      versesEl.scrollTop = 0;
-      renderWindow();
-
-      if (currentChapter > 1) {
-        const idxCh = items.findIndex(it => it.type === "ch" && it.chapter === currentChapter);
-        if (idxCh >= 0) {
-          versesEl.scrollTop = idxCh * itemHeight;
-          renderWindow();
+      if (opts.verse) {
+        scrollToVerse(opts.chapter || currentChapter, opts.verse, opts.flash !== false);
+      } else {
+        versesEl.scrollTop = 0;
+        renderWindow();
+        if (currentChapter > 1) {
+          const idxCh = items.findIndex(it => it.type === "ch" && it.chapter === currentChapter);
+          if (idxCh >= 0) {
+            versesEl.scrollTop = idxCh * itemHeight;
+            renderWindow();
+          }
         }
+      }
+      if (opts.updateHash !== false) {
+        setHash(idx, currentChapter, opts.verse || 0, opts.replaceHash);
       }
     }
 
+    function centerVerseEl(el) {
+      if (!el) return false;
+      const cRect = versesEl.getBoundingClientRect();
+      const eRect = el.getBoundingClientRect();
+      const delta = (eRect.top - cRect.top) - (cRect.height / 2) + (eRect.height / 2);
+      if (Math.abs(delta) < 1) return true;
+      versesEl.scrollTop += delta;
+      return true;
+    }
+
+    function scrollToVerse(chapter, verse, flash) {
+      const itemIdx = items.findIndex(it =>
+        it.type === "v" && it.verse.chapter === chapter && verseNum(it.verse) === verse
+      );
+      const idxCh = items.findIndex(it => it.type === "ch" && it.chapter === chapter);
+      if (itemIdx < 0) {
+        if (idxCh >= 0) {
+          versesEl.scrollTop = idxCh * itemHeight;
+          lastStart = -1;
+          renderWindow();
+        }
+        return;
+      }
+      if (flash) {
+        flashTarget = { bookIdx: currentBook, chapter, verse, start: Date.now(), duration: 1600 };
+        setTimeout(() => {
+          if (flashTarget && Date.now() - flashTarget.start >= flashTarget.duration) {
+            flashTarget = null;
+          }
+        }, 1700);
+      }
+      // Render from the chapter heading so wrapped lines lay out at their natural height,
+      // then center using the element's real position (the sticky toolbar sits outside #verses).
+      pinRender = {
+        start: Math.max(0, idxCh >= 0 ? idxCh : itemIdx - 5),
+        end: Math.min(items.length, itemIdx + 30)
+      };
+      const viewH = versesEl.clientHeight || 600;
+      versesEl.scrollTop = Math.max(0, itemIdx * itemHeight - viewH / 2 + itemHeight / 2);
+      lastStart = -1;
+      renderWindow();
+      const sel = `.verse[data-chapter="${chapter}"][data-verse="${verse}"]`;
+      centerVerseEl(windowEl.querySelector(sel));
+      requestAnimationFrame(() => {
+        lastStart = -1;
+        renderWindow();
+        centerVerseEl(windowEl.querySelector(sel));
+      });
+    }
+
+    function openVerse(bookIdx, chapter, verse, opts) {
+      opts = opts || {};
+      showBook(bookIdx, {
+        chapter,
+        verse,
+        flash: opts.flash !== false,
+        updateHash: opts.updateHash !== false,
+        replaceHash: opts.replaceHash
+      });
+    }
+
+    function applyHash(hash, opts) {
+      opts = opts || {};
+      const loc = parseHash(hash);
+      if (!loc) return false;
+      openVerse(loc.bookIdx, loc.chapter, loc.verse, {
+        flash: !!loc.verse,
+        updateHash: false,
+        replaceHash: opts.replaceHash
+      });
+      return true;
+    }
+
     function doSearch() {
+      pinRender = null;
       const q = searchEl.value.trim();
       if (!q) {
         showBook(currentBook);
@@ -574,14 +823,14 @@
       }
       bookTitleEl.textContent = "Search results";
       items = [];
-      books.forEach(book => {
+      books.forEach((book, bookIdx) => {
         const matches = book.verses.filter(v => {
           if (redOnly && !hasDivine(v.text)) return false;
           return foldSearch(v.ref + " " + v.text).includes(foldSearch(q));
         });
         if (!matches.length) return;
         items.push({ type: "ch", bookName: book.name });
-        matches.forEach(v => items.push({ type: "v", verse: v, query: foldSearch(q) }));
+        matches.forEach(v => items.push({ type: "v", verse: v, query: foldSearch(q), bookIdx }));
       });
       statusEl.textContent = items.filter(i => i.type === "v").length + " matches";
       lastStart = -1;
@@ -638,12 +887,7 @@
 
     chapterJumpEl.onchange = () => {
       currentChapter = parseInt(chapterJumpEl.value, 10);
-      const idxCh = items.findIndex(it => it.type === "ch" && it.chapter === currentChapter);
-      if (idxCh >= 0) {
-        versesEl.scrollTop = idxCh * itemHeight;
-        renderWindow();
-      }
-      savePosition();
+      showBook(currentBook, { chapter: currentChapter });
     };
 
     let searchTimer = null;
@@ -654,6 +898,46 @@
         else showBook(currentBook);
       }, 180);
     };
+    searchEl.onkeydown = (e) => {
+      if (e.key === "Enter") {
+        clearTimeout(searchTimer);
+        if (searchEl.value.trim()) doSearch();
+        else showBook(currentBook);
+      }
+    };
+
+    function resultVerseEl(target) {
+      return target && target.closest ? target.closest(".verse.search-hit") : null;
+    }
+    versesEl.addEventListener("click", (e) => {
+      const hit = resultVerseEl(e.target);
+      if (!hit) return;
+      openVerse(
+        parseInt(hit.dataset.bookIdx, 10),
+        parseInt(hit.dataset.chapter, 10),
+        parseInt(hit.dataset.verse, 10)
+      );
+    });
+    versesEl.addEventListener("keydown", (e) => {
+      const hit = resultVerseEl(e.target);
+      if (!hit) return;
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openVerse(
+          parseInt(hit.dataset.bookIdx, 10),
+          parseInt(hit.dataset.chapter, 10),
+          parseInt(hit.dataset.verse, 10)
+        );
+      }
+    });
+
+    window.addEventListener("hashchange", () => {
+      if (ignoreHashChange) {
+        ignoreHashChange = false;
+        return;
+      }
+      applyHash(location.hash);
+    });
 
     redToggleEl.onclick = () => {
       redOnly = !redOnly;
@@ -705,9 +989,10 @@
         parseText(raw);
         renderSidebar();
         loadPosition();
-        showBook(currentBook);
+        if (!applyHash(location.hash, { replaceHash: true })) {
+          showBook(currentBook, { replaceHash: true });
+        }
         updateSuggest();
-        statusEl.textContent = `${books.length} books`;
       } catch (e) {
         statusEl.textContent = "Processed text not found.";
         windowEl.innerHTML = "<p>The processed text file is not yet available.</p>";
