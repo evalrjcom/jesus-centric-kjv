@@ -49,6 +49,11 @@ Context rules that are not simple word pairs (currently the verb `art` → `are`
 ## Jesus-type markers
 Besides the general `[JESUS]` rules (Word, Lamb, Christ, Messiah, Son of Man, Son of God), `jesus_types.tsv` lists one verse per theme of the "books of the Bible reveal Christ" chart, with the word that points to Him (for example `her seed` in Gen 3:15 becomes `her seed[JESUS]`). Columns: `ref`, `target`, `occurrence`, `match` (strong, moderate or weak) and `theme`. A target that is not found in its verse fails the run, and a word that already carries `[JESUS]` is left alone. The generated table is in `JESUS_TYPES.md`; regenerate it with `python3 jesus_centric_kjv_processor.py --write-types-md`, or just edit `jesus_types.tsv` in the browser and let CI do it.
 
+## Divine pronouns (He[JESUS] / Him[JESUS])
+When `he` or `him` refers to GOD (the LORD, GOD, the Father), JESUS or the Holy Spirit, the processor capitalizes it and adds a marker: `He[JESUS]`, `Him[JESUS]` (for example Ps 23:2 "He[JESUS] makes me to lie down"). `his` and `himself` are not changed. The logic is in `divine_pronouns.py`: a pronoun takes the nearest earlier singular antecedent in the same verse or up to two verses back, with grammar checks (for example "JESUS said to him" keeps `him` lowercase). It is tuned for precision, so unclear cases stay lowercase.
+
+Fix a verse with a row in `divine_pronouns.tsv` (tab-separated `ref`, `word`, `occurrence`, `include` or `exclude`, optional note), for example `Heb 4:8	he	1	exclude	JESUS here is Joshua`. Edit it in the browser or locally; a row that matches no he/him fails the run. Options: `--pronouns PATH`, `--no-divine-pronouns`, and `--pronoun-review PREFIX` (writes `PREFIX.md` and `PREFIX.csv` with every change and every ambiguous case).
+
 If `docs/TEXT-PCE.txt` is missing, the script downloads it from
 `https://raw.githubusercontent.com/evalrjcom/jesus-centric-kjv/main/docs/TEXT-PCE.txt`.
 Every load is validated: 66 books, 1,189 chapters and 31,102 verses, in canonical order with no duplicates. The script exits with an error if any check fails.

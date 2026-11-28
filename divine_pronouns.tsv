@@ -1,0 +1,62 @@
+# Divine-pronoun overrides for jesus_centric_kjv_processor.py (divine_pronouns.py)
+#
+# The processor writes He[JESUS] / Him[JESUS] where its heuristic decides a he/him refers to GOD, JESUS
+# or the Holy Spirit. Use this file to fix a verse it gets wrong. Edit it in the browser or locally.
+#
+# Columns (tab-separated): ref <TAB> word <TAB> occurrence <TAB> action <TAB> note (optional)
+#   ref         PCE reference, e.g. Ps 23:2 (book abbreviations as in jesus_types.tsv)
+#   word        he or him
+#   occurrence  which he (or him) in the verse, counting from 1, case-insensitive
+#   action      include (force He[JESUS] / Him[JESUS]) or exclude (keep lowercase, no marker)
+# A row that does not match a he/him in its verse fails the run.
+#
+Isa 52:13	he	1	include	Suffering Servant (Messianic)
+Isa 52:15	he	1	include	Suffering Servant (Messianic)
+Isa 52:15	him	1	include	Suffering Servant (Messianic)
+Isa 53:2	he	1	include	Suffering Servant (Messianic)
+Isa 53:2	him	1	include	Suffering Servant (Messianic)
+Isa 53:2	he	2	include	Suffering Servant (Messianic)
+Isa 53:2	him	2	include	Suffering Servant (Messianic)
+Isa 53:2	him	3	include	Suffering Servant (Messianic)
+Isa 53:3	he	1	include	Suffering Servant (Messianic)
+Isa 53:3	him	1	include	Suffering Servant (Messianic)
+Isa 53:3	he	2	include	Suffering Servant (Messianic)
+Isa 53:3	him	2	include	Suffering Servant (Messianic)
+Isa 53:4	he	1	include	Suffering Servant (Messianic)
+Isa 53:4	him	1	include	Suffering Servant (Messianic)
+Isa 53:5	he	1	include	Suffering Servant (Messianic)
+Isa 53:5	he	2	include	Suffering Servant (Messianic)
+Isa 53:5	him	1	include	Suffering Servant (Messianic)
+Isa 53:6	him	1	include	Suffering Servant (Messianic)
+Isa 53:7	he	1	include	Suffering Servant (Messianic)
+Isa 53:7	he	2	include	Suffering Servant (Messianic)
+Isa 53:7	he	3	include	Suffering Servant (Messianic)
+Isa 53:7	he	4	include	Suffering Servant (Messianic)
+Isa 53:7	he	5	include	Suffering Servant (Messianic)
+Isa 53:8	he	1	include	Suffering Servant (Messianic)
+Isa 53:8	he	2	include	Suffering Servant (Messianic)
+Isa 53:8	he	3	include	Suffering Servant (Messianic)
+Isa 53:9	he	1	include	Suffering Servant (Messianic)
+Isa 53:9	he	2	include	Suffering Servant (Messianic)
+Isa 53:10	him	1	include	Suffering Servant (Messianic)
+Isa 53:10	he	1	include	Suffering Servant (Messianic)
+Isa 53:10	him	2	include	Suffering Servant (Messianic)
+Isa 53:10	he	2	include	Suffering Servant (Messianic)
+Isa 53:10	he	3	include	Suffering Servant (Messianic)
+Isa 53:11	he	1	include	Suffering Servant (Messianic)
+Isa 53:11	he	2	include	Suffering Servant (Messianic)
+Isa 53:12	him	1	include	Suffering Servant (Messianic)
+Isa 53:12	he	1	include	Suffering Servant (Messianic)
+Isa 53:12	he	2	include	Suffering Servant (Messianic)
+Isa 53:12	he	3	include	Suffering Servant (Messianic)
+Isa 53:12	he	4	include	Suffering Servant (Messianic)
+Joh 1:10	he	1	include	the Word / the true Light
+Joh 1:10	him	1	include	the Word / the true Light
+Joh 1:10	him	2	include	the Word / the true Light
+Joh 1:11	he	1	include	the Word / the true Light
+Joh 1:11	him	1	include	the Word / the true Light
+Joh 1:12	him	1	include	the Word / the true Light
+Joh 1:12	he	1	include	the Word / the true Light
+Joh 1:18	he	1	include	the only begotten Son
+Joh 1:18	him	1	include	the Father
+Heb 4:8	he	1	exclude	JESUS here is Joshua (Greek form of the name)

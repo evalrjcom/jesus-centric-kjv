@@ -130,7 +130,9 @@ def test_cli_legacy_plain_input(tmp_path):
     src.write_text("JOHN\r\n3:16: For God so loved the world, that whosoever believeth in him\r\n", encoding="utf-8")
     out = tmp_path / "out.txt"
     jk.main([str(src), str(out)])
-    assert out.read_text(encoding="utf-8") == "JOHN\n3:16: For GOD so loved the world, that whoever believes in him\n"
+    # the divine-pronoun stage also runs in legacy mode: "him" here is the Son
+    assert out.read_text(encoding="utf-8") == ("JOHN\n3:16: For GOD so loved the world, that whoever believes in "
+                                               "Him[JESUS]\n")
 
 
 def test_general_eth_rule_removed():

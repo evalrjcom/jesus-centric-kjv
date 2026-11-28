@@ -11,6 +11,9 @@ import argparse, json, re, sys
 import urllib.error, urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import divine_pronouns as dp  # noqa: E402
+
 # ---------------------------------------------------------------------------
 # Pure Cambridge Edition (PCE) source
 # ---------------------------------------------------------------------------
@@ -22,6 +25,7 @@ DEFAULT_SWAPS_PATH = REPO_ROOT / "swaps.tsv"
 DEFAULT_REPLACEMENTS_MD = REPO_ROOT / "REPLACEMENTS.md"
 DEFAULT_TYPES_PATH = REPO_ROOT / "jesus_types.tsv"
 DEFAULT_TYPES_MD = REPO_ROOT / "JESUS_TYPES.md"
+DEFAULT_PRONOUNS_PATH = REPO_ROOT / "divine_pronouns.tsv"
 
 # Canonical 66-book order: (PCE abbreviation, full name, output header).
 # Output headers match the book headers the viewer (docs/index.html) has always used.
@@ -348,6 +352,48 @@ def apply_types(entries: list) -> None:
     TYPES_BY_REF = index_types(entries)
 
 
+# ---------------------------------------------------------------------------
+# Divine pronouns (divine_pronouns.py): he/him that refer to GOD or JESUS -> He[JESUS] / Him[JESUS]
+# divine_pronouns.tsv holds manual include/exclude overrides for the heuristic.
+# ---------------------------------------------------------------------------
+PRONOUN_OVERRIDES = dp.load_overrides(DEFAULT_PRONOUNS_PATH, BOOK_INDEX)
+
+
+def apply_pronoun_overrides(entries: list) -> None:
+    global PRONOUN_OVERRIDES
+    PRONOUN_OVERRIDES = entries
+
+
+def mark_divine_pronouns(items, overrides=None, common=None):
+    """Run the divine-pronoun stage over processed verses in canonical order.
+
+    items: list of (ref, abbr, text, raw) where text is the processed verse (no 'C:V: ' prefix) and raw is
+    the KJV verse text (italic brackets stripped) or None. common: words seen in lowercase (default: from
+    items), used to tell proper names from sentence-initial words. Returns (new_texts, decisions).
+    Raises dp.OverridesError when an override does not match a he/him in its verse.
+    """
+    overrides = PRONOUN_OVERRIDES if overrides is None else overrides
+    if common is None:
+        common = dp.common_words(t for _, _, t, _ in items)
+    resolver = dp.Resolver(common, dp.index_overrides(overrides))
+    nt_start = BOOK_INDEX["Mt"]
+    out, decisions, book = [], [], None
+    for ref, abbr, text, raw in items:
+        if abbr != book:
+            book = abbr
+            resolver.reset()
+        new, ds = resolver.verse(ref, abbr, text, BOOK_INDEX[abbr] >= nt_start, raw)
+        for d in ds:
+            d["before"], d["after"] = text, new
+        decisions.extend(ds)
+        out.append(new)
+    unused = [o for o in overrides if (o["ref"], o["word"], o["occurrence"]) not in resolver.used_overrides]
+    if unused:
+        raise dp.OverridesError("divine_pronouns.tsv: no matching he/him for " + ", ".join(
+            f"line {o['line']} ({o['ref']} {o['word']} #{o['occurrence']})" for o in unused))
+    return out, decisions
+
+
 # Static prose appended when regenerating REPLACEMENTS.md from swaps.tsv.
 # Keep this in sync with the hand-written context-rule section of that file.
 ART_RULE_MD = (
@@ -520,42 +566,64 @@ def _is_pce_file(path: Path) -> bool:
     return bool(m and m.group(1) in BOOK_INDEX)
 
 
-def process_file(inp, outp):
+def process_file(inp, outp, pronouns=True):
     """Legacy mode: process a plain 'HEADER / C:V: text' file line by line."""
-    with open(inp, encoding="utf-8", errors="replace") as fin, open(outp, "w", encoding="utf-8", newline="\n") as fout:
+    header_abbr = {header: abbr for abbr, _, header in BOOKS}
+    with open(inp, encoding="utf-8", errors="replace") as fin:
+        rows, abbr = [], None
         for raw in fin:
             line = raw.rstrip("\r\n")
-            if not line.strip():
-                fout.write("\n")
-                continue
-            fout.write(process_line(line) + "\n")
+            m = re.match(r"^(\d+):(\d+): ", line)
+            if line in header_abbr and not m:
+                abbr = header_abbr[line]
+            if m and abbr:
+                rows.append(["verse", process_line(line), f"{abbr} {m.group(1)}:{m.group(2)}", abbr])
+            else:
+                rows.append(["other", process_line(line) if line.strip() else "", None, None])
+    if pronouns:
+        verse_rows = [r for r in rows if r[0] == "verse"]
+        items = [(r[2], r[3], r[1].partition(": ")[2], None) for r in verse_rows]
+        texts, _ = mark_divine_pronouns(items, overrides=[])
+        for r, t in zip(verse_rows, texts):
+            r[1] = r[1].partition(": ")[0] + ": " + t
+    with open(outp, "w", encoding="utf-8", newline="\n") as fout:
+        for r in rows:
+            fout.write(r[1] + "\n")
     print(f"Processed {inp} -> {outp}")
 
 
-def process_pce(source, outp, italics="strip", titles_json=None, timeout=30.0):
+def process_pce(source, outp, italics="strip", titles_json=None, timeout=30.0, pronouns=True,
+                pronoun_review=None):
     verses, origin = load_pce(source, timeout=timeout)
     print(f"Loaded PCE from {origin}: {EXPECTED_BOOKS} books, {EXPECTED_CHAPTERS} chapters, {len(verses)} verses")
     outp = Path(outp)
     outp.parent.mkdir(parents=True, exist_ok=True)
-    header_abbr = {header: abbr for abbr, _, header in BOOKS}
-    abbr, used = None, set()
-    with open(outp, "w", encoding="utf-8", newline="\n") as fout:
-        for line in pce_to_lines(verses, italics):
-            # book headers pass through unchanged; verse lines get the full pipeline
-            if line in header_abbr and not re.match(r"^\d+:\d+: ", line):
-                abbr = header_abbr[line]
-                fout.write(line + "\n")
-                continue
-            m = re.match(r"^(\d+):(\d+): ", line)
-            if not m:
-                fout.write(line + "\n")
-                continue
-            ref = f"{abbr} {m.group(1)}:{m.group(2)}"
-            used.add(ref)
-            fout.write(process_line(line, ref) + "\n")
+    used = set()
+    items = []
+    for v in verses:
+        ref = f"{v['abbr']} {v['chapter']}:{v['verse']}"
+        used.add(ref)
+        line = process_line(f"{v['chapter']}:{v['verse']}: {render_text(v['text'], italics)}", ref)
+        items.append((ref, v["abbr"], line.partition(": ")[2], render_text(v["text"], "strip")))
     missing = sorted(set(TYPES_BY_REF) - used)
     if missing:
         raise TypesError(f"jesus_types.tsv refers to verses not in the source: {', '.join(missing)}")
+    if pronouns:
+        texts, decisions = mark_divine_pronouns(items)
+        changed = sum(1 for d in decisions if d["status"] == "include" and not d["already"])
+        print(f"Divine pronouns: {changed} he/him marked")
+        if pronoun_review:
+            md, csv_path = dp.write_review(decisions, pronoun_review, [b[0] for b in BOOKS])
+            print(f"Wrote divine-pronoun review -> {md}, {csv_path}")
+    else:
+        texts = [t for _, _, t, _ in items]
+    with open(outp, "w", encoding="utf-8", newline="\n") as fout:
+        current = None
+        for v, text in zip(verses, texts):
+            if v["abbr"] != current:
+                current = v["abbr"]
+                fout.write(v["header"] + "\n")
+            fout.write(f"{v['chapter']}:{v['verse']}: {text}\n")
     if titles_json:
         Path(titles_json).write_text(json.dumps(titles_metadata(verses), ensure_ascii=False, indent=1) + "\n",
                                      encoding="utf-8")
@@ -581,6 +649,12 @@ def main(argv=None):
     p.add_argument("--write-types-md", nargs="?", const=DEFAULT_TYPES_MD, type=Path, metavar="PATH",
                    help="regenerate JESUS_TYPES.md from the types file and exit "
                         "(default path: JESUS_TYPES.md next to this script)")
+    p.add_argument("--pronouns", type=Path, default=DEFAULT_PRONOUNS_PATH,
+                   help="TSV of divine-pronoun overrides (default: divine_pronouns.tsv next to this script)")
+    p.add_argument("--no-divine-pronouns", action="store_true",
+                   help="skip the stage that writes He[JESUS] / Him[JESUS] for pronouns of GOD or JESUS")
+    p.add_argument("--pronoun-review", type=Path, metavar="PREFIX",
+                   help="also write PREFIX.md and PREFIX.csv listing every divine-pronoun decision")
     p.add_argument("--italics", choices=["strip", "keep", "html"], default="strip",
                    help="PCE [italic] supplied words: strip brackets (default), keep [ ], or wrap in <i></i>")
     p.add_argument("--titles-json", type=Path, help="also write Psalm titles / colophons (<<...>>) as JSON")
@@ -593,6 +667,9 @@ def main(argv=None):
             apply_swaps(load_swaps(args.swaps))
         if Path(args.types) != DEFAULT_TYPES_PATH or args.write_types_md:
             apply_types(load_types(args.types))
+        if Path(args.pronouns) != DEFAULT_PRONOUNS_PATH:
+            apply_pronoun_overrides(dp.load_overrides(args.pronouns, BOOK_INDEX))
+        pron = not args.no_divine_pronouns
         if args.write_types_md is not None:
             out_md = write_types_md(TYPES, args.write_types_md)
             print(f"Wrote {len(TYPES)} jesus-type markers -> {out_md}")
@@ -606,12 +683,12 @@ def main(argv=None):
             if args.source:
                 p.error("give either an input path or --source, not both")
             if _is_pce_file(inp):
-                process_pce(inp, outp, args.italics, args.titles_json, args.timeout)
+                process_pce(inp, outp, args.italics, args.titles_json, args.timeout, pron, args.pronoun_review)
             else:
-                process_file(inp, outp)
+                process_file(inp, outp, pron)
         else:
             outp = args.paths[0] if args.paths else DEFAULT_OUTPUT
-            process_pce(args.source, outp, args.italics, args.titles_json, args.timeout)
+            process_pce(args.source, outp, args.italics, args.titles_json, args.timeout, pron, args.pronoun_review)
     except Exception as e:
         print(f"error: {e}", file=sys.stderr)
         sys.exit(1)
