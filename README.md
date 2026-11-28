@@ -30,6 +30,8 @@ Options:
 - `--timeout SECONDS`: download timeout when the source is fetched from a URL (default 30).
 - `--swaps PATH`: TSV of word swaps, one `old<TAB>new` pair per line (default: `swaps.tsv` next to the script). `#` comments and blank lines are allowed.
 - `--write-replacements-md [PATH]`: regenerate `REPLACEMENTS.md` from the swaps file and exit.
+- `--types PATH`: TSV of per-verse `[JESUS]` markers (default: `jesus_types.tsv` next to the script).
+- `--write-types-md [PATH]`: regenerate `JESUS_TYPES.md` from the types file and exit.
 
 ## Word swaps
 Lexical modernization rules live in `swaps.tsv` (one `old<TAB>new` pair per line; `#` comments and blank lines are allowed). You can edit them locally or in the GitHub file editor.
@@ -43,6 +45,9 @@ python3 jesus_centric_kjv_processor.py --write-replacements-md
 **On GitHub:** edit only `swaps.tsv` in the browser and commit to `main`. CI regenerates `REPLACEMENTS.md` and the processed text, runs the tests, and commits any updates.
 
 Context rules that are not simple word pairs (currently the verb `art` → `are`) stay in the Python script. The full table and the `art` rule are in `REPLACEMENTS.md`. These swaps are kept in a separate file until a final Bible translation version is settled.
+
+## Jesus-type markers
+Besides the general `[JESUS]` rules (Word, Lamb, Christ, Messiah, Son of Man, Son of God), `jesus_types.tsv` lists one verse per theme of the "books of the Bible reveal Christ" chart, with the word that points to Him (for example `her seed` in Gen 3:15 becomes `her seed[JESUS]`). Columns: `ref`, `target`, `occurrence`, `match` (strong, moderate or weak) and `theme`. A target that is not found in its verse fails the run, and a word that already carries `[JESUS]` is left alone. The generated table is in `JESUS_TYPES.md`; regenerate it with `python3 jesus_centric_kjv_processor.py --write-types-md`, or just edit `jesus_types.tsv` in the browser and let CI do it.
 
 If `docs/TEXT-PCE.txt` is missing, the script downloads it from
 `https://raw.githubusercontent.com/evalrjcom/jesus-centric-kjv/main/docs/TEXT-PCE.txt`.
@@ -62,11 +67,11 @@ The processed text is served from the `/docs` folder.
 The site will be available at `https://evalrjcom.github.io/jesus-centric-kjv/`.
 
 The GitHub Action (`.github/workflows/process-kjv.yml`) automatically:
-- Regenerates `REPLACEMENTS.md` from `swaps.tsv`
+- Regenerates `REPLACEMENTS.md` from `swaps.tsv` and `JESUS_TYPES.md` from `jesus_types.tsv`
 - Runs the tests
 - Reads the Pure Cambridge Edition text from `docs/TEXT-PCE.txt`
 - Runs the processor
-- Commits the updated `docs/jesus_centric_kjv_all66.txt` and `REPLACEMENTS.md` when they change (or on manual workflow run)
+- Commits the updated `docs/jesus_centric_kjv_all66.txt`, `REPLACEMENTS.md` and `JESUS_TYPES.md` when they change (or on manual workflow run)
 - Comments on new/edited issues
 
 Trigger the workflow manually from the Actions tab if you want to regenerate the text immediately.

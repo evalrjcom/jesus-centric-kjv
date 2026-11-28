@@ -6,7 +6,9 @@ on:
     paths:
       - 'jesus_centric_kjv_processor.py'
       - 'swaps.tsv'
+      - 'jesus_types.tsv'
       - 'REPLACEMENTS.md'
+      - 'JESUS_TYPES.md'
       - 'docs/TEXT-PCE.txt'
       - 'tests/**'
       - '.github/workflows/process-kjv.yml'
@@ -14,7 +16,9 @@ on:
     paths:
       - 'jesus_centric_kjv_processor.py'
       - 'swaps.tsv'
+      - 'jesus_types.tsv'
       - 'REPLACEMENTS.md'
+      - 'JESUS_TYPES.md'
       - 'docs/TEXT-PCE.txt'
       - 'tests/**'
   issues:
@@ -46,6 +50,10 @@ jobs:
       - name: Regenerate REPLACEMENTS.md
         run: python3 jesus_centric_kjv_processor.py --write-replacements-md
 
+      # Same for jesus_types.tsv -> JESUS_TYPES.md (a target missing from its verse fails here).
+      - name: Regenerate JESUS_TYPES.md
+        run: python3 jesus_centric_kjv_processor.py --write-types-md
+
       - name: Run tests
         run: |
           python3 -m pip install --quiet pytest
@@ -55,16 +63,16 @@ jobs:
       - name: Run processor
         run: python3 jesus_centric_kjv_processor.py --source docs/TEXT-PCE.txt docs/jesus_centric_kjv_all66.txt
 
-      - name: Commit processed text and REPLACEMENTS.md if changed
+      - name: Commit processed text and generated docs if changed
         if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/jesus_centric_kjv_all66.txt REPLACEMENTS.md
+          git add docs/jesus_centric_kjv_all66.txt REPLACEMENTS.md JESUS_TYPES.md
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update processed text and REPLACEMENTS.md [skip ci]"
+            git commit -m "Update processed text and generated docs [skip ci]"
             # Pull any concurrent commits before pushing
             git pull --rebase origin main || true
             git push

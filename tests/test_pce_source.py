@@ -117,7 +117,7 @@ def test_missing_local_file_and_bad_url(tmp_path):
 
 def test_cli_two_arg_pce_and_titles(tmp_path, monkeypatch):
     # Full text is parsed and validated; the slow modernization pipeline is stubbed for speed.
-    monkeypatch.setattr(jk, "process_line", lambda s: s)
+    monkeypatch.setattr(jk, "process_line", lambda s, ref=None: s)
     out, tj = tmp_path / "out.txt", tmp_path / "titles.json"
     jk.main([str(jk.DEFAULT_PCE_PATH), str(out), "--titles-json", str(tj)])
     lines = out.read_text(encoding="utf-8").splitlines()

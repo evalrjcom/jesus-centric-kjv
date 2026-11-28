@@ -69,7 +69,7 @@ GENESIS
 3:12: And the man said, The woman whom you gavest to be with me, she gave me of the tree, and I did eat.
 3:13: And the LORD GOD said to the woman, What is this that you have done? And the woman said, The serpent beguiled me, and I did eat.
 3:14: And the LORD GOD said to the serpent, Because you have done this, you are cursed above all cattle, and above every beast of the field; upon your belly shall you go, and dust shall you eat all the days of your life:
-3:15: And I will put enmity between you and the woman, and between your seed and her seed; it shall bruise your head, and you shall bruise his heel.
+3:15: And I will put enmity between you and the woman, and between your seed and her seed[JESUS]; it shall bruise your head, and you shall bruise his heel.
 3:16: To the woman he said, I will greatly multiply your sorrow and your conception; in sorrow you shall bring forth children; and your desire shall be to your husband, and he shall rule over you.
 3:17: And to Adam he said, Because you have hearkened to the voice of your wife, and have eaten of the tree, of which I commanded you, saying, You shall not eat of it: cursed is the ground for your sake; in sorrow shall you eat of it all the days of your life;
 3:18: Thorns also and thistles shall it bring forth to you; and you shall eat the herb of the field;
@@ -1962,7 +1962,7 @@ EXODUS
 16:12: I have heard the murmurings of the children of Israel: speak to them, saying, At even you shall eat flesh, and in the morning you shall be filled with bread; and you shall know that I am the LORD your GOD.
 16:13: And it happened, that at even the quails came up, and covered the camp: and in the morning the dew lay round about the host.
 16:14: And when the dew that lay was gone up, look, upon the face of the wilderness there lay a small round thing, as small as the hoar frost on the ground.
-16:15: And when the children of Israel saw it, they said one to another, It is manna: for they knew not what it was. And Moses said to them, This is the bread which the LORD has given you to eat.
+16:15: And when the children of Israel saw it, they said one to another, It is manna: for they knew not what it was. And Moses said to them, This is the bread[JESUS] which the LORD has given you to eat.
 16:16: This is the thing which the LORD has commanded, Gather of it every man according to his eating, an omer for every man, according to the number of your persons; take you every man for them which are in his tents.
 16:17: And the children of Israel did so, and gathered, some more, some less.
 16:18: And when they did mete it with an omer, he that gathered much had nothing over, and he that gathered little had no lack; they gathered every man according to his eating.
@@ -1989,7 +1989,7 @@ EXODUS
 17:3: And the people thirsted there for water; and the people murmured against Moses, and said, Therefore is this that you have brought us up out of Egypt, to kill us and our children and our cattle with thirst?
 17:4: And Moses cried to the LORD, saying, What shall I do to this people? they be almost ready to stone me.
 17:5: And the LORD said to Moses, Go on before the people, and take with you of the elders of Israel; and your rod, with which you struck the river, take in yours hand, and go.
-17:6: Look, I will stand before you there upon the rock in Horeb; and you shall smite the rock, and there shall come water out of it, that the people may drink. And Moses did so in the sight of the elders of Israel.
+17:6: Look, I will stand before you there upon the rock in Horeb; and you shall smite the rock[JESUS], and there shall come water out of it, that the people may drink. And Moses did so in the sight of the elders of Israel.
 17:7: And he called the name of the place Massah, and Meribah, because of the chiding of the children of Israel, and because they tempted the LORD, saying, Is the LORD among us, or not?
 17:8: Then came Amalek, and fought with Israel in Rephidim.
 17:9: And Moses said to Joshua, Choose us out men, and go out, fight with Amalek: to morrow I will stand on the top of the hill with the rod of GOD in mine hand.
@@ -3356,7 +3356,7 @@ LEVITICUS
 21:7: They shall not take a wife that is a whore, or profane; neither shall they take a woman put away from her husband: for he is holy to his GOD.
 21:8: You shall sanctify him therefore; for he offers the bread of your GOD: he shall be holy to you: for I the LORD, which sanctify you, am holy.
 21:9: And the daughter of any priest, if she profane herself by playing the whore, she profanes her father: she shall be burnt with fire.
-21:10: And he that is the high priest among his brethren, upon whose head the anointing oil was poured, and that is consecrated to put on the garments, shall not uncover his head, nor rend his clothes;
+21:10: And he that is the high priest[JESUS] among his brethren, upon whose head the anointing oil was poured, and that is consecrated to put on the garments, shall not uncover his head, nor rend his clothes;
 21:11: Neither shall he go in to any dead body, nor defile himself for his father, or for his mother;
 21:12: Neither shall he go out of the sanctuary, nor profane the sanctuary of his GOD; for the crown of the anointing oil of his GOD is upon him: I am the LORD.
 21:13: And he shall take a wife in her virginity.
@@ -4124,7 +4124,7 @@ NUMBERS
 14:11: And the LORD said to Moses, How long will this people provoke me? and how long will it be before they believe me, for all the signs which I have shewed among them?
 14:12: I will smite them with the pestilence, and disinherit them, and will make of you a greater nation and mightier than they.
 14:13: And Moses said to the LORD, Then the Egyptians shall hear it, (for you brought up this people in your might from among them;)
-14:14: And they will tell it to the inhabitants of this land: for they have heard that you LORD are among this people, that you LORD are seen face to face, and that your cloud stands over them, and that you go before them, by day time in a pillar of a cloud, and in a pillar of fire by night.
+14:14: And they will tell it to the inhabitants of this land: for they have heard that you LORD are among this people, that you LORD are seen face to face, and that your cloud stands over them, and that you go before them, by day time in a pillar of a cloud, and in a pillar of fire[JESUS] by night.
 14:15: Now if you shall kill all this people as one man, then the nations which have heard the fame of you will speak, saying,
 14:16: Because the LORD was not able to bring this people into the land which he swore to them, therefore he has slain them in the wilderness.
 14:17: And now, I beseech you, let the power of my LORD be great, according as you have spoken, saying,
@@ -5402,7 +5402,7 @@ DEUTERONOMY
 18:12: For all that do these things are an abomination to the LORD: and because of these abominations the LORD your GOD does drive them out from before you.
 18:13: You shall be perfect with the LORD your GOD.
 18:14: For these nations, which you shall possess, hearkened to observers of times, and to diviners: but as for you, the LORD your GOD has not suffered you so to do.
-18:15: The LORD your GOD will raise up to you a Prophet from the midst of you, of your brethren, like to me; to him you shall listen;
+18:15: The LORD your GOD will raise up to you a Prophet[JESUS] from the midst of you, of your brethren, like to me; to him you shall listen;
 18:16: According to all that you desiredst of the LORD your GOD in Horeb in the day of the assembly, saying, Let me not hear again the voice of the LORD my GOD, neither let me see this great fire any more, that I die not.
 18:17: And the LORD said to me, They have well spoken that which they have spoken.
 18:18: I will raise them up a Prophet from among their brethren, like to you, and will put my words in his mouth; and he shall speak to them all that I shall command him.
@@ -5952,7 +5952,7 @@ JOSHUA
 5:11: And they did eat of the old corn of the land on the morrow after the passover, unleavened cakes, and parched corn in the selfsame day.
 5:12: And the manna ceased on the morrow after they had eaten of the old corn of the land; neither had the children of Israel manna any more; but they did eat of the fruit of the land of Canaan that year.
 5:13: And it happened, when Joshua was by Jericho, that he lifted up his eyes and looked, and, look, there stood a man over against him with his sword drawn in his hand: and Joshua went to him, and said to him, Are you for us, or for our adversaries?
-5:14: And he said, Nay; but as captain of the host of the LORD am I now come. And Joshua fell on his face to the earth, and did worship, and said to him, What says my lord to his servant?
+5:14: And he said, Nay; but as captain[JESUS] of the host of the LORD am I now come. And Joshua fell on his face to the earth, and did worship, and said to him, What says my lord to his servant?
 5:15: And the captain of the LORD’s host said to Joshua, Loose your shoe from off your foot; for the place whereon you stand is holy. And Joshua did so.
 6:1: Now Jericho was straitly shut up because of the children of Israel: none went out, and none came in.
 6:2: And the LORD said to Joshua, See, I have given into yours hand Jericho, and the king of it, and the mighty men of valour.
@@ -6861,7 +6861,7 @@ JUDGES
 11:24: Will not you possess that which Chemosh your god gives you to possess? So whomsoever the LORD our GOD shall drive out from before us, them will we possess.
 11:25: And now are you any thing better than Balak the son of Zippor, king of Moab? did he ever strive against Israel, or did he ever fight against them,
 11:26: While Israel lived in Heshbon and her towns, and in Aroer and her towns, and in all the cities that be along by the coasts of Arnon, three hundred years? why therefore did you not recover them within that time?
-11:27: Therefore I have not sinned against you, but you do me wrong to war against me: the LORD the Judge be judge this day between the children of Israel and the children of Ammon.
+11:27: Therefore I have not sinned against you, but you do me wrong to war against me: the LORD the Judge[JESUS] be judge this day between the children of Israel and the children of Ammon.
 11:28: However the king of the children of Ammon hearkened not to the words of Jephthah which he sent him.
 11:29: Then the Spirit of the LORD came upon Jephthah, and he passed over Gilead, and Manasseh, and passed over Mizpeh of Gilead, and from Mizpeh of Gilead he passed over to the children of Ammon.
 11:30: And Jephthah vowed a vow to the LORD, and said, If you shall without fail deliver the children of Ammon into mine hands,
@@ -7210,7 +7210,7 @@ RUTH
 4:11: And all the people that were in the gate, and the elders, said, We are witnesses. The LORD make the woman that is come into yours house like Rachel and like Leah, which two did build the house of Israel: and do you worthily in Ephratah, and be famous in Bethlehem:
 4:12: And let your house be like the house of Pharez, whom Tamar bare to Judah, of the seed which the LORD shall give you of this young woman.
 4:13: So Boaz took Ruth, and she was his wife: and when he went in to her, the LORD gave her conception, and she bare a son.
-4:14: And the women said to Naomi, Blessed be the LORD, which has not left you this day without a kinsman, that his name may be famous in Israel.
+4:14: And the women said to Naomi, Blessed be the LORD, which has not left you this day without a kinsman[JESUS], that his name may be famous in Israel.
 4:15: And he shall be to you a restorer of your life, and a nourisher of yours old age: for your daughter in law, which loves you, which is better to you than seven sons, has born him.
 4:16: And Naomi took the child, and laid it in her bosom, and became nurse to it.
 4:17: And the women her neighbours gave it a name, saying, There is a son born to Naomi; and they called his name Obed: he is the father of Jesse, the father of David.
@@ -7257,7 +7257,7 @@ FIRST SAMUEL
 2:7: The LORD makes poor, and makes rich: he brings low, and lifts up.
 2:8: He raises up the poor out of the dust, and lifts up the beggar from the dunghill, to set them among princes, and to make them inherit the throne of glory: for the pillars of the earth are the LORD’s, and he has set the world upon them.
 2:9: He will keep the feet of his saints, and the wicked shall be silent in darkness; for by strength shall no man prevail.
-2:10: The adversaries of the LORD shall be broken to pieces; out of heaven shall he thunder upon them: the LORD shall judge the ends of the earth; and he shall give strength to his king, and exalt the horn of his anointed.
+2:10: The adversaries of the LORD shall be broken to pieces; out of heaven shall he thunder upon them: the LORD shall judge the ends of the earth; and he shall give strength to his king, and exalt the horn of his anointed[JESUS].
 2:11: And Elkanah went to Ramah to his house. And the child did minister to the LORD before Eli the priest.
 2:12: Now the sons of Eli were sons of Belial; they knew not the LORD.
 2:13: And the priests’ custom with the people was, that, when any man offered sacrifice, the priest’s servant came, while the flesh was in seething, with a fleshhook of three teeth in his hand;
@@ -8200,7 +8200,7 @@ SECOND SAMUEL
 7:9: And I was with you whithersoever you wentest, and have cut off all yours enemies out of your sight, and have made you a great name, like to the name of the great men that are in the earth.
 7:10: Moreover I will appoint a place for my people Israel, and will plant them, that they may dwell in a place of their own, and move no more; neither shall the children of wickedness afflict them any more, as beforetime,
 7:11: And as since the time that I commanded judges to be over my people Israel, and have caused you to rest from all yours enemies. Also the LORD tells you that he will make you an house.
-7:12: And when your days be fulfilled, and you shall sleep with your fathers, I will set up your seed after you, which shall proceed out of your bowels, and I will establish his kingdom.
+7:12: And when your days be fulfilled, and you shall sleep with your fathers, I will set up your seed[JESUS] after you, which shall proceed out of your bowels, and I will establish his kingdom.
 7:13: He shall build an house for my name, and I will stablish the throne of his kingdom for ever.
 7:14: I will be his father, and he shall be my son. If he commit iniquity, I will chasten him with the rod of men, and with the stripes of the children of men:
 7:15: But my mercy shall not depart away from him, as I took it from Saul, whom I put away before you.
@@ -8892,7 +8892,7 @@ SECOND SAMUEL
 5:2: And Solomon sent to Hiram, saying,
 5:3: You know how that David my father could not build an house to the name of the LORD his GOD for the wars which were about him on every side, until the LORD put them under the soles of his feet.
 5:4: But now the LORD my GOD has given me rest on every side, so that there is neither adversary nor evil occurrent.
-5:5: And, look, I purpose to build an house to the name of the LORD my GOD, as the LORD spoke to David my father, saying, Your son, whom I will set upon your throne in your room, he shall build an house to my name.
+5:5: And, look, I purpose to build an house to the name of the LORD my GOD, as the LORD spoke to David my father, saying, Your son[JESUS], whom I will set upon your throne in your room, he shall build an house to my name.
 5:6: Now therefore command you that they hew me cedar trees out of Lebanon; and my servants shall be with your servants: and to you will I give hire for your servants according to all that you shall appoint: for you know that there is not among us any that can skill to hew timber like to the Sidonians.
 5:7: And it happened, when Hiram heard the words of Solomon, that he rejoiced greatly, and said, Blessed be the LORD this day, which has given to David a wise son over this great people.
 5:8: And Hiram sent to Solomon, saying, I have considered the things which you sentest to me for: and I will do all your desire concerning timber of cedar, and concerning timber of fir.
@@ -9546,7 +9546,7 @@ SECOND SAMUEL
 2 KINGS
 1:1: Then Moab rebelled against Israel after the death of Ahab.
 1:2: And Ahaziah fell down through a lattice in his upper chamber that was in Samaria, and was sick: and he sent messengers, and said to them, Go, inquire of Baalzebub the god of Ekron whether I shall recover of this disease.
-1:3: But the angel of the LORD said to Elijah the Tishbite, Arise, go up to meet the messengers of the king of Samaria, and say to them, Is it not because there is not a GOD in Israel, that you go to inquire of Baalzebub the god of Ekron?
+1:3: But the angel of the LORD[JESUS] said to Elijah the Tishbite, Arise, go up to meet the messengers of the king of Samaria, and say to them, Is it not because there is not a GOD in Israel, that you go to inquire of Baalzebub the god of Ekron?
 1:4: Now therefore thus says the LORD, You shall not come down from that bed on which you are gone up, but shall surely die. And Elijah departed.
 1:5: And when the messengers turned back to him, he said to them, Why are you now turned back?
 1:6: And they said to him, There came a man up to meet us, and said to us, Go, turn again to the king that sent you, and say to him, Thus says the LORD, Is it not because there is not a GOD in Israel, that you sendest to inquire of Baalzebub the god of Ekron? therefore you shall not come down from that bed on which you are gone up, but shall surely die.
@@ -10888,7 +10888,7 @@ SECOND SAMUEL
 17:11: And it shall come to pass, when your days be expired that you must go to be with your fathers, that I will raise up your seed after you, which shall be of your sons; and I will establish his kingdom.
 17:12: He shall build me an house, and I will stablish his throne for ever.
 17:13: I will be his father, and he shall be my son: and I will not take my mercy away from him, as I took it from him that was before you:
-17:14: But I will settle him in mine house and in my kingdom for ever: and his throne shall be established for evermore.
+17:14: But I will settle him[JESUS] in mine house and in my kingdom for ever: and his throne shall be established for evermore.
 17:15: According to all these words, and according to all this vision, so did Nathan speak to David.
 17:16: And David the king came and sat before the LORD, and said, Who am I, O LORD GOD, and what is mine house, that you have brought me hitherto?
 17:17: And yet this was a small thing in yours eyes, O GOD; for you have also spoken of your servant’s house for a great while to come, and have regarded me according to the estate of a man of high degree, O LORD GOD.
@@ -11505,7 +11505,7 @@ SECOND SAMUEL
 14:15: They struck also the tents of cattle, and carried away sheep and camels in abundance, and returned to Jerusalem.
 15:1: And the Spirit of GOD came upon Azariah the son of Oded:
 15:2: And he went out to meet Asa, and said to him, Hear you me, Asa, and all Judah and Benjamin; The LORD is with you, while you be with him; and if you seek him, he will be found of you; but if you forsake him, he will forsake you.
-15:3: Now for a long season Israel has been without the true GOD, and without a teaching priest, and without law.
+15:3: Now for a long season Israel has been without the true GOD, and without a teaching priest[JESUS], and without law.
 15:4: But when they in their trouble did turn to the LORD GOD of Israel, and sought him, he was found of them.
 15:5: And in those times there was no peace to him that went out, nor to him that came in, but great vexations were upon all the inhabitants of the countries.
 15:6: And nation was destroyed of nation, and city of city: for GOD did vex them with all adversity.
@@ -12192,7 +12192,7 @@ EZRA
 7:3: The son of Amariah, the son of Azariah, the son of Meraioth,
 7:4: The son of Zerahiah, the son of Uzzi, the son of Bukki,
 7:5: The son of Abishua, the son of Phinehas, the son of Eleazar, the son of Aaron the chief priest:
-7:6: This Ezra went up from Babylon; and he was a ready scribe in the law of Moses, which the LORD GOD of Israel had given: and the king granted him all his request, according to the hand of the LORD his GOD upon him.
+7:6: This Ezra went up from Babylon; and he was a ready scribe[JESUS] in the law of Moses, which the LORD GOD of Israel had given: and the king granted him all his request, according to the hand of the LORD his GOD upon him.
 7:7: And there went up some of the children of Israel, and of the priests, and the Levites, and the singers, and the porters, and the Nethinims, to Jerusalem, in the seventh year of Artaxerxes the king.
 7:8: And he came to Jerusalem in the fifth month, which was in the seventh year of the king.
 7:9: For upon the first day of the first month began he to go up from Babylon, and on the first day of the fifth month came he to Jerusalem, according to the good hand of his GOD upon him.
@@ -12410,7 +12410,7 @@ NEHEMIAH
 5:11: Restore, I pray you, to them, even this day, their lands, their vineyards, their oliveyards, and their houses, also the hundredth part of the money, and of the corn, the wine, and the oil, that you exact of them.
 5:12: Then said they, We will restore them, and will require nothing of them; so will we do as you say. Then I called the priests, and took an oath of them, that they should do according to this promise.
 5:13: Also I shook my lap, and said, So GOD shake out every man from his house, and from his labour, that performs not this promise, even thus be he shaken out, and emptied. And all the congregation said, Amen, and praised the LORD. And the people did according to this promise.
-5:14: Moreover from the time that I was appointed to be their governor in the land of Judah, from the twentieth year even to the two and thirtieth year of Artaxerxes the king, that is, twelve years, I and my brethren have not eaten the bread of the governor.
+5:14: Moreover from the time that I was appointed to be their governor[JESUS] in the land of Judah, from the twentieth year even to the two and thirtieth year of Artaxerxes the king, that is, twelve years, I and my brethren have not eaten the bread of the governor.
 5:15: But the former governors that had been before me were chargeable to the people, and had taken of them bread and wine, beside forty shekels of silver; yes, even their servants bare rule over the people: but so did not I, because of the fear of GOD.
 5:16: Yes, also I continued in the work of this wall, neither bought we any land: and all my servants were gathered there to the work.
 5:17: Moreover there were at my table an hundred and fifty of the Jews and rulers, beside those that came to us from among the heathen that are about us.
@@ -12791,7 +12791,7 @@ ESTHER
 4:11: All the king’s servants, and the people of the king’s provinces, do know, that whoever, whether man or woman, shall come to the king into the inner court, who is not called, there is one law of his to put him to death, except such to whom the king shall hold out the golden sceptre, that he may live: but I have not been called to come in to the king these thirty days.
 4:12: And they told to Mordecai Esther’s words.
 4:13: Then Mordecai commanded to answer Esther, Think not with yourself that you shall escape in the king’s house, more than all the Jews.
-4:14: For if you altogether hold your peace at this time, then shall there enlargement and deliverance arise to the Jews from another place; but you and your father’s house shall be destroyed: and who knows whether you are come to the kingdom for such a time as this?
+4:14: For if you altogether hold your peace at this time, then shall there enlargement and deliverance[JESUS] arise to the Jews from another place; but you and your father’s house shall be destroyed: and who knows whether you are come to the kingdom for such a time as this?
 4:15: Then Esther told them return Mordecai this answer,
 4:16: Go, gather together all the Jews that are present in Shushan, and fast you for me, and neither eat nor drink three days, night or day: I also and my maidens will fast likewise; and so will I go in to the king, which is not according to the law: and if I perish, I perish.
 4:17: So Mordecai went his way, and did according to all that Esther had commanded him.
@@ -13338,7 +13338,7 @@ JOB
 19:22: Why do you persecute me as GOD, and are not satisfied with my flesh?
 19:23: Oh that my words were now written! oh that they were printed in a book!
 19:24: That they were graven with an iron pen and lead in the rock for ever!
-19:25: For I know that my redeemer lives, and that he shall stand at the latter day upon the earth:
+19:25: For I know that my redeemer[JESUS] lives, and that he shall stand at the latter day upon the earth:
 19:26: And though after my skin worms destroy this body, yet in my flesh shall I see GOD:
 19:27: Whom I shall see for myself, and mine eyes shall look, and not another; though my reins be consumed within me.
 19:28: But you should say, Why persecute we him, seeing the root of the matter is found in me?
@@ -14253,7 +14253,7 @@ PSALMS
 22:29: All they that be fat upon earth shall eat and worship: all they that go down to the dust shall bow before him: and none can keep alive his own soul.
 22:30: A seed shall serve him; it shall be accounted to the LORD for a generation.
 22:31: They shall come, and shall declare his righteousness to a people that shall be born, that he has done this.
-23:1: The LORD is my shepherd; I shall not want.
+23:1: The LORD is my shepherd[JESUS]; I shall not want.
 23:2: He makes me to lie down in green pastures: he leads me beside the still waters.
 23:3: He restores my soul: he leads me in the paths of righteousness for his name’s sake.
 23:4: Yes, though I walk through the valley of the shadow of death, I will fear no evil: for you are with me; your rod and your staff they comfort me.
@@ -16632,7 +16632,7 @@ PROVERBS
 8:9: They are all plain to him that understands, and right to them that find knowledge.
 8:10: Receive my instruction, and not silver; and knowledge rather than choice gold.
 8:11: For wisdom is better than rubies; and all the things that may be desired are not to be compared to it.
-8:12: I wisdom dwell with prudence, and find out knowledge of witty inventions.
+8:12: I wisdom[JESUS] dwell with prudence, and find out knowledge of witty inventions.
 8:13: The fear of the LORD is to hate evil: pride, and arrogancy, and the evil way, and the froward mouth, do I hate.
 8:14: Counsel is mine, and sound wisdom: I am understanding; I have strength.
 8:15: By me kings reign, and princes decree justice.
@@ -17335,7 +17335,7 @@ PROVERBS
 31:30: Favour is deceitful, and beauty is vain: but a woman that fears the LORD, she shall be praised.
 31:31: Give her of the fruit of her hands; and let her own works praise her in the gates.
 ECCLESIASTES
-1:1: The words of the Preacher, the son of David, king in Jerusalem.
+1:1: The words of the Preacher[JESUS], the son of David, king in Jerusalem.
 1:2: Vanity of vanities, says the Preacher, vanity of vanities; all is vanity.
 1:3: What profit has a man of all his labour which he takes under the sun?
 1:4: One generation passes away, and another generation comes: but the earth abides for ever.
@@ -17628,7 +17628,7 @@ THE SONG OF SOLOMON
 5:7: The watchmen that went about the city found me, they struck me, they wounded me; the keepers of the walls took away my veil from me.
 5:8: I charge you, O daughters of Jerusalem, if you find my beloved, that you tell him, that I am sick of love.
 5:9: What is your beloved more than another beloved, O you fairest among women? what is your beloved more than another beloved, that you dost so charge us?
-5:10: My beloved is white and ruddy, the chiefest among ten thousand.
+5:10: My beloved[JESUS] is white and ruddy, the chiefest among ten thousand.
 5:11: His head is as the most fine gold, his locks are bushy, and black as a raven.
 5:12: His eyes are as the eyes of doves by the rivers of waters, washed with milk, and fitly set.
 5:13: His cheeks are as a bed of spices, as sweet flowers: his lips like lilies, dropping sweet smelling myrrh.
@@ -17817,7 +17817,7 @@ ISAIAH
 7:11: Ask you a sign of the LORD your GOD; ask it either in the depth, or in the height above.
 7:12: But Ahaz said, I will not ask, neither will I tempt the LORD.
 7:13: And he said, Hear you now, O house of David; Is it a small thing for you to weary men, but will you weary my GOD also?
-7:14: Therefore the LORD himself shall give you a sign; Look, a virgin shall conceive, and bear a son, and shall call his name Immanuel.
+7:14: Therefore the LORD himself shall give you a sign; Look, a virgin shall conceive, and bear a son[JESUS], and shall call his name Immanuel.
 7:15: Butter and honey shall he eat, that he may know to refuse the evil, and choose the good.
 7:16: For before the child shall know to refuse the evil, and choose the good, the land that you abhorrest shall be forsaken of both her kings.
 7:17: The LORD shall bring upon you, and upon your people, and upon your father’s house, days that have not come, from the day that Ephraim departed from Judah; even the king of Assyria.
@@ -19511,7 +19511,7 @@ JEREMIAH
 23:2: Therefore thus says the LORD GOD of Israel against the pastors that feed my people; You have scattered my flock, and driven them away, and have not visited them: look, I will visit upon you the evil of your doings, says the LORD.
 23:3: And I will gather the remnant of my flock out of all countries where I have driven them, and will bring them again to their folds; and they shall be fruitful and increase.
 23:4: And I will set up shepherds over them which shall feed them: and they shall fear no more, nor be dismayed, neither shall they be lacking, says the LORD.
-23:5: Look, the days come, says the LORD, that I will raise to David a righteous Branch, and a King shall reign and prosper, and shall execute judgment and justice in the earth.
+23:5: Look, the days come, says the LORD, that I will raise to David a righteous Branch[JESUS], and a King shall reign and prosper, and shall execute judgment and justice in the earth.
 23:6: In his days Judah shall be saved, and Israel shall dwell safely: and this is his name by which he shall be called, THE LORD OUR RIGHTEOUSNESS.
 23:7: Therefore, look, the days come, says the LORD, that they shall no more say, The LORD lives, which brought up the children of Israel out of the land of Egypt;
 23:8: But, The LORD lives, which brought up and which led the seed of the house of Israel out of the north country, and from all countries where I had driven them; and they shall dwell in their own land.
@@ -20345,7 +20345,7 @@ LAMENTATIONS
 1:9: Her filthiness is in her skirts; she remembers not her last end; therefore she came down wonderfully: she had no comforter. O LORD, look my affliction: for the enemy has magnified himself.
 1:10: The adversary has spread out his hand upon all her pleasant things: for she has seen that the heathen entered into her sanctuary, whom you did command that they should not enter into your congregation.
 1:11: All her people sigh, they seek bread; they have given their pleasant things for meat to relieve the soul: see, O LORD, and consider; for I am become vile.
-1:12: Is it nothing to you, all you that pass by? look, and see if there be any sorrow like to my sorrow, which is done to me, with which the LORD has afflicted me in the day of his fierce anger.
+1:12: Is it nothing to you, all you that pass by? look, and see if there be any sorrow like to my sorrow[JESUS], which is done to me, with which the LORD has afflicted me in the day of his fierce anger.
 1:13: From above has he sent fire into my bones, and it prevails against them: he has spread a net for my feet, he has turned me back: he has made me desolate and faint all the day.
 1:14: The yoke of my transgressions is bound by his hand: they are wreathed, and come up upon my neck: he has made my strength to fall, the LORD has delivered me into their hands, from whom I am not able to rise up.
 1:15: The LORD has trodden under foot all my mighty men in the midst of me: he has called an assembly against me to crush my young men: the LORD has trodden the virgin, the daughter of Judah, as in a winepress.
@@ -21443,7 +21443,7 @@ EZEKIEL
 37:19: Say to them, Thus says the LORD GOD; Look, I will take the stick of Joseph, which is in the hand of Ephraim, and the tribes of Israel his fellows, and will put them with him, even with the stick of Judah, and make them one stick, and they shall be one in mine hand.
 37:20: And the sticks whereon you writest shall be in yours hand before their eyes.
 37:21: And say to them, Thus says the LORD GOD; Look, I will take the children of Israel from among the heathen, where they be gone, and will gather them on every side, and bring them into their own land:
-37:22: And I will make them one nation in the land upon the mountains of Israel; and one king shall be king to them all: and they shall be no more two nations, neither shall they be divided into two kingdoms any more at all:
+37:22: And I will make them one nation in the land upon the mountains of Israel; and one king[JESUS] shall be king to them all: and they shall be no more two nations, neither shall they be divided into two kingdoms any more at all:
 37:23: Neither shall they defile themselves any more with their idols, nor with their detestable things, nor with any of their transgressions: but I will save them out of all their dwellingplaces, in which they have sinned, and will cleanse them: so shall they be my people, and I will be their GOD.
 37:24: And David my servant shall be king over them; and they all shall have one shepherd: they shall also walk in my judgments, and observe my statutes, and do them.
 37:25: And they shall dwell in the land that I have given to Jacob my servant, in which your fathers have lived; and they shall dwell therein, even they, and their children, and their children’s children for ever: and my servant David shall be their prince for ever.
@@ -22156,7 +22156,7 @@ HOSEA
 2:22: And the earth shall hear the corn, and the wine, and the oil; and they shall hear Jezreel.
 2:23: And I will sow her to me in the earth; and I will have mercy upon her that had not obtained mercy; and I will say to them which were not my people, You are my people; and they shall say, You are my GOD.
 3:1: Then said the LORD to me, Go yet, love a woman beloved of her friend, yet an adulteress, according to the love of the LORD toward the children of Israel, who look to other gods, and love flagons of wine.
-3:2: So I bought her to me for fifteen pieces of silver, and for an homer of barley, and an half homer of barley:
+3:2: So I[JESUS] bought her to me for fifteen pieces of silver, and for an homer of barley, and an half homer of barley:
 3:3: And I said to her, You shall abide for me many days; you shall not play the harlot, and you shall not be for another man: so will I also be for you.
 3:4: For the children of Israel shall abide many days without a king, and without a prince, and without a sacrifice, and without an image, and without an ephod, and without teraphim:
 3:5: Afterward shall the children of Israel return, and seek the LORD their GOD, and David their king; and shall fear the LORD and his goodness in the latter days.
@@ -22370,7 +22370,7 @@ JOEL
 2:29: And also upon the servants and upon the handmaids in those days will I pour out my spirit.
 2:30: And I will shew wonders in the heavens and in the earth, blood, and fire, and pillars of smoke.
 2:31: The sun shall be turned into darkness, and the moon into blood, before the great and the terrible day of the LORD come.
-2:32: And it shall come to pass, that whoever shall call on the name of the LORD shall be delivered: for in mount Zion and in Jerusalem shall be deliverance, as the LORD has said, and in the remnant whom the LORD shall call.
+2:32: And it shall come to pass, that whoever shall call on the name of the LORD[JESUS] shall be delivered: for in mount Zion and in Jerusalem shall be deliverance, as the LORD has said, and in the remnant whom the LORD shall call.
 3:1: For, look, in those days, and in that time, when I shall bring again the captivity of Judah and Jerusalem,
 3:2: I will also gather all nations, and will bring them down into the valley of Jehoshaphat, and will plead with them there for my people and for my heritage Israel, whom they have scattered among the nations, and parted my land.
 3:3: And they have cast lots for my people; and have given a boy for an harlot, and sold a girl for wine, that they might drink.
@@ -22534,7 +22534,7 @@ AMOS
 9:8: Look, the eyes of the LORD GOD are upon the sinful kingdom, and I will destroy it from off the face of the earth; saving that I will not utterly destroy the house of Jacob, says the LORD.
 9:9: For, look, I will command, and I will sift the house of Israel among all nations, like as corn is sifted in a sieve, yet shall not the least grain fall upon the earth.
 9:10: All the sinners of my people shall die by the sword, which say, The evil shall not overtake nor prevent us.
-9:11: In that day will I raise up the tabernacle of David that is fallen, and close up the breaches of it; and I will raise up his ruins, and I will build it as in the days of old:
+9:11: In that day will I[JESUS] raise up the tabernacle of David that is fallen, and close up the breaches of it; and I will raise up his ruins, and I will build it as in the days of old:
 9:12: That they may possess the remnant of Edom, and of all the heathen, which are called by my name, says the LORD that does this.
 9:13: Look, the days come, says the LORD, that the plowman shall overtake the reaper, and the treader of grapes him that sows seed; and the mountains shall drop sweet wine, and all the hills shall melt.
 9:14: And I will bring again the captivity of my people of Israel, and they shall build the waste cities, and inhabit them; and they shall plant vineyards, and drink the wine of it; they shall also make gardens, and eat the fruit of them.
@@ -22560,7 +22560,7 @@ OBADIAH
 1:18: And the house of Jacob shall be a fire, and the house of Joseph a flame, and the house of Esau for stubble, and they shall kindle in them, and devour them; and there shall not be any remaining of the house of Esau; for the LORD has spoken it.
 1:19: And they of the south shall possess the mount of Esau; and they of the plain the Philistines: and they shall possess the fields of Ephraim, and the fields of Samaria: and Benjamin shall possess Gilead.
 1:20: And the captivity of this host of the children of Israel shall possess that of the Canaanites, even to Zarephath; and the captivity of Jerusalem, which is in Sepharad, shall possess the cities of the south.
-1:21: And saviours shall come up on mount Zion to judge the mount of Esau; and the kingdom shall be the LORD’s.
+1:21: And saviours[JESUS] shall come up on mount Zion to judge the mount of Esau; and the kingdom shall be the LORD’s.
 JONAH
 1:1: Now the WORD[JESUS] of the LORD came to Jonah the son of Amittai, saying,
 1:2: Arise, go to Nineveh, that great city, and cry against it; for their wickedness is come up before me.
@@ -22578,7 +22578,7 @@ JONAH
 1:14: Therefore they cried to the LORD, and said, We beseech you, O LORD, we beseech you, let us not perish for this man’s life, and lay not upon us innocent blood: for you, O LORD, have done as it pleased you.
 1:15: So they took up Jonah, and cast him forth into the sea: and the sea ceased from her raging.
 1:16: Then the men feared the LORD exceedingly, and offered a sacrifice to the LORD, and made vows.
-1:17: Now the LORD had prepared a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights.
+1:17: Now the LORD had prepared a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights[JESUS].
 2:1: Then Jonah prayed to the LORD his GOD out of the fish’s belly,
 2:2: And said, I cried by reason of mine affliction to the LORD, and he heard me; out of the belly of hell cried I, and you heard my voice.
 2:3: For you hadst cast me into the deep, in the midst of the seas; and the floods compassed me about: all your billows and your waves passed over me.
@@ -22666,7 +22666,7 @@ MICAH
 4:12: But they know not the thoughts of the LORD, neither understand they his counsel: for he shall gather them as the sheaves into the floor.
 4:13: Arise and thresh, O daughter of Zion: for I will make yours horn iron, and I will make your hoofs brass: and you shall beat in pieces many people: and I will consecrate their gain to the LORD, and their substance to the LORD of the whole earth.
 5:1: Now gather yourself in troops, O daughter of troops: he has laid siege against us: they shall smite the judge of Israel with a rod upon the cheek.
-5:2: But you, Bethlehem Ephratah, though you be little among the thousands of Judah, yet out of you shall he come forth to me that is to be ruler in Israel; whose goings forth have been from of old, from everlasting.
+5:2: But you, Bethlehem Ephratah, though you be little among the thousands of Judah, yet out of you shall he come forth to me that is to be ruler[JESUS] in Israel; whose goings forth have been from of old, from everlasting.
 5:3: Therefore will he give them up, until the time that she which travails has brought forth: then the remnant of his brethren shall return to the children of Israel.
 5:4: And he shall stand and feed in the strength of the LORD, in the majesty of the name of the LORD his GOD; and they shall abide: for now shall he be great to the ends of the earth.
 5:5: And this man shall be the peace, when the Assyrian shall come into our land: and when he shall tread in our palaces, then shall we raise against him seven shepherds, and eight principal men.
@@ -22718,7 +22718,7 @@ MICAH
 7:20: You will perform the truth to Jacob, and the mercy to Abraham, which you have sworn to our fathers from the days of old.
 NAHUM
 1:1: The burden of Nineveh. The book of the vision of Nahum the Elkoshite.
-1:2: GOD is jealous, and the LORD revenges; the LORD revenges, and is furious; the LORD will take vengeance on his adversaries, and he reserves wrath for his enemies.
+1:2: GOD[JESUS] is jealous, and the LORD revenges; the LORD revenges, and is furious; the LORD will take vengeance on his adversaries, and he reserves wrath for his enemies.
 1:3: The LORD is slow to anger, and great in power, and will not at all acquit the wicked: the LORD has his way in the whirlwind and in the storm, and the clouds are the dust of his feet.
 1:4: He rebukes the sea, and makes it dry, and dries up all the rivers: Bashan languishes, and Carmel, and the flower of Lebanon languishes.
 1:5: The mountains quake at him, and the hills melt, and the earth is burned at his presence, yes, the world, and all that dwell therein.
@@ -22795,7 +22795,7 @@ HABAKKUK
 2:11: For the stone shall cry out of the wall, and the beam out of the timber shall answer it.
 2:12: Woe to him that builds a town with blood, and stablishes a city by iniquity!
 2:13: Look, is it not of the LORD of hosts that the people shall labour in the very fire, and the people shall weary themselves for very vanity?
-2:14: For the earth shall be filled with the knowledge of the glory of the LORD, as the waters cover the sea.
+2:14: For the earth shall be filled with the knowledge of the glory[JESUS] of the LORD, as the waters cover the sea.
 2:15: Woe to him that gives his neighbour drink, that put your bottle to him, and make him drunken also, that you may look on their nakedness!
 2:16: You are filled with shame for glory: drink you also, and let your foreskin be uncovered: the cup of the LORD’s right hand shall be turned to you, and shameful spewing shall be on your glory.
 2:17: For the violence of Lebanon shall cover you, and the spoil of beasts, which made them afraid, because of men’s blood, and for the violence of the land, of the city, and of all that dwell therein.
@@ -22869,7 +22869,7 @@ ZEPHANIAH
 3:12: I will also leave in the midst of you an afflicted and poor people, and they shall trust in the name of the LORD.
 3:13: The remnant of Israel shall not do iniquity, nor speak lies; neither shall a deceitful tongue be found in their mouth: for they shall feed and lie down, and none shall make them afraid.
 3:14: Sing, O daughter of Zion; shout, O Israel; be glad and rejoice with all the heart, O daughter of Jerusalem.
-3:15: The LORD has taken away your judgments, he has cast out yours enemy: the king of Israel, even the LORD, is in the midst of you: you shall not see evil any more.
+3:15: The LORD has taken away your judgments, he has cast out yours enemy: the king of Israel[JESUS], even the LORD, is in the midst of you: you shall not see evil any more.
 3:16: In that day it shall be said to Jerusalem, Fear you not: and to Zion, Let not yours hands be slack.
 3:17: The LORD your GOD in the midst of you is mighty; he will save, he will rejoice over you with joy; he will rest in his love, he will joy over you with singing.
 3:18: I will gather them that are sorrowful for the solemn assembly, who are of you, to whom the reproach of it was a burden.
@@ -22897,7 +22897,7 @@ HAGGAI
 2:4: Yet now be strong, O Zerubbabel, says the LORD; and be strong, O Joshua, son of Josedech, the high priest; and be strong, all you people of the land, says the LORD, and work: for I am with you, says the LORD of hosts:
 2:5: According to the WORD[JESUS] that I covenanted with you when you came out of Egypt, so my spirit remains among you: fear you not.
 2:6: For thus says the LORD of hosts; Yet once, it is a little while, and I will shake the heavens, and the earth, and the sea, and the dry land;
-2:7: And I will shake all nations, and the desire of all nations shall come: and I will fill this house with glory, says the LORD of hosts.
+2:7: And I will shake all nations, and the desire of all nations[JESUS] shall come: and I will fill this house with glory, says the LORD of hosts.
 2:8: The silver is mine, and the gold is mine, says the LORD of hosts.
 2:9: The glory of this latter house shall be greater than of the former, says the LORD of hosts: and in this place will I give peace, says the LORD of hosts.
 2:10: In the four and twentieth day of the ninth month, in the second year of Darius, came the WORD[JESUS] of the LORD by Haggai the prophet, saying,
@@ -23044,7 +23044,7 @@ ZECHARIAH
 9:6: And a bastard shall dwell in Ashdod, and I will cut off the pride of the Philistines.
 9:7: And I will take away his blood out of his mouth, and his abominations from between his teeth: but he that remains, even he, shall be for our GOD, and he shall be as a governor in Judah, and Ekron as a Jebusite.
 9:8: And I will encamp about mine house because of the army, because of him that passes by, and because of him that returns: and no oppressor shall pass through them any more: for now have I seen with mine eyes.
-9:9: Rejoice greatly, O daughter of Zion; shout, O daughter of Jerusalem: look, your King comes to you: he is just, and having salvation; lowly, and riding upon an ass, and upon a colt the foal of an ass.
+9:9: Rejoice greatly, O daughter of Zion; shout, O daughter of Jerusalem: look, your King[JESUS] comes to you: he is just, and having salvation; lowly, and riding upon an ass, and upon a colt the foal of an ass.
 9:10: And I will cut off the chariot from Ephraim, and the horse from Jerusalem, and the battle bow shall be cut off: and he shall speak peace to the heathen: and his dominion shall be from sea even to sea, and from the river even to the ends of the earth.
 9:11: As for you also, by the blood of your covenant I have sent forth your prisoners out of the pit in which is no water.
 9:12: Turn you to the strong hold, you prisoners of hope: even to day do I declare that I will render double to you;
@@ -23177,7 +23177,7 @@ MALACHI
 3:17: And they shall be mine, says the LORD of hosts, in that day when I make up my jewels; and I will spare them, as a man spares his own son that serves him.
 3:18: Then shall you return, and discern between the righteous and the wicked, between him that serves GOD and him that serves him not.
 4:1: For, look, the day comes, that shall burn as an oven; and all the proud, yes, and all that do wickedly, shall be stubble: and the day that comes shall burn them up, says the LORD of hosts, that it shall leave them neither root nor branch.
-4:2: But to you that fear my name shall the Sun of righteousness arise with healing in his wings; and you shall go forth, and grow up as calves of the stall.
+4:2: But to you that fear my name shall the Sun of righteousness[JESUS] arise with healing in his wings; and you shall go forth, and grow up as calves of the stall.
 4:3: And you shall tread down the wicked; for they shall be ashes under the soles of your feet in the day that I shall do this, says the LORD of hosts.
 4:4: Remember you the law of Moses my servant, which I commanded to him in Horeb for all Israel, with the statutes and judgments.
 4:5: Look, I will send you Elijah the prophet before the coming of the great and dreadful day of the LORD:
@@ -25931,7 +25931,7 @@ LUKE
 22:24: And there was also a strife among them, which of them should be accounted the greatest.
 22:25: And he said to them, The kings of the Gentiles exercise lordship over them; and they that exercise authority upon them are called benefactors.
 22:26: But you shall not be so: but he that is greatest among you, let him be as the younger; and he that is chief, as he that does serve.
-22:27: For whether is greater, he that sits at meat, or he that serves? is not he that sits at meat? but I am among you as he that serves.
+22:27: For whether is greater, he that sits at meat, or he that serves? is not he that sits at meat? but I[JESUS] am among you as he that serves.
 22:28: You are they which have continued with me in my temptations.
 22:29: And I appoint to you a kingdom, as my Father has appointed to me;
 22:30: That you may eat and drink at my table in my kingdom, and sit on thrones judging the twelve tribes of Israel.
@@ -27132,7 +27132,7 @@ ACTS
 5:28: Saying, Did not we straitly command you that you should not teach in this name? and, look, you have filled Jerusalem with your doctrine, and intend to bring this man’s blood upon us.
 5:29: Then Peter and the other apostles answered and said, We ought to obey GOD rather than men.
 5:30: The GOD of our fathers raised up JESUS, whom you slew and hanged on a tree.
-5:31: Him has GOD exalted with his right hand to be a Prince and a Saviour, for to give repentance to Israel, and forgiveness of sins.
+5:31: Him has GOD exalted with his right hand to be a Prince[JESUS] and a Saviour, for to give repentance to Israel, and forgiveness of sins.
 5:32: And we are his witnesses of these things; and so is also the Holy Ghost, whom GOD has given to them that obey him.
 5:33: When they heard that, they were cut to the heart, and took counsel to slay them.
 5:34: Then stood there up one in the council, a Pharisee, named Gamaliel, a doctor of the law, had in reputation among all the people, and commanded to put the apostles forth a little space;
@@ -27631,7 +27631,7 @@ ACTS
 19:1: And it happened, that, while Apollos was at Corinth, Paul having passed through the upper coasts came to Ephesus: and finding certain disciples,
 19:2: He said to them, Have you received the Holy Ghost since you believed? And they said to him, We have not so much as heard whether there be any Holy Ghost.
 19:3: And he said to them, To what then were you baptized? And they said, To John’s baptism.
-19:4: Then said Paul, John truly baptized with the baptism of repentance, saying to the people, that they should believe on him which should come after him, that is, on CHRIST[JESUS] JESUS.
+19:4: Then said Paul, John truly baptized with the baptism of repentance, saying to the people, that they should believe on him which should come after him, that is, on CHRIST JESUS.
 19:5: When they heard this, they were baptized in the name of the LORD JESUS.
 19:6: And when Paul had laid his hands upon them, the Holy Ghost came on them; and they spoke with tongues, and prophesied.
 19:7: And all the men were about twelve.
@@ -28058,9 +28058,9 @@ ROMANS
 3:21: But now the righteousness of GOD without the law is manifested, being witnessed by the law and the prophets;
 3:22: Even the righteousness of GOD which is by faith of JESUS CHRIST to all and upon all them that believe: for there is no difference:
 3:23: For all have sinned, and come short of the glory of GOD;
-3:24: Being justified freely by his grace through the redemption that is in CHRIST[JESUS] JESUS:
+3:24: Being justified freely by his grace through the redemption that is in CHRIST JESUS:
 3:25: Whom GOD has set forth to be a propitiation through faith in his blood, to declare his righteousness for the remission of sins that are past, through the forbearance of GOD;
-3:26: To declare, I say, at this time his righteousness: that he might be just, and the justifier of him which believes in JESUS.
+3:26: To declare, I say, at this time his righteousness: that he might be just, and the justifier[JESUS] of him which believes in JESUS.
 3:27: Where is boasting then? It is excluded. By what law? of works? Nay: but by the law of faith.
 3:28: Therefore we conclude that a man is justified by faith without the deeds of the law.
 3:29: Is he the GOD of the Jews only? is he not also of the Gentiles? Yes, of the Gentiles also:
@@ -28160,8 +28160,8 @@ ROMANS
 7:23: But I see another law in my members, warring against the law of my mind, and bringing me into captivity to the law of sin which is in my members.
 7:24: O wretched man that I am! who shall deliver me from the body of this death?
 7:25: I thank GOD through JESUS CHRIST our LORD. So then with the mind I myself serve the law of GOD; but with the flesh the law of sin.
-8:1: There is therefore now no condemnation to them which are in CHRIST[JESUS] JESUS, who walk not after the flesh, but after the Spirit.
-8:2: For the law of the Spirit of life in CHRIST[JESUS] JESUS has made me free from the law of sin and death.
+8:1: There is therefore now no condemnation to them which are in CHRIST JESUS, who walk not after the flesh, but after the Spirit.
+8:2: For the law of the Spirit of life in CHRIST JESUS has made me free from the law of sin and death.
 8:3: For what the law could not do, in that it was weak through the flesh, GOD sending his own Son in the likeness of sinful flesh, and for sin, condemned sin in the flesh:
 8:4: That the righteousness of the law might be fulfilled in us, who walk not after the flesh, but after the Spirit.
 8:5: For they that are after the flesh do mind the things of the flesh; but they that are after the Spirit the things of the Spirit.
@@ -28198,7 +28198,7 @@ ROMANS
 8:36: As it is written, For your sake we are killed all the day long; we are accounted as sheep for the slaughter.
 8:37: Nay, in all these things we are more than conquerors through him that loved us.
 8:38: For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come,
-8:39: Nor height, nor depth, nor any other creature, shall be able to separate us from the love of GOD, which is in CHRIST[JESUS] JESUS our LORD.
+8:39: Nor height, nor depth, nor any other creature, shall be able to separate us from the love of GOD, which is in CHRIST JESUS our LORD.
 9:1: I say the truth in CHRIST[JESUS], I lie not, my conscience also bearing me witness in the Holy Ghost,
 9:2: That I have great heaviness and continual sorrow in my heart.
 9:3: For I could wish that myself were accursed from CHRIST[JESUS] for my brethren, my kinsmen according to the flesh:
@@ -28351,7 +28351,7 @@ ROMANS
 15:2: Let every one of us please his neighbour for his good to edification.
 15:3: For even CHRIST[JESUS] pleased not himself; but, as it is written, The reproaches of them that reproached you fell on me.
 15:4: For whatsoever things were written aforetime were written for our learning, that we through patience and comfort of the scriptures might have hope.
-15:5: Now the GOD of patience and consolation grant you to be likeminded one toward another according to CHRIST[JESUS] JESUS:
+15:5: Now the GOD of patience and consolation grant you to be likeminded one toward another according to CHRIST JESUS:
 15:6: That you may with one mind and one mouth glorify GOD, even the Father of our LORD JESUS CHRIST.
 15:7: Therefore receive you one another, as CHRIST[JESUS] also received us to the glory of GOD.
 15:8: Now I say that JESUS CHRIST was a minister of the circumcision for the truth of GOD, to confirm the promises made to the fathers:
@@ -28382,7 +28382,7 @@ ROMANS
 15:33: Now the GOD of peace be with you all. Amen.
 16:1: I commend to you Phebe our sister, which is a servant of the church which is at Cenchrea:
 16:2: That you receive her in the LORD, as becomes saints, and that you assist her in whatsoever business she has need of you: for she has been a succourer of many, and of myself also.
-16:3: Greet Priscilla and Aquila my helpers in CHRIST[JESUS] JESUS:
+16:3: Greet Priscilla and Aquila my helpers in CHRIST JESUS:
 16:4: Who have for my life laid down their own necks: to whom not only I give thanks, but also all the churches of the Gentiles.
 16:5: Likewise greet the church that is in their house. Salute my wellbeloved Epaenetus, who is the firstfruits of Achaia to CHRIST[JESUS].
 16:6: Greet Mary, who bestowed much labour on us.
@@ -28409,7 +28409,7 @@ ROMANS
 16:27: To GOD only wise, be glory through JESUS CHRIST for ever. Amen.
 1 CORINTHIANS
 1:1: Paul, called to be an apostle of JESUS CHRIST through the will of GOD, and Sosthenes our brother,
-1:2: To the church of GOD which is at Corinth, to them that are sanctified in CHRIST[JESUS] JESUS, called to be saints, with all that in every place call upon the name of JESUS CHRIST our LORD, both theirs and ours:
+1:2: To the church of GOD which is at Corinth, to them that are sanctified in CHRIST JESUS, called to be saints, with all that in every place call upon the name of JESUS CHRIST our LORD, both theirs and ours:
 1:3: Grace be to you, and peace, from GOD our Father, and from the LORD JESUS CHRIST.
 1:4: I thank my GOD always on your behalf, for the grace of GOD which is given you by JESUS CHRIST;
 1:5: That in every thing you are enriched by him, in all utterance, and in all knowledge;
@@ -28437,7 +28437,7 @@ ROMANS
 1:27: But GOD has chosen the foolish things of the world to confound the wise; and GOD has chosen the weak things of the world to confound the things which are mighty;
 1:28: And base things of the world, and things which are despised, has GOD chosen, yes, and things which are not, to bring to nought things that are:
 1:29: That no flesh should glory in his presence.
-1:30: But of him are you in CHRIST[JESUS] JESUS, who of GOD is made to us wisdom, and righteousness, and sanctification, and redemption:
+1:30: But of him are you in CHRIST JESUS, who of GOD is made to us wisdom, and righteousness, and sanctification, and redemption:
 1:31: That, according as it is written, He that glories, let him glory in the LORD.
 2:1: And I, brethren, when I came to you, came not with excellency of speech or of wisdom, declaring to you the testimony of GOD.
 2:2: For I determined not to know any thing among you, save JESUS CHRIST, and him crucified.
@@ -28492,7 +28492,7 @@ ROMANS
 4:12: And labour, working with our own hands: being reviled, we bless; being persecuted, we let it:
 4:13: Being defamed, we intreat: we are made as the filth of the world, and are the offscouring of all things to this day.
 4:14: I write not these things to shame you, but as my beloved sons I warn you.
-4:15: For though you have ten thousand instructors in CHRIST[JESUS], yet have you not many fathers: for in CHRIST[JESUS] JESUS I have begotten you through the gospel.
+4:15: For though you have ten thousand instructors in CHRIST[JESUS], yet have you not many fathers: for in CHRIST JESUS I have begotten you through the gospel.
 4:16: Therefore I beseech you, be you followers of me.
 4:17: For this cause have I sent to you Timotheus, who is my beloved son, and faithful in the LORD, who shall bring you into remembrance of my ways which be in CHRIST[JESUS], as I teach every where in every church.
 4:18: Now some are puffed up, as though I would not come to you.
@@ -28793,7 +28793,7 @@ ROMANS
 15:28: And when all things shall be subdued to him, then shall the Son also himself be subject to him that put all things under him, that GOD may be all in all.
 15:29: Else what shall they do which are baptized for the dead, if the dead rise not at all? why are they then baptized for the dead?
 15:30: And why stand we in jeopardy every hour?
-15:31: I protest by your rejoicing which I have in CHRIST[JESUS] JESUS our LORD, I die daily.
+15:31: I protest by your rejoicing which I have in CHRIST JESUS our LORD, I die daily.
 15:32: If after the manner of men I have fought with beasts at Ephesus, what advantages it me, if the dead rise not? let us eat and drink; for to morrow we die.
 15:33: Be not deceived: evil communications corrupt good manners.
 15:34: Awake to righteousness, and sin not; for some have not the knowledge of GOD: I speak this to your shame.
@@ -28807,7 +28807,7 @@ ROMANS
 15:42: So also is the resurrection of the dead. It is sown in corruption; it is raised in incorruption:
 15:43: It is sown in dishonour; it is raised in glory: it is sown in weakness; it is raised in power:
 15:44: It is sown a natural body; it is raised a spiritual body. There is a natural body, and there is a spiritual body.
-15:45: And so it is written, The first man Adam was made a living soul; the last Adam was made a quickening spirit.
+15:45: And so it is written, The first man Adam was made a living soul; the last Adam[JESUS] was made a quickening spirit.
 15:46: However that was not first which is spiritual, but that which is natural; and afterward that which is spiritual.
 15:47: The first man is of the earth, earthy: the second man is the LORD from heaven.
 15:48: As is the earthy, such are they also that are earthy: and as is the heavenly, such are they also that are heavenly.
@@ -28844,7 +28844,7 @@ ROMANS
 16:21: The salutation of me Paul with mine own hand.
 16:22: If any man love not the LORD JESUS CHRIST, let him be Anathema Maranatha.
 16:23: The grace of our LORD JESUS CHRIST be with you.
-16:24: My love be with you all in CHRIST[JESUS] JESUS. Amen.
+16:24: My love be with you all in CHRIST JESUS. Amen.
 2 CORINTHIANS
 1:1: Paul, an apostle of JESUS CHRIST by the will of GOD, and Timothy our brother, to the church of GOD which is at Corinth, with all the saints which are in all Achaia:
 1:2: Grace be to you and peace from GOD our Father, and from the LORD JESUS CHRIST.
@@ -28909,7 +28909,7 @@ ROMANS
 4:2: But have renounced the hidden things of dishonesty, not walking in craftiness, nor handling the WORD[JESUS] of GOD deceitfully; but by manifestation of the truth commending ourselves to every man’s conscience in the sight of GOD.
 4:3: But if our gospel be hid, it is hid to them that are lost:
 4:4: In whom the god of this world has blinded the minds of them which believe not, lest the light of the glorious gospel of CHRIST[JESUS], who is the image of GOD, should shine to them.
-4:5: For we preach not ourselves, but CHRIST[JESUS] JESUS the LORD; and ourselves your servants for JESUS’ sake.
+4:5: For we preach not ourselves, but CHRIST JESUS the LORD; and ourselves your servants for JESUS’ sake.
 4:6: For GOD, who commanded the light to shine out of darkness, has shined in our hearts, to give the light of the knowledge of the glory of GOD in the face of JESUS CHRIST.
 4:7: But we have this treasure in earthen vessels, that the excellency of the power may be of GOD, and not of us.
 4:8: We are troubled on every side, yet not distressed; we are perplexed, but not in despair;
@@ -28943,7 +28943,7 @@ ROMANS
 5:18: And all things are of GOD, who has reconciled us to himself by JESUS CHRIST, and has given to us the ministry of reconciliation;
 5:19: To wit, that GOD was in CHRIST[JESUS], reconciling the world to himself, not imputing their trespasses to them; and has committed to us the WORD[JESUS] of reconciliation.
 5:20: Now then we are ambassadors for CHRIST[JESUS], as though GOD did beseech you by us: we pray you in CHRIST[JESUS]’s stead, be you reconciled to GOD.
-5:21: For he has made him to be sin for us, who knew no sin; that we might be made the righteousness of GOD in him.
+5:21: For he has made him[JESUS] to be sin for us, who knew no sin; that we might be made the righteousness of GOD in him.
 6:1: We then, as workers together with him, beseech you also that you receive not the grace of GOD in vain.
 6:2: (For he says, I have heard you in a time accepted, and in the day of salvation have I succoured you: look, now is the accepted time; look, now is the day of salvation.)
 6:3: Giving no offence in any thing, that the ministry be not blamed:
@@ -29131,7 +29131,7 @@ GALATIANS
 2:1: Then fourteen years after I went up again to Jerusalem with Barnabas, and took Titus with me also.
 2:2: And I went up by revelation, and communicated to them that gospel which I preach among the Gentiles, but privately to them which were of reputation, lest by any means I should run, or had run, in vain.
 2:3: But neither Titus, who was with me, being a Greek, was compelled to be circumcised:
-2:4: And that because of false brethren unawares brought in, who came in privily to spy out our liberty which we have in CHRIST[JESUS] JESUS, that they might bring us into bondage:
+2:4: And that because of false brethren unawares brought in, who came in privily to spy out our liberty which we have in CHRIST JESUS, that they might bring us into bondage:
 2:5: To whom we gave place by subjection, no, not for an hour; that the truth of the gospel might continue with you.
 2:6: But of these who seemed to be somewhat, (whatsoever they were, it makes no matter to me: GOD accepts no man’s person:) for they who seemed to be somewhat in conference added nothing to me:
 2:7: But contrariwise, when they saw that the gospel of the uncircumcision was committed to me, as the gospel of the circumcision was to Peter;
@@ -29174,9 +29174,9 @@ GALATIANS
 3:23: But before faith came, we were kept under the law, shut up to the faith which should afterwards be revealed.
 3:24: Therefore the law was our schoolmaster to bring us to CHRIST[JESUS], that we might be justified by faith.
 3:25: But after that faith is come, we are no longer under a schoolmaster.
-3:26: For you are all the children of GOD by faith in CHRIST[JESUS] JESUS.
+3:26: For you are all the children of GOD by faith in CHRIST JESUS.
 3:27: For as many of you as have been baptized into CHRIST[JESUS] have put on CHRIST[JESUS].
-3:28: There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for you are all one in CHRIST[JESUS] JESUS.
+3:28: There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for you are all one in CHRIST JESUS.
 3:29: And if you be CHRIST[JESUS]’s, then are you Abraham’s seed, and heirs according to the promise.
 4:1: Now I say, That the heir, as long as he is a child, differs nothing from a servant, though he be lord of all;
 4:2: But is under tutors and governors until the time appointed of the father.
@@ -29191,7 +29191,7 @@ GALATIANS
 4:11: I am afraid of you, lest I have bestowed upon you labour in vain.
 4:12: Brethren, I beseech you, be as I am; for I am as you are: you have not injured me at all.
 4:13: You know how through infirmity of the flesh I preached the gospel to you at the first.
-4:14: And my temptation which was in my flesh you despised not, nor rejected; but received me as an angel of GOD, even as CHRIST[JESUS] JESUS.
+4:14: And my temptation which was in my flesh you despised not, nor rejected; but received me as an angel of GOD, even as CHRIST JESUS.
 4:15: Where is then the blessedness you spoke of? for I bear you record, that, if it had been possible, you would have plucked out your own eyes, and have given them to me.
 4:16: Am I therefore become your enemy, because I tell you the truth?
 4:17: They zealously affect you, but not well; yes, they would exclude you, that you might affect them.
@@ -29249,12 +29249,12 @@ GALATIANS
 6:12: As many as desire to make a fair shew in the flesh, they constrain you to be circumcised; only lest they should let persecution for the cross of CHRIST[JESUS].
 6:13: For neither they themselves who are circumcised keep the law; but desire to have you circumcised, that they may glory in your flesh.
 6:14: But GOD forbid that I should glory, save in the cross of our LORD JESUS CHRIST, by whom the world is crucified to me, and I to the world.
-6:15: For in CHRIST[JESUS] JESUS neither circumcision avails any thing, nor uncircumcision, but a new creature.
+6:15: For in CHRIST JESUS neither circumcision avails any thing, nor uncircumcision, but a new creature.
 6:16: And as many as walk according to this rule, peace be on them, and mercy, and upon the Israel of GOD.
 6:17: From henceforth let no man trouble me: for I bear in my body the marks of the LORD JESUS.
 6:18: Brethren, the grace of our LORD JESUS CHRIST be with your spirit. Amen.
 EPHESIANS
-1:1: Paul, an apostle of JESUS CHRIST by the will of GOD, to the saints which are at Ephesus, and to the faithful in CHRIST[JESUS] JESUS:
+1:1: Paul, an apostle of JESUS CHRIST by the will of GOD, to the saints which are at Ephesus, and to the faithful in CHRIST JESUS:
 1:2: Grace be to you, and peace, from GOD our Father, and from the LORD JESUS CHRIST.
 1:3: Blessed be the GOD and Father of our LORD JESUS CHRIST, who has blessed us with all spiritual blessings in heavenly places in CHRIST[JESUS]:
 1:4: According as he has chosen us in him before the foundation of the world, that we should be holy and without blame before him in love:
@@ -29275,21 +29275,21 @@ EPHESIANS
 1:19: And what is the exceeding greatness of his power to us-ward who believe, according to the working of his mighty power,
 1:20: Which he worked in CHRIST[JESUS], when he raised him from the dead, and set him at his own right hand in the heavenly places,
 1:21: Far above all principality, and power, and might, and dominion, and every name that is named, not only in this world, but also in that which is to come:
-1:22: And has put all things under his feet, and gave him to be the head over all things to the church,
+1:22: And has put all things under his feet, and gave him to be the head[JESUS] over all things to the church,
 1:23: Which is his body, the fulness of him that fills all in all.
 2:1: And you has he quickened, who were dead in trespasses and sins;
 2:2: In which in time past you walked according to the course of this world, according to the prince of the power of the air, the spirit that now works in the children of disobedience:
 2:3: Among whom also we all had our conduct in times past in the lusts of our flesh, fulfilling the desires of the flesh and of the mind; and were by nature the children of wrath, even as others.
 2:4: But GOD, who is rich in mercy, for his great love with which he loved us,
 2:5: Even when we were dead in sins, has quickened us together with CHRIST[JESUS], (by grace you are saved;)
-2:6: And has raised us up together, and made us sit together in heavenly places in CHRIST[JESUS] JESUS:
-2:7: That in the ages to come he might shew the exceeding riches of his grace in his kindness toward us through CHRIST[JESUS] JESUS.
+2:6: And has raised us up together, and made us sit together in heavenly places in CHRIST JESUS:
+2:7: That in the ages to come he might shew the exceeding riches of his grace in his kindness toward us through CHRIST JESUS.
 2:8: For by grace are you saved through faith; and that not of yourselves: it is the gift of GOD:
 2:9: Not of works, lest any man should boast.
-2:10: For we are his workmanship, created in CHRIST[JESUS] JESUS to good works, which GOD has before ordained that we should walk in them.
+2:10: For we are his workmanship, created in CHRIST JESUS to good works, which GOD has before ordained that we should walk in them.
 2:11: Therefore remember, that you being in time past Gentiles in the flesh, who are called Uncircumcision by that which is called the Circumcision in the flesh made by hands;
 2:12: That at that time you were without CHRIST[JESUS], being aliens from the commonwealth of Israel, and strangers from the covenants of promise, having no hope, and without GOD in the world:
-2:13: But now in CHRIST[JESUS] JESUS you who sometimes were far off are made near by the blood of CHRIST[JESUS].
+2:13: But now in CHRIST JESUS you who sometimes were far off are made near by the blood of CHRIST[JESUS].
 2:14: For he is our peace, who has made both one, and has broken down the middle wall of partition between us;
 2:15: Having abolished in his flesh the enmity, even the law of commandments contained in ordinances; for to make in himself of twain one new man, so making peace;
 2:16: And that he might reconcile both to GOD in one body by the cross, having slain the enmity thereby:
@@ -29309,7 +29309,7 @@ EPHESIANS
 3:8: To me, who am less than the least of all saints, is this grace given, that I should preach among the Gentiles the unsearchable riches of CHRIST[JESUS];
 3:9: And to make all men see what is the fellowship of the mystery, which from the beginning of the world has been hid in GOD, who created all things by JESUS CHRIST:
 3:10: To the intent that now to the principalities and powers in heavenly places might be known by the church the manifold wisdom of GOD,
-3:11: According to the eternal purpose which he purposed in CHRIST[JESUS] JESUS our LORD:
+3:11: According to the eternal purpose which he purposed in CHRIST JESUS our LORD:
 3:12: In whom we have boldness and access with confidence by the faith of him.
 3:13: Therefore I desire that you faint not at my tribulations for you, which is your glory.
 3:14: For this cause I bow my knees to the Father of our LORD JESUS CHRIST,
@@ -29319,7 +29319,7 @@ EPHESIANS
 3:18: May be able to comprehend with all saints what is the breadth, and length, and depth, and height;
 3:19: And to know the love of CHRIST[JESUS], which passes knowledge, that you might be filled with all the fulness of GOD.
 3:20: Now to him that is able to do exceeding abundantly above all that we ask or think, according to the power that works in us,
-3:21: To him be glory in the church by CHRIST[JESUS] JESUS throughout all ages, world without end. Amen.
+3:21: To him be glory in the church by CHRIST JESUS throughout all ages, world without end. Amen.
 4:1: I therefore, the prisoner of the LORD, beseech you that you walk worthy of the vocation with which you are called,
 4:2: With all lowliness and meekness, with longsuffering, forbearing one another in love;
 4:3: Endeavouring to keep the unity of the Spirit in the bond of peace.
@@ -29410,7 +29410,7 @@ EPHESIANS
 6:23: Peace be to the brethren, and love with faith, from GOD the Father and the LORD JESUS CHRIST.
 6:24: Grace be with all them that love our LORD JESUS CHRIST in sincerity. Amen.
 PHILIPPIANS
-1:1: Paul and Timotheus, the servants of JESUS CHRIST, to all the saints in CHRIST[JESUS] JESUS which are at Philippi, with the bishops and deacons:
+1:1: Paul and Timotheus, the servants of JESUS CHRIST, to all the saints in CHRIST JESUS which are at Philippi, with the bishops and deacons:
 1:2: Grace be to you, and peace, from GOD our Father, and from the LORD JESUS CHRIST.
 1:3: I thank my GOD upon every remembrance of you,
 1:4: Always in every prayer of mine for you all making request with joy,
@@ -29444,7 +29444,7 @@ PHILIPPIANS
 2:2: Fulfil you my joy, that you be likeminded, having the same love, being of one accord, of one mind.
 2:3: Let nothing be done through strife or vainglory; but in lowliness of mind let each esteem other better than themselves.
 2:4: Look not every man on his own things, but every man also on the things of others.
-2:5: Let this mind be in you, which was also in CHRIST[JESUS] JESUS:
+2:5: Let this mind be in you, which was also in CHRIST JESUS:
 2:6: Who, being in the form of GOD, thought it not robbery to be equal with GOD:
 2:7: But made himself of no reputation, and took upon him the form of a servant, and was made in the likeness of men:
 2:8: And being found in fashion as a man, he humbled himself, and became obedient to death, even the death of the cross.
@@ -29472,18 +29472,18 @@ PHILIPPIANS
 2:30: Because for the work of CHRIST[JESUS] he was near to death, not regarding his life, to supply your lack of service toward me.
 3:1: Finally, my brethren, rejoice in the LORD. To write the same things to you, to me indeed is not grievous, but for you it is safe.
 3:2: Beware of dogs, beware of evil workers, beware of the concision.
-3:3: For we are the circumcision, which worship GOD in the spirit, and rejoice in CHRIST[JESUS] JESUS, and have no confidence in the flesh.
+3:3: For we are the circumcision, which worship GOD in the spirit, and rejoice in CHRIST JESUS, and have no confidence in the flesh.
 3:4: Though I might also have confidence in the flesh. If any other man thinks that he has of which he might trust in the flesh, I more:
 3:5: Circumcised the eighth day, of the stock of Israel, of the tribe of Benjamin, an Hebrew of the Hebrews; as touching the law, a Pharisee;
 3:6: Concerning zeal, persecuting the church; touching the righteousness which is in the law, blameless.
 3:7: But what things were gain to me, those I counted loss for CHRIST[JESUS].
-3:8: Yes doubtless, and I count all things but loss for the excellency of the knowledge of CHRIST[JESUS] JESUS my LORD: for whom I have suffered the loss of all things, and do count them but dung, that I may win CHRIST[JESUS],
+3:8: Yes doubtless, and I count all things but loss for the excellency of the knowledge of CHRIST JESUS my LORD: for whom I have suffered the loss of all things, and do count them but dung, that I may win CHRIST[JESUS],
 3:9: And be found in him, not having mine own righteousness, which is of the law, but that which is through the faith of CHRIST[JESUS], the righteousness which is of GOD by faith:
 3:10: That I may know him, and the power of his resurrection, and the fellowship of his sufferings, being made conformable to his death;
 3:11: If by any means I might attain to the resurrection of the dead.
-3:12: Not as though I had already attained, either were already perfect: but I follow after, if that I may apprehend that for which also I am apprehended of CHRIST[JESUS] JESUS.
+3:12: Not as though I had already attained, either were already perfect: but I follow after, if that I may apprehend that for which also I am apprehended of CHRIST JESUS.
 3:13: Brethren, I count not myself to have apprehended: but this one thing I do, forgetting those things which are behind, and reaching forth to those things which are before,
-3:14: I press toward the mark for the prize of the high calling of GOD in CHRIST[JESUS] JESUS.
+3:14: I press toward the mark for the prize of the high calling of GOD in CHRIST JESUS.
 3:15: Let us therefore, as many as be perfect, be thus minded: and if in any thing you be otherwise minded, GOD shall reveal even this to you.
 3:16: Nevertheless, whereto we have already attained, let us walk by the same rule, let us mind the same thing.
 3:17: Brethren, be followers together of me, and mark them which walk so as you have us for an ensample.
@@ -29497,7 +29497,7 @@ PHILIPPIANS
 4:4: Rejoice in the LORD alway: and again I say, Rejoice.
 4:5: Let your moderation be known to all men. The LORD is at hand.
 4:6: Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known to GOD.
-4:7: And the peace of GOD, which passes all understanding, shall keep your hearts and minds through CHRIST[JESUS] JESUS.
+4:7: And the peace of GOD, which passes all understanding, shall keep your hearts and minds through CHRIST JESUS.
 4:8: Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.
 4:9: Those things, which you have both learned, and received, and heard, and seen in me, do: and the GOD of peace shall be with you.
 4:10: But I rejoiced in the LORD greatly, that now at the last your care of me has flourished again; in which you were also careful, but you lacked opportunity.
@@ -29509,16 +29509,16 @@ PHILIPPIANS
 4:16: For even in Thessalonica you sent once and again to my necessity.
 4:17: Not because I desire a gift: but I desire fruit that may abound to your account.
 4:18: But I have all, and abound: I am full, having received of Epaphroditus the things which were sent from you, an odour of a sweet smell, a sacrifice acceptable, wellpleasing to GOD.
-4:19: But my GOD shall supply all your need according to his riches in glory by CHRIST[JESUS] JESUS.
+4:19: But my GOD shall supply all your need according to his riches in glory by CHRIST JESUS.
 4:20: Now to GOD and our Father be glory for ever and ever. Amen.
-4:21: Salute every saint in CHRIST[JESUS] JESUS. The brethren which are with me greet you.
+4:21: Salute every saint in CHRIST JESUS. The brethren which are with me greet you.
 4:22: All the saints salute you, chiefly they that are of Caesar’s household.
 4:23: The grace of our LORD JESUS CHRIST be with you all. Amen.
 COLOSSIANS
 1:1: Paul, an apostle of JESUS CHRIST by the will of GOD, and Timotheus our brother,
 1:2: To the saints and faithful brethren in CHRIST[JESUS] which are at Colosse: Grace be to you, and peace, from GOD our Father and the LORD JESUS CHRIST.
 1:3: We give thanks to GOD and the Father of our LORD JESUS CHRIST, praying always for you,
-1:4: Since we heard of your faith in CHRIST[JESUS] JESUS, and of the love which you have to all the saints,
+1:4: Since we heard of your faith in CHRIST JESUS, and of the love which you have to all the saints,
 1:5: For the hope which is laid up for you in heaven, of which you heard before in the WORD[JESUS] of the truth of the gospel;
 1:6: Which is come to you, as it is in all the world; and brings forth fruit, as it does also in you, since the day you heard of it, and knew the grace of GOD in truth:
 1:7: As you also learned of Epaphras our dear fellowservant, who is for you a faithful minister of CHRIST[JESUS];
@@ -29529,7 +29529,7 @@ COLOSSIANS
 1:12: Giving thanks to the Father, which has made us meet to be partakers of the inheritance of the saints in light:
 1:13: Who has delivered us from the power of darkness, and has translated us into the kingdom of his dear Son:
 1:14: In whom we have redemption through his blood, even the forgiveness of sins:
-1:15: Who is the image of the invisible GOD, the firstborn of every creature:
+1:15: Who is the image[JESUS] of the invisible GOD, the firstborn of every creature:
 1:16: For by him were all things created, that are in heaven, and that are in earth, visible and invisible, whether they be thrones, or dominions, or principalities, or powers: all things were created by him, and for him:
 1:17: And he is before all things, and by him all things consist.
 1:18: And he is the head of the body, the church: who is the beginning, the firstborn from the dead; that in all things he might have the preeminence.
@@ -29542,14 +29542,14 @@ COLOSSIANS
 1:25: Of which I am made a minister, according to the dispensation of GOD which is given to me for you, to fulfil the WORD[JESUS] of GOD;
 1:26: Even the mystery which has been hid from ages and from generations, but now is made manifest to his saints:
 1:27: To whom GOD would make known what is the riches of the glory of this mystery among the Gentiles; which is CHRIST[JESUS] in you, the hope of glory:
-1:28: Whom we preach, warning every man, and teaching every man in all wisdom; that we may present every man perfect in CHRIST[JESUS] JESUS:
+1:28: Whom we preach, warning every man, and teaching every man in all wisdom; that we may present every man perfect in CHRIST JESUS:
 1:29: To which I also labour, striving according to his working, which works in me mightily.
 2:1: For I would that you knew what great conflict I have for you, and for them at Laodicea, and for as many as have not seen my face in the flesh;
 2:2: That their hearts might be comforted, being knit together in love, and to all riches of the full assurance of understanding, to the acknowledgement of the mystery of GOD, and of the Father, and of CHRIST[JESUS];
 2:3: In whom are hid all the treasures of wisdom and knowledge.
 2:4: And this I say, lest any man should beguile you with enticing words.
 2:5: For though I be absent in the flesh, yet am I with you in the spirit, joying and beholding your order, and the stedfastness of your faith in CHRIST[JESUS].
-2:6: As you have therefore received CHRIST[JESUS] JESUS the LORD, so walk you in him:
+2:6: As you have therefore received CHRIST JESUS the LORD, so walk you in him:
 2:7: Rooted and built up in him, and stablished in the faith, as you have been taught, abounding therein with thanksgiving.
 2:8: Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after CHRIST[JESUS].
 2:9: For in him dwells all the fulness of the Godhead bodily.
@@ -29634,7 +29634,7 @@ COLOSSIANS
 2:11: As you know how we exhorted and comforted and charged every one of you, as a father does his children,
 2:12: That you would walk worthy of GOD, who has called you to his kingdom and glory.
 2:13: For this cause also thank we GOD without ceasing, because, when you received the WORD[JESUS] of GOD which you heard of us, you received it not as the WORD[JESUS] of men, but as it is in truth, the WORD[JESUS] of GOD, which effectually works also in you that believe.
-2:14: For you, brethren, became followers of the churches of GOD which in Judaea are in CHRIST[JESUS] JESUS: for you also have suffered like things of your own countrymen, even as they have of the Jews:
+2:14: For you, brethren, became followers of the churches of GOD which in Judaea are in CHRIST JESUS: for you also have suffered like things of your own countrymen, even as they have of the Jews:
 2:15: Who both killed the LORD JESUS, and their own prophets, and have persecuted us; and they please not GOD, and are contrary to all men:
 2:16: Forbidding us to speak to the Gentiles that they might be saved, to fill up their sins alway: for the wrath is come upon them to the uttermost.
 2:17: But we, brethren, being taken from you for a short time in presence, not in heart, endeavoured the more abundantly to see your face with great desire.
@@ -29669,7 +29669,7 @@ COLOSSIANS
 4:13: But I would not have you to be ignorant, brethren, concerning them which are asleep, that you sorrow not, even as others which have no hope.
 4:14: For if we believe that JESUS died and rose again, even so them also which sleep in JESUS will GOD bring with him.
 4:15: For this we say to you by the WORD[JESUS] of the LORD, that we which are alive and remain to the coming of the LORD shall not prevent them which are asleep.
-4:16: For the LORD himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of GOD: and the dead in CHRIST[JESUS] shall rise first:
+4:16: For the LORD[JESUS] himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of GOD: and the dead in CHRIST[JESUS] shall rise first:
 4:17: Then we which are alive and remain shall be caught up together with them in the clouds, to meet the LORD in the air: and so shall we ever be with the LORD.
 4:18: Therefore comfort one another with these words.
 5:1: But of the times and the seasons, brethren, you have no need that I write to you.
@@ -29689,7 +29689,7 @@ COLOSSIANS
 5:15: See that none render evil for evil to any man; but ever follow that which is good, both among yourselves, and to all men.
 5:16: Rejoice evermore.
 5:17: Pray without ceasing.
-5:18: In every thing give thanks: for this is the will of GOD in CHRIST[JESUS] JESUS concerning you.
+5:18: In every thing give thanks: for this is the will of GOD in CHRIST JESUS concerning you.
 5:19: Quench not the Spirit.
 5:20: Despise not prophesyings.
 5:21: Prove all things; hold fast that which is good.
@@ -29710,7 +29710,7 @@ COLOSSIANS
 1:7: And to you who are troubled rest with us, when the LORD JESUS shall be revealed from heaven with his mighty angels,
 1:8: In flaming fire taking vengeance on them that know not GOD, and that obey not the gospel of our LORD JESUS CHRIST:
 1:9: Who shall be punished with everlasting destruction from the presence of the LORD, and from the glory of his power;
-1:10: When he shall come to be glorified in his saints, and to be admired in all them that believe (because our testimony among you was believed) in that day.
+1:10: When he[JESUS] shall come to be glorified in his saints, and to be admired in all them that believe (because our testimony among you was believed) in that day.
 1:11: Therefore also we pray always for you, that our GOD would count you worthy of this calling, and fulfil all the good pleasure of his goodness, and the work of faith with power:
 1:12: That the name of our LORD JESUS CHRIST may be glorified in you, and you in him, according to the grace of our GOD and the LORD JESUS CHRIST.
 2:1: Now we beseech you, brethren, by the coming of our LORD JESUS CHRIST, and by our gathering together to him,
@@ -29760,10 +29760,10 @@ COLOSSIANS
 1:9: Knowing this, that the law is not made for a righteous man, but for the lawless and disobedient, for the ungodly and for sinners, for unholy and profane, for murderers of fathers and murderers of mothers, for manslayers,
 1:10: For whoremongers, for them that defile themselves with mankind, for menstealers, for liars, for perjured persons, and if there be any other thing that is contrary to sound doctrine;
 1:11: According to the glorious gospel of the blessed GOD, which was committed to my trust.
-1:12: And I thank CHRIST[JESUS] JESUS our LORD, who has enabled me, for that he counted me faithful, putting me into the ministry;
+1:12: And I thank CHRIST JESUS our LORD, who has enabled me, for that he counted me faithful, putting me into the ministry;
 1:13: Who was before a blasphemer, and a persecutor, and injurious: but I obtained mercy, because I did it ignorantly in unbelief.
-1:14: And the grace of our LORD was exceeding abundant with faith and love which is in CHRIST[JESUS] JESUS.
-1:15: This is a faithful saying, and worthy of all acceptation, that CHRIST[JESUS] JESUS came into the world to save sinners; of whom I am chief.
+1:14: And the grace of our LORD was exceeding abundant with faith and love which is in CHRIST JESUS.
+1:15: This is a faithful saying, and worthy of all acceptation, that CHRIST JESUS came into the world to save sinners; of whom I am chief.
 1:16: However for this cause I obtained mercy, that in me first JESUS CHRIST might shew forth all longsuffering, for a pattern to them which should hereafter believe on him to life everlasting.
 1:17: Now to the King eternal, immortal, invisible, the only wise GOD, be honour and glory for ever and ever. Amen.
 1:18: This charge I commit to you, son Timothy, according to the prophecies which went before on you, that you by them mightest war a good warfare;
@@ -29773,7 +29773,7 @@ COLOSSIANS
 2:2: For kings, and for all that are in authority; that we may lead a quiet and peaceable life in all godliness and honesty.
 2:3: For this is good and acceptable in the sight of GOD our Saviour;
 2:4: Who will have all men to be saved, and to come to the knowledge of the truth.
-2:5: For there is one GOD, and one mediator between GOD and men, the man CHRIST[JESUS] JESUS;
+2:5: For there is one GOD, and one mediator[JESUS] between GOD and men, the man CHRIST JESUS;
 2:6: Who gave himself a ransom for all, to be testified in due time.
 2:7: To which I am ordained a preacher, and an apostle, (I speak the truth in CHRIST[JESUS], and lie not;) a teacher of the Gentiles in faith and verity.
 2:8: I will therefore that men pray every where, lifting up holy hands, without wrath and doubting.
@@ -29796,7 +29796,7 @@ COLOSSIANS
 3:10: And let these also first be proved; then let them use the office of a deacon, being found blameless.
 3:11: Even so must their wives be grave, not slanderers, sober, faithful in all things.
 3:12: Let the deacons be the husbands of one wife, ruling their children and their own houses well.
-3:13: For they that have used the office of a deacon well purchase to themselves a good degree, and great boldness in the faith which is in CHRIST[JESUS] JESUS.
+3:13: For they that have used the office of a deacon well purchase to themselves a good degree, and great boldness in the faith which is in CHRIST JESUS.
 3:14: These things write I to you, hoping to come to you shortly:
 3:15: But if I tarry long, that you may know how you oughtest to behave yourself in the house of GOD, which is the church of the living GOD, the pillar and ground of the truth.
 3:16: And without controversy great is the mystery of godliness: GOD was manifest in the flesh, justified in the Spirit, seen of angels, preached to the Gentiles, believed on in the world, received up into glory.
@@ -29853,7 +29853,7 @@ COLOSSIANS
 6:10: For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows.
 6:11: But you, O man of GOD, flee these things; and follow after righteousness, godliness, faith, love, patience, meekness.
 6:12: Fight the good fight of faith, lay hold on eternal life, to which you are also called, and have professed a good profession before many witnesses.
-6:13: I give you charge in the sight of GOD, who quickens all things, and before CHRIST[JESUS] JESUS, who before Pontius Pilate witnessed a good confession;
+6:13: I give you charge in the sight of GOD, who quickens all things, and before CHRIST JESUS, who before Pontius Pilate witnessed a good confession;
 6:14: That you keep this commandment without spot, unrebukeable, until the appearing of our LORD JESUS CHRIST:
 6:15: Which in his times he shall shew, who is the blessed and only Potentate, the King of kings, and LORD of lords;
 6:16: Who only has immortality, dwelling in the light which no man can approach to; whom no man has seen, nor can see: to whom be honour and power everlasting. Amen.
@@ -29863,25 +29863,25 @@ COLOSSIANS
 6:20: O Timothy, keep that which is committed to your trust, avoiding profane and vain babblings, and oppositions of science falsely so called:
 6:21: Which some professing have erred concerning the faith. Grace be with you. Amen.
 2 TIMOTHY
-1:1: Paul, an apostle of JESUS CHRIST by the will of GOD, according to the promise of life which is in CHRIST[JESUS] JESUS,
-1:2: To Timothy, my dearly beloved son: Grace, mercy, and peace, from GOD the Father and CHRIST[JESUS] JESUS our LORD.
+1:1: Paul, an apostle of JESUS CHRIST by the will of GOD, according to the promise of life which is in CHRIST JESUS,
+1:2: To Timothy, my dearly beloved son: Grace, mercy, and peace, from GOD the Father and CHRIST JESUS our LORD.
 1:3: I thank GOD, whom I serve from my forefathers with pure conscience, that without ceasing I have remembrance of you in my prayers night and day;
 1:4: Greatly desiring to see you, being mindful of your tears, that I may be filled with joy;
 1:5: When I call to remembrance the unfeigned faith that is in you, which lived first in your grandmother Lois, and your mother Eunice; and I am persuaded that in you also.
 1:6: Therefore I put you in remembrance that you stir up the gift of GOD, which is in you by the putting on of my hands.
 1:7: For GOD has not given us the spirit of fear; but of power, and of love, and of a sound mind.
 1:8: Be not you therefore ashamed of the testimony of our LORD, nor of me his prisoner: but be you partaker of the afflictions of the gospel according to the power of GOD;
-1:9: Who has saved us, and called us with an holy calling, not according to our works, but according to his own purpose and grace, which was given us in CHRIST[JESUS] JESUS before the world began,
+1:9: Who has saved us, and called us with an holy calling, not according to our works, but according to his own purpose and grace, which was given us in CHRIST JESUS before the world began,
 1:10: But is now made manifest by the appearing of our Saviour JESUS CHRIST, who has abolished death, and has brought life and immortality to light through the gospel:
 1:11: To which I am appointed a preacher, and an apostle, and a teacher of the Gentiles.
 1:12: For the which cause I also let these things: nevertheless I am not ashamed: for I know whom I have believed, and am persuaded that he is able to keep that which I have committed to him against that day.
-1:13: Hold fast the form of sound words, which you have heard of me, in faith and love which is in CHRIST[JESUS] JESUS.
+1:13: Hold fast the form of sound words, which you have heard of me, in faith and love which is in CHRIST JESUS.
 1:14: That good thing which was committed to you keep by the Holy Ghost which dwells in us.
 1:15: This you know, that all they which are in Asia be turned away from me; of whom are Phygellus and Hermogenes.
 1:16: The LORD give mercy to the house of Onesiphorus; for he oft refreshed me, and was not ashamed of my chain:
 1:17: But, when he was in Rome, he sought me out very diligently, and found me.
 1:18: The LORD grant to him that he may find mercy of the LORD in that day: and in how many things he ministered to me at Ephesus, you know very well.
-2:1: You therefore, my son, be strong in the grace that is in CHRIST[JESUS] JESUS.
+2:1: You therefore, my son, be strong in the grace that is in CHRIST JESUS.
 2:2: And the things that you have heard of me among many witnesses, the same commit you to faithful men, who shall be able to teach others also.
 2:3: You therefore endure hardness, as a good soldier of JESUS CHRIST.
 2:4: No man that wars entangles himself with the affairs of this life; that he may please him who has chosen him to be a soldier.
@@ -29890,7 +29890,7 @@ COLOSSIANS
 2:7: Consider what I say; and the LORD give you understanding in all things.
 2:8: Remember that JESUS CHRIST of the seed of David was raised from the dead according to my gospel:
 2:9: In which I let trouble, as an evil doer, even to bonds; but the WORD[JESUS] of GOD is not bound.
-2:10: Therefore I endure all things for the elect’s sakes, that they may also obtain the salvation which is in CHRIST[JESUS] JESUS with eternal glory.
+2:10: Therefore I endure all things for the elect’s sakes, that they may also obtain the salvation which is in CHRIST JESUS with eternal glory.
 2:11: It is a faithful saying: For if we be dead with him, we shall also live with him:
 2:12: If we let, we shall also reign with him: if we deny him, he also will deny us:
 2:13: If we believe not, yet he abides faithful: he cannot deny himself.
@@ -29918,10 +29918,10 @@ COLOSSIANS
 3:9: But they shall proceed no further: for their folly shall be manifest to all men, as theirs also was.
 3:10: But you have fully known my doctrine, manner of life, purpose, faith, longsuffering, love, patience,
 3:11: Persecutions, afflictions, which came to me at Antioch, at Iconium, at Lystra; what persecutions I endured: but out of them all the LORD delivered me.
-3:12: Yes, and all that will live godly in CHRIST[JESUS] JESUS shall let persecution.
+3:12: Yes, and all that will live godly in CHRIST JESUS shall let persecution.
 3:13: But evil men and seducers shall wax worse and worse, deceiving, and being deceived.
 3:14: But continue you in the things which you have learned and have been assured of, knowing of whom you have learned them;
-3:15: And that from a child you have known the holy scriptures, which are able to make you wise to salvation through faith which is in CHRIST[JESUS] JESUS.
+3:15: And that from a child you have known the holy scriptures, which are able to make you wise to salvation through faith which is in CHRIST JESUS.
 3:16: All scripture is given by inspiration of GOD, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness:
 3:17: That the man of GOD may be perfect, throughly furnished to all good works.
 4:1: I charge you therefore before GOD, and the LORD JESUS CHRIST, who shall judge the quick and the dead at his appearing and his kingdom;
@@ -29931,7 +29931,7 @@ COLOSSIANS
 4:5: But watch you in all things, endure afflictions, do the work of an evangelist, make full proof of your ministry.
 4:6: For I am now ready to be offered, and the time of my departure is at hand.
 4:7: I have fought a good fight, I have finished my course, I have kept the faith:
-4:8: Henceforth there is laid up for me a crown of righteousness, which the LORD, the righteous judge, shall give me at that day: and not to me only, but to all them also that love his appearing.
+4:8: Henceforth there is laid up for me a crown of righteousness, which the LORD, the righteous judge[JESUS], shall give me at that day: and not to me only, but to all them also that love his appearing.
 4:9: Do your diligence to come shortly to me:
 4:10: For Demas has forsaken me, having loved this present world, and is departed to Thessalonica; Crescens to Galatia, Titus to Dalmatia.
 4:11: Only Luke is with me. Take Mark, and bring him with you: for he is profitable to me for the ministry.
@@ -29999,7 +29999,7 @@ PHILEMON
 1:3: Grace to you, and peace, from GOD our Father and the LORD JESUS CHRIST.
 1:4: I thank my GOD, making mention of you always in my prayers,
 1:5: Hearing of your love and faith, which you have toward the LORD JESUS, and toward all saints;
-1:6: That the communication of your faith may become effectual by the acknowledging of every good thing which is in you in CHRIST[JESUS] JESUS.
+1:6: That the communication of your faith may become effectual by the acknowledging of every good thing which is in you in CHRIST JESUS.
 1:7: For we have great joy and consolation in your love, because the bowels of the saints are refreshed by you, brother.
 1:8: Therefore, though I might be much bold in CHRIST[JESUS] to enjoin you that which is convenient,
 1:9: Yet for love’s sake I rather beseech you, being such an one as Paul the aged, and now also a prisoner of JESUS CHRIST.
@@ -30009,14 +30009,14 @@ PHILEMON
 1:13: Whom I would have retained with me, that in your stead he might have ministered to me in the bonds of the gospel:
 1:14: But without your mind would I do nothing; that your benefit should not be as it were of necessity, but willingly.
 1:15: For perhaps he therefore departed for a season, that you should receive him for ever;
-1:16: Not now as a servant, but above a servant, a brother beloved, specially to me, but how much more to you, both in the flesh, and in the LORD?
+1:16: Not now as a servant, but above a servant, a brother beloved, specially to me, but how much more to you, both in the flesh, and in the LORD[JESUS]?
 1:17: If you count me therefore a partner, receive him as myself.
 1:18: If he has wronged you, or owes you ought, put that on mine account;
 1:19: I Paul have written it with mine own hand, I will repay it: albeit I do not say to you how you owest to me even yours own self besides.
 1:20: Yes, brother, let me have joy of you in the LORD: refresh my bowels in the LORD.
 1:21: Having confidence in your obedience I wrote to you, knowing that you will also do more than I say.
 1:22: But withal prepare me also a lodging: for I trust that through your prayers I shall be given to you.
-1:23: There salute you Epaphras, my fellowprisoner in CHRIST[JESUS] JESUS;
+1:23: There salute you Epaphras, my fellowprisoner in CHRIST JESUS;
 1:24: Marcus, Aristarchus, Demas, Lucas, my fellowlabourers.
 1:25: The grace of our LORD JESUS CHRIST be with your spirit. Amen.
 HEBREWS
@@ -30052,7 +30052,7 @@ HEBREWS
 2:16: For truly he took not on him the nature of angels; but he took on him the seed of Abraham.
 2:17: Therefore in all things it behoved him to be made like to his brethren, that he might be a merciful and faithful high priest in things pertaining to GOD, to make reconciliation for the sins of the people.
 2:18: For in that he himself has suffered being tempted, he is able to succour them that are tempted.
-3:1: Therefore, holy brethren, partakers of the heavenly calling, consider the Apostle and High Priest of our profession, CHRIST[JESUS] JESUS;
+3:1: Therefore, holy brethren, partakers of the heavenly calling, consider the Apostle and High Priest of our profession, CHRIST JESUS;
 3:2: Who was faithful to him that appointed him, as also Moses was faithful in all his house.
 3:3: For this man was counted worthy of more glory than Moses, inasmuch as he who has built the house has more honour than the house.
 3:4: For every house is built by some man; but he that built all things is GOD.
@@ -30270,7 +30270,7 @@ HEBREWS
 11:39: And these all, having obtained a good report through faith, received not the promise:
 11:40: GOD having provided some better thing for us, that they without us should not be made perfect.
 12:1: Therefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which does so easily beset us, and let us run with patience the race that is set before us,
-12:2: Looking to JESUS the author and finisher of our faith; who for the joy that was set before him endured the cross, despising the shame, and is set down at the right hand of the throne of GOD.
+12:2: Looking to JESUS the author[JESUS] and finisher of our faith; who for the joy that was set before him endured the cross, despising the shame, and is set down at the right hand of the throne of GOD.
 12:3: For consider him that endured such contradiction of sinners against himself, lest you be wearied and faint in your minds.
 12:4: You have not yet resisted to blood, striving against sin.
 12:5: And you have forgotten the exhortation which speaks to you as to children, My son, despise not you the chastening of the LORD, nor faint when you are rebuked of him:
@@ -30351,7 +30351,7 @@ JAMES
 1:25: But whoever looks into the perfect law of liberty, and continues therein, he being not a forgetful hearer, but a doer of the work, this man shall be blessed in his deed.
 1:26: If any man among you seem to be religious, and bridles not his tongue, but deceives his own heart, this man’s religion is vain.
 1:27: Pure religion and undefiled before GOD and the Father is this, To visit the fatherless and widows in their affliction, and to keep himself unspotted from the world.
-2:1: My brethren, have not the faith of our LORD JESUS CHRIST, the LORD of glory, with respect of persons.
+2:1: My brethren, have not the faith of our LORD JESUS CHRIST, the LORD of glory[JESUS], with respect of persons.
 2:2: For if there come to your assembly a man with a gold ring, in goodly apparel, and there come in also a poor man in vile clothing;
 2:3: And you have respect to him that wears the gay clothing, and say to him, Sit you here in a good place; and say to the poor, Stand you there, or sit here under my footstool:
 2:4: Are you not then partial in yourselves, and are become judges of evil thoughts?
@@ -30527,21 +30527,21 @@ JAMES
 5:1: The elders which are among you I exhort, who am also an elder, and a witness of the sufferings of CHRIST[JESUS], and also a partaker of the glory that shall be revealed:
 5:2: Feed the flock of GOD which is among you, taking the oversight of it, not by constraint, but willingly; not for filthy lucre, but of a ready mind;
 5:3: Neither as being lords over GOD’s heritage, but being ensamples to the flock.
-5:4: And when the chief Shepherd shall appear, you shall receive a crown of glory that fades not away.
+5:4: And when the chief Shepherd[JESUS] shall appear, you shall receive a crown of glory that fades not away.
 5:5: Likewise, you younger, submit yourselves to the elder. Yes, all of you be subject one to another, and be clothed with humility: for GOD resists the proud, and gives grace to the humble.
 5:6: Humble yourselves therefore under the mighty hand of GOD, that he may exalt you in due time:
 5:7: Casting all your care upon him; for he cares for you.
 5:8: Be sober, be vigilant; because your adversary the devil, as a roaring lion, walks about, seeking whom he may devour:
 5:9: Whom resist stedfast in the faith, knowing that the same afflictions are accomplished in your brethren that are in the world.
-5:10: But the GOD of all grace, who has called us to his eternal glory by CHRIST[JESUS] JESUS, after that you have suffered a while, make you perfect, stablish, strengthen, settle you.
+5:10: But the GOD of all grace, who has called us to his eternal glory by CHRIST JESUS, after that you have suffered a while, make you perfect, stablish, strengthen, settle you.
 5:11: To him be glory and dominion for ever and ever. Amen.
 5:12: By Silvanus, a faithful brother to you, as I suppose, I have written briefly, exhorting, and testifying that this is the true grace of GOD in which you stand.
 5:13: The church that is at Babylon, elected together with you, salutes you; and so does Marcus my son.
-5:14: Greet you one another with a kiss of love. Peace be with you all that are in CHRIST[JESUS] JESUS. Amen.
+5:14: Greet you one another with a kiss of love. Peace be with you all that are in CHRIST JESUS. Amen.
 2 PETER
 1:1: Simon Peter, a servant and an apostle of JESUS CHRIST, to them that have obtained like precious faith with us through the righteousness of GOD and our Saviour JESUS CHRIST:
 1:2: Grace and peace be multiplied to you through the knowledge of GOD, and of JESUS our LORD,
-1:3: According as his divine power has given to us all things that pertain to life and godliness, through the knowledge of him that has called us to glory and virtue:
+1:3: According as his divine power has given to us all things that pertain to life and godliness, through the knowledge of him[JESUS] that has called us to glory and virtue:
 1:4: By which are given to us exceeding great and precious promises: that by these you might be partakers of the divine nature, having escaped the corruption that is in the world through lust.
 1:5: And beside this, giving all diligence, add to your faith virtue; and to virtue knowledge;
 1:6: And to knowledge temperance; and to temperance patience; and to patience godliness;
@@ -30618,7 +30618,7 @@ JAMES
 2:5: But whoever keeps his WORD[JESUS], in him truly is the love of GOD perfected: hereby know we that we are in him.
 2:6: He that says he abides in him ought himself also so to walk, even as he walked.
 2:7: Brethren, I write no new commandment to you, but an old commandment which you had from the beginning. The old commandment is the WORD[JESUS] which you have heard from the beginning.
-2:8: Again, a new commandment I write to you, which thing is true in him and in you: because the darkness is past, and the true light now shines.
+2:8: Again, a new commandment I write to you, which thing is true in him and in you: because the darkness is past, and the true light[JESUS] now shines.
 2:9: He that says he is in the light, and hates his brother, is in darkness even until now.
 2:10: He that loves his brother abides in the light, and there is none occasion of stumbling in him.
 2:11: But he that hates his brother is in darkness, and walks in darkness, and knows not where he goes, because that darkness has blinded his eyes.
@@ -30709,7 +30709,7 @@ JAMES
 2 JOHN
 1:1: The elder to the elect lady and her children, whom I love in the truth; and not I only, but also all they that have known the truth;
 1:2: For the truth’s sake, which dwells in us, and shall be with us for ever.
-1:3: Grace be with you, mercy, and peace, from GOD the Father, and from the LORD JESUS CHRIST, the Son of the Father, in truth and love.
+1:3: Grace be with you, mercy, and peace, from GOD the Father, and from the LORD JESUS CHRIST, the Son of the Father[JESUS], in truth and love.
 1:4: I rejoiced greatly that I found of your children walking in truth, as we have received a commandment from the Father.
 1:5: And now I beseech you, lady, not as though I wrote a new commandment to you, but that which we had from the beginning, that we love one another.
 1:6: And this is love, that we walk after his commandments. This is the commandment, That, as you have heard from the beginning, you should walk in it.
@@ -30727,7 +30727,7 @@ JAMES
 1:4: I have no greater joy than to hear that my children walk in truth.
 1:5: Beloved, you do faithfully whatsoever you do to the brethren, and to strangers;
 1:6: Which have borne witness of your love before the church: whom if you bring forward on their journey after a godly sort, you shall do well:
-1:7: Because that for his name’s sake they went forth, taking nothing of the Gentiles.
+1:7: Because that for his[JESUS] name’s sake they went forth, taking nothing of the Gentiles.
 1:8: We therefore ought to receive such, that we might be fellowhelpers to the truth.
 1:9: I wrote to the church: but Diotrephes, who loves to have the preeminence among them, receives us not.
 1:10: Therefore, if I come, I will remember his deeds which he does, prating against us with malicious words: and not content therewith, neither does he himself receive the brethren, and forbids them that would, and casts them out of the church.
@@ -30760,7 +30760,7 @@ JUDE
 1:22: And of some have compassion, making a difference:
 1:23: And others save with fear, pulling them out of the fire; hating even the garment spotted by the flesh.
 1:24: Now to him that is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy,
-1:25: To the only wise GOD our Saviour, be glory and majesty, dominion and power, both now and ever. Amen.
+1:25: To the only wise GOD our Saviour[JESUS], be glory and majesty, dominion and power, both now and ever. Amen.
 REVELATION
 1:1: The Revelation of JESUS CHRIST, which GOD gave to him, to shew to his servants things which must shortly come to pass; and he sent and signified it by his angel to his servant John:
 1:2: Who bare record of the WORD[JESUS] of GOD, and of the testimony of JESUS CHRIST, and of all things that he saw.
@@ -31097,7 +31097,7 @@ REVELATION
 19:13: And he was clothed with a vesture dipped in blood: and his name is called The WORD[JESUS] of GOD.
 19:14: And the armies which were in heaven followed him upon white horses, clothed in fine linen, white and clean.
 19:15: And out of his mouth goes a sharp sword, that with it he should smite the nations: and he shall rule them with a rod of iron: and he treads the winepress of the fierceness and wrath of Almighty GOD.
-19:16: And he has on his vesture and on his thigh a name written, KING OF KINGS, AND LORD OF LORDS.
+19:16: And he has on his vesture and on his thigh a name written, KING OF KINGS, AND LORD OF LORDS[JESUS].
 19:17: And I saw an angel standing in the sun; and he cried with a loud voice, saying to all the birds that fly in the midst of heaven, Come and gather yourselves together to the supper of the great GOD;
 19:18: That you may eat the flesh of kings, and the flesh of captains, and the flesh of mighty men, and the flesh of horses, and of them that sit on them, and the flesh of all men, both free and bond, both small and great.
 19:19: And I saw the beast, and the kings of the earth, and their armies, gathered together to make war against him that sat on the horse, and against his army.

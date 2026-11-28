@@ -20,6 +20,8 @@ PCE_RAW_URL = "https://raw.githubusercontent.com/evalrjcom/jesus-centric-kjv/mai
 DEFAULT_OUTPUT = REPO_ROOT / "docs" / "jesus_centric_kjv_all66.txt"
 DEFAULT_SWAPS_PATH = REPO_ROOT / "swaps.tsv"
 DEFAULT_REPLACEMENTS_MD = REPO_ROOT / "REPLACEMENTS.md"
+DEFAULT_TYPES_PATH = REPO_ROOT / "jesus_types.tsv"
+DEFAULT_TYPES_MD = REPO_ROOT / "JESUS_TYPES.md"
 
 # Canonical 66-book order: (PCE abbreviation, full name, output header).
 # Output headers match the book headers the viewer (docs/index.html) has always used.
@@ -63,6 +65,10 @@ class PCEError(ValueError):
 
 class SwapsError(ValueError):
     """Raised when a swaps TSV cannot be loaded or fails validation."""
+
+
+class TypesError(ValueError):
+    """Raised when jesus_types.tsv cannot be loaded, or a target is not found in its verse."""
 
 
 def decode_pce(data: bytes) -> str:
@@ -253,6 +259,95 @@ REPLACEMENTS = load_swaps(DEFAULT_SWAPS_PATH)
 SORTED_REPLACEMENTS, COMPILED_REPLACEMENTS = compile_replacements(REPLACEMENTS)
 
 
+# ---------------------------------------------------------------------------
+# Jesus-type markers (jesus_types.tsv): [JESUS] after a chosen word in a chosen verse
+# ---------------------------------------------------------------------------
+JESUS_MARK = "[JESUS]"
+TYPE_MATCH_LEVELS = ("strong", "moderate", "weak")
+REF_RE = re.compile(r"^(\S+) (\d+):(\d+)$")
+
+
+def load_types(path) -> list:
+    """Parse jesus_types.tsv: ref<TAB>target<TAB>occurrence<TAB>match<TAB>theme.
+
+    Returns a list of dicts (ref, abbr, chapter, verse, target, occurrence, match, theme, line).
+    Comments (#) and blank lines are ignored. Raises TypesError with a line number on a bad row.
+    """
+    path = Path(path)
+    try:
+        raw = path.read_text(encoding="utf-8-sig")
+    except FileNotFoundError:
+        raise TypesError(f"{path}: file not found") from None
+    except UnicodeDecodeError as e:
+        raise TypesError(f"{path}: not valid UTF-8 ({e})") from e
+    entries, seen = [], set()
+    for n, line in enumerate(raw.splitlines(), 1):
+        if not line.strip() or line.strip().startswith("#"):
+            continue
+        f = [part.strip() for part in line.split("\t")]
+        if len(f) != 5:
+            raise TypesError(f"{path}:{n}: expected 5 tab-separated fields "
+                             f"(ref, target, occurrence, match, theme), got {len(f)}: {line[:80]!r}")
+        ref, target, occ, match, theme = f
+        m = REF_RE.match(ref)
+        if not m or m.group(1) not in BOOK_INDEX:
+            raise TypesError(f"{path}:{n}: bad ref {ref!r} (expected e.g. 'Ge 3:15')")
+        if not target:
+            raise TypesError(f"{path}:{n}: empty target")
+        try:
+            occ_n = int(occ) if occ else 1
+        except ValueError:
+            raise TypesError(f"{path}:{n}: occurrence must be a number, got {occ!r}") from None
+        if occ_n < 1:
+            raise TypesError(f"{path}:{n}: occurrence must be >= 1")
+        if match not in TYPE_MATCH_LEVELS:
+            raise TypesError(f"{path}:{n}: match must be one of {TYPE_MATCH_LEVELS}, got {match!r}")
+        key = (ref, target.lower(), occ_n)
+        if key in seen:
+            raise TypesError(f"{path}:{n}: duplicate entry for {ref} {target!r} #{occ_n}")
+        seen.add(key)
+        entries.append({"ref": ref, "abbr": m.group(1), "chapter": int(m.group(2)), "verse": int(m.group(3)),
+                        "target": target, "occurrence": occ_n, "match": match, "theme": theme, "line": n})
+    if not entries:
+        raise TypesError(f"{path}: no entries found")
+    return entries
+
+
+def index_types(entries: list) -> dict:
+    by_ref = {}
+    for e in entries:
+        by_ref.setdefault(e["ref"], []).append(e)
+    return by_ref
+
+
+def apply_type_marker(text: str, entry: dict):
+    """Put [JESUS] after the entry's Nth occurrence of its target in `text` (already processed).
+
+    Returns (new_text, status): "added", or "already" when that occurrence is already followed by
+    [JESUS] (so nothing is added). Raises TypesError if the target (or that occurrence) is not found.
+    """
+    pattern = re.compile(r"(?<!\w)" + re.escape(entry["target"]) + r"(?!\w)", re.I)
+    matches = list(pattern.finditer(text))
+    if len(matches) < entry["occurrence"]:
+        raise TypesError(f"{entry['ref']}: target {entry['target']!r} occurrence #{entry['occurrence']} "
+                         f"not found ({len(matches)} match(es)) in: {text!r}")
+    end = matches[entry["occurrence"] - 1].end()
+    if text.startswith(JESUS_MARK, end):
+        return text, "already"
+    return text[:end] + JESUS_MARK + text[end:], "added"
+
+
+TYPES = load_types(DEFAULT_TYPES_PATH)
+TYPES_BY_REF = index_types(TYPES)
+
+
+def apply_types(entries: list) -> None:
+    """Install a list of type entries as the process-wide TYPES / TYPES_BY_REF."""
+    global TYPES, TYPES_BY_REF
+    TYPES = entries
+    TYPES_BY_REF = index_types(entries)
+
+
 # Static prose appended when regenerating REPLACEMENTS.md from swaps.tsv.
 # Keep this in sync with the hand-written context-rule section of that file.
 ART_RULE_MD = (
@@ -297,6 +392,43 @@ def write_replacements_md(swaps=None, path=None) -> Path:
     return path
 
 
+def write_types_md(entries=None, path=None) -> Path:
+    """Generate JESUS_TYPES.md from a list of entries or a TSV path. Returns the written path."""
+    if entries is None:
+        entries = TYPES
+    elif not isinstance(entries, list):
+        entries = load_types(entries)
+    path = Path(path) if path is not None else DEFAULT_TYPES_MD
+    names = {abbr: name for abbr, name, _ in BOOKS}
+    entries = sorted(entries, key=lambda e: (BOOK_INDEX[e["abbr"]], e["chapter"], e["verse"], e["line"]))
+    counts = {lvl: sum(1 for e in entries if e["match"] == lvl) for lvl in TYPE_MATCH_LEVELS}
+    esc = lambda t: t.replace("|", "\\|")
+    lines = [
+        "# Jesus-type markers",
+        "",
+        "Verses where the processor adds `[JESUS]` right after a word that points to Christ, taken from the",
+        "\"books of the Bible reveal Christ\" chart. The source of truth is `jesus_types.tsv`. This file is generated from it:",
+        "",
+        "```bash",
+        "python3 jesus_centric_kjv_processor.py --write-types-md",
+        "```",
+        "",
+        "The target is matched in the processed (modernized) verse. If it already carries `[JESUS]` from the",
+        "Word / Lamb / Christ / Son of Man / Son of God rules, nothing more is added.",
+        "",
+        f"Total: **{len(entries)}** (strong {counts['strong']}, moderate {counts['moderate']}, weak {counts['weak']})",
+        "",
+        "| Book | Verse | Target | # | Match | Theme |",
+        "|------|-------|--------|---|-------|-------|",
+    ]
+    for e in entries:
+        lines.append(f"| {names[e['abbr']]} | {e['chapter']}:{e['verse']} | `{esc(e['target'])}` | "
+                     f"{e['occurrence']} | {e['match']} | {esc(e['theme'])} |")
+    lines.append("")
+    path.write_text("\n".join(lines), encoding="utf-8")
+    return path
+
+
 def match_case(found, target):
     """Give `target` the capitalization of the matched KJV text `found`.
     lowercase -> target as written; ALL CAPS (2+ letters) -> TARGET; otherwise (Title or mixed case)
@@ -336,9 +468,13 @@ def uppercase_jesus(line):
     return re.sub(r"\b[Jj]esus\b", "JESUS", line)
 
 def add_jesus_marker(line):
-    # Protect "JESUS CHRIST" so it is not marked as CHRIST[JESUS]
-    placeholder = "__JESUS_CHRIST_PROTECTED__"
-    line = re.sub(r"\bJESUS\s+CHRIST\b", placeholder, line, flags=re.I)
+    # Protect the compound names "JESUS CHRIST" and "CHRIST JESUS" (any case) so that neither is
+    # marked as CHRIST[JESUS]: JESUS is already named in them. Both are restored in capitals.
+    protected = []
+    def protect(m):
+        protected.append("CHRIST JESUS" if m.group(0).split()[0].lower() == "christ" else "JESUS CHRIST")
+        return f"__JESUS_NAME_PROTECTED_{len(protected) - 1}__"
+    line = re.sub(r"\b(?:JESUS\s+CHRIST|CHRIST\s+JESUS)\b", protect, line, flags=re.I)
 
     terms = [r"\bWord\b", r"\bLamb\b", r"\bChrist\b", r"\bMessiah\b", r"\bSon of Man\b", r"\bSon of God\b"]
     def repl(m):
@@ -348,15 +484,31 @@ def add_jesus_marker(line):
     for term in terms:
         line = re.compile(term, re.I).sub(repl, line)
 
-    # Restore protected phrase
-    line = line.replace(placeholder, "JESUS CHRIST")
+    # Restore protected names
+    for i, name in enumerate(protected):
+        line = line.replace(f"__JESUS_NAME_PROTECTED_{i}__", name)
     return line
 
-def process_line(line):
+def apply_type_markers(line, ref):
+    """Apply jesus_types.tsv entries for verse `ref` ("Ge 3:15") to a processed 'C:V: text' line."""
+    entries = TYPES_BY_REF.get(ref)
+    if not entries:
+        return line
+    head, sep, text = line.partition(": ")      # keep the 'C:V: ' prefix out of the target search
+    for entry in entries:
+        text, _status = apply_type_marker(text, entry)
+    return head + sep + text
+
+
+def process_line(line, ref=None):
+    """Full pipeline for one verse line. `ref` (PCE style, e.g. "Ge 3:15") enables the per-verse
+    jesus_types.tsv markers; without it (legacy files) only the general marker rules run."""
     line = modernize_line(line)
     line = capitalize_divine(line)
     line = uppercase_jesus(line)
     line = add_jesus_marker(line)
+    if ref is not None:
+        line = apply_type_markers(line, ref)
     return line
 
 
@@ -385,10 +537,25 @@ def process_pce(source, outp, italics="strip", titles_json=None, timeout=30.0):
     print(f"Loaded PCE from {origin}: {EXPECTED_BOOKS} books, {EXPECTED_CHAPTERS} chapters, {len(verses)} verses")
     outp = Path(outp)
     outp.parent.mkdir(parents=True, exist_ok=True)
+    header_abbr = {header: abbr for abbr, _, header in BOOKS}
+    abbr, used = None, set()
     with open(outp, "w", encoding="utf-8", newline="\n") as fout:
         for line in pce_to_lines(verses, italics):
             # book headers pass through unchanged; verse lines get the full pipeline
-            fout.write((line if not re.match(r"^\d+:\d+: ", line) else process_line(line)) + "\n")
+            if line in header_abbr and not re.match(r"^\d+:\d+: ", line):
+                abbr = header_abbr[line]
+                fout.write(line + "\n")
+                continue
+            m = re.match(r"^(\d+):(\d+): ", line)
+            if not m:
+                fout.write(line + "\n")
+                continue
+            ref = f"{abbr} {m.group(1)}:{m.group(2)}"
+            used.add(ref)
+            fout.write(process_line(line, ref) + "\n")
+    missing = sorted(set(TYPES_BY_REF) - used)
+    if missing:
+        raise TypesError(f"jesus_types.tsv refers to verses not in the source: {', '.join(missing)}")
     if titles_json:
         Path(titles_json).write_text(json.dumps(titles_metadata(verses), ensure_ascii=False, indent=1) + "\n",
                                      encoding="utf-8")
@@ -409,6 +576,11 @@ def main(argv=None):
                    type=Path, metavar="PATH",
                    help="regenerate REPLACEMENTS.md from the swaps file and exit "
                         "(default path: REPLACEMENTS.md next to this script)")
+    p.add_argument("--types", type=Path, default=DEFAULT_TYPES_PATH,
+                   help="TSV of per-verse [JESUS] markers (default: jesus_types.tsv next to this script)")
+    p.add_argument("--write-types-md", nargs="?", const=DEFAULT_TYPES_MD, type=Path, metavar="PATH",
+                   help="regenerate JESUS_TYPES.md from the types file and exit "
+                        "(default path: JESUS_TYPES.md next to this script)")
     p.add_argument("--italics", choices=["strip", "keep", "html"], default="strip",
                    help="PCE [italic] supplied words: strip brackets (default), keep [ ], or wrap in <i></i>")
     p.add_argument("--titles-json", type=Path, help="also write Psalm titles / colophons (<<...>>) as JSON")
@@ -419,6 +591,12 @@ def main(argv=None):
     try:
         if Path(args.swaps) != DEFAULT_SWAPS_PATH or args.write_replacements_md:
             apply_swaps(load_swaps(args.swaps))
+        if Path(args.types) != DEFAULT_TYPES_PATH or args.write_types_md:
+            apply_types(load_types(args.types))
+        if args.write_types_md is not None:
+            out_md = write_types_md(TYPES, args.write_types_md)
+            print(f"Wrote {len(TYPES)} jesus-type markers -> {out_md}")
+            return
         if args.write_replacements_md is not None:
             out_md = write_replacements_md(REPLACEMENTS, args.write_replacements_md)
             print(f"Wrote {len(REPLACEMENTS)} swaps -> {out_md}")
