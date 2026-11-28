@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jesus-Centric KJV</title>
+  <meta name="description" content="A Jesus-centric reading of the King James Bible (Pure Cambridge Edition), with modernized wording and a shareable link to every verse.">
+  <link rel="canonical" href="https://evalrjcom.github.io/jesus-centric-kjv/">
+  <meta property="og:title" content="Jesus-Centric KJV">
+  <meta property="og:description" content="A Jesus-centric reading of the King James Bible (Pure Cambridge Edition), with modernized wording and a shareable link to every verse.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evalrjcom.github.io/jesus-centric-kjv/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jesus-Centric KJV">
+  <meta name="twitter:description" content="A Jesus-centric reading of the King James Bible (Pure Cambridge Edition), with modernized wording and a shareable link to every verse.">
+  <meta name="theme-color" content="#0d0f12">
   <style>
     :root, [data-theme="dark"] {
       --bg: #0d0f12;
@@ -206,6 +216,139 @@
       0% { background: var(--flash); }
       100% { background: transparent; }
     }
+    .verse { position: relative; flex-wrap: wrap; }
+    .verse-text { flex: 1; min-width: 12rem; }
+    .verse.selected {
+      background: var(--hit-hover);
+      border-radius: 4px;
+    }
+    .verse-actions {
+      position: absolute;
+      right: 0;
+      bottom: 100%;
+      margin-bottom: 0.15rem;
+      display: flex;
+      gap: 0.15rem;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.15rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.28);
+      z-index: 8;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(4px);
+      transition: opacity 0.12s ease, transform 0.12s ease;
+      white-space: nowrap;
+    }
+    .verse:hover .verse-actions,
+    .verse:focus-within .verse-actions,
+    .verse.show-actions .verse-actions {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    .verse-act-trigger { display: none; }
+    .verse-act {
+      background: transparent;
+      border: none;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 1;
+      padding: 0.35rem 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+    }
+    .verse-act:hover,
+    .verse-act:focus-visible {
+      background: var(--hit-hover);
+      color: var(--accent);
+      outline: none;
+    }
+    .verse-act:focus-visible {
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    #toast {
+      position: fixed;
+      left: 50%;
+      bottom: 1.5rem;
+      transform: translateX(-50%) translateY(8px);
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--accent);
+      box-shadow: 0 6px 22px rgba(0,0,0,0.45);
+      padding: 0.6rem 1.15rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      z-index: 60;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    @media (hover: none) and (pointer: coarse) {
+      /* Touch has no hover: a compact trigger stays visible; the full menu opens when selected. */
+      .verse-actions {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+      .verse-actions .verse-act {
+        display: none;
+        min-height: 36px;
+        padding: 0.4rem 0.55rem;
+        font-size: 0.85rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+      }
+      .verse-actions .verse-act-trigger {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 36px;
+        min-height: 36px;
+        padding: 0;
+        color: var(--muted);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        opacity: 0.85;
+      }
+      .verse.show-actions .verse-actions,
+      .verse:focus-within .verse-actions {
+        position: static;
+        flex-basis: 100%;
+        justify-content: flex-end;
+        margin: 0.3rem 0 0;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.28);
+        padding: 0.15rem;
+      }
+      .verse.show-actions .verse-actions .verse-act,
+      .verse:focus-within .verse-actions .verse-act {
+        display: inline-flex;
+      }
+      .verse.show-actions .verse-actions .verse-act-trigger,
+      .verse:focus-within .verse-actions .verse-act-trigger {
+        display: none;
+      }
+    }
     #backTop {
       position: fixed;
       bottom: 1.5rem;
@@ -288,7 +431,7 @@
       .book-title { font-size: 1.35rem; }
       #status { font-size: 0.8rem; }
       #virtualWindow { padding: 0.4rem 0.8rem 3rem; }
-      .verse { margin: 0.5rem 0; }
+      .verse { margin: 0.5rem 0; padding-right: 2.6rem; }
       .verse-ref { min-width: 2.8rem; font-size: 0.9em; }
       #backTop {
         bottom: 1rem;
@@ -338,6 +481,7 @@
     </main>
   </div>
   <button id="backTop" title="Back to top">↑</button>
+  <div id="toast" role="status" aria-live="polite"></div>
   <script>
     const REPO = "evalrjcom/jesus-centric-kjv";
     const TXT_URL = "jesus_centric_kjv_all66.txt";
@@ -358,6 +502,7 @@
     const readWidthEl = document.getElementById("readWidth");
     const backTopEl = document.getElementById("backTop");
     const bookListEl = document.getElementById("bookList");
+    const toastEl = document.getElementById("toast");
 
     let books = [];
     let currentBook = 0;
@@ -373,6 +518,9 @@
     let ignoreHashChange = false;
     let flashTarget = null; // { bookIdx, chapter, verse, start, duration }
     let pinRender = null; // { start, end } keep a chapter laid out naturally when jumping to a verse
+    let selectedRange = null; // { bookIdx, chapter, start, end }
+    let selectAnchor = null; // { bookIdx, chapter, verse }
+    let toastTimer = null;
 
     // Short book ids for deep links such as #Eph/2/8
     const BOOK_IDS = {
@@ -454,15 +602,20 @@
       const parts = String(ref).split(":");
       return parseInt(parts[parts.length - 1], 10) || 0;
     }
-    function makeHash(bookIdx, chapter, verse) {
+    function makeHash(bookIdx, chapter, verse, endVerse) {
       if (bookIdx == null || !books[bookIdx]) return "";
       let h = "#" + bookIdFor(books[bookIdx].name);
       if (chapter) h += "/" + chapter;
-      if (verse) h += "/" + verse;
+      if (verse) {
+        const lo = endVerse && endVerse < verse ? endVerse : verse;
+        const hi = endVerse && endVerse > verse ? endVerse : verse;
+        h += "/" + lo;
+        if (hi && hi !== lo) h += "-" + hi;
+      }
       return h;
     }
-    function setHash(bookIdx, chapter, verse, replace) {
-      const h = makeHash(bookIdx, chapter, verse);
+    function setHash(bookIdx, chapter, verse, replace, endVerse) {
+      const h = makeHash(bookIdx, chapter, verse, endVerse);
       if (!h || location.hash === h) return;
       ignoreHashChange = true;
       if (replace) history.replaceState(null, "", h);
@@ -471,15 +624,142 @@
       setTimeout(() => { ignoreHashChange = false; }, 0);
     }
     function parseHash(hash) {
-      const m = String(hash || "").match(/^#\/?([^\/#]+)(?:\/(\d+))?(?:\/(\d+))?\/?$/);
+      const m = String(hash || "").match(/^#\/?([^\/#]+)(?:\/(\d+))?(?:\/(\d+)(?:-(\d+))?)?\/?$/);
       if (!m) return null;
       const bookIdx = findBookIndexBySlug(m[1]);
       if (bookIdx < 0) return null;
+      let verse = m[3] ? parseInt(m[3], 10) : 0;
+      let endVerse = m[4] ? parseInt(m[4], 10) : 0;
+      if (verse && endVerse && endVerse < verse) {
+        const tmp = verse; verse = endVerse; endVerse = tmp;
+      }
+      if (endVerse === verse) endVerse = 0;
       return {
         bookIdx,
         chapter: m[2] ? parseInt(m[2], 10) : 1,
-        verse: m[3] ? parseInt(m[3], 10) : 0
+        verse,
+        endVerse
       };
+    }
+    function siteVerseUrl(bookIdx, chapter, verse, endVerse) {
+      return location.origin + location.pathname + makeHash(bookIdx, chapter, verse, endVerse);
+    }
+    function displayBookName(name) {
+      const small = { of: 1, the: 1, and: 1 };
+      return String(name || "").toLowerCase().split(/\s+/).map((w, i) => {
+        if (i > 0 && small[w]) return w;
+        return w.charAt(0).toUpperCase() + w.slice(1);
+      }).join(" ");
+    }
+    // Editorial [JESUS] markers are useful in the reader but look messy in a shared quote,
+    // e.g. "CHRIST[JESUS] JESUS" or "WORD[JESUS] of truth". Strip the brackets for copy/share;
+    // surrounding words such as CHRIST, JESUS, LORD, and GOD are kept.
+    function plainVerseText(text) {
+      return String(text || "").replace(/\[JESUS\]/g, "").replace(/\s+/g, " ").trim();
+    }
+    function formatCitation(bookIdx, chapter, start, end) {
+      const name = displayBookName(books[bookIdx] && books[bookIdx].name);
+      let ref = name + " " + chapter + ":" + start;
+      if (end && end !== start) ref += "-" + end;
+      return ref;
+    }
+    function sharePayload(bookIdx, chapter, start, end) {
+      const lo = Math.min(start, end || start);
+      const hi = Math.max(start, end || start);
+      const book = books[bookIdx];
+      const verses = book ? book.verses.filter(v => v.chapter === chapter && verseNum(v) >= lo && verseNum(v) <= hi) : [];
+      const body = verses.map(v => plainVerseText(v.text)).join("\n");
+      const citation = formatCitation(bookIdx, chapter, lo, hi);
+      const url = siteVerseUrl(bookIdx, chapter, lo, hi === lo ? 0 : hi);
+      const full = "\u201C" + body + "\u201D \u2014 " + citation + " (Jesus-Centric KJV)\n" + url;
+      return { full, url, citation, title: citation + " (Jesus-Centric KJV)", body };
+    }
+    function showToast(message) {
+      if (!toastEl) return;
+      toastEl.textContent = message;
+      toastEl.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toastEl.classList.remove("show"), 1800);
+    }
+    function copyText(text) {
+      const done = (ok) => { if (ok) showToast("Copied"); return ok; };
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).then(() => done(true)).catch(() => done(copyTextFallback(text)));
+      }
+      return Promise.resolve(done(copyTextFallback(text)));
+    }
+    function copyTextFallback(text) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      let ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      return ok;
+    }
+    function rangeForVerseEl(el) {
+      const bookIdx = el.dataset.bookIdx != null && el.dataset.bookIdx !== ""
+        ? parseInt(el.dataset.bookIdx, 10)
+        : currentBook;
+      const chapter = parseInt(el.dataset.chapter, 10);
+      const verse = parseInt(el.dataset.verse, 10);
+      if (selectedRange
+          && selectedRange.bookIdx === bookIdx
+          && selectedRange.chapter === chapter
+          && verse >= selectedRange.start
+          && verse <= selectedRange.end) {
+        return { bookIdx, chapter, start: selectedRange.start, end: selectedRange.end };
+      }
+      return { bookIdx, chapter, start: verse, end: verse };
+    }
+    function handleVerseAction(btn) {
+      const verseEl = btn.closest(".verse");
+      if (!verseEl) return;
+      const range = rangeForVerseEl(verseEl);
+      const payload = sharePayload(range.bookIdx, range.chapter, range.start, range.end);
+      const act = btn.getAttribute("data-act");
+      if (act === "copy") {
+        copyText(payload.full);
+      } else if (act === "link") {
+        copyText(payload.url);
+      } else if (act === "share") {
+        shareOrCopy(payload);
+      } else if (act === "menu") {
+        const ch = verseEl.dataset.chapter;
+        const vs = verseEl.dataset.verse;
+        const bookAttr = verseEl.dataset.bookIdx;
+        setTimeout(() => {
+          const sel = bookAttr != null && bookAttr !== ""
+            ? `.verse[data-book-idx="${bookAttr}"][data-chapter="${ch}"][data-verse="${vs}"]`
+            : `.verse[data-chapter="${ch}"][data-verse="${vs}"]`;
+          const fresh = windowEl.querySelector(sel) || verseEl;
+          selectVerseEl(fresh, false);
+          const first = windowEl.querySelector(sel + ' .verse-act[data-act="copy"]');
+          if (first) first.focus();
+        }, 0);
+      }
+    }
+    function shareOrCopy(payload) {
+      if (navigator.share) {
+        navigator.share({ title: payload.title, text: payload.full, url: payload.url }).catch((err) => {
+          if (err && err.name === "AbortError") return;
+          copyText(payload.full);
+        });
+        return;
+      }
+      copyText(payload.full);
+    }
+    function clearSelection() {
+      if (!selectedRange && !selectAnchor) return;
+      selectedRange = null;
+      selectAnchor = null;
+      lastStart = -1;
+      renderWindow();
     }
 
     function highlightDivine(text) {
@@ -683,16 +963,28 @@
             const label = (books[it.bookIdx] ? books[it.bookIdx].name : "") + " " + it.verse.ref;
             div.setAttribute("aria-label", label.trim());
           }
+          const vNum = verseNum(it.verse);
+          const thisBookIdx = it.bookIdx != null ? it.bookIdx : currentBook;
           if (flashTarget
-              && flashTarget.bookIdx === currentBook
-              && it.bookIdx == null
-              && it.verse.chapter === flashTarget.chapter
-              && verseNum(it.verse) === flashTarget.verse) {
-            const elapsed = Date.now() - flashTarget.start;
-            if (elapsed < flashTarget.duration) {
-              div.classList.add("flash");
-              div.style.animationDelay = (-elapsed) + "ms";
+              && flashTarget.bookIdx === thisBookIdx
+              && it.verse.chapter === flashTarget.chapter) {
+            const lo = flashTarget.verse;
+            const hi = flashTarget.endVerse || flashTarget.verse;
+            if (vNum >= Math.min(lo, hi) && vNum <= Math.max(lo, hi)) {
+              const elapsed = Date.now() - flashTarget.start;
+              if (elapsed < flashTarget.duration) {
+                div.classList.add("flash");
+                div.style.animationDelay = (-elapsed) + "ms";
+              }
             }
+          }
+          if (selectedRange
+              && selectedRange.bookIdx === thisBookIdx
+              && it.verse.chapter === selectedRange.chapter
+              && vNum >= selectedRange.start
+              && vNum <= selectedRange.end) {
+            div.classList.add("selected");
+            if (vNum === selectedRange.end) div.classList.add("show-actions");
           }
           let plain = it.verse.text;
           if (it.query) {
@@ -700,7 +992,32 @@
           }
           let textHtml = highlightDivine(plain);
           textHtml = textHtml.replace(/\x00([^\x00]+)\x00/g, "<mark>$1</mark>");
-          div.innerHTML = `<span class="verse-ref">${it.verse.ref}</span><span>${textHtml}</span>`;
+          div.innerHTML = `<span class="verse-ref">${it.verse.ref}</span><span class="verse-text">${textHtml}</span>`;
+          const actions = document.createElement("span");
+          actions.className = "verse-actions";
+          const citation = (books[thisBookIdx] ? books[thisBookIdx].name : "") + " " + it.verse.ref;
+          const mkBtn = (act, label, aria) => {
+            const b = document.createElement("button");
+            b.type = "button";
+            b.className = "verse-act";
+            b.setAttribute("data-act", act);
+            b.setAttribute("aria-label", aria);
+            b.tabIndex = -1;
+            b.textContent = label;
+            return b;
+          };
+          const trigger = mkBtn("menu", "Share", "Copy or share " + citation.trim());
+          trigger.classList.add("verse-act-trigger");
+          trigger.setAttribute("aria-haspopup", "true");
+          trigger.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>';
+          actions.appendChild(trigger);
+          actions.appendChild(mkBtn("copy", "Copy", "Copy " + citation.trim()));
+          actions.appendChild(mkBtn("link", "Copy link", "Copy link to " + citation.trim()));
+          actions.appendChild(mkBtn("share", "Share", "Share " + citation.trim()));
+          if (div.classList.contains("selected")) {
+            actions.querySelectorAll(".verse-act:not(.verse-act-trigger)").forEach(b => { b.tabIndex = 0; });
+          }
+          div.appendChild(actions);
           frag.appendChild(div);
         }
       }
@@ -715,6 +1032,16 @@
       if (opts.chapter) currentChapter = opts.chapter;
       const book = books[idx];
       if (!book) return;
+      const endVerse = opts.endVerse || 0;
+      if (opts.verse && endVerse && endVerse !== opts.verse) {
+        const lo = Math.min(opts.verse, endVerse);
+        const hi = Math.max(opts.verse, endVerse);
+        selectedRange = { bookIdx: idx, chapter: opts.chapter || currentChapter, start: lo, end: hi };
+        selectAnchor = { bookIdx: idx, chapter: selectedRange.chapter, verse: lo };
+      } else if (!opts.keepSelection) {
+        selectedRange = null;
+        selectAnchor = null;
+      }
       bookTitleEl.textContent = book.name;
       // Chapter view is unfiltered so a leftover search query can stay in the box.
       items = buildItems(book, "");
@@ -724,7 +1051,7 @@
       setActiveSidebar(idx);
       savePosition();
       if (opts.verse) {
-        scrollToVerse(opts.chapter || currentChapter, opts.verse, opts.flash !== false);
+        scrollToVerse(opts.chapter || currentChapter, opts.verse, opts.flash !== false, endVerse);
       } else {
         versesEl.scrollTop = 0;
         renderWindow();
@@ -737,7 +1064,7 @@
         }
       }
       if (opts.updateHash !== false) {
-        setHash(idx, currentChapter, opts.verse || 0, opts.replaceHash);
+        setHash(idx, currentChapter, opts.verse || 0, opts.replaceHash, endVerse);
       }
     }
 
@@ -751,7 +1078,7 @@
       return true;
     }
 
-    function scrollToVerse(chapter, verse, flash) {
+    function scrollToVerse(chapter, verse, flash, endVerse) {
       const itemIdx = items.findIndex(it =>
         it.type === "v" && it.verse.chapter === chapter && verseNum(it.verse) === verse
       );
@@ -765,7 +1092,7 @@
         return;
       }
       if (flash) {
-        flashTarget = { bookIdx: currentBook, chapter, verse, start: Date.now(), duration: 1600 };
+        flashTarget = { bookIdx: currentBook, chapter, verse, endVerse: endVerse || 0, start: Date.now(), duration: 1600 };
         setTimeout(() => {
           if (flashTarget && Date.now() - flashTarget.start >= flashTarget.duration) {
             flashTarget = null;
@@ -774,9 +1101,16 @@
       }
       // Render from the chapter heading so wrapped lines lay out at their natural height,
       // then center using the element's real position (the sticky toolbar sits outside #verses).
+      let pinEnd = itemIdx + 30;
+      if (endVerse && endVerse !== verse) {
+        const endIdx = items.findIndex(it =>
+          it.type === "v" && it.verse.chapter === chapter && verseNum(it.verse) === endVerse
+        );
+        if (endIdx >= 0) pinEnd = Math.max(pinEnd, endIdx + 8);
+      }
       pinRender = {
         start: Math.max(0, idxCh >= 0 ? idxCh : itemIdx - 5),
-        end: Math.min(items.length, itemIdx + 30)
+        end: Math.min(items.length, pinEnd)
       };
       const viewH = versesEl.clientHeight || 600;
       versesEl.scrollTop = Math.max(0, itemIdx * itemHeight - viewH / 2 + itemHeight / 2);
@@ -796,6 +1130,7 @@
       showBook(bookIdx, {
         chapter,
         verse,
+        endVerse: opts.endVerse || 0,
         flash: opts.flash !== false,
         updateHash: opts.updateHash !== false,
         replaceHash: opts.replaceHash
@@ -808,6 +1143,7 @@
       if (!loc) return false;
       openVerse(loc.bookIdx, loc.chapter, loc.verse, {
         flash: !!loc.verse,
+        endVerse: loc.endVerse || 0,
         updateHash: false,
         replaceHash: opts.replaceHash
       });
@@ -816,6 +1152,8 @@
 
     function doSearch() {
       pinRender = null;
+      selectedRange = null;
+      selectAnchor = null;
       const q = searchEl.value.trim();
       if (!q) {
         showBook(currentBook);
@@ -909,16 +1247,93 @@
     function resultVerseEl(target) {
       return target && target.closest ? target.closest(".verse.search-hit") : null;
     }
+    function selectVerseEl(el, extend) {
+      const bookIdx = el.dataset.bookIdx != null && el.dataset.bookIdx !== ""
+        ? parseInt(el.dataset.bookIdx, 10)
+        : currentBook;
+      const chapter = parseInt(el.dataset.chapter, 10);
+      const verse = parseInt(el.dataset.verse, 10);
+      // Range selection stays within one book and chapter.
+      if (extend && selectAnchor && selectAnchor.bookIdx === bookIdx && selectAnchor.chapter === chapter) {
+        const lo = Math.min(selectAnchor.verse, verse);
+        const hi = Math.max(selectAnchor.verse, verse);
+        selectedRange = { bookIdx, chapter, start: lo, end: hi };
+      } else {
+        selectAnchor = { bookIdx, chapter, verse };
+        selectedRange = { bookIdx, chapter, start: verse, end: verse };
+      }
+      windowEl.querySelectorAll(".verse").forEach(v => {
+        const vBook = v.dataset.bookIdx != null && v.dataset.bookIdx !== ""
+          ? parseInt(v.dataset.bookIdx, 10)
+          : currentBook;
+        const vCh = parseInt(v.dataset.chapter, 10);
+        const vNum = parseInt(v.dataset.verse, 10);
+        const inRange = vBook === selectedRange.bookIdx
+          && vCh === selectedRange.chapter
+          && vNum >= selectedRange.start
+          && vNum <= selectedRange.end;
+        v.classList.toggle("selected", inRange);
+        v.classList.toggle("show-actions", inRange && vNum === selectedRange.end);
+        v.querySelectorAll(".verse-act:not(.verse-act-trigger)").forEach(b => {
+          b.tabIndex = inRange && vNum === selectedRange.end ? 0 : -1;
+        });
+      });
+      const replace = true;
+      const endVerse = selectedRange.end !== selectedRange.start ? selectedRange.end : 0;
+      setHash(bookIdx, chapter, selectedRange.start, replace, endVerse);
+    }
+    let skipVerseOpen = false;
+    function isVerseActionTarget(target) {
+      return !!(target && target.closest && target.closest(".verse-act, .verse-actions"));
+    }
+    versesEl.addEventListener("pointerdown", (e) => {
+      if (isVerseActionTarget(e.target)) {
+        skipVerseOpen = true;
+        e.stopPropagation();
+      }
+    }, true);
     versesEl.addEventListener("click", (e) => {
+      if (isVerseActionTarget(e.target)) {
+        e.preventDefault();
+        e.stopPropagation();
+        skipVerseOpen = true;
+        handleVerseAction(e.target.closest(".verse-act") || e.target.closest(".verse-actions").querySelector(".verse-act-trigger"));
+        setTimeout(() => { skipVerseOpen = false; }, 50);
+        return;
+      }
+    }, true);
+    versesEl.addEventListener("focusin", (e) => {
+      const verse = e.target.closest && e.target.closest(".verse");
+      if (!verse) return;
+      verse.querySelectorAll(".verse-act:not(.verse-act-trigger)").forEach(b => { b.tabIndex = 0; });
+    });
+    versesEl.addEventListener("click", (e) => {
+      if (skipVerseOpen || isVerseActionTarget(e.target)) {
+        skipVerseOpen = false;
+        return;
+      }
       const hit = resultVerseEl(e.target);
-      if (!hit) return;
-      openVerse(
-        parseInt(hit.dataset.bookIdx, 10),
-        parseInt(hit.dataset.chapter, 10),
-        parseInt(hit.dataset.verse, 10)
-      );
+      if (hit && !e.shiftKey) {
+        openVerse(
+          parseInt(hit.dataset.bookIdx, 10),
+          parseInt(hit.dataset.chapter, 10),
+          parseInt(hit.dataset.verse, 10)
+        );
+        return;
+      }
+      const verseEl = e.target.closest ? e.target.closest(".verse") : null;
+      if (!verseEl) return;
+      // Shift-click (desktop) or a second tap in the same chapter (touch) selects a range.
+      const coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+      const extend = e.shiftKey || (coarse && selectAnchor
+        && selectAnchor.bookIdx === (verseEl.dataset.bookIdx != null && verseEl.dataset.bookIdx !== ""
+          ? parseInt(verseEl.dataset.bookIdx, 10) : currentBook)
+        && selectAnchor.chapter === parseInt(verseEl.dataset.chapter, 10)
+        && selectAnchor.verse !== parseInt(verseEl.dataset.verse, 10));
+      selectVerseEl(verseEl, extend);
     });
     versesEl.addEventListener("keydown", (e) => {
+      if (e.target.closest && e.target.closest(".verse-act")) return;
       const hit = resultVerseEl(e.target);
       if (!hit) return;
       if (e.key === "Enter" || e.key === " ") {
@@ -971,6 +1386,8 @@
       document.documentElement.setAttribute("data-theme", theme);
       themeToggleEl.textContent = theme === "dark" ? "Light" : "Dark";
       localStorage.setItem("kjv-theme", theme);
+      const themeColor = document.querySelector('meta[name="theme-color"]');
+      if (themeColor) themeColor.setAttribute("content", theme === "dark" ? "#0d0f12" : "#f7f5f2");
     }
 
     themeToggleEl.onclick = () => {
